@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3_VGA
-Wed Sep 15 12:03:36 2021
+Thu Sep 30 16:44:32 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -14,11 +14,12 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Parameter Settings for User Entity Instance: group_no:i_GrNo
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Parameter Settings for User Entity Instance: group_no:i_GrNo
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +45,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Sep 15 12:03:36 2021            ;
+; Analysis & Synthesis Status        ; Successful - Thu Sep 30 16:44:32 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Lab3_VGA                                         ;
 ; Top-level Entity Name              ; VGA_contr                                        ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 108                                              ;
-;     Total combinational functions  ; 103                                              ;
-;     Dedicated logic registers      ; 61                                               ;
-; Total registers                    ; 61                                               ;
+; Total logic elements               ; 76                                               ;
+;     Total combinational functions  ; 73                                               ;
+;     Dedicated logic registers      ; 29                                               ;
+; Total registers                    ; 29                                               ;
 ; Total pins                         ; 86                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -165,23 +166,23 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path        ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+---------+
-; VGA_contr.bdf                    ; yes             ; User Block Diagram/Schematic File  ; X:/TSIU03/Lab3_VGA/VGA_contr.bdf    ;         ;
-; ce_gen.vhd                       ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/ce_gen.vhd       ;         ;
-; pixelcounter.vhd                 ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/pixelcounter.vhd ;         ;
-; hs_gen.vhd                       ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/hs_gen.vhd       ;         ;
-; linecounter.vhd                  ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/linecounter.vhd  ;         ;
-; vs_gen.vhd                       ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/vs_gen.vhd       ;         ;
-; RAM_control.vhd                  ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/RAM_control.vhd  ;         ;
-; blank_gen.vhd                    ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/blank_gen.vhd    ;         ;
-; pixel_reg.vhd                    ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/pixel_reg.vhd    ;         ;
-; RGB_gen.vhd                      ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/RGB_gen.vhd      ;         ;
-; group_no.vhd                     ; yes             ; User VHDL File                     ; X:/TSIU03/Lab3_VGA/group_no.vhd     ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
+; VGA_contr.bdf                    ; yes             ; User Block Diagram/Schematic File  ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/VGA_contr.bdf    ;         ;
+; ce_gen.vhd                       ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ce_gen.vhd       ;         ;
+; pixelcounter.vhd                 ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixelcounter.vhd ;         ;
+; hs_gen.vhd                       ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/hs_gen.vhd       ;         ;
+; linecounter.vhd                  ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/linecounter.vhd  ;         ;
+; vs_gen.vhd                       ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/vs_gen.vhd       ;         ;
+; RAM_control.vhd                  ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/RAM_control.vhd  ;         ;
+; blank_gen.vhd                    ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/blank_gen.vhd    ;         ;
+; pixel_reg.vhd                    ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixel_reg.vhd    ;         ;
+; RGB_gen.vhd                      ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/RGB_gen.vhd      ;         ;
+; group_no.vhd                     ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/group_no.vhd     ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -189,28 +190,28 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 108            ;
+; Estimated Total logic elements              ; 76             ;
 ;                                             ;                ;
-; Total combinational functions               ; 103            ;
+; Total combinational functions               ; 73             ;
 ; Logic element usage by number of LUT inputs ;                ;
 ;     -- 4 input functions                    ; 15             ;
-;     -- 3 input functions                    ; 44             ;
+;     -- 3 input functions                    ; 14             ;
 ;     -- <=2 input functions                  ; 44             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 63             ;
+;     -- normal mode                          ; 33             ;
 ;     -- arithmetic mode                      ; 40             ;
 ;                                             ;                ;
-; Total registers                             ; 61             ;
-;     -- Dedicated logic registers            ; 61             ;
+; Total registers                             ; 29             ;
+;     -- Dedicated logic registers            ; 29             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 86             ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; fpga_clk~input ;
-; Maximum fan-out                             ; 61             ;
-; Total fan-out                               ; 586            ;
-; Average fan-out                             ; 1.74           ;
+; Maximum fan-out                             ; 29             ;
+; Total fan-out                               ; 408            ;
+; Average fan-out                             ; 1.49           ;
 +---------------------------------------------+----------------+
 
 
@@ -219,28 +220,59 @@ applicable agreement for further details.
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
-; |VGA_contr                     ; 103 (2)           ; 61 (6)       ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |VGA_contr                           ; work         ;
+; |VGA_contr                     ; 73 (2)            ; 29 (6)       ; 0           ; 0            ; 0       ; 0         ; 86   ; 0            ; |VGA_contr                           ; work         ;
 ;    |RAM_control:iRAMcontrol|   ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|RAM_control:iRAMcontrol   ; work         ;
-;    |RGB_gen:i_RGB_gen|         ; 22 (22)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|RGB_gen:i_RGB_gen         ; work         ;
 ;    |blank_gen:iBlank_gen|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|blank_gen:iBlank_gen      ; work         ;
 ;    |ce_gen:i_ce_gen|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|ce_gen:i_ce_gen           ; work         ;
 ;    |hs_gen:i_hs_gen|           ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|hs_gen:i_hs_gen           ; work         ;
 ;    |linecounter:i_linecounter| ; 16 (16)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|linecounter:i_linecounter ; work         ;
-;    |pixel_reg:i_pixreg|        ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixel_reg:i_pixreg        ; work         ;
 ;    |pixelcounter:i_pixcounter| ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixelcounter:i_pixcounter ; work         ;
 ;    |vs_gen:i_vs_gen|           ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|vs_gen:i_vs_gen           ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; ce_gen:i_ce_gen|counter[1]            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 1 ;                                        ;
-+---------------------------------------+----------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; pixel_reg:i_pixreg|pixcode[7]          ; Stuck at VCC due to stuck port data_in ;
+; pixel_reg:i_pixreg|pixcode[4..6]       ; Stuck at GND due to stuck port data_in ;
+; pixel_reg:i_pixreg|pixcode[2,3]        ; Stuck at VCC due to stuck port data_in ;
+; pixel_reg:i_pixreg|pixcode[0,1]        ; Stuck at GND due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_b[2..7]          ; Stuck at GND due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_g[0]             ; Stuck at VCC due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_g[1]             ; Stuck at GND due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_g[2,3]           ; Stuck at VCC due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_g[4]             ; Stuck at GND due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_g[5,6]           ; Stuck at VCC due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_g[7]             ; Stuck at GND due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_r[0..7]          ; Stuck at GND due to stuck port data_in ;
+; RGB_gen:i_RGB_gen|vga_b[0,1]           ; Stuck at GND due to stuck port data_in ;
+; ce_gen:i_ce_gen|counter[1]             ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 33 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                     ;
++-------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                 ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++-------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; pixel_reg:i_pixreg|pixcode[7] ; Stuck at VCC              ; RGB_gen:i_RGB_gen|vga_b[2], RGB_gen:i_RGB_gen|vga_b[3], RGB_gen:i_RGB_gen|vga_b[4], ;
+;                               ; due to stuck port data_in ; RGB_gen:i_RGB_gen|vga_b[5], RGB_gen:i_RGB_gen|vga_b[6], RGB_gen:i_RGB_gen|vga_b[7], ;
+;                               ;                           ; RGB_gen:i_RGB_gen|vga_g[0], RGB_gen:i_RGB_gen|vga_g[1], RGB_gen:i_RGB_gen|vga_g[2], ;
+;                               ;                           ; RGB_gen:i_RGB_gen|vga_g[3], RGB_gen:i_RGB_gen|vga_g[4], RGB_gen:i_RGB_gen|vga_g[5], ;
+;                               ;                           ; RGB_gen:i_RGB_gen|vga_g[6], RGB_gen:i_RGB_gen|vga_g[7], RGB_gen:i_RGB_gen|vga_r[0], ;
+;                               ;                           ; RGB_gen:i_RGB_gen|vga_r[1], RGB_gen:i_RGB_gen|vga_r[2], RGB_gen:i_RGB_gen|vga_r[3], ;
+;                               ;                           ; RGB_gen:i_RGB_gen|vga_r[4], RGB_gen:i_RGB_gen|vga_r[5], RGB_gen:i_RGB_gen|vga_b[1], ;
+;                               ;                           ; RGB_gen:i_RGB_gen|vga_b[0]                                                          ;
+; pixel_reg:i_pixreg|pixcode[6] ; Stuck at GND              ; RGB_gen:i_RGB_gen|vga_r[7]                                                          ;
+;                               ; due to stuck port data_in ;                                                                                     ;
+; pixel_reg:i_pixreg|pixcode[5] ; Stuck at GND              ; RGB_gen:i_RGB_gen|vga_r[6]                                                          ;
+;                               ; due to stuck port data_in ;                                                                                     ;
++-------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -248,7 +280,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 61    ;
+; Total registers                              ; 29    ;
 ; Number of registers using Synchronous Clear  ; 10    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 29    ;
@@ -284,7 +316,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -294,7 +326,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Sep 15 12:03:30 2021
+    Info: Processing started: Thu Sep 30 16:44:22 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3_VGA -c Lab3_VGA
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_contr.bdf
@@ -329,6 +361,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file rgb_gen
 Info (12021): Found 2 design units, including 1 entities, in source file group_no.vhd
     Info (12022): Found design unit 1: group_no-foo
     Info (12023): Found entity 1: group_no
+Info (12021): Found 2 design units, including 1 entities, in source file displayrom.vhd
+    Info (12022): Found design unit 1: Display_Frame-Display_Arc
+    Info (12023): Found entity 1: Display_Frame
 Info (12127): Elaborating entity "VGA_contr" for the top level hierarchy
 Info (12128): Elaborating entity "hs_gen" for hierarchy "hs_gen:i_hs_gen"
 Info (12128): Elaborating entity "pixelcounter" for hierarchy "pixelcounter:i_pixcounter"
@@ -340,6 +375,7 @@ Info (12128): Elaborating entity "RAM_control" for hierarchy "RAM_control:iRAMco
 Info (12128): Elaborating entity "blank_gen" for hierarchy "blank_gen:iBlank_gen"
 Info (12128): Elaborating entity "RGB_gen" for hierarchy "RGB_gen:i_RGB_gen"
 Info (12128): Elaborating entity "pixel_reg" for hierarchy "pixel_reg:i_pixreg"
+Warning (10036): Verilog HDL or VHDL warning at pixel_reg.vhd(19): object "Constant_pic" assigned a value but never read
 Info (12128): Elaborating entity "group_no" for hierarchy "group_no:i_GrNo"
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -365,17 +401,58 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX7[5]" is stuck at VCC
     Warning (13410): Pin "HEX7[6]" is stuck at GND
     Warning (13410): Pin "sram_addr[19]" is stuck at GND
+    Warning (13410): Pin "vga_b[7]" is stuck at GND
+    Warning (13410): Pin "vga_b[6]" is stuck at GND
+    Warning (13410): Pin "vga_b[5]" is stuck at GND
+    Warning (13410): Pin "vga_b[4]" is stuck at GND
+    Warning (13410): Pin "vga_b[3]" is stuck at GND
+    Warning (13410): Pin "vga_b[2]" is stuck at GND
+    Warning (13410): Pin "vga_b[1]" is stuck at GND
+    Warning (13410): Pin "vga_b[0]" is stuck at GND
+    Warning (13410): Pin "vga_g[7]" is stuck at GND
+    Warning (13410): Pin "vga_g[6]" is stuck at VCC
+    Warning (13410): Pin "vga_g[5]" is stuck at VCC
+    Warning (13410): Pin "vga_g[4]" is stuck at GND
+    Warning (13410): Pin "vga_g[3]" is stuck at VCC
+    Warning (13410): Pin "vga_g[2]" is stuck at VCC
+    Warning (13410): Pin "vga_g[1]" is stuck at GND
+    Warning (13410): Pin "vga_g[0]" is stuck at VCC
+    Warning (13410): Pin "vga_r[7]" is stuck at GND
+    Warning (13410): Pin "vga_r[6]" is stuck at GND
+    Warning (13410): Pin "vga_r[5]" is stuck at GND
+    Warning (13410): Pin "vga_r[4]" is stuck at GND
+    Warning (13410): Pin "vga_r[3]" is stuck at GND
+    Warning (13410): Pin "vga_r[2]" is stuck at GND
+    Warning (13410): Pin "vga_r[1]" is stuck at GND
+    Warning (13410): Pin "vga_r[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 16 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "sram_data[15]"
+    Warning (15610): No output dependent on input pin "sram_data[14]"
+    Warning (15610): No output dependent on input pin "sram_data[13]"
+    Warning (15610): No output dependent on input pin "sram_data[12]"
+    Warning (15610): No output dependent on input pin "sram_data[11]"
+    Warning (15610): No output dependent on input pin "sram_data[10]"
+    Warning (15610): No output dependent on input pin "sram_data[9]"
+    Warning (15610): No output dependent on input pin "sram_data[8]"
+    Warning (15610): No output dependent on input pin "sram_data[7]"
+    Warning (15610): No output dependent on input pin "sram_data[6]"
+    Warning (15610): No output dependent on input pin "sram_data[5]"
+    Warning (15610): No output dependent on input pin "sram_data[4]"
+    Warning (15610): No output dependent on input pin "sram_data[3]"
+    Warning (15610): No output dependent on input pin "sram_data[2]"
+    Warning (15610): No output dependent on input pin "sram_data[1]"
+    Warning (15610): No output dependent on input pin "sram_data[0]"
+Info (21057): Implemented 162 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 68 output pins
-    Info (21061): Implemented 108 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 4656 megabytes
-    Info: Processing ended: Wed Sep 15 12:03:36 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 76 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 4837 megabytes
+    Info: Processing ended: Thu Sep 30 16:44:32 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:05
 
 

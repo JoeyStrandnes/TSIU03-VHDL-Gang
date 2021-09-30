@@ -32,9 +32,5 @@ begin
 		end if;
 	end process;
 	vga_sync <= '0';
---	vga_r <= (pixcode(6 downto 5) & pixcode(6 downto 5) & pixcode(6 downto 5) & pixcode(6 downto 5)) when pixcode(7) = '1' else (pixcode(6 downto 0) & pixcode(6)); 
---	vga_g <= (pixcode(4 downto 2) & pixcode(4 downto 2) & pixcode(4 downto 3)) when pixcode(7) = '1' else (pixcode(6 downto 0) & pixcode(6)); 
---	vga_b <= (pixcode(1 downto 0) & pixcode(1 downto 0) & pixcode(1 downto 0) & pixcode(1 downto 0)) when pixcode(7) = '1' else (pixcode(6 downto 0) & pixcode(6));	
---	vga_sync <= '0';
 	
 end architecture;

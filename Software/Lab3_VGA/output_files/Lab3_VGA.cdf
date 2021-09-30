@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("X:/TSIU03/Lab3_VGA/output_files/") File("Lab3_VGA.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/output_files/") File("Lab3_VGA.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
