@@ -1,0 +1,334 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(global
+	(rect 144 400 432 440)
+	(constant)
+	(text "CONSTANT" (rect 3 -1 69 13)(font "Arial" (font_size 8)))
+	(text " NAME" (rect 107 0 141 12)(font "Arial" ))
+	(text "CONSTANT_NAME" (rect 4 16 111 30)(font "Arial" (font_size 8)))
+	(text " VALUE" (rect 139 0 177 12)(font "Arial" ))
+	(text "CONSTANT_VALUE" (rect 140 16 254 30)(font "Arial" (font_size 8)))
+	(drawing
+		(line (pt 138 40)(pt 138 0))
+	)
+)
+(global
+	(rect 144 448 432 488)
+	(constant)
+	(text "CONSTANT" (rect 3 -1 69 13)(font "Arial" (font_size 8)))
+	(text " NAME" (rect 107 0 141 12)(font "Arial" ))
+	(text "CONSTANT_NAME" (rect 4 16 111 30)(font "Arial" (font_size 8)))
+	(text " VALUE" (rect 139 0 177 12)(font "Arial" ))
+	(text "CONSTANT_VALUE" (rect 140 16 254 30)(font "Arial" (font_size 8)))
+	(drawing
+		(line (pt 138 40)(pt 138 0))
+	)
+)
+(global
+	(rect 144 496 432 536)
+	(constant)
+	(text "CONSTANT" (rect 3 -1 69 13)(font "Arial" (font_size 8)))
+	(text " NAME" (rect 107 0 141 12)(font "Arial" ))
+	(text "CONSTANT_NAME" (rect 4 16 111 30)(font "Arial" (font_size 8)))
+	(text " VALUE" (rect 139 0 177 12)(font "Arial" ))
+	(text "CONSTANT_VALUE" (rect 140 16 254 30)(font "Arial" (font_size 8)))
+	(drawing
+		(line (pt 138 40)(pt 138 0))
+	)
+)
+(global
+	(rect 144 344 432 384)
+	(constant)
+	(text "CONSTANT" (rect 3 -1 69 13)(font "Arial" (font_size 8)))
+	(text " NAME" (rect 107 0 141 12)(font "Arial" ))
+	(text "CONSTANT_NAME" (rect 4 16 111 30)(font "Arial" (font_size 8)))
+	(text " VALUE" (rect 139 0 177 12)(font "Arial" ))
+	(text "1" (rect 140 16 147 30)(font "Arial" (font_size 8)))
+	(drawing
+		(line (pt 138 40)(pt 138 0))
+	)
+)
+(symbol
+	(rect 576 352 816 528)
+	(text "SRAM_control" (rect 5 0 74 12)(font "Arial" ))
+	(text "inst" (rect 8 160 25 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "rstn" (rect 0 0 18 12)(font "Arial" ))
+		(text "rstn" (rect 21 27 39 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "lrsel" (rect 0 0 20 12)(font "Arial" ))
+		(text "lrsel" (rect 21 43 41 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "offset[19..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "offset[19..0]" (rect 21 59 83 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "RW" (rect 0 0 18 12)(font "Arial" ))
+		(text "RW" (rect 21 75 39 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "ADDR[19..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "ADDR[19..0]" (rect 166 27 229 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "sram_ce" (rect 0 0 42 12)(font "Arial" ))
+		(text "sram_ce" (rect 184 43 226 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "sram_oe" (rect 0 0 42 12)(font "Arial" ))
+		(text "sram_oe" (rect 184 59 226 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "sram_we" (rect 0 0 43 12)(font "Arial" ))
+		(text "sram_we" (rect 183 75 226 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "sram_lb" (rect 0 0 38 12)(font "Arial" ))
+		(text "sram_lb" (rect 187 123 225 135)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "sram_ub" (rect 0 0 42 12)(font "Arial" ))
+		(text "sram_ub" (rect 184 139 226 151)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144))
+	)
+	(port
+		(pt 240 96)
+		(bidir)
+		(text "DATA_SRAM[15..0]" (rect 0 0 96 12)(font "Arial" ))
+		(text "DATA_SRAM[15..0]" (rect 130 91 226 103)(font "Arial" ))
+		(line (pt 240 96)(pt 224 96)(line_width 3))
+	)
+	(port
+		(pt 240 112)
+		(bidir)
+		(text "DATA_ECHO[15..0]" (rect 0 0 97 12)(font "Arial" ))
+		(text "DATA_ECHO[15..0]" (rect 132 107 229 119)(font "Arial" ))
+		(line (pt 240 112)(pt 224 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 160))
+	)
+)
+(symbol
+	(rect 176 200 456 376)
+	(text "ECHO_GEN" (rect 5 0 66 12)(font "Arial" ))
+	(text "inst4" (rect 8 160 31 172)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rstn" (rect 0 0 18 12)(font "Arial" ))
+		(text "rstn" (rect 21 43 39 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "lrsel" (rect 0 0 20 12)(font "Arial" ))
+		(text "lrsel" (rect 21 59 41 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "cntr[9..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "cntr[9..0]" (rect 21 75 65 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "SAMPLE_IN[15..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "SAMPLE_IN[15..0]" (rect 21 91 113 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ECHO_VOL[3..0]" (rect 0 0 84 12)(font "Arial" ))
+		(text "ECHO_VOL[3..0]" (rect 21 107 105 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ECHO_NUM[1..0]" (rect 0 0 88 12)(font "Arial" ))
+		(text "ECHO_NUM[1..0]" (rect 21 123 109 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "ECHO_DELAY[3..0]" (rect 0 0 100 12)(font "Arial" ))
+		(text "ECHO_DELAY[3..0]" (rect 21 139 121 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 280 32)
+		(output)
+		(text "SAMPLE_OUT[15..0]" (rect 0 0 102 12)(font "Arial" ))
+		(text "SAMPLE_OUT[15..0]" (rect 173 27 275 39)(font "Arial" ))
+		(line (pt 280 32)(pt 264 32)(line_width 3))
+	)
+	(port
+		(pt 280 48)
+		(output)
+		(text "rstn_tmp" (rect 0 0 43 12)(font "Arial" ))
+		(text "rstn_tmp" (rect 223 43 266 55)(font "Arial" ))
+		(line (pt 280 48)(pt 264 48))
+	)
+	(port
+		(pt 280 64)
+		(output)
+		(text "lrsel_tmp" (rect 0 0 44 12)(font "Arial" ))
+		(text "lrsel_tmp" (rect 222 59 266 71)(font "Arial" ))
+		(line (pt 280 64)(pt 264 64))
+	)
+	(port
+		(pt 280 80)
+		(output)
+		(text "offset[19..0]" (rect 0 0 62 12)(font "Arial" ))
+		(text "offset[19..0]" (rect 207 75 269 87)(font "Arial" ))
+		(line (pt 280 80)(pt 264 80)(line_width 3))
+	)
+	(port
+		(pt 280 96)
+		(output)
+		(text "RW" (rect 0 0 18 12)(font "Arial" ))
+		(text "RW" (rect 244 91 262 103)(font "Arial" ))
+		(line (pt 280 96)(pt 264 96))
+	)
+	(port
+		(pt 280 112)
+		(bidir)
+		(text "DATA[15..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "DATA[15..0]" (rect 206 107 266 119)(font "Arial" ))
+		(line (pt 280 112)(pt 264 112)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 264 160))
+	)
+)
+(connector
+	(pt 576 384)
+	(pt 568 384)
+)
+(connector
+	(pt 456 248)
+	(pt 568 248)
+)
+(connector
+	(pt 568 248)
+	(pt 568 384)
+)
+(connector
+	(pt 456 264)
+	(pt 576 264)
+)
+(connector
+	(pt 576 264)
+	(pt 576 384)
+)
+(connector
+	(pt 576 384)
+	(pt 576 400)
+)
+(connector
+	(pt 456 280)
+	(pt 552 280)
+	(bus)
+)
+(connector
+	(pt 552 280)
+	(pt 552 416)
+	(bus)
+)
+(connector
+	(pt 576 416)
+	(pt 552 416)
+	(bus)
+)
+(connector
+	(pt 456 296)
+	(pt 528 296)
+)
+(connector
+	(pt 576 432)
+	(pt 528 432)
+)
+(connector
+	(pt 528 296)
+	(pt 528 432)
+)
+(connector
+	(pt 456 312)
+	(pt 824 312)
+	(bus)
+)
+(connector
+	(pt 824 312)
+	(pt 824 464)
+	(bus)
+)
+(connector
+	(pt 816 464)
+	(pt 824 464)
+	(bus)
+)
+(junction (pt 576 384))

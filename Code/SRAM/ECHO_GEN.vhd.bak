@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ECHO_GEN is
+  Port ( 
+			rstn							: in std_logic;
+			lrsel							: in std_logic;
+			cntr							: in unsigned(9 downto 0); --really want first 9 bits
+			SAMPLE_IN					: in signed(15 downto 0);
+			SAMPLE_OUT					: out signed(15 downto 0);
+			
+			ECHO_VOL						: in std_logic_vector(3 downto 0);
+			ECHO_NUM						: in std_logic_vector(1 downto 0);
+			ECHO_DELAY					: in std_logic_vector(3 downto 0);
+			
+			offset   					: out unsigned(19 downto 0);
+			RW								: out std_logic; -- Read = 1, Write = 0
+			DATA							: inout signed(15 downto 0);
+
+			);
+end entity;
