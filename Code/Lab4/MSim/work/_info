@@ -1,0 +1,205 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\KURSKOD\tsiu03 Systemkonstruktion\Lab4_Audio\MSim
+T_opt
+V>5]1a`dFJJ3c8WU5=KFGY3
+Z1 04 8 3 work tb_audio sim 1
+=2-b00cd16f28d7-614ddd06-166-27c8
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+Z2 OL;O;10.1b;51
+Z3 dX:\KURSKOD\tsiu03 Systemkonstruktion\Lab4_Audio\MSim
+T_opt1
+VJja5?R@R>=Yk^`fhXG2aE0
+R1
+=4-b00cd16f2490-614f37e3-32c-21a4
+o-quiet -auto_acc_if_foreign -work work
+n@_opt1
+R2
+Echannel_mod
+Z4 w1632579797
+Z5 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dX:\KURSKOD\tsiu03 Systemkonstruktion\Lab4\MSim
+Z9 8X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/channel_mod.vhd
+Z10 FX:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/channel_mod.vhd
+l0
+L5
+Vh_G:iE5ZX^l6>4Gb5J^=B2
+Z11 OL;C;10.1b;51
+32
+Z12 !s108 1632579808.936000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/channel_mod.vhd|
+Z14 !s107 X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/channel_mod.vhd|
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1
+!s100 ^7AkC4B:8Ul]iIQC`:dB<2
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 channel_mod 0 22 h_G:iE5ZX^l6>4Gb5J^=B2
+l22
+L19
+VQHR?1RVT9I<850JDMX<?01
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 >;?^Uz377LlShFW_mghBo1
+!i10b 1
+Ectrl
+Z17 w1632492771
+R5
+R6
+R7
+R8
+Z18 8X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/ctrl.vhd
+Z19 FX:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/ctrl.vhd
+l0
+L7
+V4f11MX5WcKeO2ll9<Jk4h0
+R11
+32
+Z20 !s108 1632492789.826000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/ctrl.vhd|
+Z22 !s107 X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/ctrl.vhd|
+R15
+R16
+!s100 e=Cg[YHkP5jRklPQ0IVYo3
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 4 ctrl 0 22 4f11MX5WcKeO2ll9<Jk4h0
+l23
+L21
+Vcg5G`l;f9cJ8feD7DKWQe0
+R11
+32
+R20
+R21
+R22
+R15
+R16
+!s100 AQa]ZU^[IBnYSKGF072eH0
+!i10b 1
+Egroup_no
+Z23 w1552991779
+R6
+R7
+R8
+Z24 8X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/group_no.vhd
+Z25 FX:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/group_no.vhd
+l0
+L7
+V`8kKI3`WTeQbzbm56fQFA3
+R11
+32
+Z26 !s108 1632492298.127000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/group_no.vhd|
+Z28 !s107 X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/group_no.vhd|
+R15
+R16
+!s100 UJXobCL?NB3?5oGOWTR8e0
+!i10b 1
+Artl
+R6
+R7
+DEx4 work 8 group_no 0 22 `8kKI3`WTeQbzbm56fQFA3
+l14
+L12
+VJJ3GKMkWKmHJ[F=l1HQYM1
+R11
+32
+R26
+R27
+R28
+R15
+R16
+!s100 8joCFL7oAXeJ;zWkoc1o^0
+!i10b 1
+Esnddriver
+w0
+R5
+R6
+R7
+R8
+Z29 8X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/SndDriver.vhd
+Z30 FX:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/SndDriver.vhd
+l0
+L25
+VDD>GhR4Y;DeU62DKXz5OJ3
+R11
+32
+Z31 !s108 1632581599.748000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/SndDriver.vhd|
+Z33 !s107 X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/SndDriver.vhd|
+R15
+R16
+!s100 4Rn>BinRn9eGa2XzlO8ZM0
+!i10b 1
+Abdf_type
+R5
+R6
+R7
+DEx4 work 9 snddriver 0 22 DD>GhR4Y;DeU62DKXz5OJ3
+l87
+L44
+VST;RJ;K^Ig4R3P`zT;RCF1
+R11
+32
+R31
+R32
+R33
+R15
+R16
+!s100 6jNcnmZ]YP]4[E<kkWF8V0
+!i10b 1
+Etb_audio
+Z34 w1632492233
+Z35 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R5
+R6
+R7
+R8
+Z36 8X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/MSim/TB_Audio.vhd
+Z37 FX:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/MSim/TB_Audio.vhd
+l0
+L8
+Vi<H]V7oJ<0LONe@chCDO;1
+R11
+32
+Z38 !s108 1632492294.335000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/MSim/TB_Audio.vhd|
+Z40 !s107 X:/KURSKOD/tsiu03 Systemkonstruktion/Lab4/MSim/TB_Audio.vhd|
+R15
+R16
+!s100 Oo7TOW7ESzG]>;JD^MCbO1
+!i10b 1
+Asim
+R35
+R5
+R6
+R7
+DEx4 work 8 tb_audio 0 22 i<H]V7oJ<0LONe@chCDO;1
+l62
+L11
+VF:fGbz^70im1NXlIZa:MI1
+R11
+32
+R38
+R39
+R40
+R15
+R16
+!s100 J>1WOJI[DnJEIUN6cbC321
+!i10b 1

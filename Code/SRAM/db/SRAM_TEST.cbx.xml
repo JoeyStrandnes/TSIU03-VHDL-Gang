@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="SRAM_TEST">
+		<CBX_INST_ENTRY INSTANCE_NAME="|SRAM_TEST|lpm_constant0:inst_const|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_sf6.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
