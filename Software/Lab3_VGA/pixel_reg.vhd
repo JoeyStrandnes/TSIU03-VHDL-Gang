@@ -3,11 +3,12 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity pixel_reg is
-  Port ( clk, rstn     : in std_logic;
-         pixcode       : out std_logic;
+  Port ( clk, rstn      : in std_logic;
+         pixcode_single : out std_logic;
          -- RAM signals
          --Constant_pic : in std_logic;
-			vcnt,hcnt : in unsigned(9 downto 0));
+			vcnt,hcnt : in unsigned(9 downto 0);
+			vcnt_d,hcnt_d : out unsigned(9 downto 0));
 			
 end entity;
 
@@ -16,7 +17,7 @@ architecture rtl of pixel_reg is
 
 type pic_array is array(0 to 4799) of std_logic;
 signal Constant_pic : pic_array;
-signal index :  unsigned(19 downto 0);
+--signal index :  unsigned(19 downto 0);
 
 begin
 	
@@ -25,9 +26,11 @@ begin
 	process(clk)
 	begin
 		if (rising_edge(clk)) then
-			index <= (vcnt/8)*80+(hcnt/8);
-			pixcode <= Constant_pic(to_integer(index));
-			
+			--index <= (vcnt/8)*80+(hcnt/8);
+			--pixcode <= Constant_pic(to_integer(index));
+			pixcode_single <= Constant_pic(to_integer((vcnt/8)*80+(hcnt/8)));
+			vcnt_d <= vcnt;
+			hcnt_d <= hcnt;
 		end if;
 	end process;
 

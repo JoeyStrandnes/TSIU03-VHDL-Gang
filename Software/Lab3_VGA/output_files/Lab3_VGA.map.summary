@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Oct 01 12:05:03 2021
+Analysis & Synthesis Status : Successful - Fri Oct 01 13:54:03 2021
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : Lab3_VGA
 Top-level Entity Name : VGA_contr
 Family : Cyclone IV E
-Total logic elements : 283
-    Total combinational functions : 252
-    Dedicated logic registers : 67
-Total registers : 67
-Total pins : 70
+Total logic elements : 349
+    Total combinational functions : 301
+    Dedicated logic registers : 108
+Total registers : 108
+Total pins : 45
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
