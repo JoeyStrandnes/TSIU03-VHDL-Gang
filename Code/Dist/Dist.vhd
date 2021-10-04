@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity Dist is
-	Port (clk, rstn, def : in std_logic;
+	Port (clk, rstn : in std_logic;
 			distcontrol : in unsigned(3 downto 0);
 			sample_in : in signed (15 downto 0);
 			sample_out : out signed(15 downto 0));
@@ -12,11 +12,11 @@ end entity;
 architecture distArch of Dist is
 	signal threshold : signed (15 downto 0);
 	signal sample_out_tmp : signed(15 downto 0);
-
+	signal tmp: unsigned(3 downto 0);
 begin
-
-with distcontrol select
-		threshold <=   to_signed(2048, 16) when "0000", 
+tmp <= "0001";
+with tmp select
+		threshold <=   to_signed(2048, 16) when "0000", -- 32767*1/16 
 							to_signed(4096, 16) when "0001",
 							to_signed(6144, 16) when "0010",
 							to_signed(8192, 16) when "0011",
@@ -30,8 +30,8 @@ with distcontrol select
 							to_signed(24576, 16) when "1011",
 							to_signed(26624, 16) when "1100",
 							to_signed(28672, 16) when "1101",
-							to_signed(30720, 16) when "1110",
-							to_signed(32767, 16)  when "1111",
+							to_signed(30720, 16) when "1110",	-- 32767*14/16 
+							to_signed(32767, 16)  when "1111", -- 32767*15/16 
 							to_signed(32767, 16)  when others; -- 32767*16/16 
 	process (clk, rstn)
 	begin
@@ -39,9 +39,9 @@ with distcontrol select
 			--En massa skit;
 		elsif rising_edge (clk) then
 			
-				if sample_in > threshold and sample_in > 0 then -- Kollar inte 0
+				if sample_in > threshold then --and sample_in > 0 then -- Kollar inte 0
 					sample_out_tmp <= threshold;
-				elsif sample_in < -threshold and sample_in < 0 then --Kollar inte 0
+				elsif sample_in < -threshold then --and sample_in < 0 then --Kollar inte 0
 					sample_out_tmp <= threshold;
 				else 
 					sample_out_tmp <= sample_in;
