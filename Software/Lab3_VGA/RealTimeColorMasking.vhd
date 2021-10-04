@@ -29,6 +29,7 @@ begin
 	
 		if (rising_edge(clk)) then
 			
+			--pixcode <= (others => pixcode_single);
 			counter <= counter +1;
 			if(counter = 1000000) then
 				h_limit <= h_limit +1;
@@ -61,9 +62,9 @@ begin
 			pixcode <= "10011110";
 
 			--elsif(((vcnt > 279) AND (vcnt < 440)) AND ((hcnt > 39) AND (hcnt < 600))) then -- Overlay for graph view. 600 max
-			elsif(((vcnt > 279) AND (vcnt < 440)) AND ((hcnt > h_limit_Graph-40) AND (hcnt < h_limit_Graph))) then -- Overlay for graph view. 600 max
+			--elsif(((vcnt > 279) AND (vcnt < 440)) AND ((hcnt > h_limit_Graph-40) AND (hcnt < h_limit_Graph))) then -- Overlay for graph view. 600 max
 				
-				pixcode <= "11111100";
+				--pixcode <= "11111100";
 	
 			else
 				pixcode <= (others => pixcode_single);
@@ -85,5 +86,8 @@ begin
 			
 		end if;
 	end process;
+	
+	
+
 
 end architecture;

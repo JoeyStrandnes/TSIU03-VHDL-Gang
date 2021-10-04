@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3_VGA
-Fri Oct 01 16:10:26 2021
+Mon Oct 04 16:59:52 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -45,15 +45,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 01 16:10:26 2021            ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 04 16:59:52 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Lab3_VGA                                         ;
 ; Top-level Entity Name              ; VGA_contr                                        ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 473                                              ;
-;     Total combinational functions  ; 442                                              ;
-;     Dedicated logic registers      ; 142                                              ;
-; Total registers                    ; 142                                              ;
+; Total logic elements               ; 456                                              ;
+;     Total combinational functions  ; 445                                              ;
+;     Dedicated logic registers      ; 102                                              ;
+; Total registers                    ; 102                                              ;
 ; Total pins                         ; 45                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -190,28 +190,28 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 473            ;
+; Estimated Total logic elements              ; 456            ;
 ;                                             ;                ;
-; Total combinational functions               ; 442            ;
+; Total combinational functions               ; 445            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 229            ;
-;     -- 3 input functions                    ; 98             ;
-;     -- <=2 input functions                  ; 115            ;
+;     -- 4 input functions                    ; 273            ;
+;     -- 3 input functions                    ; 84             ;
+;     -- <=2 input functions                  ; 88             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 317            ;
-;     -- arithmetic mode                      ; 125            ;
+;     -- normal mode                          ; 362            ;
+;     -- arithmetic mode                      ; 83             ;
 ;                                             ;                ;
-; Total registers                             ; 142            ;
-;     -- Dedicated logic registers            ; 142            ;
+; Total registers                             ; 102            ;
+;     -- Dedicated logic registers            ; 102            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 45             ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; fpga_clk~input ;
-; Maximum fan-out                             ; 142            ;
-; Total fan-out                               ; 1880           ;
-; Average fan-out                             ; 2.79           ;
+; Maximum fan-out                             ; 102            ;
+; Total fan-out                               ; 1857           ;
+; Average fan-out                             ; 2.92           ;
 +---------------------------------------------+----------------+
 
 
@@ -220,15 +220,15 @@ applicable agreement for further details.
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
-; |VGA_contr                     ; 442 (2)           ; 142 (9)      ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |VGA_contr                           ; work         ;
+; |VGA_contr                     ; 445 (2)           ; 102 (9)      ; 0           ; 0            ; 0       ; 0         ; 45   ; 0            ; |VGA_contr                           ; work         ;
 ;    |RGB_gen:i_RGB_gen|         ; 19 (19)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|RGB_gen:i_RGB_gen         ; work         ;
-;    |blank_gen:iBlank_gen|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|blank_gen:iBlank_gen      ; work         ;
+;    |blank_gen:iBlank_gen|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|blank_gen:iBlank_gen      ; work         ;
 ;    |ce_gen:i_ce_gen|           ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|ce_gen:i_ce_gen           ; work         ;
-;    |hs_gen:i_hs_gen|           ; 5 (5)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|hs_gen:i_hs_gen           ; work         ;
-;    |linecounter:i_linecounter| ; 15 (15)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|linecounter:i_linecounter ; work         ;
-;    |masking:inst|              ; 189 (189)         ; 65 (65)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|masking:inst              ; work         ;
-;    |pixel_reg:i_pixreg|        ; 186 (186)         ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixel_reg:i_pixreg        ; work         ;
-;    |pixelcounter:i_pixcounter| ; 18 (18)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixelcounter:i_pixcounter ; work         ;
+;    |hs_gen:i_hs_gen|           ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|hs_gen:i_hs_gen           ; work         ;
+;    |linecounter:i_linecounter| ; 16 (16)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|linecounter:i_linecounter ; work         ;
+;    |masking:inst|              ; 122 (122)         ; 45 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|masking:inst              ; work         ;
+;    |pixel_reg:i_pixreg|        ; 256 (256)         ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixel_reg:i_pixreg        ; work         ;
+;    |pixelcounter:i_pixcounter| ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixelcounter:i_pixcounter ; work         ;
 ;    |vs_gen:i_vs_gen|           ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|vs_gen:i_vs_gen           ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -251,12 +251,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 142   ;
-; Number of registers using Synchronous Clear  ; 20    ;
+; Total registers                              ; 102   ;
+; Number of registers using Synchronous Clear  ; 10    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 32    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 45    ;
+; Number of registers using Clock Enable       ; 29    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -266,40 +266,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; masking:inst|h_limit[7]                 ; 9       ;
-; masking:inst|h_limit[2]                 ; 2       ;
-; masking:inst|h_limit[1]                 ; 2       ;
-; masking:inst|h_limit[0]                 ; 2       ;
 ; masking:inst|h_limit_2[8]               ; 4       ;
 ; masking:inst|h_limit_2[7]               ; 4       ;
 ; masking:inst|h_limit_2[6]               ; 4       ;
 ; masking:inst|h_limit_2[2]               ; 2       ;
 ; masking:inst|h_limit_2[1]               ; 2       ;
-; masking:inst|h_limit_Graph[5]           ; 4       ;
-; masking:inst|h_limit_Graph[2]           ; 3       ;
-; masking:inst|h_limit_Graph[1]           ; 3       ;
-; masking:inst|h_limit_Graph[0]           ; 3       ;
+; masking:inst|h_limit[7]                 ; 4       ;
+; masking:inst|h_limit[2]                 ; 2       ;
+; masking:inst|h_limit[1]                 ; 2       ;
+; masking:inst|h_limit[0]                 ; 2       ;
 ; hs_gen:i_hs_gen|hsync                   ; 1       ;
 ; vs_gen:i_vs_gen|vsync                   ; 1       ;
-; Total number of inverted registers = 15 ;         ;
+; Total number of inverted registers = 11 ;         ;
 +-----------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[7]       ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit[6]       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit_2[4]     ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit_Graph[3] ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 9 LEs                ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[3]       ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[1]       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit[7]       ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit_2[1]     ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit_Graph[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[6]   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit[3]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit_2[3] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[1]   ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit[7]   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|h_limit_2[2] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |VGA_contr|masking:inst|pixcode      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -327,7 +321,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Oct 01 16:10:16 2021
+    Info: Processing started: Mon Oct 04 16:59:41 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3_VGA -c Lab3_VGA
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_contr.bdf
@@ -402,13 +396,13 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 520 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 503 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 475 logic cells
+    Info (21061): Implemented 458 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4649 megabytes
-    Info: Processing ended: Fri Oct 01 16:10:27 2021
+    Info: Processing ended: Mon Oct 04 16:59:52 2021
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:05
 
