@@ -1,0 +1,42 @@
+# Error: Acs sdne.
+# 2
+#        Unable to replace existing ini file (X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/SRAM_SIM.mpf).  File can not be renamed.
+# Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/SRAM_SIM.mpf).  File can not be renamed.
+# Compile of TB_Audio.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of SRAM_control.vhd was successful.
+# 3 compiles, 2 failed with 2 errors. 
+# Compile of TB_Audio.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of SRAM_control.vhd was successful.
+# 3 compiles, 2 failed with 2 errors. 
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd was successful.
+# Compile of TB_Audio.vhd failed with 1 errors.
+# Compile of TB_Audio.vhd failed with 3 errors.
+# Compile of TB_Audio.vhd failed with 1 errors.
+# Compile of TB_Audio.vhd failed with 8 errors.
+# Compile of TB_Audio.vhd failed with 5 errors.
+# Compile of TB_Audio.vhd failed with 7 errors.
+# Compile of TB_Audio.vhd failed with 5 errors.
+# Compile of TB_Audio.vhd failed with 1 errors.
+# Compile of TB_SRAM.vhd was successful.
+# Compile of TB_Audio.vhd failed with 1 errors.
+# Compile of TB_Audio.vhd was successful.
+# Compile of TB_SRAM.vhd was successful.
+# Compile of SRAM_control.vhd was successful.
+# 3 compiles, 0 failed with no errors. 
+# Compile of TB_Audio.vhd failed with 15 errors.
+# Compile of TB_Audio.vhd failed with 15 errors.
+# Compile of TB_Audio.vhd failed with 4 errors.
+# Compile of TB_Audio.vhd was successful.
+# Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/SRAM_SIM.mpf).  File can not be renamed.
