@@ -42,14 +42,14 @@ USE lpm.all;
 ENTITY lpm_constant0 IS
 	PORT
 	(
-		result		: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+		result		: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
 	);
 END lpm_constant0;
 
 
 ARCHITECTURE SYN OF lpm_constant0 IS
 
-	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (3 DOWNTO 0);
+	SIGNAL sub_wire0	: STD_LOGIC_VECTOR (1 DOWNTO 0);
 
 
 
@@ -61,19 +61,19 @@ ARCHITECTURE SYN OF lpm_constant0 IS
 		lpm_width		: NATURAL
 	);
 	PORT (
-			result	: OUT STD_LOGIC_VECTOR (3 DOWNTO 0)
+			result	: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	result    <= sub_wire0(3 DOWNTO 0);
+	result    <= sub_wire0(1 DOWNTO 0);
 
 	LPM_CONSTANT_component : LPM_CONSTANT
 	GENERIC MAP (
-		lpm_cvalue => 15,
+		lpm_cvalue => 3,
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "LPM_CONSTANT",
-		lpm_width => 4
+		lpm_width => 2
 	)
 	PORT MAP (
 		result => sub_wire0
@@ -89,21 +89,21 @@ END SYN;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
--- Retrieval info: PRIVATE: Radix NUMERIC "10"
+-- Retrieval info: PRIVATE: Radix NUMERIC "2"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: PRIVATE: Value NUMERIC "15"
--- Retrieval info: PRIVATE: nBit NUMERIC "4"
+-- Retrieval info: PRIVATE: Value NUMERIC "3"
+-- Retrieval info: PRIVATE: nBit NUMERIC "2"
 -- Retrieval info: PRIVATE: new_diagram STRING "1"
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
--- Retrieval info: CONSTANT: LPM_CVALUE NUMERIC "15"
+-- Retrieval info: CONSTANT: LPM_CVALUE NUMERIC "3"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_CONSTANT"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "4"
--- Retrieval info: USED_PORT: result 0 0 4 0 OUTPUT NODEFVAL "result[3..0]"
--- Retrieval info: CONNECT: result 0 0 4 0 @result 0 0 4 0
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
+-- Retrieval info: USED_PORT: result 0 0 2 0 OUTPUT NODEFVAL "result[1..0]"
+-- Retrieval info: CONNECT: result 0 0 2 0 @result 0 0 2 0
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_constant0.vhd TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_constant0.inc FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_constant0.cmp TRUE
--- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_constant0.bsf TRUE FALSE
+-- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_constant0.bsf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_constant0_inst.vhd FALSE
 -- Retrieval info: LIB_FILE: lpm

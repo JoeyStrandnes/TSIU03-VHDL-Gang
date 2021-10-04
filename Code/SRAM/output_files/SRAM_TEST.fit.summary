@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri Oct 01 14:44:34 2021
+Fitter Status : Successful - Mon Oct 04 13:56:31 2021
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : SRAM_TEST
 Top-level Entity Name : SRAM_TEST
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 170 / 114,480 ( < 1 % )
+Total logic elements : 169 / 114,480 ( < 1 % )
     Total combinational functions : 110 / 114,480 ( < 1 % )
     Dedicated logic registers : 145 / 114,480 ( < 1 % )
 Total registers : 145

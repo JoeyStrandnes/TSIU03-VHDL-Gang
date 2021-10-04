@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 232 232 248)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect 64 248 232 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "rstn" (rect 5 0 24 12)(font "Arial" ))
+	(text "rstn" (rect 5 0 23 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -57,7 +57,7 @@ applicable agreement for further details.
 	(input)
 	(rect -488 408 -320 424)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "adcdat" (rect 5 0 39 12)(font "Arial" ))
+	(text "adcdat" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -68,6 +68,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -544 424 -488 440))
 )
 (pin
 	(output)
@@ -186,6 +187,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 160 360 208 376))
 )
 (pin
 	(output)
@@ -202,6 +204,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 160 376 208 392))
 )
 (pin
 	(output)
@@ -218,6 +221,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 160 392 216 408))
 )
 (pin
 	(output)
@@ -234,6 +238,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 160 408 208 424))
 )
 (pin
 	(output)
@@ -250,6 +255,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
+	(annotation_block (location)(rect 160 488 216 504))
 )
 (pin
 	(bidir)
@@ -617,9 +623,37 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 104 592 216 640)
-	(text "lpm_constant0" (rect 15 0 115 16)(font "Arial" (font_size 10)))
-	(text "inst_const" (rect 8 32 58 44)(font "Arial" ))
+	(rect 104 672 216 720)
+	(text "lpm_constant1" (rect 15 0 115 16)(font "Arial" (font_size 10)))
+	(text "inst3" (rect 8 32 31 44)(font "Arial" ))
+	(port
+		(pt 112 24)
+		(output)
+		(text "result[1..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "3" (rect 87 17 94 31)(font "Arial" (font_size 8)))
+		(line (pt 112 24)(pt 96 24)(line_width 3))
+	)
+	(drawing
+		(text "2" (rect 99 26 104 38)(font "Arial" ))
+		(line (pt 106 20)(pt 98 28))
+		(line (pt 16 16)(pt 16 32))
+		(line (pt 16 16)(pt 96 16))
+		(line (pt 16 32)(pt 96 32))
+		(line (pt 96 16)(pt 96 32))
+		(line (pt 0 0)(pt 114 0))
+		(line (pt 114 0)(pt 114 50))
+		(line (pt 0 50)(pt 114 50))
+		(line (pt 0 0)(pt 0 50))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+		(line (pt 0 0)(pt 0 0))
+	)
+)
+(symbol
+	(rect 104 600 216 648)
+	(text "lpm_constant2" (rect 15 0 115 16)(font "Arial" (font_size 10)))
+	(text "inst4" (rect 8 32 31 44)(font "Arial" ))
 	(port
 		(pt 112 24)
 		(output)
@@ -716,17 +750,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 224 504)
-	(pt 224 512)
-)
-(connector
 	(pt 232 504)
 	(pt 224 504)
-)
-(connector
-	(text "lrsel" (rect 194 496 214 508)(font "Arial" ))
-	(pt 224 512)
-	(pt 184 512)
 )
 (connector
 	(text "ECHO_DELAY[3..0]" (rect 234 336 334 348)(font "Arial" ))
@@ -877,8 +902,34 @@ applicable agreement for further details.
 	(pt -16 480)
 )
 (connector
-	(text "ECHO_DELAY[3..0]" (rect 216 600 316 612)(font "Arial" ))
-	(pt 216 616)
-	(pt 272 616)
+	(pt 1136 304)
+	(pt 1048 304)
+	(bus)
+)
+(connector
+	(pt 224 504)
+	(pt 224 536)
+)
+(connector
+	(text "lrsel" (rect 194 520 214 532)(font "Arial" ))
+	(pt 224 536)
+	(pt 184 536)
+)
+(connector
+	(text "ECHO_NUM[1..0]" (rect 234 320 322 332)(font "Arial" ))
+	(pt 304 336)
+	(pt 224 336)
+	(bus)
+)
+(connector
+	(text "ECHO_NUM[1..0]" (rect 226 680 314 692)(font "Arial" ))
+	(pt 216 696)
+	(pt 272 696)
+	(bus)
+)
+(connector
+	(text "ECHO_DELAY[3..0]" (rect 216 608 316 620)(font "Arial" ))
+	(pt 216 624)
+	(pt 280 624)
 	(bus)
 )

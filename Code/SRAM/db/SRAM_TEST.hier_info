@@ -7,6 +7,22 @@ rstn => SRAM_control:inst2.rstn
 rstn => SndDriver:inst_SND.rstn
 rstn => ECHO_GEN:inst.rstn
 adcdat => SndDriver:inst_SND.adcdat
+DATA_SRAM[0] <> SRAM_control:inst2.DATA_SRAM[0]
+DATA_SRAM[1] <> SRAM_control:inst2.DATA_SRAM[1]
+DATA_SRAM[2] <> SRAM_control:inst2.DATA_SRAM[2]
+DATA_SRAM[3] <> SRAM_control:inst2.DATA_SRAM[3]
+DATA_SRAM[4] <> SRAM_control:inst2.DATA_SRAM[4]
+DATA_SRAM[5] <> SRAM_control:inst2.DATA_SRAM[5]
+DATA_SRAM[6] <> SRAM_control:inst2.DATA_SRAM[6]
+DATA_SRAM[7] <> SRAM_control:inst2.DATA_SRAM[7]
+DATA_SRAM[8] <> SRAM_control:inst2.DATA_SRAM[8]
+DATA_SRAM[9] <> SRAM_control:inst2.DATA_SRAM[9]
+DATA_SRAM[10] <> SRAM_control:inst2.DATA_SRAM[10]
+DATA_SRAM[11] <> SRAM_control:inst2.DATA_SRAM[11]
+DATA_SRAM[12] <> SRAM_control:inst2.DATA_SRAM[12]
+DATA_SRAM[13] <> SRAM_control:inst2.DATA_SRAM[13]
+DATA_SRAM[14] <> SRAM_control:inst2.DATA_SRAM[14]
+DATA_SRAM[15] <> SRAM_control:inst2.DATA_SRAM[15]
 sram_oe <= SRAM_control:inst2.sram_oe
 sram_we <= SRAM_control:inst2.sram_we
 sram_lb <= SRAM_control:inst2.sram_lb
@@ -722,6 +738,7 @@ rstn => ECHO1[12].ACLR
 rstn => ECHO1[13].ACLR
 rstn => ECHO1[14].ACLR
 rstn => ECHO1[15].ACLR
+rstn => RW~reg0.ENA
 rstn => offset[19]~reg0.ENA
 rstn => offset[18]~reg0.ENA
 rstn => offset[17]~reg0.ENA
@@ -742,7 +759,6 @@ rstn => offset[3]~reg0.ENA
 rstn => offset[2]~reg0.ENA
 rstn => offset[1]~reg0.ENA
 rstn => offset[0]~reg0.ENA
-rstn => RW~reg0.ENA
 lrsel => ~NO_FANOUT~
 cntr[0] => LessThan0.IN18
 cntr[0] => LessThan1.IN18
@@ -780,54 +796,54 @@ cntr[8] => LessThan0.IN10
 cntr[8] => LessThan1.IN10
 cntr[8] => LessThan2.IN10
 cntr[8] => LessThan3.IN10
-SAMPLE_IN[0] => Add3.IN16
+SAMPLE_IN[0] => Add2.IN16
 SAMPLE_IN[0] => DATA_WRITE[0].DATAIN
-SAMPLE_IN[1] => Add3.IN15
+SAMPLE_IN[1] => Add2.IN15
 SAMPLE_IN[1] => DATA_WRITE[1].DATAIN
-SAMPLE_IN[2] => Add3.IN14
+SAMPLE_IN[2] => Add2.IN14
 SAMPLE_IN[2] => DATA_WRITE[2].DATAIN
-SAMPLE_IN[3] => Add3.IN13
+SAMPLE_IN[3] => Add2.IN13
 SAMPLE_IN[3] => DATA_WRITE[3].DATAIN
-SAMPLE_IN[4] => Add3.IN12
+SAMPLE_IN[4] => Add2.IN12
 SAMPLE_IN[4] => DATA_WRITE[4].DATAIN
-SAMPLE_IN[5] => Add3.IN11
+SAMPLE_IN[5] => Add2.IN11
 SAMPLE_IN[5] => DATA_WRITE[5].DATAIN
-SAMPLE_IN[6] => Add3.IN10
+SAMPLE_IN[6] => Add2.IN10
 SAMPLE_IN[6] => DATA_WRITE[6].DATAIN
-SAMPLE_IN[7] => Add3.IN9
+SAMPLE_IN[7] => Add2.IN9
 SAMPLE_IN[7] => DATA_WRITE[7].DATAIN
-SAMPLE_IN[8] => Add3.IN8
+SAMPLE_IN[8] => Add2.IN8
 SAMPLE_IN[8] => DATA_WRITE[8].DATAIN
-SAMPLE_IN[9] => Add3.IN7
+SAMPLE_IN[9] => Add2.IN7
 SAMPLE_IN[9] => DATA_WRITE[9].DATAIN
-SAMPLE_IN[10] => Add3.IN6
+SAMPLE_IN[10] => Add2.IN6
 SAMPLE_IN[10] => DATA_WRITE[10].DATAIN
-SAMPLE_IN[11] => Add3.IN5
+SAMPLE_IN[11] => Add2.IN5
 SAMPLE_IN[11] => DATA_WRITE[11].DATAIN
-SAMPLE_IN[12] => Add3.IN4
+SAMPLE_IN[12] => Add2.IN4
 SAMPLE_IN[12] => DATA_WRITE[12].DATAIN
-SAMPLE_IN[13] => Add3.IN3
+SAMPLE_IN[13] => Add2.IN3
 SAMPLE_IN[13] => DATA_WRITE[13].DATAIN
-SAMPLE_IN[14] => Add3.IN2
+SAMPLE_IN[14] => Add2.IN2
 SAMPLE_IN[14] => DATA_WRITE[14].DATAIN
-SAMPLE_IN[15] => Add3.IN1
+SAMPLE_IN[15] => Add2.IN1
 SAMPLE_IN[15] => DATA_WRITE[15].DATAIN
-SAMPLE_OUT[0] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[1] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[2] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[4] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[5] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[6] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[7] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[8] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[9] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[10] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[11] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[12] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[13] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[14] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
-SAMPLE_OUT[15] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[4] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[5] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[6] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[7] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[8] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[9] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[10] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[11] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[12] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[13] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[14] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+SAMPLE_OUT[15] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
 ECHO_VOL[0] => ~NO_FANOUT~
 ECHO_VOL[1] => ~NO_FANOUT~
 ECHO_VOL[2] => ~NO_FANOUT~
@@ -893,18 +909,28 @@ DATA_READ[14] => ECHO1[14].DATAIN
 DATA_READ[15] => ECHO1[15].DATAIN
 
 
-|SRAM_TEST|lpm_constant0:inst_const
+|SRAM_TEST|lpm_constant2:inst4
 result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
 result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
 result[2] <= lpm_constant:LPM_CONSTANT_component.result[2]
 result[3] <= lpm_constant:LPM_CONSTANT_component.result[3]
 
 
-|SRAM_TEST|lpm_constant0:inst_const|lpm_constant:LPM_CONSTANT_component
+|SRAM_TEST|lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component
 result[0] <= <VCC>
 result[1] <= <VCC>
 result[2] <= <VCC>
 result[3] <= <VCC>
+
+
+|SRAM_TEST|lpm_constant1:inst3
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+result[1] <= lpm_constant:LPM_CONSTANT_component.result[1]
+
+
+|SRAM_TEST|lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+result[1] <= <VCC>
 
 
 |SRAM_TEST|my_mux:inst_mux
