@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Dist
-Mon Oct 04 15:48:06 2021
+Tue Oct 05 14:57:12 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -10,13 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -42,20 +36,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 04 15:48:06 2021            ;
+; Analysis & Synthesis Status        ; Failed - Tue Oct 05 14:57:12 2021                ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Dist                                             ;
 ; Top-level Entity Name              ; Dist                                             ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 63                                               ;
-;     Total combinational functions  ; 63                                               ;
-;     Dedicated logic registers      ; 16                                               ;
-; Total registers                    ; 16                                               ;
-; Total pins                         ; 39                                               ;
-; Total virtual pins                 ; 0                                                ;
-; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 0                                                ;
-; Total PLLs                         ; 0                                                ;
+; Total logic elements               ; N/A until Partition Merge                        ;
+;     Total combinational functions  ; N/A until Partition Merge                        ;
+;     Dedicated logic registers      ; N/A until Partition Merge                        ;
+; Total registers                    ; N/A until Partition Merge                        ;
+; Total pins                         ; N/A until Partition Merge                        ;
+; Total virtual pins                 ; N/A until Partition Merge                        ;
+; Total memory bits                  ; N/A until Partition Merge                        ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
+; Total PLLs                         ; N/A until Partition Merge                        ;
 +------------------------------------+--------------------------------------------------+
 
 
@@ -163,114 +157,22 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; Dist.vhd                         ; yes             ; User VHDL File  ; X:/TSIU03/Project/TSIU03-VHDL-Gang/Code/Dist/Dist.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-
-
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 63      ;
-;                                             ;         ;
-; Total combinational functions               ; 63      ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 11      ;
-;     -- 3 input functions                    ; 34      ;
-;     -- <=2 input functions                  ; 18      ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 34      ;
-;     -- arithmetic mode                      ; 29      ;
-;                                             ;         ;
-; Total registers                             ; 16      ;
-;     -- Dedicated logic registers            ; 16      ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 39      ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-; Maximum fan-out node                        ; Mux14~0 ;
-; Maximum fan-out                             ; 23      ;
-; Total fan-out                               ; 283     ;
-; Average fan-out                             ; 1.80    ;
-+---------------------------------------------+---------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |Dist                      ; 63 (63)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |Dist               ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 16    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Dist|sample_out_tmp[0]    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Oct 04 15:48:01 2021
+    Info: Processing started: Tue Oct 05 14:57:10 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Dist -c Dist
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file dist.vhd
-    Info (12022): Found design unit 1: Dist-distArch
-    Info (12023): Found entity 1: Dist
-Info (12127): Elaborating entity "Dist" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "def"
-Info (21057): Implemented 102 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 23 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 63 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Mon Oct 04 15:48:06 2021
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:02
+Error (10500): VHDL syntax error at Dist.vhd(42) near text "and";  expecting "end", or "(", or an identifier ("and" is a reserved keyword), or a sequential statement File: X:/TSIU03/Project/TSIU03-VHDL-Gang/Code/Dist/Dist.vhd Line: 42
+Error (10500): VHDL syntax error at Dist.vhd(44) near text "and";  expecting "end", or "(", or an identifier ("and" is a reserved keyword), or a sequential statement File: X:/TSIU03/Project/TSIU03-VHDL-Gang/Code/Dist/Dist.vhd Line: 44
+Info (12021): Found 0 design units, including 0 entities, in source file dist.vhd
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 0 warnings
+    Error: Peak virtual memory: 4622 megabytes
+    Error: Processing ended: Tue Oct 05 14:57:13 2021
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:01
 
 
