@@ -95,6 +95,6 @@ begin
 --	end process;
 			
 	-- Adding all signals together	
-	SAMPLE_OUT <= SAMPLE_IN + ECHO1; -- + ECHO2 + ECHO3 + ECHO4);
+	SAMPLE_OUT <= ; -- + ECHO2 + ECHO3 + ECHO4);
 	
 end architecture;
