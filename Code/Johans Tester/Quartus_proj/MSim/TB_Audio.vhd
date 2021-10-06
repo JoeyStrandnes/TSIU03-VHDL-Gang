@@ -25,7 +25,7 @@ architecture sim of TB_Audio is
   signal ADDR		: unsigned(19 downto 0);
   signal DATA       : signed(15 downto 0);
   -- SRAM ADDRESS WIDTH
-  constant N : integer := 10;
+  constant N : integer := 20;
   -- SIGNALS BETWEEN DUTS
   signal CE, OE, WE,LB,UB : std_logic;
   -- some functions for reporting results:
@@ -58,7 +58,7 @@ component TB_SRAM is
 	generic( N : integer );
     port(sram_addr : in unsigned(19 downto 0);
          sram_data : inout signed(15 downto 0);
-         sram_we, sram_oe, sram_ce, sram_lb, sram_ub, clk : in  std_logic);
+         sram_we, sram_oe, sram_ce, sram_lb, sram_ub: in  std_logic);
   end component;
 
 component SRAM_control
@@ -138,7 +138,7 @@ begin
         sram_we => WE, sram_oe => OE, sram_ce => CE,
         sram_lb => LB, sram_ub => UB,
         sram_addr => ADDR,
-        sram_data => DATA,
-		clk => clk);
+        sram_data => DATA
+		);
 end architecture;
 

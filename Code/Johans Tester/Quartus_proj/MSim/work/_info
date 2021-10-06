@@ -4,198 +4,205 @@ K3
 cModel Technology
 Z0 dC:\Program Files\MentorGraphics\examples
 T_opt
-Ve^:`EUY6d?D;A:oj>g^d;2
-04 8 3 work tb_audio sim 1
-=1-b00cd16f28e8-615c15e6-28c-2c80
-o-quiet -auto_acc_if_foreign -work work
+VKI8`0BF=m2h[E4[5fTjIi2
+Z1 04 8 3 work tb_audio sim 1
+=2-b00cd16f28e8-615db3ba-3be-42e0
+Z2 o-quiet -auto_acc_if_foreign -work work
 n@_opt
-OL;O;10.1b;51
-Z1 dC:\Program Files\MentorGraphics\examples
+Z3 OL;O;10.1b;51
+Z4 dC:\Program Files\MentorGraphics\examples
+T_opt1
+V4ghO64`<aSQ?]We1zKc2=0
+04 11 3 work tb_echo_gen sim 1
+=6-b00cd16f28e8-615d6950-15c-2658
+R2
+n@_opt1
+R3
+R4
+T_opt2
+Va^VO=z4^>OlEO0HcC:Zfa3
+R1
+=1-b00cd16f28e8-615db35b-295-22d4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt2
+R3
+R4
 Eecho_gen
-Z2 w1633348551
-Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
-Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
-Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 dX:\GITHUB\TSIU03-VHDL-Gang\Code\Johans Tester\Quartus_proj\MSim
-Z7 8X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/ECHO_GEN.vhd
-Z8 FX:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/ECHO_GEN.vhd
+Z5 w1633525182
+Z6 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 dX:\GITHUB\TSIU03-VHDL-Gang\Code\Johans Tester\Quartus_proj\MSim
+Z10 8../ECHO_GEN.vhd
+Z11 F../ECHO_GEN.vhd
 l0
 L5
-V9?SVJk2J92f6G2USEQIO^3
-Z9 OL;C;10.1b;51
+VFgC2=RZg@VB56L2hie8TW3
+Z12 OL;C;10.1b;51
 32
-Z10 !s108 1633426746.938000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/ECHO_GEN.vhd|
-Z12 !s107 X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/ECHO_GEN.vhd|
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1
+Z13 !s108 1633530879.246000
+Z14 !s90 -reportprogress|300|../ECHO_GEN.vhd|../SRAM_control.vhd|
+Z15 !s107 ../SRAM_control.vhd|../ECHO_GEN.vhd|
+Z16 tExplicit 1
 !s100 a9ATo4TEN^H^AEc0Z[cVV3
 !i10b 1
 Artl
-R3
-R4
-R5
-DEx4 work 8 echo_gen 0 22 9?SVJk2J92f6G2USEQIO^3
+R6
+R7
+R8
+DEx4 work 8 echo_gen 0 22 FgC2=RZg@VB56L2hie8TW3
 l31
 L25
-VY_bjaZKbSFm?kHB4LcRgX1
-R9
-32
-R10
-R11
+VPVU8kO`OBj5VeNGb3g[2d0
+!s100 W7?Y2CREYUS`c?9mRYl=e1
 R12
+32
 R13
 R14
-!s100 XhEf1?WNdXd_GYCk6[38a3
+R15
+R16
 !i10b 1
 Esram_control
-Z15 w1633360345
-R3
-R4
-R5
+Z17 w1633360345
 R6
-Z16 8../SRAM_control.vhd
-Z17 F../SRAM_control.vhd
+R7
+R8
+R9
+Z18 8../SRAM_control.vhd
+Z19 F../SRAM_control.vhd
 l0
 L5
 VCAeNdlE2`8VCNKj`DE=7D1
-R9
+R12
 32
-Z18 !s108 1633425961.402000
-Z19 !s90 -reportprogress|300|../SRAM_control.vhd|
-Z20 !s107 ../SRAM_control.vhd|
+R13
 R14
+R15
+R16
 !s100 `f1fVjk=7:joFEWQM5WW?0
 !i10b 1
 Artl
-R3
-R4
-R5
+R6
+R7
+R8
 DEx4 work 12 sram_control 0 22 CAeNdlE2`8VCNKj`DE=7D1
 l24
 L21
 Vo26?8nPJR;1Zcb7G[hbYO0
-R9
-32
-R18
-R19
-R20
-R14
 !s100 jI:DR1U81MWm@n6UQ`Oo`0
+R12
+32
+R13
+R14
+R15
+R16
 !i10b 1
 Etb_audio
-Z21 w1633425960
-Z22 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
-R3
-R4
-R5
+Z20 w1633530698
+Z21 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
 R6
-8../MSIM/TB_Audio.vhd
-F../MSIM/TB_Audio.vhd
+R7
+R8
+R9
+Z22 8../MSIM/TB_Audio.vhd
+Z23 F../MSIM/TB_Audio.vhd
 l0
 L8
 VO>R<GSlA1@8nlY=:T37Ag3
-R9
-32
-R14
 !s100 Oo7TOW7ESzG]>;JD^MCbO1
+R12
+32
 !i10b 1
-!s108 1633425962.631000
-!s90 -reportprogress|300|../MSIM/TB_Audio.vhd|../MSIM/TB_SRAM.vhd|
-!s107 ../MSIM/TB_SRAM.vhd|../MSIM/TB_Audio.vhd|
+Z24 !s108 1633530880.179000
+Z25 !s90 -reportprogress|300|../MSIM/TB_Audio.vhd|../MSIM/TB_ECHO_GEN.vhd|../MSIM/TB_SRAM.vhd|
+Z26 !s107 ../MSIM/TB_SRAM.vhd|../MSIM/TB_ECHO_GEN.vhd|../MSIM/TB_Audio.vhd|
+R16
 Asim
-R22
-R3
-R4
-R5
-DEx4 work 8 tb_audio 0 22 i<H]V7oJ<0LONe@chCDO;1
+R21
+R6
+R7
+R8
+Z27 DEx4 work 8 tb_audio 0 22 O>R<GSlA1@8nlY=:T37Ag3
 l80
 L11
-V2:HnEXH@9]_b7Rk;K^SBP2
-R9
+Z28 VdK=L=<khzISaBRWnl_F;^2
+Z29 !s100 mj1`?5UzQ?<SNDRojJ^lf0
+R12
 32
-R13
-R14
-FX:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_Audio.vhd
-8X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_Audio.vhd
-!s108 1633424860.298000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_Audio.vhd|
-!s107 X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_Audio.vhd|
-!s100 YSHOYgI41k77]9UUAY:nR2
 !i10b 1
+R24
+R25
+R26
+R16
 Etb_echo_gen
-Z23 w1633428495
-R22
-R3
-R4
-R5
+Z30 w1633525160
+R21
 R6
-Z24 8X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_ECHO_GEN.vhd
-Z25 FX:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_ECHO_GEN.vhd
+R7
+R8
+R9
+Z31 8../MSIM/TB_ECHO_GEN.vhd
+Z32 F../MSIM/TB_ECHO_GEN.vhd
 l0
 L8
-VQZXOQe6O]hjiCi<G2TIH]1
+VPSj7NcAYllcA?FhIW1i531
 !s100 Vce_7L8UnGNHN81YCSJUm3
-R9
+R12
 32
 !i10b 1
-Z26 !s108 1633428526.367000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_ECHO_GEN.vhd|
-Z28 !s107 X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_ECHO_GEN.vhd|
-R13
-R14
-Asim
-R22
-R3
-R4
-R5
-DEx4 work 11 tb_echo_gen 0 22 QZXOQe6O]hjiCi<G2TIH]1
-l76
-L11
-VSgI;]mSemn7cUZR2QD6bl0
-!s100 eVM4aL[L]=V@Lci3FnGWI0
-R9
-32
-!i10b 1
+R24
+R25
 R26
-R27
-R28
-R13
-R14
-Etb_sram
-Z29 w1633424456
-R3
-R4
-R5
+R16
+Asim
+R21
 R6
-Z30 8X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_SRAM.vhd
-Z31 FX:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_SRAM.vhd
+R7
+R8
+Z33 DEx4 work 11 tb_echo_gen 0 22 PSj7NcAYllcA?FhIW1i531
+l81
+L11
+Z34 Vi6N5fW5:PPTDD[1U1XiE@2
+Z35 !s100 gkH`5j=K5j0ek^P<T`77@3
+R12
+32
+!i10b 1
+R24
+R25
+R26
+R16
+Etb_sram
+Z36 w1633530777
+R6
+R7
+R8
+R9
+Z37 8../MSIM/TB_SRAM.vhd
+Z38 F../MSIM/TB_SRAM.vhd
 l0
 L5
-V8[0[EjQ[_DFS385<a_Id62
-R9
+V@]=e5MYlc5LEoAG;4Fa6P2
+!s100 ^^^>6coZP2AhZ0kN1OkRe1
+R12
 32
-Z32 !s108 1633424671.860000
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_SRAM.vhd|
-Z34 !s107 X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/MSim/TB_SRAM.vhd|
-R13
-R14
-!s100 gdYCh>DmJNzO;SG;a<cV83
 !i10b 1
+R24
+R25
+R26
+R16
 Asim
-R3
-R4
-R5
-DEx4 work 7 tb_sram 0 22 8[0[EjQ[_DFS385<a_Id62
+R6
+R7
+R8
+Z39 DEx4 work 7 tb_sram 0 22 @]=e5MYlc5LEoAG;4Fa6P2
 l21
-L17
-V>b6aZ2h=1B7QBlF:j_X9<2
-R9
+L16
+Z40 VCEYXm2PeQhj4XiKdMFPEK0
+Z41 !s100 T3WU=B:nMj3_L55Zj3?H^2
+R12
 32
-R32
-R33
-R34
-R13
-R14
-!s100 ;nLIVLZZNWDcCA<30D=R81
 !i10b 1
+R24
+R25
+R26
+R16

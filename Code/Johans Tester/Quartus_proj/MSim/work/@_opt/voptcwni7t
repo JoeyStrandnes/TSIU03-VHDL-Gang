@@ -1,0 +1,207 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Program Files\MentorGraphics\examples
+T_opt
+VKI8`0BF=m2h[E4[5fTjIi2
+Z1 04 8 3 work tb_audio sim 1
+=2-b00cd16f28e8-615db3ba-3be-42e0
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.1b;51
+T_opt1
+V4ghO64`<aSQ?]We1zKc2=0
+04 11 3 work tb_echo_gen sim 1
+=6-b00cd16f28e8-615d6950-15c-2658
+R2
+n@_opt1
+R3
+Z4 dC:\Program Files\MentorGraphics\examples
+T_opt2
+Va^VO=z4^>OlEO0HcC:Zfa3
+R1
+=1-b00cd16f28e8-615db35b-295-22d4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt2
+R3
+R4
+Eecho_gen
+Z5 w1633525182
+Z6 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 dX:\GITHUB\TSIU03-VHDL-Gang\Code\Johans Tester\Quartus_proj\MSim
+Z10 8../ECHO_GEN.vhd
+Z11 F../ECHO_GEN.vhd
+l0
+L5
+VFgC2=RZg@VB56L2hie8TW3
+Z12 OL;C;10.1b;51
+32
+Z13 !s108 1633530786.980000
+Z14 !s90 -reportprogress|300|../ECHO_GEN.vhd|../SRAM_control.vhd|
+Z15 !s107 ../SRAM_control.vhd|../ECHO_GEN.vhd|
+Z16 tExplicit 1
+!s100 a9ATo4TEN^H^AEc0Z[cVV3
+!i10b 1
+Artl
+R6
+R7
+R8
+DEx4 work 8 echo_gen 0 22 FgC2=RZg@VB56L2hie8TW3
+l31
+L25
+VPVU8kO`OBj5VeNGb3g[2d0
+R12
+32
+R13
+R14
+R15
+R16
+!s100 W7?Y2CREYUS`c?9mRYl=e1
+!i10b 1
+Esram_control
+Z17 w1633360345
+R6
+R7
+R8
+R9
+Z18 8../SRAM_control.vhd
+Z19 F../SRAM_control.vhd
+l0
+L5
+VCAeNdlE2`8VCNKj`DE=7D1
+R12
+32
+R13
+R14
+R15
+R16
+!s100 `f1fVjk=7:joFEWQM5WW?0
+!i10b 1
+Artl
+R6
+R7
+R8
+DEx4 work 12 sram_control 0 22 CAeNdlE2`8VCNKj`DE=7D1
+l24
+L21
+Vo26?8nPJR;1Zcb7G[hbYO0
+R12
+32
+R13
+R14
+R15
+R16
+!s100 jI:DR1U81MWm@n6UQ`Oo`0
+!i10b 1
+Etb_audio
+Z20 w1633530698
+Z21 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+R6
+R7
+R8
+R9
+Z22 8../MSIM/TB_Audio.vhd
+Z23 F../MSIM/TB_Audio.vhd
+l0
+L8
+VO>R<GSlA1@8nlY=:T37Ag3
+R12
+32
+Z24 !s108 1633530787.880000
+Z25 !s90 -reportprogress|300|../MSIM/TB_Audio.vhd|../MSIM/TB_ECHO_GEN.vhd|../MSIM/TB_SRAM.vhd|
+Z26 !s107 ../MSIM/TB_SRAM.vhd|../MSIM/TB_ECHO_GEN.vhd|../MSIM/TB_Audio.vhd|
+R16
+!s100 Oo7TOW7ESzG]>;JD^MCbO1
+!i10b 1
+Asim
+R21
+R6
+R7
+R8
+DEx4 work 8 tb_audio 0 22 O>R<GSlA1@8nlY=:T37Ag3
+l80
+L11
+VdK=L=<khzISaBRWnl_F;^2
+R12
+32
+R24
+R25
+R26
+R16
+!s100 mj1`?5UzQ?<SNDRojJ^lf0
+!i10b 1
+Etb_echo_gen
+Z27 w1633525160
+R21
+R6
+R7
+R8
+R9
+Z28 8../MSIM/TB_ECHO_GEN.vhd
+Z29 F../MSIM/TB_ECHO_GEN.vhd
+l0
+L8
+VPSj7NcAYllcA?FhIW1i531
+R12
+32
+R24
+R25
+R26
+R16
+!s100 Vce_7L8UnGNHN81YCSJUm3
+!i10b 1
+Asim
+R21
+R6
+R7
+R8
+DEx4 work 11 tb_echo_gen 0 22 PSj7NcAYllcA?FhIW1i531
+l81
+L11
+Vi6N5fW5:PPTDD[1U1XiE@2
+R12
+32
+R24
+R25
+R26
+R16
+!s100 gkH`5j=K5j0ek^P<T`77@3
+!i10b 1
+Etb_sram
+Z30 w1633530777
+R6
+R7
+R8
+R9
+Z31 8../MSIM/TB_SRAM.vhd
+Z32 F../MSIM/TB_SRAM.vhd
+l0
+L5
+V@]=e5MYlc5LEoAG;4Fa6P2
+R12
+32
+R24
+R25
+R26
+R16
+!s100 ^^^>6coZP2AhZ0kN1OkRe1
+!i10b 1
+Asim
+R6
+R7
+R8
+DEx4 work 7 tb_sram 0 22 @]=e5MYlc5LEoAG;4Fa6P2
+l21
+L16
+VCEYXm2PeQhj4XiKdMFPEK0
+R12
+32
+R24
+R25
+R26
+R16
+!s100 T3WU=B:nMj3_L55Zj3?H^2
+!i10b 1

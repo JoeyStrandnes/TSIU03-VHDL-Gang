@@ -17,16 +17,21 @@ architecture sim of TB_ECHO_GEN is
 	signal mclk, bclk, adclrc, daclrc, adcdat, dacdat : std_logic;
 	signal lrsel : std_logic;
 	signal count : unsigned(8 downto 0);
-	signal cntr: unsigned(9 downto 0) := (others => '0');
+	signal SND_COUNT: unsigned(9 downto 0);
+	--ECHO SIGNALS
 	signal SAMPLE_IN, SAMPLE_OUT: signed(15 downto 0);
 	signal DATA_READ, DATA_WRITE: signed(15 downto 0);
 	signal RW		: std_logic;
-
+	--ECHO SETTINGS
 	signal	VOL 				:  unsigned(3 downto 0);
 	signal	NUM					:  unsigned(1 downto 0);
 	signal	DELAY				:  unsigned(3 downto 0);
 
 	signal offset				: unsigned(19 downto 0);
+	
+	-- Simulating sound input counter
+	signal sample_count : unsigned(5 downto 0);
+	
   -- some functions for reporting results:
   function s2str(x : signed) return string is begin
     return integer'image(to_integer(x));
@@ -77,25 +82,39 @@ begin
   -- ### Clock generation part ###
   clk <= not clk after 10 ns when not done;
   rstn <= '0', '1' after 50 ns;
-  done <= false, true after 1 ms;
+  done <= false, true after 100 us;
   
 	process(clk,rstn) begin
 		if rstn = '0' then
-			cntr <= (others => '0');
+			SND_COUNT <= (others => '0');
 		elsif rising_edge(clk) then
-			cntr <= cntr + 1;
+			SND_COUNT <= SND_COUNT + 1;
 		end if;
 	end process;
 	
-	mclk 		<= NOT cntr(1);
-	bclk 		<= cntr(3);
-	adclrc	<= NOT cntr(9);
-	daclrc	<= NOT cntr(9);
-	lrsel		<= cntr(9);
-	count <= cntr(8 downto 0);
-  
+	mclk 		<= NOT SND_COUNT(1);
+	bclk 		<= SND_COUNT(3);
+	adclrc	<= NOT SND_COUNT(9);
+	daclrc	<= NOT SND_COUNT(9);
+	lrsel		<= SND_COUNT(9);
+	count <= SND_COUNT(8 downto 0);
+	
+	DELAY <= X"F"; --Hardcoding delay
+	
+	-- ### Inputting Samples ###
+	process(lrsel)
+	begin
+		if(rstn = '0') then
+			sample_count <= (others => '0');
+		elsif lrsel'event then
+			sample_count <= sample_count+1;
+		end if;
+	end process;
+	SAMPLE_IN <= resize( signed( sample_count*2), SAMPLE_IN'length);
 
-  -- ### Instantiation ###
+
+	
+	-- ### Instantiation ###
 	DUT_ECHO_GEN : ECHO_GEN port map(
 			clk		=> clk,				
 			rstn	=> rstn, 				

@@ -1,5 +1,5 @@
 Fitter report for SRAM_TEST
-Mon Oct 04 13:56:31 2021
+Wed Oct 06 15:38:22 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -67,17 +67,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 04 13:56:31 2021            ;
+; Fitter Status                      ; Successful - Wed Oct 06 15:38:22 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; SRAM_TEST                                        ;
 ; Top-level Entity Name              ; SRAM_TEST                                        ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE115F29C7                                    ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 169 / 114,480 ( < 1 % )                          ;
-;     Total combinational functions  ; 110 / 114,480 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 145 / 114,480 ( < 1 % )                          ;
-; Total registers                    ; 145                                              ;
+; Total logic elements               ; 148 / 114,480 ( < 1 % )                          ;
+;     Total combinational functions  ; 118 / 114,480 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 111 / 114,480 ( < 1 % )                          ;
+; Total registers                    ; 111                                              ;
 ; Total pins                         ; 49 / 529 ( 9 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                            ;
@@ -154,12 +154,13 @@ applicable agreement for further details.
 ; Number detected on machine ; 6           ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.95        ;
+; Average used               ; 1.59        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;  19.0%      ;
+;     Processors 2-4         ;  13.6%      ;
+;     Processors 5-6         ;   9.1%      ;
 +----------------------------+-------------+
 
 
@@ -223,8 +224,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 381 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 381 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 355 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 355 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -247,7 +248,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 371     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 345     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 10      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -263,26 +264,26 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/output_fil
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 169 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 24                      ;
-;     -- Register only                        ; 59                      ;
-;     -- Combinational with a register        ; 86                      ;
+; Total logic elements                        ; 148 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 37                      ;
+;     -- Register only                        ; 30                      ;
+;     -- Combinational with a register        ; 81                      ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 6                       ;
-;     -- 3 input functions                    ; 72                      ;
-;     -- <=2 input functions                  ; 32                      ;
-;     -- Register only                        ; 59                      ;
+;     -- 4 input functions                    ; 21                      ;
+;     -- 3 input functions                    ; 63                      ;
+;     -- <=2 input functions                  ; 34                      ;
+;     -- Register only                        ; 30                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 69                      ;
+;     -- normal mode                          ; 77                      ;
 ;     -- arithmetic mode                      ; 41                      ;
 ;                                             ;                         ;
-; Total registers*                            ; 145 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 145 / 114,480 ( < 1 % ) ;
+; Total registers*                            ; 111 / 117,053 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 111 / 114,480 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 13 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 11 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                       ;
 ; I/O pins                                    ; 49 / 529 ( 9 % )        ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )          ;
@@ -301,10 +302,10 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/output_fil
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%            ;
 ; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%            ;
-; Maximum fan-out                             ; 145                     ;
-; Highest non-global fan-out                  ; 115                     ;
-; Total fan-out                               ; 1008                    ;
-; Average fan-out                             ; 2.37                    ;
+; Maximum fan-out                             ; 111                     ;
+; Highest non-global fan-out                  ; 89                      ;
+; Total fan-out                               ; 903                     ;
+; Average fan-out                             ; 2.35                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -317,25 +318,25 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/output_fil
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 169 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 24                     ; 0                              ;
-;     -- Register only                        ; 59                     ; 0                              ;
-;     -- Combinational with a register        ; 86                     ; 0                              ;
+; Total logic elements                        ; 148 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 37                     ; 0                              ;
+;     -- Register only                        ; 30                     ; 0                              ;
+;     -- Combinational with a register        ; 81                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 6                      ; 0                              ;
-;     -- 3 input functions                    ; 72                     ; 0                              ;
-;     -- <=2 input functions                  ; 32                     ; 0                              ;
-;     -- Register only                        ; 59                     ; 0                              ;
+;     -- 4 input functions                    ; 21                     ; 0                              ;
+;     -- 3 input functions                    ; 63                     ; 0                              ;
+;     -- <=2 input functions                  ; 34                     ; 0                              ;
+;     -- Register only                        ; 30                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 69                     ; 0                              ;
+;     -- normal mode                          ; 77                     ; 0                              ;
 ;     -- arithmetic mode                      ; 41                     ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 145                    ; 0                              ;
-;     -- Dedicated logic registers            ; 145 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 111                    ; 0                              ;
+;     -- Dedicated logic registers            ; 111 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;                                             ;                        ;                                ;
-; Total LABs:  partially or completely used   ; 13 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 11 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
 ; Virtual pins                                ; 0                      ; 0                              ;
 ; I/O pins                                    ; 49                     ; 0                              ;
@@ -351,8 +352,8 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/output_fil
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 1003                   ; 5                              ;
-;     -- Registered Connections               ; 308                    ; 0                              ;
+;     -- Total Connections                    ; 898                    ; 5                              ;
+;     -- Registered Connections               ; 331                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 32                     ; 0                              ;
@@ -385,8 +386,8 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/output_fil
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; adcdat ; D2    ; 1        ; 0            ; 68           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; clk    ; Y2    ; 2        ; 0            ; 36           ; 14           ; 145                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; rstn   ; M23   ; 6        ; 115          ; 40           ; 7            ; 115                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; clk    ; Y2    ; 2        ; 0            ; 36           ; 14           ; 111                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; rstn   ; M23   ; 6        ; 115          ; 40           ; 7            ; 89                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -1283,13 +1284,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                      ; Library Name ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------+--------------+
-; |SRAM_TEST                         ; 169 (0)     ; 145 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 49   ; 0            ; 24 (0)       ; 59 (0)            ; 86 (0)           ; |SRAM_TEST                                               ; work         ;
-;    |ECHO_GEN:inst|                 ; 32 (32)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 11 (11)           ; 6 (6)            ; |SRAM_TEST|ECHO_GEN:inst                                 ; work         ;
-;    |SRAM_control:inst2|            ; 57 (57)     ; 54 (54)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 18 (18)           ; 37 (37)          ; |SRAM_TEST|SRAM_control:inst2                            ; work         ;
-;    |SndDriver:inst_SND|            ; 81 (1)      ; 74 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (0)        ; 30 (0)            ; 44 (1)           ; |SRAM_TEST|SndDriver:inst_SND                            ; work         ;
-;       |channel_mod:b2v_inst_left|  ; 36 (36)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 15 (15)           ; 17 (17)          ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left  ; work         ;
-;       |channel_mod:b2v_inst_right| ; 35 (35)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 15 (15)           ; 17 (17)          ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right ; work         ;
-;       |ctrl:b2v_inst_ctrl|         ; 10 (10)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 10 (10)          ; |SRAM_TEST|SndDriver:inst_SND|ctrl:b2v_inst_ctrl         ; work         ;
+; |SRAM_TEST                         ; 148 (0)     ; 111 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 49   ; 0            ; 37 (0)       ; 30 (0)            ; 81 (0)           ; |SRAM_TEST                                               ; work         ;
+;    |ECHO_GEN:inst|                 ; 24 (24)     ; 9 (9)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 12 (12)          ; |SRAM_TEST|ECHO_GEN:inst                                 ; work         ;
+;    |SRAM_control:inst2|            ; 55 (55)     ; 38 (38)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 1 (1)             ; 37 (37)          ; |SRAM_TEST|SRAM_control:inst2                            ; work         ;
+;    |SndDriver:inst_SND|            ; 72 (1)      ; 64 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (1)        ; 29 (0)            ; 35 (0)           ; |SRAM_TEST|SndDriver:inst_SND                            ; work         ;
+;       |channel_mod:b2v_inst_left|  ; 30 (30)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 13 (13)           ; 14 (14)          ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left  ; work         ;
+;       |channel_mod:b2v_inst_right| ; 30 (30)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 16 (16)           ; 11 (11)          ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right ; work         ;
+;       |ctrl:b2v_inst_ctrl|         ; 11 (11)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 10 (10)          ; |SRAM_TEST|SndDriver:inst_SND|ctrl:b2v_inst_ctrl         ; work         ;
 +------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1351,166 +1352,140 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                               ;
-+----------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                            ; Pad To Core Index ; Setting ;
-+----------------------------------------------------------------+-------------------+---------+
-; DATA_SRAM[15]                                                  ;                   ;         ;
-; DATA_SRAM[14]                                                  ;                   ;         ;
-; DATA_SRAM[13]                                                  ;                   ;         ;
-; DATA_SRAM[12]                                                  ;                   ;         ;
-; DATA_SRAM[11]                                                  ;                   ;         ;
-; DATA_SRAM[10]                                                  ;                   ;         ;
-; DATA_SRAM[9]                                                   ;                   ;         ;
-; DATA_SRAM[8]                                                   ;                   ;         ;
-; DATA_SRAM[7]                                                   ;                   ;         ;
-; DATA_SRAM[6]                                                   ;                   ;         ;
-; DATA_SRAM[5]                                                   ;                   ;         ;
-; DATA_SRAM[4]                                                   ;                   ;         ;
-; DATA_SRAM[3]                                                   ;                   ;         ;
-; DATA_SRAM[2]                                                   ;                   ;         ;
-; DATA_SRAM[1]                                                   ;                   ;         ;
-; DATA_SRAM[0]                                                   ;                   ;         ;
-; clk                                                            ;                   ;         ;
-; rstn                                                           ;                   ;         ;
-;      - SRAM_control:inst2|PTR[0]                               ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[15] ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|RW                                        ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[1]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[3]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[9]           ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[19]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[18]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[17]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[16]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[15]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[14]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[13]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[12]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[11]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[10]                              ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[9]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[8]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[7]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[6]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[5]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[4]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[3]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[2]                               ; 0                 ; 6       ;
-;      - SRAM_control:inst2|PTR[1]                               ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[4]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[5]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[6]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[7]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[2]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[0]           ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[14] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[15] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[15]  ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[15]                                 ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[14] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[14]  ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[14]                                 ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[13] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[13]  ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[13]                                 ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[12] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[12]  ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[12]                                 ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[11] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[11]  ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[11]                                 ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[10] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[10]  ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[10]                                 ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[9]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[9]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[9]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[8]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[8]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[8]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[7]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[7]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[7]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[6]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[6]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[6]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[5]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[5]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[5]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[4]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[4]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[4]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[3]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[3]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[3]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[2]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[2]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[2]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[1]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[1]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[1]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[0]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[0]   ; 0                 ; 6       ;
-;      - ECHO_GEN:inst|ECHO1[0]                                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[14]  ; 0                 ; 6       ;
-;      - SRAM_control:inst2|lrsel_change                         ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[13] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[13]  ; 0                 ; 6       ;
-;      - SRAM_control:inst2|lrsel_old                            ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[12] ; 0                 ; 6       ;
-;      - SRAM_control:inst2|DATA_ECHO_OUT[15]~0                  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[12]  ; 0                 ; 6       ;
-;      - SRAM_control:inst2|DATA_SRAM[13]~16                     ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[11] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[11]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[10] ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[10]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[9]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[9]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[8]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[8]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[7]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[7]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[6]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[6]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[5]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[5]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[4]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[4]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[3]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[3]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[2]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[2]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[1]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[1]   ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[0]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[0]   ; 0                 ; 6       ;
-; adcdat                                                         ;                   ;         ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[0]  ; 0                 ; 6       ;
-;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[0]   ; 0                 ; 6       ;
-+----------------------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                     ;
++----------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                  ; Pad To Core Index ; Setting ;
++----------------------------------------------------------------------+-------------------+---------+
+; DATA_SRAM[15]                                                        ;                   ;         ;
+; DATA_SRAM[14]                                                        ;                   ;         ;
+; DATA_SRAM[13]                                                        ;                   ;         ;
+; DATA_SRAM[12]                                                        ;                   ;         ;
+; DATA_SRAM[11]                                                        ;                   ;         ;
+; DATA_SRAM[10]                                                        ;                   ;         ;
+; DATA_SRAM[9]                                                         ;                   ;         ;
+; DATA_SRAM[8]                                                         ;                   ;         ;
+; DATA_SRAM[7]                                                         ;                   ;         ;
+; DATA_SRAM[6]                                                         ;                   ;         ;
+; DATA_SRAM[5]                                                         ;                   ;         ;
+; DATA_SRAM[4]                                                         ;                   ;         ;
+; DATA_SRAM[3]                                                         ;                   ;         ;
+; DATA_SRAM[2]                                                         ;                   ;         ;
+; DATA_SRAM[1]                                                         ;                   ;         ;
+; DATA_SRAM[0]                                                         ;                   ;         ;
+; clk                                                                  ;                   ;         ;
+; rstn                                                                 ;                   ;         ;
+;      - SRAM_control:inst2|PTR[0]                                     ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[15]       ; 0                 ; 6       ;
+;      - ECHO_GEN:inst|RW                                              ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[1]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[3]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[9]                 ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[3]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[2]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[1]                                     ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[2]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[4]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[5]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[6]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[7]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]                 ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[19]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[18]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[17]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[16]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[15]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[14]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[13]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[12]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[11]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[10]                                    ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[9]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[8]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[7]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[6]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[5]                                     ; 0                 ; 6       ;
+;      - SRAM_control:inst2|PTR[4]                                     ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[0]                 ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[14]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[14]        ; 0                 ; 6       ;
+;      - SRAM_control:inst2|lrsel_change                               ; 0                 ; 6       ;
+;      - ECHO_GEN:inst|offset[18]~5                                    ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[13]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[13]        ; 0                 ; 6       ;
+;      - SRAM_control:inst2|lrsel_old                                  ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[12]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[12]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[15]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[15]        ; 0                 ; 6       ;
+;      - SRAM_control:inst2|DATA_SRAM[14]~16                           ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[14]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[14]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[13]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[13]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[12]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[12]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[11]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[11]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[10]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[10]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[9]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[9]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[8]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[8]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[7]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[7]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[6]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[6]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[5]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[5]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[4]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[4]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[3]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[3]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[2]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[2]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[1]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[1]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[0]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[0]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[11]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[11]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[10]       ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[10]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[9]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[9]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[8]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[8]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[7]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[7]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[6]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[6]         ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[5]        ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[5]         ; 0                 ; 6       ;
+; adcdat                                                               ;                   ;         ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[0]~feeder ; 0                 ; 6       ;
+;      - SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[0]~feeder  ; 0                 ; 6       ;
++----------------------------------------------------------------------+-------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                    ;
-+----------------------------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                                     ; Location          ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; ECHO_GEN:inst|LessThan0~2                                ; LCCOMB_X10_Y9_N20 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; SRAM_control:inst2|DATA_ECHO_OUT[15]~0                   ; LCCOMB_X10_Y9_N22 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; SRAM_control:inst2|DATA_SRAM[13]~16                      ; LCCOMB_X10_Y9_N8  ; 16      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
-; SRAM_control:inst2|lrsel_change                          ; FF_X4_Y7_N29      ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[6]~1  ; LCCOMB_X10_Y9_N18 ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|rx~0        ; LCCOMB_X10_Y9_N6  ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[8]~1 ; LCCOMB_X10_Y9_N2  ; 15      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|rx~0       ; LCCOMB_X10_Y9_N12 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; clk                                                      ; PIN_Y2            ; 145     ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; rstn                                                     ; PIN_M23           ; 115     ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-+----------------------------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                   ;
++----------------------------------------------------------+------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                                     ; Location         ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++----------------------------------------------------------+------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; ECHO_GEN:inst|offset[18]~6                               ; LCCOMB_X5_Y3_N14 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst2|DATA_SRAM[14]~16                      ; LCCOMB_X6_Y4_N10 ; 16      ; Sync. load                 ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst2|lrsel_change                          ; FF_X6_Y4_N31     ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15]~1 ; LCCOMB_X7_Y3_N4  ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|rx~0        ; LCCOMB_X6_Y3_N0  ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[6]~1 ; LCCOMB_X7_Y3_N26 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|rx~0       ; LCCOMB_X6_Y2_N22 ; 16      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]            ; FF_X6_Y3_N19     ; 20      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; clk                                                      ; PIN_Y2           ; 111     ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; rstn                                                     ; PIN_M23          ; 89      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
++----------------------------------------------------------+------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1518,7 +1493,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_Y2   ; 145     ; 2                                    ; Global Clock         ; GCLK4            ; --                        ;
+; clk  ; PIN_Y2   ; 111     ; 21                                   ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1527,49 +1502,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------+---------+
 ; Name                                                     ; Fan-Out ;
 +----------------------------------------------------------+---------+
-; rstn~input                                               ; 115     ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[9]            ; 30      ;
+; rstn~input                                               ; 89      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[9]            ; 32      ;
 ; SRAM_control:inst2|lrsel_change                          ; 20      ;
-; SRAM_control:inst2|DATA_SRAM[13]~16                      ; 16      ;
-; SRAM_control:inst2|DATA_ECHO_OUT[15]~0                   ; 16      ;
-; ECHO_GEN:inst|LessThan0~2                                ; 16      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]            ; 20      ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|rx~0        ; 16      ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|rx~0       ; 16      ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|tx~1        ; 16      ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|tx~0       ; 16      ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[6]~1  ; 15      ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[8]~1 ; 15      ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[3]            ; 10      ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|tx~0        ; 6       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]            ; 5       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[1]            ; 4       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[0]            ; 3       ;
+; SRAM_control:inst2|DATA_SRAM[14]~16                      ; 16      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[3]            ; 16      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[7]            ; 14      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[6]            ; 13      ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15]~1 ; 10      ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|tx~1        ; 10      ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[6]~1 ; 10      ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|tx~0       ; 10      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[5]            ; 10      ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[2]            ; 9       ;
+; ECHO_GEN:inst|offset[18]~6                               ; 8       ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|tx~0        ; 8       ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[4]            ; 8       ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[1]            ; 7       ;
+; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[0]            ; 5       ;
+; ECHO_GEN:inst|LessThan1~0                                ; 4       ;
+; ECHO_GEN:inst|offset[12]                                 ; 4       ;
+; ECHO_GEN:inst|LessThan0~2                                ; 3       ;
+; ECHO_GEN:inst|LessThan3~0                                ; 3       ;
 ; SRAM_control:inst2|PTR[0]                                ; 3       ;
-; ECHO_GEN:inst|RW                                         ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[0]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[1]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[2]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[3]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[4]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[5]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[6]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[7]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[8]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[9]~reg0                     ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[10]~reg0                    ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[11]~reg0                    ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[12]~reg0                    ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[13]~reg0                    ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[14]~reg0                    ; 3       ;
-; SRAM_control:inst2|DATA_SRAM[15]~reg0                    ; 3       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[2]            ; 3       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[7]            ; 3       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[6]            ; 3       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[5]            ; 3       ;
-; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[4]            ; 3       ;
+; ECHO_GEN:inst|offset[10]                                 ; 3       ;
 ; adcdat~input                                             ; 2       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[0]    ; 2       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[0]   ; 2       ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[5]    ; 2       ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[5]   ; 2       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[0]    ; 2       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[0]   ; 2       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[1]    ; 2       ;
@@ -1600,38 +1562,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[13]  ; 2       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[14]   ; 2       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[14]  ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[15]~30                          ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[14]~28                          ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[13]~26                          ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[12]~24                          ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[11]~22                          ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[10]~20                          ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[9]~18                           ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[8]~16                           ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[7]~14                           ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[6]~12                           ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[5]~10                           ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[4]~8                            ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[3]~6                            ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[2]~4                            ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[1]~2                            ; 2       ;
-; ECHO_GEN:inst|SAMPLE_OUT[0]~0                            ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[0]~15                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[1]~14                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[2]~13                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[3]~12                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[4]~11                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[5]~10                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[6]~9                        ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[7]~8                        ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[8]~7                        ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[9]~6                        ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[10]~5                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[11]~4                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[12]~3                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[13]~2                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[14]~1                       ; 2       ;
-; SRAM_control:inst2|DATA_SRAM[15]~0                       ; 2       ;
+; ECHO_GEN:inst|offset~8                                   ; 2       ;
+; ECHO_GEN:inst|LessThan1~1                                ; 2       ;
+; ECHO_GEN:inst|LessThan0~1                                ; 2       ;
+; ECHO_GEN:inst|LessThan0~0                                ; 2       ;
+; ECHO_GEN:inst|offset~0                                   ; 2       ;
+; ECHO_GEN:inst|RW~0                                       ; 2       ;
+; ECHO_GEN:inst|LessThan2~1                                ; 2       ;
+; ECHO_GEN:inst|LessThan2~0                                ; 2       ;
+; ECHO_GEN:inst|offset[17]                                 ; 2       ;
+; ECHO_GEN:inst|RW                                         ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[0]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[1]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[2]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[3]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[4]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[5]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[6]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[7]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[8]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[9]~reg0                     ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[10]~reg0                    ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[11]~reg0                    ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[12]~reg0                    ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[13]~reg0                    ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[14]~reg0                    ; 2       ;
+; SRAM_control:inst2|DATA_SRAM[15]~reg0                    ; 2       ;
 ; SRAM_control:inst2|PTR[1]                                ; 2       ;
 ; SRAM_control:inst2|PTR[2]                                ; 2       ;
 ; SRAM_control:inst2|PTR[3]                                ; 2       ;
@@ -1647,35 +1603,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SRAM_control:inst2|PTR[13]                               ; 2       ;
 ; SRAM_control:inst2|PTR[14]                               ; 2       ;
 ; SRAM_control:inst2|PTR[15]                               ; 2       ;
+; ECHO_GEN:inst|offset[15]                                 ; 2       ;
 ; SRAM_control:inst2|PTR[16]                               ; 2       ;
 ; SRAM_control:inst2|PTR[17]                               ; 2       ;
 ; SRAM_control:inst2|PTR[18]                               ; 2       ;
 ; SRAM_control:inst2|PTR[19]                               ; 2       ;
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[0]~27         ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~16    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~16   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~15    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~15   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~14    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[1]    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~14   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[1]   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~13    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[2]    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~13   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[2]   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~12    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[3]    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~12   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[3]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~11    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[4]    ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~11   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[4]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~10    ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[5]    ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~10   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[5]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~9     ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[6]    ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~9    ; 1       ;
@@ -1700,6 +1637,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[11]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~4    ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[11]  ; 1       ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[15]   ; 1       ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[15]  ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~3     ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[12]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~3    ; 1       ;
@@ -1708,54 +1647,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SRAM_control:inst2|lrsel_old                             ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~2     ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[13]   ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[0]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[1]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[2]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[3]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[4]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[5]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[6]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[7]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[8]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[9]                      ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[10]                     ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[11]                     ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[12]                     ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[13]                     ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[14]                     ; 1       ;
-; ECHO_GEN:inst|LessThan0~1                                ; 1       ;
-; ECHO_GEN:inst|LessThan0~0                                ; 1       ;
-; SRAM_control:inst2|DATA_ECHO_OUT[15]                     ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~2    ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[13]  ; 1       ;
 ; SRAM_control:inst2|PTR[0]~57                             ; 1       ;
+; ECHO_GEN:inst|offset~13                                  ; 1       ;
+; ECHO_GEN:inst|offset~12                                  ; 1       ;
+; ECHO_GEN:inst|offset~11                                  ; 1       ;
+; ECHO_GEN:inst|offset~10                                  ; 1       ;
+; ECHO_GEN:inst|offset~9                                   ; 1       ;
+; ECHO_GEN:inst|offset~7                                   ; 1       ;
+; ECHO_GEN:inst|offset[18]~5                               ; 1       ;
+; ECHO_GEN:inst|offset[5]~4                                ; 1       ;
+; ECHO_GEN:inst|offset~3                                   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg~0     ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[14]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg~0    ; 1       ;
-; ECHO_GEN:inst|ECHO1[0]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[1]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[2]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[3]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[4]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[5]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[6]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[7]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[8]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[9]                                   ; 1       ;
-; ECHO_GEN:inst|ECHO1[10]                                  ; 1       ;
-; ECHO_GEN:inst|ECHO1[11]                                  ; 1       ;
-; ECHO_GEN:inst|ECHO1[12]                                  ; 1       ;
-; ECHO_GEN:inst|ECHO1[13]                                  ; 1       ;
-; ECHO_GEN:inst|ECHO1[14]                                  ; 1       ;
-; ECHO_GEN:inst|ECHO1[15]                                  ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_left|RXReg[15]   ; 1       ;
-; SndDriver:inst_SND|channel_mod:b2v_inst_right|RXReg[15]  ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[14]  ; 1       ;
 ; ECHO_GEN:inst|RW~1                                       ; 1       ;
-; ECHO_GEN:inst|RW~0                                       ; 1       ;
+; ECHO_GEN:inst|offset[5]~2                                ; 1       ;
+; ECHO_GEN:inst|offset[5]~1                                ; 1       ;
+; ECHO_GEN:inst|offset[5]                                  ; 1       ;
+; ECHO_GEN:inst|offset[11]                                 ; 1       ;
 ; SndDriver:inst_SND|dacdat~0                              ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15]   ; 1       ;
 ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[15]  ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[0]~15                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[1]~14                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[2]~13                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[3]~12                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[4]~11                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[5]~10                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[6]~9                        ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[7]~8                        ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[8]~7                        ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[9]~6                        ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[10]~5                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[11]~4                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[12]~3                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[13]~2                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[14]~1                       ; 1       ;
+; SRAM_control:inst2|DATA_SRAM[15]~0                       ; 1       ;
 ; SRAM_control:inst2|PTR[19]~55                            ; 1       ;
 ; SRAM_control:inst2|PTR[18]~54                            ; 1       ;
 ; SRAM_control:inst2|PTR[18]~53                            ; 1       ;
@@ -1793,21 +1724,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SRAM_control:inst2|PTR[2]~21                             ; 1       ;
 ; SRAM_control:inst2|PTR[1]~20                             ; 1       ;
 ; SRAM_control:inst2|PTR[1]~19                             ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[14]~29                          ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[13]~27                          ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[12]~25                          ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[11]~23                          ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[10]~21                          ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[9]~19                           ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[8]~17                           ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[7]~15                           ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[6]~13                           ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[5]~11                           ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[4]~9                            ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[3]~7                            ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[2]~5                            ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[1]~3                            ; 1       ;
-; ECHO_GEN:inst|SAMPLE_OUT[0]~1                            ; 1       ;
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[9]~25         ; 1       ;
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]~24         ; 1       ;
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[8]~23         ; 1       ;
@@ -1825,6 +1741,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[2]~11         ; 1       ;
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[1]~10         ; 1       ;
 ; SndDriver:inst_SND|ctrl:b2v_inst_ctrl|cntr[1]~9          ; 1       ;
+; SRAM_control:inst2|ADDR[19]~30                           ; 1       ;
+; SRAM_control:inst2|ADDR[18]~29                           ; 1       ;
+; SRAM_control:inst2|ADDR[18]~28                           ; 1       ;
+; SRAM_control:inst2|ADDR[17]~27                           ; 1       ;
+; SRAM_control:inst2|ADDR[17]~26                           ; 1       ;
+; SRAM_control:inst2|ADDR[16]~25                           ; 1       ;
+; SRAM_control:inst2|ADDR[16]~24                           ; 1       ;
+; SRAM_control:inst2|ADDR[15]~23                           ; 1       ;
+; SRAM_control:inst2|ADDR[15]~22                           ; 1       ;
+; SRAM_control:inst2|ADDR[14]~21                           ; 1       ;
+; SRAM_control:inst2|ADDR[14]~20                           ; 1       ;
+; SRAM_control:inst2|ADDR[13]~19                           ; 1       ;
+; SRAM_control:inst2|ADDR[13]~18                           ; 1       ;
+; SRAM_control:inst2|ADDR[12]~17                           ; 1       ;
+; SRAM_control:inst2|ADDR[12]~16                           ; 1       ;
+; SRAM_control:inst2|ADDR[11]~15                           ; 1       ;
+; SRAM_control:inst2|ADDR[11]~14                           ; 1       ;
+; SRAM_control:inst2|ADDR[10]~13                           ; 1       ;
+; SRAM_control:inst2|ADDR[10]~12                           ; 1       ;
+; SRAM_control:inst2|ADDR[9]~11                            ; 1       ;
+; SRAM_control:inst2|ADDR[9]~10                            ; 1       ;
+; SRAM_control:inst2|ADDR[8]~9                             ; 1       ;
+; SRAM_control:inst2|ADDR[8]~8                             ; 1       ;
+; SRAM_control:inst2|ADDR[7]~7                             ; 1       ;
+; SRAM_control:inst2|ADDR[7]~6                             ; 1       ;
+; SRAM_control:inst2|ADDR[6]~5                             ; 1       ;
+; SRAM_control:inst2|ADDR[6]~4                             ; 1       ;
+; SRAM_control:inst2|ADDR[5]~3                             ; 1       ;
+; SRAM_control:inst2|ADDR[5]~2                             ; 1       ;
+; SRAM_control:inst2|ADDR[4]~1                             ; 1       ;
+; SRAM_control:inst2|ADDR[4]~0                             ; 1       ;
+; ECHO_GEN:inst|offset[4]                                  ; 1       ;
+; ECHO_GEN:inst|offset[18]                                 ; 1       ;
 +----------------------------------------------------------+---------+
 
 
@@ -1833,62 +1782,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-------------------------+
 ; Other Routing Resource Type ; Usage                   ;
 +-----------------------------+-------------------------+
-; Block interconnects         ; 230 / 342,891 ( < 1 % ) ;
-; C16 interconnects           ; 17 / 10,120 ( < 1 % )   ;
-; C4 interconnects            ; 150 / 209,544 ( < 1 % ) ;
-; Direct links                ; 79 / 342,891 ( < 1 % )  ;
+; Block interconnects         ; 190 / 342,891 ( < 1 % ) ;
+; C16 interconnects           ; 21 / 10,120 ( < 1 % )   ;
+; C4 interconnects            ; 126 / 209,544 ( < 1 % ) ;
+; Direct links                ; 54 / 342,891 ( < 1 % )  ;
 ; Global clocks               ; 1 / 20 ( 5 % )          ;
-; Local interconnects         ; 98 / 119,088 ( < 1 % )  ;
-; R24 interconnects           ; 14 / 9,963 ( < 1 % )    ;
-; R4 interconnects            ; 157 / 289,782 ( < 1 % ) ;
+; Local interconnects         ; 101 / 119,088 ( < 1 % ) ;
+; R24 interconnects           ; 12 / 9,963 ( < 1 % )    ;
+; R4 interconnects            ; 128 / 289,782 ( < 1 % ) ;
 +-----------------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.00) ; Number of LABs  (Total = 13) ;
+; Number of Logic Elements  (Average = 13.45) ; Number of LABs  (Total = 11) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
+; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
+; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
 ; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
-; 9                                           ; 0                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 1                            ;
 ; 10                                          ; 1                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 1                            ;
+; 11                                          ; 1                            ;
+; 12                                          ; 0                            ;
 ; 13                                          ; 0                            ;
 ; 14                                          ; 1                            ;
-; 15                                          ; 1                            ;
-; 16                                          ; 7                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 6                            ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 2.69) ; Number of LABs  (Total = 13) ;
+; LAB-wide Signals  (Average = 2.36) ; Number of LABs  (Total = 11) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 8                            ;
-; 1 Clock                            ; 13                           ;
-; 1 Clock enable                     ; 8                            ;
+; 1 Clock                            ; 10                           ;
+; 1 Clock enable                     ; 4                            ;
 ; 1 Sync. load                       ; 2                            ;
-; 2 Clock enables                    ; 4                            ;
+; 2 Clock enables                    ; 2                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 23.15) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced  (Average = 23.55) ; Number of LABs  (Total = 11) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 1                            ;
+; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
@@ -1896,106 +1845,91 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
+; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
 ; 13                                           ; 0                            ;
 ; 14                                           ; 0                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 1                            ;
-; 18                                           ; 0                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 1                            ;
 ; 19                                           ; 0                            ;
 ; 20                                           ; 1                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 0                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 1                            ;
 ; 23                                           ; 0                            ;
 ; 24                                           ; 1                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 2                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 2                            ;
+; 27                                           ; 0                            ;
 ; 28                                           ; 0                            ;
-; 29                                           ; 0                            ;
+; 29                                           ; 1                            ;
 ; 30                                           ; 0                            ;
-; 31                                           ; 0                            ;
-; 32                                           ; 4                            ;
+; 31                                           ; 1                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 11.62) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced Out  (Average = 10.73) ; Number of LABs  (Total = 11) ;
 +--------------------------------------------------+------------------------------+
 ; 0                                                ; 0                            ;
-; 1                                                ; 1                            ;
-; 2                                                ; 2                            ;
-; 3                                                ; 0                            ;
+; 1                                                ; 0                            ;
+; 2                                                ; 0                            ;
+; 3                                                ; 1                            ;
 ; 4                                                ; 0                            ;
-; 5                                                ; 1                            ;
+; 5                                                ; 0                            ;
 ; 6                                                ; 0                            ;
-; 7                                                ; 0                            ;
-; 8                                                ; 0                            ;
+; 7                                                ; 2                            ;
+; 8                                                ; 1                            ;
 ; 9                                                ; 0                            ;
-; 10                                               ; 1                            ;
-; 11                                               ; 2                            ;
-; 12                                               ; 1                            ;
+; 10                                               ; 3                            ;
+; 11                                               ; 1                            ;
+; 12                                               ; 0                            ;
 ; 13                                               ; 0                            ;
 ; 14                                               ; 0                            ;
 ; 15                                               ; 0                            ;
 ; 16                                               ; 2                            ;
 ; 17                                               ; 0                            ;
-; 18                                               ; 1                            ;
+; 18                                               ; 0                            ;
 ; 19                                               ; 0                            ;
-; 20                                               ; 0                            ;
-; 21                                               ; 0                            ;
-; 22                                               ; 0                            ;
-; 23                                               ; 1                            ;
-; 24                                               ; 1                            ;
+; 20                                               ; 1                            ;
 +--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 14.00) ; Number of LABs  (Total = 13) ;
+; Number of Distinct Inputs  (Average = 12.00) ; Number of LABs  (Total = 11) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 2                            ;
-; 4                                            ; 1                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 2                            ;
 ; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 2                            ;
 ; 9                                            ; 0                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 1                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 0                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 2                            ;
 ; 15                                           ; 0                            ;
-; 16                                           ; 1                            ;
+; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 1                            ;
-; 19                                           ; 0                            ;
+; 19                                           ; 1                            ;
 ; 20                                           ; 0                            ;
-; 21                                           ; 1                            ;
+; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 0                            ;
-; 26                                           ; 0                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 0                            ;
-; 29                                           ; 0                            ;
-; 30                                           ; 0                            ;
-; 31                                           ; 0                            ;
-; 32                                           ; 0                            ;
-; 33                                           ; 0                            ;
-; 34                                           ; 0                            ;
-; 35                                           ; 1                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2185,7 +2119,7 @@ Info (176353): Automatically promoted node clk~input (placed in PIN Y2 (CLK2, DI
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:06
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -2193,16 +2127,16 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.53 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (169064): Following 16 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
     Info (169065): Pin DATA_SRAM[15] has a permanently enabled output enable
     Info (169065): Pin DATA_SRAM[14] has a permanently enabled output enable
@@ -2222,9 +2156,9 @@ Warning (169064): Following 16 pins have no output enable or a GND or VCC output
     Info (169065): Pin DATA_SRAM[0] has a permanently enabled output enable
 Info (144001): Generated suppressed messages file X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/output_files/SRAM_TEST.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 5687 megabytes
-    Info: Processing ended: Mon Oct 04 13:56:33 2021
-    Info: Elapsed time: 00:00:26
+    Info: Peak virtual memory: 5689 megabytes
+    Info: Processing ended: Wed Oct 06 15:38:24 2021
+    Info: Elapsed time: 00:00:25
     Info: Total CPU time (on all processors): 00:00:26
 
 

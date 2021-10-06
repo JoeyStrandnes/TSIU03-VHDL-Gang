@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SRAM_TEST
-Mon Oct 04 13:56:06 2021
+Wed Oct 06 15:37:58 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -15,12 +15,13 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis IP Cores Summary
   9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component
- 13. Parameter Settings for User Entity Instance: lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component
+ 14. Parameter Settings for User Entity Instance: lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -46,15 +47,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 04 13:56:05 2021            ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 06 15:37:58 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; SRAM_TEST                                        ;
 ; Top-level Entity Name              ; SRAM_TEST                                        ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 175                                              ;
-;     Total combinational functions  ; 110                                              ;
-;     Dedicated logic registers      ; 145                                              ;
-; Total registers                    ; 145                                              ;
+; Total logic elements               ; 151                                              ;
+;     Total combinational functions  ; 118                                              ;
+;     Dedicated logic registers      ; 111                                              ;
+; Total registers                    ; 111                                              ;
 ; Total pins                         ; 49                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -190,28 +191,28 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 175       ;
+; Estimated Total logic elements              ; 151       ;
 ;                                             ;           ;
-; Total combinational functions               ; 110       ;
+; Total combinational functions               ; 118       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 6         ;
-;     -- 3 input functions                    ; 72        ;
-;     -- <=2 input functions                  ; 32        ;
+;     -- 4 input functions                    ; 21        ;
+;     -- 3 input functions                    ; 63        ;
+;     -- <=2 input functions                  ; 34        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 69        ;
+;     -- normal mode                          ; 77        ;
 ;     -- arithmetic mode                      ; 41        ;
 ;                                             ;           ;
-; Total registers                             ; 145       ;
-;     -- Dedicated logic registers            ; 145       ;
+; Total registers                             ; 111       ;
+;     -- Dedicated logic registers            ; 111       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 49        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 145       ;
-; Total fan-out                               ; 956       ;
-; Average fan-out                             ; 2.59      ;
+; Maximum fan-out                             ; 111       ;
+; Total fan-out                               ; 867       ;
+; Average fan-out                             ; 2.53      ;
 +---------------------------------------------+-----------+
 
 
@@ -220,12 +221,12 @@ applicable agreement for further details.
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
-; |SRAM_TEST                         ; 110 (0)           ; 145 (0)      ; 0           ; 0            ; 0       ; 0         ; 49   ; 0            ; |SRAM_TEST                                               ; work         ;
-;    |ECHO_GEN:inst|                 ; 21 (21)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|ECHO_GEN:inst                                 ; work         ;
-;    |SRAM_control:inst2|            ; 39 (39)           ; 54 (54)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SRAM_control:inst2                            ; work         ;
-;    |SndDriver:inst_SND|            ; 50 (1)            ; 74 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND                            ; work         ;
-;       |channel_mod:b2v_inst_left|  ; 20 (20)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left  ; work         ;
-;       |channel_mod:b2v_inst_right| ; 19 (19)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right ; work         ;
+; |SRAM_TEST                         ; 118 (0)           ; 111 (0)      ; 0           ; 0            ; 0       ; 0         ; 49   ; 0            ; |SRAM_TEST                                               ; work         ;
+;    |ECHO_GEN:inst|                 ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|ECHO_GEN:inst                                 ; work         ;
+;    |SRAM_control:inst2|            ; 54 (54)           ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SRAM_control:inst2                            ; work         ;
+;    |SndDriver:inst_SND|            ; 40 (1)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND                            ; work         ;
+;       |channel_mod:b2v_inst_left|  ; 15 (15)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left  ; work         ;
+;       |channel_mod:b2v_inst_right| ; 14 (14)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right ; work         ;
 ;       |ctrl:b2v_inst_ctrl|         ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|ctrl:b2v_inst_ctrl         ; work         ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -241,14 +242,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; ECHO_GEN:inst|offset[0..19]            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 20 ;                                        ;
-+----------------------------------------+----------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++--------------------------------------------------------+----------------------------------------+
+; Register name                                          ; Reason for Removal                     ;
++--------------------------------------------------------+----------------------------------------+
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[0] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[0]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[1] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[1]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[2] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[2]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[3] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[3]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[4] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[4]  ; Stuck at GND due to stuck port data_in ;
+; ECHO_GEN:inst|offset[0..3,19]                          ; Stuck at GND due to stuck port data_in ;
+; ECHO_GEN:inst|offset[9]                                ; Merged with ECHO_GEN:inst|offset[17]   ;
+; ECHO_GEN:inst|offset[8,16]                             ; Merged with ECHO_GEN:inst|offset[10]   ;
+; ECHO_GEN:inst|offset[7]                                ; Merged with ECHO_GEN:inst|offset[15]   ;
+; ECHO_GEN:inst|offset[6,13,14]                          ; Merged with ECHO_GEN:inst|offset[12]   ;
+; Total Number of Removed Registers = 22                 ;                                        ;
++--------------------------------------------------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++--------------------------------------------------------+---------------------------+---------------------------------------------------------+
+; Register name                                          ; Reason for Removal        ; Registers Removed due to This Register                  ;
++--------------------------------------------------------+---------------------------+---------------------------------------------------------+
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[0] ; Stuck at GND              ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[1], ;
+;                                                        ; due to stuck port data_in ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[2], ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[3], ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[4]  ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[0]  ; Stuck at GND              ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[1],  ;
+;                                                        ; due to stuck port data_in ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[2],  ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[3],  ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[4]   ;
++--------------------------------------------------------+---------------------------+---------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -256,12 +287,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 145   ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 111   ;
+; Number of registers using Synchronous Clear  ; 3     ;
 ; Number of registers using Synchronous Load   ; 16    ;
-; Number of registers using Asynchronous Clear ; 110   ;
+; Number of registers using Asynchronous Clear ; 84    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 116   ;
+; Number of registers using Clock Enable       ; 82    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -271,9 +302,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SRAM_TEST|SRAM_control:inst2|DATA_SRAM[13]~reg0                  ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[6]  ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[8] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[6] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |SRAM_TEST|SRAM_control:inst2|DATA_SRAM[14]~reg0                  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 45 LEs               ; 15 LEs                 ; Yes        ; |SRAM_TEST|ECHO_GEN:inst|offset[5]                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
 
 
@@ -318,7 +350,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Oct 04 13:55:55 2021
+    Info: Processing started: Wed Oct 06 15:37:48 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SRAM_TEST -c SRAM_TEST
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file sram_control.vhd
@@ -361,6 +393,7 @@ Info (12128): Elaborating entity "ECHO_GEN" for hierarchy "ECHO_GEN:inst"
 Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(27): object "ECHO2" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(28): object "ECHO3" assigned a value but never read
 Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(29): object "ECHO4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(30): object "I_SAMPLE_OUT" assigned a value but never read
 Info (12128): Elaborating entity "lpm_constant2" for hierarchy "lpm_constant2:inst4"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component"
 Info (12130): Elaborated megafunction instantiation "lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component"
@@ -437,15 +470,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 240 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 202 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 30 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 191 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info (21061): Implemented 153 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 48 warnings
     Info: Peak virtual memory: 4650 megabytes
-    Info: Processing ended: Mon Oct 04 13:56:06 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Wed Oct 06 15:37:58 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:02
 
 

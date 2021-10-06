@@ -27,42 +27,55 @@ architecture rtl of ECHO_GEN is
 	signal ECHO2 : signed(15 downto 0);
 	signal ECHO3 : signed(15 downto 0);
 	signal ECHO4 : signed(15 downto 0);
-	--BORDE ANVÄNDA NÅGOT ANNAT?
+	signal I_SAMPLE_OUT : signed(15 downto 0); --internal version of output
 begin
 	-- Offset and RW 
-	process(clk, rstn) is begin
+	process(clk, rstn) is
+	begin
 		if rstn = '0' then
 			ECHO1 <= (others => '0');
 			ECHO2 <= (others => '0');
 			ECHO3 <= (others => '0');
 			ECHO4 <= (others => '0');
-			
+		--Vore snyggare med en "riktig" FSM och lookup-table	
 		elsif rising_edge(clk) then
 			if cntr < 50 then
-				offset <= resize(6100*(ECHO_DELAY+1)*1, offset'length); -- the first offset time decided by ECHO_DELAY 1/16 s to 1 s 
+				--ALTERNATIVT?offset <= resize(ECHO_DELAY * to_unsigned(6103*1, 15), offset'length);
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*1
+				, offset'length);
 				RW <= '1';
-				ECHO1 <= DATA_READ;
+				ECHO1 <= DATA_READ; 
+				I_SAMPLE_OUT <= SAMPLE_IN + ECHO1;
 			elsif cntr < 100 then
-				offset <= resize(6100*(ECHO_DELAY+1)*2, offset'length); -- the first offset time decided by ECHO_DELAY 2/16 s to 2 s 
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*2
+				, offset'length);
 				RW <= '1';
 				ECHO2 <= DATA_READ;
 			elsif cntr < 150 then
-				offset <= resize(6100*(ECHO_DELAY+1)*3, offset'length); -- the first offset time decided by ECHO_DELAY 3/16 s to 3 s 
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*3
+				, offset'length);
 				RW <= '1';
 				ECHO3 <= DATA_READ;
 			elsif cntr < 200 then
-				offset <= resize(6100*(ECHO_DELAY+1)*4, offset'length); -- the first offset time decided by ECHO_DELAY 4/16 s to 4 s 
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*4
+				, offset'length);
 				RW <= '1';
 				ECHO4 <= DATA_READ;
-			else
+			elsif cntr < 300 then
 				offset <= (others => '0' );
 				RW <= '0';
+			else 
+				RW <= '1';
 			end if;
 		end if;
 	end process;
 
-	DATA_WRITE <= SAMPLE_IN; -- We are not writing any other data in to SRAM.
-
+	DATA_WRITE <= SAMPLE_IN; -- We are only writing the current sample into SRAM
+	SAMPLE_OUT <= I_SAMPLE_OUT;
 	-- Muting echos not wanted decided by ECHO_NUM
 --	process(clk,ECHO_NUM) is
 --		begin
@@ -80,7 +93,5 @@ begin
 --			end if;
 --	end process;
 			
-	-- Adding all signals together	
-	SAMPLE_OUT <= SAMPLE_IN + ECHO1; -- + ECHO2 + ECHO3 + ECHO4);
 	
 end architecture;

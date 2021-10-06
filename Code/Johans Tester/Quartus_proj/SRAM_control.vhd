@@ -24,7 +24,7 @@ architecture rtl of SRAM_control is
 begin
 	--tied to vdd/ground constantly, since we dont need change these...
 	sram_ce <= '0';
-	sram_oe <= '0';
+	sram_oe <= not RW; -- output enable
 	sram_lb <= '0';
 	sram_ub <= '0';
 	
@@ -57,4 +57,18 @@ begin
 	end process;
 	
 	ADDR <= PTR - offset;
+	
+	-- we    ----__--------------------------------------
+	-- oe    ----------___-------------------------------
+	-- addr  --<AAAAW>-<AR>------------------------------
+	-- dataI zzzzzzzzzzDDDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz SRAM skriver till bussen
+	-- dataO ---<DDDD>-zzzzz-----------------------------
+	
+	
+	-- cntr  000001123344
+	-- we    -----__--------------
+	-- oe    --------________-----
+	-- addr  -----ww-r0r1r2r3-----
+	-- datI  zzzzzzzzRRzzzzzzzzzzz
+	-- datO  -----WW-zz-----------
 end architecture;
