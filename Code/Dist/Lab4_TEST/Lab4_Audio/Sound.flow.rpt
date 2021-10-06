@@ -1,5 +1,5 @@
 Flow report for Sound
-Mon Oct 04 17:08:04 2021
+Tue Oct 05 15:33:49 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 04 17:08:04 2021            ;
+; Flow Status                        ; Successful - Tue Oct 05 15:33:49 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Sound                                            ;
 ; Top-level Entity Name              ; Sound                                            ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE115F29C7                                    ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 104 / 114,480 ( < 1 % )                          ;
-;     Total combinational functions  ; 83 / 114,480 ( < 1 % )                           ;
+; Total logic elements               ; 107 / 114,480 ( < 1 % )                          ;
+;     Total combinational functions  ; 81 / 114,480 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 92 / 114,480 ( < 1 % )                           ;
 ; Total registers                    ; 92                                               ;
 ; Total pins                         ; 22 / 529 ( 4 % )                                 ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/04/2021 17:07:18 ;
+; Start date & time ; 10/05/2021 15:32:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Sound               ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 193569099818484.163336003801392       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 193569099818790.163344076908248       ; --            ; --          ; --             ;
 ; CYCLONEII_OPTIMIZATION_TECHNIQUE    ; Area                                  ; Balanced      ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (VHDL)                       ; <None>        ; --          ; --             ;
@@ -97,12 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 4639 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:16     ; 1.9                     ; 5669 MB             ; 00:00:19                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 4564 MB             ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 4684 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4520 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:37     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Synthesis      ; 00:00:08     ; 1.0                     ; 4640 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:20     ; 1.7                     ; 5658 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:07     ; 1.0                     ; 4560 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 4683 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4519 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:47     ; --                      ; --                  ; 00:00:28                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,11 +111,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MUXEN4-212       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MUXEN4-212       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MUXEN4-212       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MUXEN4-212       ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; MUXEN4-212       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
