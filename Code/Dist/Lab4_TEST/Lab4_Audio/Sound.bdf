@@ -72,6 +72,22 @@ applicable agreement for further details.
 	(annotation_block (location)(rect 1368 304 1424 320))
 )
 (pin
+	(input)
+	(rect 24 568 192 584)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Switches[3..0]" (rect 5 0 75 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 1176 256 1352 272)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -391,7 +407,7 @@ applicable agreement for further details.
 		(pt 232 32)
 		(output)
 		(text "sample_out[15..0]" (rect 0 0 88 12)(font "Arial" ))
-		(text "sample_out[15..0]" (rect 137 27 211 39)(font "Arial" ))
+		(text "sample_out[15..0]" (rect 137 27 225 39)(font "Arial" ))
 		(line (pt 232 32)(pt 216 32)(line_width 3))
 	)
 	(drawing
@@ -559,6 +575,21 @@ applicable agreement for further details.
 	(text "LADC[15..0]" (rect 536 496 597 508)(font "Arial" ))
 	(pt 560 512)
 	(pt 536 512)
+	(bus)
+)
+(connector
+	(pt 192 576)
+	(pt 200 576)
+	(bus)
+)
+(connector
+	(pt 256 328)
+	(pt 200 328)
+	(bus)
+)
+(connector
+	(pt 200 328)
+	(pt 200 576)
 	(bus)
 )
 (junction (pt 192 296))
