@@ -1,5 +1,5 @@
 Flow report for Sound_Project
-Mon Oct 04 11:01:07 2021
+Fri Oct 08 12:29:25 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Flow Failed - Mon Oct 04 11:01:07 2021           ;
+; Flow Status                        ; Flow Failed - Fri Oct 08 12:29:24 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Sound_Project                                    ;
 ; Top-level Entity Name              ; Sound_Project                                    ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/04/2021 11:01:06 ;
+; Start date & time ; 10/08/2021 12:29:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Sound_Project       ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id           ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID               ; 193569099819223.163333806606560 ; --            ; --          ; --                   ;
+; COMPILER_SIGNATURE_ID               ; 193569099819378.163368896306640 ; --            ; --          ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Design Compiler                 ; <None>        ; --          ; --                   ;
 ; EDA_INPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_design_synthesis ;
 ; EDA_INPUT_VCC_NAME                  ; Vdd                             ; --            ; --          ; eda_design_synthesis ;
@@ -98,7 +98,7 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
 ; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -108,7 +108,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; MUXEN4-207       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; TRANSISTOR1-214  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 

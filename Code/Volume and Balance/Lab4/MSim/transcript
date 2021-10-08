@@ -1,0 +1,21 @@
+do wave.do
+vsim work.tb_audio
+# vsim work.tb_audio 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+do wave.do
+run -a
+# ** Note: mclk: OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: bclk:OK (320 ns)
+#    Time: 1480 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: adclrc:OK (20480 ns)
+#    Time: 41 us  Iteration: 2  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
