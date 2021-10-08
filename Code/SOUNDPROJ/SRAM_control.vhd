@@ -22,6 +22,7 @@ end entity;
 architecture rtl of SRAM_control is
 	signal PTR : unsigned(19 downto 0) ; -- current adress in memory
 	signal lrsel_old, lrsel_change : std_logic := '0';
+	signal sec_old, sec_change : std_logic := '0';
 begin
 	--tied to vdd/ground constantly, since we dont need change these...
 	sram_ce <= '0';
@@ -29,17 +30,18 @@ begin
 	sram_lb <= '0';
 	sram_ub <= '0';
 	
-	sram_we <= RW;
-	
 	process(clk,rstn) is begin
 		if rstn = '0' then
 			
 		elsif rising_edge(clk) then
 			if RW = '1' then
 				DATA_ECHO_OUT <= DATA_SRAM;
+				DATA_SRAM <= (others=>'Z');
 			else
 				DATA_SRAM <= DATA_ECHO_IN;
 			end if;
+			sram_we <= RW;
+			--sram_we <= seccount(0);
 		end if;
 	end process;
 	
@@ -56,10 +58,17 @@ begin
 --			end if;
 --		end if;	
 --	end process;
-	process(clk) begin
-		if rising_edge(clk) then
-			PTR <= resize(seccount(1 downto 0),20);
+	process(clk,rstn) is
+	begin
+		if rstn = '0' then
+			PTR <= (others =>'0');
+		elsif rising_edge(clk) then
+			sec_old <= seccount(0);
+			sec_change <= sec_old xor seccount(0);
+			if sec_change = '1' then
+				PTR <= PTR + 1;
+				ADDR <= PTR - offset;
+			end if;
 		end if;
 	end process;
-	ADDR <= PTR - offset;
 end architecture;

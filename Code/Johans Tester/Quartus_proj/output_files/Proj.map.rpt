@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proj
-Wed Oct 06 19:03:11 2021
+Fri Oct 08 14:46:08 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -46,15 +46,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 06 19:03:11 2021            ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 08 14:46:08 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 192                                              ;
-;     Total combinational functions  ; 127                                              ;
-;     Dedicated logic registers      ; 153                                              ;
-; Total registers                    ; 153                                              ;
+; Total logic elements               ; 233                                              ;
+;     Total combinational functions  ; 150                                              ;
+;     Dedicated logic registers      ; 186                                              ;
+; Total registers                    ; 186                                              ;
 ; Total pins                         ; 149                                              ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -190,28 +190,28 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 192       ;
+; Estimated Total logic elements              ; 233       ;
 ;                                             ;           ;
-; Total combinational functions               ; 127       ;
+; Total combinational functions               ; 150       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 50        ;
-;     -- 3 input functions                    ; 41        ;
-;     -- <=2 input functions                  ; 36        ;
+;     -- 4 input functions                    ; 59        ;
+;     -- 3 input functions                    ; 40        ;
+;     -- <=2 input functions                  ; 51        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 86        ;
+;     -- normal mode                          ; 109       ;
 ;     -- arithmetic mode                      ; 41        ;
 ;                                             ;           ;
-; Total registers                             ; 153       ;
-;     -- Dedicated logic registers            ; 153       ;
+; Total registers                             ; 186       ;
+;     -- Dedicated logic registers            ; 186       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 149       ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 153       ;
-; Total fan-out                               ; 1171      ;
-; Average fan-out                             ; 1.97      ;
+; Maximum fan-out                             ; 186       ;
+; Total fan-out                               ; 1317      ;
+; Average fan-out                             ; 2.03      ;
 +---------------------------------------------+-----------+
 
 
@@ -220,13 +220,14 @@ applicable agreement for further details.
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
-; |Proj                              ; 127 (0)           ; 153 (0)      ; 0           ; 0            ; 0       ; 0         ; 149  ; 0            ; |Proj                                           ; work         ;
-;    |ECHO_GEN:inst2|                ; 23 (23)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2                            ; work         ;
-;    |SRAM_control:inst3|            ; 55 (55)           ; 54 (54)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SRAM_control:inst3                        ; work         ;
+; |Proj                              ; 150 (0)           ; 186 (0)      ; 0           ; 0            ; 0       ; 0         ; 149  ; 0            ; |Proj                                           ; work         ;
+;    |ECHO_GEN:inst2|                ; 31 (31)           ; 41 (41)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2                            ; work         ;
+;    |SRAM_control:inst3|            ; 54 (54)           ; 71 (71)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SRAM_control:inst3                        ; work         ;
 ;    |SndDriver:inst|                ; 49 (1)            ; 74 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst                            ; work         ;
-;       |channel_mod:b2v_inst_left|  ; 19 (19)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left  ; work         ;
-;       |channel_mod:b2v_inst_right| ; 19 (19)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right ; work         ;
+;       |channel_mod:b2v_inst_left|  ; 20 (20)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left  ; work         ;
+;       |channel_mod:b2v_inst_right| ; 18 (18)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right ; work         ;
 ;       |ctrl:b2v_inst_ctrl|         ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|ctrl:b2v_inst_ctrl         ; work         ;
+;    |my_mux:inst1|                  ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|my_mux:inst1                              ; work         ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -259,26 +260,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 153   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 16    ;
+; Total registers                              ; 186   ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 110   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 124   ;
+; Number of registers using Clock Enable       ; 173   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left|TXReg[5]  ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right|TXReg[6] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Proj|SRAM_control:inst3|DATA_SRAM[12]~reg0              ;
-; 6:1                ; 15 bits   ; 60 LEs        ; 45 LEs               ; 15 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|offset[15]                          ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left|TXReg[15]  ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right|TXReg[15] ;
+; 8:1                ; 15 bits   ; 75 LEs        ; 60 LEs               ; 15 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|offset[13]                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------+
@@ -309,7 +309,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -319,7 +319,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Oct 06 19:03:04 2021
+    Info: Processing started: Fri Oct 08 14:46:00 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proj -c Proj
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file snddriver.vhd
@@ -365,9 +365,9 @@ Warning (12125): Using design file echo_gen.vhd, which is not specified as a des
     Info (12022): Found design unit 1: ECHO_GEN-rtl
     Info (12023): Found entity 1: ECHO_GEN
 Info (12128): Elaborating entity "ECHO_GEN" for hierarchy "ECHO_GEN:inst2"
-Warning (10036): Verilog HDL or VHDL warning at echo_gen.vhd(26): object "ECHO1" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at echo_gen.vhd(27): object "ECHO2" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at echo_gen.vhd(28): object "ECHO3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at echo_gen.vhd(28): object "ECHO1" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at echo_gen.vhd(29): object "ECHO2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at echo_gen.vhd(30): object "ECHO3" assigned a value but never read
 Info (12128): Elaborating entity "lpm_constant0" for hierarchy "lpm_constant0:inst4"
 Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
 Info (12130): Elaborated megafunction instantiation "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
@@ -384,57 +384,6 @@ Warning (12125): Using design file group_no.vhd, which is not specified as a des
     Info (12022): Found design unit 1: group_no-RTL
     Info (12023): Found entity 1: group_no
 Info (12128): Elaborating entity "group_no" for hierarchy "group_no:inst5"
-Warning (13034): The following nodes have both tri-state and non-tri-state drivers
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[15]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[14]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[13]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[12]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[11]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[10]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[9]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[8]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[7]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[6]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[5]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[4]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[3]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[2]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[1]" and its non-tri-state driver.
-    Warning (13035): Inserted always-enabled tri-state buffer between "sram_data[0]" and its non-tri-state driver.
-Info (13060): One or more bidirs are fed by always enabled tri-state buffers
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[15]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[14]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[13]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[12]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[11]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[10]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[9]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[8]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[7]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[6]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[5]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[4]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[3]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[2]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[1]" is moved to its source
-    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "sram_data[0]" is moved to its source
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
-    Warning (13010): Node "sram_data~synth"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "hsync" is stuck at GND
     Warning (13410): Pin "vsync" is stuck at GND
@@ -442,6 +391,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "vga_blank" is stuck at GND
     Warning (13410): Pin "vga_sync" is stuck at GND
     Warning (13410): Pin "sram_ce" is stuck at GND
+    Warning (13410): Pin "sram_oe" is stuck at GND
     Warning (13410): Pin "sram_lb" is stuck at GND
     Warning (13410): Pin "sram_ub" is stuck at GND
     Warning (13410): Pin "HEX0[0]" is stuck at GND
@@ -543,15 +493,15 @@ Warning (21074): Design contains 23 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]"
     Warning (15610): No output dependent on input pin "SW[16]"
     Warning (15610): No output dependent on input pin "SW[17]"
-Info (21057): Implemented 343 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 384 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
     Info (21059): Implemented 107 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 194 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 165 warnings
-    Info: Peak virtual memory: 4660 megabytes
-    Info: Processing ended: Wed Oct 06 19:03:11 2021
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 235 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 132 warnings
+    Info: Peak virtual memory: 4662 megabytes
+    Info: Processing ended: Fri Oct 08 14:46:08 2021
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:03
 
 

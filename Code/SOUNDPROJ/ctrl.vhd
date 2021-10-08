@@ -19,6 +19,6 @@ begin
 			cntr <= cntr + 1;
 		end if;
 	end process;
-	seccount <= cntr(26 downto 24);
+	seccount <= cntr(25 downto 23);
 	
 end architecture;

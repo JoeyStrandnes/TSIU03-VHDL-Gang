@@ -833,15 +833,6 @@ applicable agreement for further details.
 	(pt 296 120)
 )
 (connector
-	(pt 224 136)
-	(pt 232 136)
-)
-(connector
-	(text "rstn" (rect 272 120 290 132)(font "Arial" ))
-	(pt 232 136)
-	(pt 296 136)
-)
-(connector
 	(text "clk" (rect 498 448 512 460)(font "Arial" ))
 	(pt 528 464)
 	(pt 488 464)
@@ -860,21 +851,6 @@ applicable agreement for further details.
 	(text "rstn" (rect 266 320 284 332)(font "Arial" ))
 	(pt 296 336)
 	(pt 256 336)
-)
-(connector
-	(pt 472 336)
-	(pt 496 336)
-	(bus)
-)
-(connector
-	(pt 1112 8)
-	(pt 1120 8)
-	(bus)
-)
-(connector
-	(pt 1120 8)
-	(pt 1208 8)
-	(bus)
 )
 (connector
 	(pt 848 464)
@@ -1004,5 +980,25 @@ applicable agreement for further details.
 	(pt 712 552)
 	(bus)
 )
-(junction (pt 232 136))
-(junction (pt 1120 8))
+(connector
+	(text "seccount[2..0]" (rect 472 320 542 332)(font "Arial" ))
+	(pt 472 336)
+	(pt 496 336)
+	(bus)
+)
+(connector
+	(text "seccount[2..0]" (rect 488 544 558 556)(font "Arial" ))
+	(pt 528 560)
+	(pt 488 560)
+	(bus)
+)
+(connector
+	(text "rstn" (rect 242 120 260 132)(font "Arial" ))
+	(pt 296 136)
+	(pt 232 136)
+)
+(connector
+	(pt 1120 8)
+	(pt 1208 8)
+	(bus)
+)
