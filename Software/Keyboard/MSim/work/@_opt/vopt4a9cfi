@@ -1,0 +1,82 @@
+m255
+K3
+13
+cModel Technology
+dC:\Program Files\MentorGraphics\examples
+T_opt
+VP4anz^BYa@H[m>=UUM8c72
+04 10 3 work lab2_kb_tb sim 1
+=5-b00cd16f25bc-6139ff5a-13-81c
+o-quiet -auto_acc_if_foreign -work work
+n@_opt
+OL;O;10.1b;51
+Elab2_kb
+Z0 w1631190868
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dX:\TSIU03\Lab2\MSim
+Z4 8X:/TSIU03/Lab2/Lab2_KB.vhd
+Z5 FX:/TSIU03/Lab2/Lab2_KB.vhd
+l0
+L4
+V;LK]zWQN=WD2Bgiigd;n72
+Z6 OL;C;10.1b;51
+32
+Z7 !s108 1631190868.693000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab2/Lab2_KB.vhd|
+Z9 !s107 X:/TSIU03/Lab2/Lab2_KB.vhd|
+Z10 o-work work -2002 -explicit
+Z11 tExplicit 1
+!s100 T>R>0B;PSEV:c?9iK>hfk2
+!i10b 1
+Artl
+R1
+R2
+DEx4 work 7 lab2_kb 0 22 ;LK]zWQN=WD2Bgiigd;n72
+l16
+L12
+VnkR<g1[HOAlJAo@blkkb;2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 mG4W^Rh:L7nY>BoohR<kE1
+!i10b 1
+Elab2_kb_tb
+w0
+R1
+R2
+R3
+Z12 8X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd
+Z13 FX:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd
+l0
+L5
+VX9m=81ijAR>gQMEb:AF=a2
+R6
+32
+Z14 !s108 1631190636.990000
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd|
+Z16 !s107 X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd|
+R10
+R11
+!s100 c?:>1Aj@En=RL_Gzi96QW0
+!i10b 1
+Asim
+R1
+R2
+DEx4 work 10 lab2_kb_tb 0 22 X9m=81ijAR>gQMEb:AF=a2
+l27
+L8
+V4zUacRAG1aZ9MbK1BG1bN3
+R6
+32
+R14
+R15
+R16
+R10
+R11
+!s100 FzX@TeEo@^ajRE<R2RAlh1
+!i10b 1

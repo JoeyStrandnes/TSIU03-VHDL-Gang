@@ -1,0 +1,92 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Program Files\MentorGraphics\examples
+T_opt
+VP4anz^BYa@H[m>=UUM8c72
+04 10 3 work lab2_kb_tb sim 1
+=5-b00cd16f25bc-6139ff5a-13-81c
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1b;51
+Z3 dC:\Program Files\MentorGraphics\examples
+T_opt1
+V_a?^EG`QjMId:dWKONPUI0
+04 7 3 work lab2_kb rtl 1
+=94-b00cd16f29a3-616071d7-2b8-3934
+R1
+n@_opt1
+R2
+Elab2_kb
+Z4 w1633710524
+Z5 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dX:\TSIU03\Lab2\MSim
+Z9 8X:/TSIU03/Lab2/Lab2_KB.vhd
+Z10 FX:/TSIU03/Lab2/Lab2_KB.vhd
+l0
+L5
+VLJP5QMQ^DU3eT_4m30cli3
+Z11 OL;C;10.1b;51
+32
+Z12 !s108 1633710526.651000
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab2/Lab2_KB.vhd|
+Z14 !s107 X:/TSIU03/Lab2/Lab2_KB.vhd|
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1
+!s100 05DEHNH7nmGVEZK^zDK4F3
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 7 lab2_kb 0 22 LJP5QMQ^DU3eT_4m30cli3
+l23
+L13
+V?d9k[1_[Yz4WmoXbWEjzR2
+R11
+32
+R12
+R13
+R14
+R15
+R16
+!s100 cUl@BiAPORG8b`XndkcW13
+!i10b 1
+Elab2_kb_tb
+w0
+R6
+R7
+R8
+Z17 8X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd
+Z18 FX:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd
+l0
+L5
+VX9m=81ijAR>gQMEb:AF=a2
+R11
+32
+Z19 !s108 1633701547.558000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd|
+Z21 !s107 X:/TSIU03/Lab2/MSim/Lab2_KB_TB.vhd|
+R15
+R16
+!s100 c?:>1Aj@En=RL_Gzi96QW0
+!i10b 1
+Asim
+R6
+R7
+DEx4 work 10 lab2_kb_tb 0 22 X9m=81ijAR>gQMEb:AF=a2
+l27
+L8
+V4zUacRAG1aZ9MbK1BG1bN3
+R11
+32
+R19
+R20
+R21
+R15
+R16
+!s100 FzX@TeEo@^ajRE<R2RAlh1
+!i10b 1

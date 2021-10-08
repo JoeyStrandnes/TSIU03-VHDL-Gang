@@ -1,0 +1,68 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Lab2_KB is
+	port(rstn,clk,PS2_CLK,PS2_DAT : in std_logic ;
+		  HEX0 : out std_logic_vector(6 downto 0) ;
+	     LEDR : out std_logic_vector(7 downto 0) ;
+		  HEX7 : out std_logic_vector(6 downto 0) ;
+		  HEX6 : out std_logic_vector(6 downto 0));
+end entity;
+
+architecture rtl of Lab2_KB is
+--Declare signals here
+	signal PS2_CLK2,PS2_CLK_old,PS2_DAT2,detected_fall : std_logic;
+	signal shiftreg : std_logic_vector(9 downto 0);
+begin
+
+	--Process 1: syncronize the input
+	p1 : process(clk)
+	begin
+		if rising_edge(clk) then
+		--Assign input DHFFs here(d-vippa)
+			PS2_DAT2 <= PS2_DAT;
+			PS2_CLK2 <= PS2_CLK;
+			PS2_CLK_old <= PS2_CLK2;
+
+		end if; --rising edge(clk)
+	end process;
+
+
+	detected_fall <= ( PS2_CLK2) AND not PS2_CLK_old;
+
+	--Process 2: Handle shiftreg:
+	p2 : process(clk,rstn)
+	begin
+		if rstn = '0' then
+			shiftreg <= (others => '0');
+		elsif rising_edge(clk) then
+			if detected_fall = '1' then
+				shiftreg(8 downto 0) <= shiftreg(9 downto 1);
+				shiftreg(9) <= PS2_DAT2;
+			end if;
+		end if;
+	end process;
+
+	LEDR <= shiftreg(7 downto 0);
+
+	p3 : process(shiftreg(7 downto 0))
+	begin
+		case shiftreg(7 downto 0) is
+ 			when "00010110" =>	HEX0 <= "1111001"; --scancode for no.1 to 7-seg
+			when "00011110" =>	HEX0 <= "0100100"; --scancode for no.2 to 7-seg
+			when "00100110" =>	HEX0 <= "0110000"; --scancode for no.3 to 7-seg
+			when "00100101" =>	HEX0 <= "0011001"; --scancode for no.4 to 7-seg
+			when "00101110" =>	HEX0 <= "0010010"; --scancode for no.5 to 7-seg 
+			when "00110110" =>	HEX0 <= "0000010"; --scancode for no.6 to 7-seg
+			when "00111101" =>	HEX0 <= "1111000"; --scancode for no.7 to 7-seg 
+			when "00111110" =>	HEX0 <= "0000000"; --scancode for no.8 to 7-seg 
+			when "01000110" =>	HEX0 <= "0010000"; --scancode for no.9 to 7-seg
+			when "01000101" =>	HEX0 <= "1000000"; --scancode for no.0 to 7-seg
+			when others => HEX0 <= "0000110";  --when not 0-9 send E
+		end case;
+	end process;
+
+	HEX7 <= "1000000"; --"0"
+	HEX6 <= "0010000"; --"9"
+end architecture;
+
