@@ -1,5 +1,5 @@
 Fitter report for Proj
-Mon Oct 04 16:35:36 2021
+Fri Oct 08 12:55:33 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -11,38 +11,39 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
   3. Fitter Settings
   4. Parallel Compilation
   5. I/O Assignment Warnings
-  6. Ignored Assignments
-  7. Incremental Compilation Preservation Summary
-  8. Incremental Compilation Partition Settings
-  9. Incremental Compilation Placement Preservation
- 10. Pin-Out File
- 11. Fitter Resource Usage Summary
- 12. Fitter Partition Statistics
- 13. Input Pins
- 14. Output Pins
- 15. Bidir Pins
- 16. Dual Purpose and Dedicated Pins
- 17. I/O Bank Usage
- 18. All Package Pins
- 19. Fitter Resource Utilization by Entity
- 20. Delay Chain Summary
- 21. Pad To Core Delay Chain Fanout
- 22. Control Signals
- 23. Global & Other Fast Signals
- 24. Non-Global High Fan-Out Signals
- 25. Other Routing Usage Summary
- 26. LAB Logic Elements
- 27. LAB-wide Signals
- 28. LAB Signals Sourced
- 29. LAB Signals Sourced Out
- 30. LAB Distinct Inputs
- 31. I/O Rules Summary
- 32. I/O Rules Details
- 33. I/O Rules Matrix
- 34. Fitter Device Options
- 35. Operating Settings and Conditions
- 36. Fitter Messages
- 37. Fitter Suppressed Messages
+  6. Fitter Netlist Optimizations
+  7. Ignored Assignments
+  8. Incremental Compilation Preservation Summary
+  9. Incremental Compilation Partition Settings
+ 10. Incremental Compilation Placement Preservation
+ 11. Pin-Out File
+ 12. Fitter Resource Usage Summary
+ 13. Fitter Partition Statistics
+ 14. Input Pins
+ 15. Output Pins
+ 16. Bidir Pins
+ 17. Dual Purpose and Dedicated Pins
+ 18. I/O Bank Usage
+ 19. All Package Pins
+ 20. Fitter Resource Utilization by Entity
+ 21. Delay Chain Summary
+ 22. Pad To Core Delay Chain Fanout
+ 23. Control Signals
+ 24. Global & Other Fast Signals
+ 25. Non-Global High Fan-Out Signals
+ 26. Other Routing Usage Summary
+ 27. LAB Logic Elements
+ 28. LAB-wide Signals
+ 29. LAB Signals Sourced
+ 30. LAB Signals Sourced Out
+ 31. LAB Distinct Inputs
+ 32. I/O Rules Summary
+ 33. I/O Rules Details
+ 34. I/O Rules Matrix
+ 35. Fitter Device Options
+ 36. Operating Settings and Conditions
+ 37. Fitter Messages
+ 38. Fitter Suppressed Messages
 
 
 
@@ -68,17 +69,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 04 16:35:36 2021            ;
+; Fitter Status                      ; Successful - Fri Oct 08 12:55:33 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE115F29C7                                    ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 39 / 114,480 ( < 1 % )                           ;
-;     Total combinational functions  ; 39 / 114,480 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 33 / 114,480 ( < 1 % )                           ;
-; Total registers                    ; 33                                               ;
+; Total logic elements               ; 77 / 114,480 ( < 1 % )                           ;
+;     Total combinational functions  ; 75 / 114,480 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 71 / 114,480 ( < 1 % )                           ;
+; Total registers                    ; 91                                               ;
 ; Total pins                         ; 135 / 529 ( 26 % )                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                            ;
@@ -154,12 +155,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 6           ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.56        ;
+; Average used               ; 1.48        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;  11.1%      ;
+;     Processors 2-6         ;   9.5%      ;
 +----------------------------+-------------+
 
 
@@ -280,6 +281,34 @@ applicable agreement for further details.
 +---------------+------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Netlist Optimizations                                                                                                                                                         ;
++----------------------------+-----------------+------------------+---------------------+-----------+----------------+----------------------+------------------+-----------------------+
+; Node                       ; Action          ; Operation        ; Reason              ; Node Port ; Node Port Name ; Destination Node     ; Destination Port ; Destination Port Name ;
++----------------------------+-----------------+------------------+---------------------+-----------+----------------+----------------------+------------------+-----------------------+
+; SRAM_control:inst|ADDR[0]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[0]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[1]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[1]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[2]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[2]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[3]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[3]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[4]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[4]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[5]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[5]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[6]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[6]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[7]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[7]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[8]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[8]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[9]  ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[9]~output  ; I                ;                       ;
+; SRAM_control:inst|ADDR[10] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[10]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[11] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[11]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[12] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[12]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[13] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[13]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[14] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[14]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[15] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[15]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[16] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[16]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[17] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[17]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[18] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[18]~output ; I                ;                       ;
+; SRAM_control:inst|ADDR[19] ; Packed Register ; Register Packing ; Timing optimization ; Q         ;                ; sram_addr[19]~output ; I                ;                       ;
++----------------------------+-----------------+------------------+---------------------+-----------+----------------+----------------------+------------------+-----------------------+
+
+
 +----------------------------------------------------------------------------------------+
 ; Ignored Assignments                                                                    ;
 +----------+----------------+--------------+------------+---------------+----------------+
@@ -343,8 +372,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 370 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 370 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 464 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 464 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -367,7 +396,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 360     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 454     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 10      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -383,26 +412,26 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 39 / 114,480 ( < 1 % ) ;
+; Total logic elements                        ; 77 / 114,480 ( < 1 % ) ;
 ;     -- Combinational with no register       ; 6                      ;
-;     -- Register only                        ; 0                      ;
-;     -- Combinational with a register        ; 33                     ;
+;     -- Register only                        ; 2                      ;
+;     -- Combinational with a register        ; 69                     ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 2                      ;
-;     -- 3 input functions                    ; 9                      ;
-;     -- <=2 input functions                  ; 28                     ;
-;     -- Register only                        ; 0                      ;
+;     -- 4 input functions                    ; 0                      ;
+;     -- 3 input functions                    ; 10                     ;
+;     -- <=2 input functions                  ; 65                     ;
+;     -- Register only                        ; 2                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 14                     ;
-;     -- arithmetic mode                      ; 25                     ;
+;     -- normal mode                          ; 33                     ;
+;     -- arithmetic mode                      ; 42                     ;
 ;                                             ;                        ;
-; Total registers*                            ; 33 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 33 / 114,480 ( < 1 % ) ;
-;     -- I/O registers                        ; 0 / 2,573 ( 0 % )      ;
+; Total registers*                            ; 91 / 117,053 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 71 / 114,480 ( < 1 % ) ;
+;     -- I/O registers                        ; 20 / 2,573 ( < 1 % )   ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 3 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 6 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 135 / 529 ( 26 % )     ;
 ;     -- Clock pins                           ; 1 / 7 ( 14 % )         ;
@@ -420,11 +449,11 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%           ;
-; Maximum fan-out                             ; 33                     ;
-; Highest non-global fan-out                  ; 30                     ;
-; Total fan-out                               ; 355                    ;
-; Average fan-out                             ; 0.96                   ;
+; Peak interconnect usage (total/H/V)         ; 1% / 1% / 1%           ;
+; Maximum fan-out                             ; 91                     ;
+; Highest non-global fan-out                  ; 70                     ;
+; Total fan-out                               ; 639                    ;
+; Average fan-out                             ; 1.38                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -437,25 +466,26 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 39 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total logic elements                        ; 77 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;     -- Combinational with no register       ; 6                     ; 0                              ;
-;     -- Register only                        ; 0                     ; 0                              ;
-;     -- Combinational with a register        ; 33                    ; 0                              ;
+;     -- Register only                        ; 2                     ; 0                              ;
+;     -- Combinational with a register        ; 69                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 2                     ; 0                              ;
-;     -- 3 input functions                    ; 9                     ; 0                              ;
-;     -- <=2 input functions                  ; 28                    ; 0                              ;
-;     -- Register only                        ; 0                     ; 0                              ;
+;     -- 4 input functions                    ; 0                     ; 0                              ;
+;     -- 3 input functions                    ; 10                    ; 0                              ;
+;     -- <=2 input functions                  ; 65                    ; 0                              ;
+;     -- Register only                        ; 2                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 14                    ; 0                              ;
-;     -- arithmetic mode                      ; 25                    ; 0                              ;
+;     -- normal mode                          ; 33                    ; 0                              ;
+;     -- arithmetic mode                      ; 42                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 33                    ; 0                              ;
-;     -- Dedicated logic registers            ; 33 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 91                    ; 0                              ;
+;     -- Dedicated logic registers            ; 71 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- I/O registers                        ; 40                    ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 3 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 6 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 135                   ; 0                              ;
@@ -463,6 +493,7 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
 ; Clock control block                         ; 1 / 24 ( 4 % )        ; 0 / 24 ( 0 % )                 ;
+; Double Data Rate I/O output circuitry       ; 20 / 516 ( 3 % )      ; 0 / 516 ( 0 % )                ;
 ;                                             ;                       ;                                ;
 ; Connections                                 ;                       ;                                ;
 ;     -- Input Connections                    ; 16                    ; 0                              ;
@@ -471,8 +502,8 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 350                   ; 5                              ;
-;     -- Registered Connections               ; 68                    ; 0                              ;
+;     -- Total Connections                    ; 634                   ; 5                              ;
+;     -- Registered Connections               ; 179                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 32                    ; 0                              ;
@@ -504,7 +535,7 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; Name    ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; KEY0    ; M23   ; 6        ; 115          ; 40           ; 7            ; 30                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; KEY0    ; M23   ; 6        ; 115          ; 40           ; 7            ; 70                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; KEY1    ; M21   ; 6        ; 115          ; 53           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; KEY2    ; N21   ; 6        ; 115          ; 42           ; 14           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; KEY3    ; R24   ; 5        ; 115          ; 35           ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
@@ -529,7 +560,7 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 ; SW[8]   ; AC25  ; 5        ; 115          ; 4            ; 21           ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; SW[9]   ; AB25  ; 5        ; 115          ; 16           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 ; adcdat  ; D2    ; 1        ; 0            ; 68           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
-; clk     ; Y2    ; 2        ; 0            ; 36           ; 14           ; 33                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
+; clk     ; Y2    ; 2        ; 0            ; 36           ; 14           ; 91                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -578,26 +609,26 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 ; daclrc        ; E3    ; 1        ; 0            ; 66           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; hsync         ; G13   ; 8        ; 38           ; 73           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; mclk          ; E1    ; 1        ; 0            ; 61           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[0]  ; AB7   ; 3        ; 16           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[10] ; AF2   ; 2        ; 0            ; 6            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[11] ; AD3   ; 2        ; 0            ; 22           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[12] ; AB4   ; 2        ; 0            ; 8            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[13] ; AC3   ; 2        ; 0            ; 23           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[14] ; AA4   ; 2        ; 0            ; 19           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[15] ; AB11  ; 3        ; 27           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[16] ; AC11  ; 3        ; 49           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[17] ; AB9   ; 3        ; 11           ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[18] ; AB8   ; 3        ; 11           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[19] ; T8    ; 2        ; 0            ; 20           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[1]  ; AD7   ; 3        ; 3            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[2]  ; AE7   ; 3        ; 20           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[3]  ; AC7   ; 3        ; 9            ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[4]  ; AB6   ; 2        ; 0            ; 4            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[5]  ; AE6   ; 3        ; 1            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[6]  ; AB5   ; 2        ; 0            ; 4            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[7]  ; AC5   ; 2        ; 0            ; 5            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[8]  ; AF5   ; 3        ; 5            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; sram_addr[9]  ; T7    ; 2        ; 0            ; 31           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[0]  ; AB7   ; 3        ; 16           ; 0            ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[10] ; AF2   ; 2        ; 0            ; 6            ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[11] ; AD3   ; 2        ; 0            ; 22           ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[12] ; AB4   ; 2        ; 0            ; 8            ; 21           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[13] ; AC3   ; 2        ; 0            ; 23           ; 21           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[14] ; AA4   ; 2        ; 0            ; 19           ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[15] ; AB11  ; 3        ; 27           ; 0            ; 7            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[16] ; AC11  ; 3        ; 49           ; 0            ; 7            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[17] ; AB9   ; 3        ; 11           ; 0            ; 7            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[18] ; AB8   ; 3        ; 11           ; 0            ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[19] ; T8    ; 2        ; 0            ; 20           ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[1]  ; AD7   ; 3        ; 3            ; 0            ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[2]  ; AE7   ; 3        ; 20           ; 0            ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[3]  ; AC7   ; 3        ; 9            ; 0            ; 0            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[4]  ; AB6   ; 2        ; 0            ; 4            ; 7            ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[5]  ; AE6   ; 3        ; 1            ; 0            ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[6]  ; AB5   ; 2        ; 0            ; 4            ; 21           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[7]  ; AC5   ; 2        ; 0            ; 5            ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[8]  ; AF5   ; 3        ; 5            ; 0            ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; sram_addr[9]  ; T7    ; 2        ; 0            ; 31           ; 14           ; yes             ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; sram_ce       ; AF8   ; 3        ; 23           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; sram_lb       ; AD4   ; 3        ; 1            ; 0            ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; sram_oe       ; AD5   ; 3        ; 1            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
@@ -634,28 +665,28 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 +---------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Bidir Pins                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+--------------------+---------------------------+----------------------+------+----------------------+---------------------+
-; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Output Termination ; Termination Control Block ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
-+---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+--------------------+---------------------------+----------------------+------+----------------------+---------------------+
-; sram_data[0]  ; AH3   ; 3        ; 5            ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[10] ; AE2   ; 2        ; 0            ; 17           ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[11] ; AE1   ; 2        ; 0            ; 16           ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[12] ; AE3   ; 2        ; 0            ; 7            ; 7            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[13] ; AE4   ; 3        ; 3            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[14] ; AF3   ; 3        ; 7            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[15] ; AG3   ; 3        ; 3            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[1]  ; AF4   ; 3        ; 1            ; 0            ; 0            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[2]  ; AG4   ; 3        ; 9            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[3]  ; AH4   ; 3        ; 9            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[4]  ; AF6   ; 3        ; 7            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[5]  ; AG6   ; 3        ; 11           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[6]  ; AH6   ; 3        ; 11           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[7]  ; AF7   ; 3        ; 20           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[8]  ; AD1   ; 2        ; 0            ; 21           ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-; sram_data[9]  ; AD2   ; 2        ; 0            ; 22           ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; -                    ; -                   ;
-+---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+--------------------+---------------------------+----------------------+------+----------------------+---------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Bidir Pins                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
++---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+--------------------+---------------------------+----------------------+------+----------------------------------------------+---------------------+
+; Name          ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Output Termination ; Termination Control Block ; Location assigned by ; Load ; Output Enable Source                         ; Output Enable Group ;
++---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+--------------------+---------------------------+----------------------+------+----------------------------------------------+---------------------+
+; sram_data[0]  ; AH3   ; 3        ; 5            ; 0            ; 7            ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[0]~en (inverted) ; -                   ;
+; sram_data[10] ; AE2   ; 2        ; 0            ; 17           ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[10]~en           ; -                   ;
+; sram_data[11] ; AE1   ; 2        ; 0            ; 16           ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[11]~en           ; -                   ;
+; sram_data[12] ; AE3   ; 2        ; 0            ; 7            ; 7            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[12]~en           ; -                   ;
+; sram_data[13] ; AE4   ; 3        ; 3            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[13]~en           ; -                   ;
+; sram_data[14] ; AF3   ; 3        ; 7            ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[14]~en           ; -                   ;
+; sram_data[15] ; AG3   ; 3        ; 3            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[15]~en           ; -                   ;
+; sram_data[1]  ; AF4   ; 3        ; 1            ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[1]~en (inverted) ; -                   ;
+; sram_data[2]  ; AG4   ; 3        ; 9            ; 0            ; 21           ; 1                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; no         ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[2]~en (inverted) ; -                   ;
+; sram_data[3]  ; AH4   ; 3        ; 9            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[3]~en            ; -                   ;
+; sram_data[4]  ; AF6   ; 3        ; 7            ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[4]~en            ; -                   ;
+; sram_data[5]  ; AG6   ; 3        ; 11           ; 0            ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[5]~en            ; -                   ;
+; sram_data[6]  ; AH6   ; 3        ; 11           ; 0            ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[6]~en            ; -                   ;
+; sram_data[7]  ; AF7   ; 3        ; 20           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[7]~en            ; -                   ;
+; sram_data[8]  ; AD1   ; 2        ; 0            ; 21           ; 14           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[8]~en            ; -                   ;
+; sram_data[9]  ; AD2   ; 2        ; 0            ; 22           ; 21           ; 0                     ; 0                  ; no     ; no             ; no              ; no                     ; no            ; 2         ; yes             ; yes        ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off                ; --                        ; User                 ; 0 pF ; SRAM_control:inst|DATA_SRAM[9]~en            ; -                   ;
++---------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+------------------------+---------------+-----------+-----------------+------------+----------+--------------+--------------+------------------+--------------------+---------------------------+----------------------+------+----------------------------------------------+---------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------+
@@ -1495,160 +1526,161 @@ The pin-out file can be found in X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/outpu
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                               ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name     ; Library Name ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------+--------------+
-; |Proj                      ; 39 (0)      ; 33 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 135  ; 0            ; 6 (0)        ; 0 (0)             ; 33 (0)           ; |Proj                   ; work         ;
-;    |SRAM_control:inst|     ; 8 (8)       ; 6 (6)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 6 (6)            ; |Proj|SRAM_control:inst ; work         ;
-;    |ctrl:inst5|            ; 27 (27)     ; 27 (27)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 27 (27)          ; |Proj|ctrl:inst5        ; work         ;
-;    |group_no:inst4|        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 3 (3)            ; |Proj|group_no:inst4    ; work         ;
-+----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name        ; Library Name ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------+--------------+
+; |Proj                      ; 77 (0)      ; 71 (0)                    ; 20 (20)       ; 0           ; 0    ; 0            ; 0       ; 0         ; 135  ; 0            ; 6 (0)        ; 2 (0)             ; 69 (0)           ; |Proj                      ; work         ;
+;    |SRAM_control:inst|     ; 47 (47)     ; 45 (45)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 2 (2)             ; 43 (43)          ; |Proj|SRAM_control:inst    ; work         ;
+;    |ctrl:inst5|            ; 26 (26)     ; 26 (26)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 26 (26)          ; |Proj|ctrl:inst5           ; work         ;
+;    |group_no:inst4|        ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 3 (3)            ; |Proj|group_no:inst4       ; work         ;
+;    |shit_and_stuff:inst6|  ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |Proj|shit_and_stuff:inst6 ; work         ;
++----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------+
-; Delay Chain Summary                                                                           ;
-+---------------+----------+---------------+---------------+-----------------------+-----+------+
-; Name          ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
-+---------------+----------+---------------+---------------+-----------------------+-----+------+
-; hsync         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vsync         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_clk       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_blank     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_sync      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_ce       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_oe       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_lb       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_ub       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_we       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; mclk          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; bclk          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; adclrc        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; daclrc        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; dacdat        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[5]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; HEX0[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[5]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[7]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDG[8]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[5]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[6]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[7]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[8]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[9]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[10]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[11]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[12]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[13]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[14]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[15]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[16]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; LEDR[17]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[19] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[18] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[17] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[16] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[15] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[14] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[13] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[12] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[11] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[10] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[9]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[8]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[7]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[6]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[5]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[4]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[3]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[2]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; sram_addr[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[7]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[6]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[5]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[4]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[3]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[2]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[1]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_b[0]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[7]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[6]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[5]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[4]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[3]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[2]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[1]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_g[0]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[7]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[6]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[5]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[4]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[3]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[2]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[1]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; vga_r[0]      ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; PS2_CLK       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; PS2_DAT       ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; adcdat        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; KEY1          ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; KEY2          ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; KEY3          ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[0]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[1]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[2]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[3]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[4]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[5]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[6]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[7]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[8]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[9]         ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[10]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[11]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[12]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[13]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[14]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[15]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[16]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; SW[17]        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[15] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[14] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[13] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[12] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[11] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[10] ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[9]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[8]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[7]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[6]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[5]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[4]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[3]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[2]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[1]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; sram_data[0]  ; Bidir    ; --            ; --            ; --                    ; --  ; --   ;
-; clk           ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; KEY0          ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-+---------------+----------+---------------+---------------+-----------------------+-----+------+
++------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                  ;
++---------------+----------+---------------+---------------+-----------------------+------------+------+
+; Name          ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO        ; TCOE ;
++---------------+----------+---------------+---------------+-----------------------+------------+------+
+; hsync         ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vsync         ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_clk       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_blank     ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_sync      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; sram_ce       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; sram_oe       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; sram_lb       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; sram_ub       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; sram_we       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; mclk          ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; bclk          ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; adclrc        ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; daclrc        ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; dacdat        ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[0]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[1]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[2]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[3]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[4]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[5]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; HEX0[6]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[0]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[1]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[2]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[3]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[4]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[5]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[6]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[7]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDG[8]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[0]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[1]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[2]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[3]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[4]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[5]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[6]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[7]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[8]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[9]       ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[10]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[11]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[12]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[13]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[14]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[15]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[16]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; LEDR[17]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; sram_addr[19] ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[18] ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[17] ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[16] ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[15] ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[14] ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[13] ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[12] ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[11] ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[10] ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[9]  ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[8]  ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[7]  ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[6]  ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[5]  ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[4]  ; Output   ; --            ; --            ; --                    ; (1) 458 ps ; --   ;
+; sram_addr[3]  ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[2]  ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[1]  ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; sram_addr[0]  ; Output   ; --            ; --            ; --                    ; (1) 437 ps ; --   ;
+; vga_b[7]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[6]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[5]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[4]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[3]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[2]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[1]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_b[0]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[7]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[6]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[5]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[4]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[3]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[2]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[1]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_g[0]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[7]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[6]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[5]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[4]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[3]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[2]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[1]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; vga_r[0]      ; Output   ; --            ; --            ; --                    ; --         ; --   ;
+; PS2_CLK       ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; PS2_DAT       ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; adcdat        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; KEY1          ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; KEY2          ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; KEY3          ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[0]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[1]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[2]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[3]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[4]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[5]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[6]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[7]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[8]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[9]         ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[10]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[11]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[12]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[13]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[14]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[15]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[16]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; SW[17]        ; Input    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[15] ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[14] ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[13] ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[12] ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[11] ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[10] ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[9]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[8]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[7]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[6]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[5]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[4]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[3]  ; Bidir    ; --            ; --            ; --                    ; --         ; --   ;
+; sram_data[2]  ; Bidir    ; --            ; (3) 745 ps    ; --                    ; --         ; --   ;
+; sram_data[1]  ; Bidir    ; --            ; (2) 557 ps    ; --                    ; --         ; --   ;
+; sram_data[0]  ; Bidir    ; (2) 557 ps    ; --            ; --                    ; --         ; --   ;
+; clk           ; Input    ; (0) 0 ps      ; --            ; --                    ; --         ; --   ;
+; KEY0          ; Input    ; --            ; (6) 1314 ps   ; --                    ; --         ; --   ;
++---------------+----------+---------------+---------------+-----------------------+------------+------+
 
 
 +---------------------------------------------------------------------------+
@@ -1694,18 +1726,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; sram_data[4]                                ;                   ;         ;
 ; sram_data[3]                                ;                   ;         ;
 ; sram_data[2]                                ;                   ;         ;
+;      - SRAM_control:inst|DATA_ECHO_OUT[2]   ; 1                 ; 3       ;
 ; sram_data[1]                                ;                   ;         ;
+;      - SRAM_control:inst|DATA_ECHO_OUT[1]   ; 1                 ; 2       ;
 ; sram_data[0]                                ;                   ;         ;
+;      - SRAM_control:inst|DATA_ECHO_OUT[0]   ; 0                 ; 2       ;
 ; clk                                         ;                   ;         ;
 ; KEY0                                        ;                   ;         ;
-;      - ctrl:inst5|cntr[0]                   ; 1                 ; 6       ;
-;      - SRAM_control:inst|DATA_SRAM[2]~reg0  ; 1                 ; 6       ;
-;      - ctrl:inst5|cntr[26]                  ; 1                 ; 6       ;
-;      - ctrl:inst5|cntr[25]                  ; 1                 ; 6       ;
-;      - ctrl:inst5|cntr[24]                  ; 1                 ; 6       ;
+;      - SRAM_control:inst|sram_we            ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[1]~reg0  ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[23]                  ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[19]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[18]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[17]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[16]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[15]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[14]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[13]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[12]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[11]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[10]            ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[9]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[8]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[7]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[6]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[5]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[4]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[3]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[2]             ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[1]             ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[22]                  ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[21]                  ; 1                 ; 6       ;
+;      - ctrl:inst5|cntr[24]                  ; 1                 ; 6       ;
+;      - ctrl:inst5|cntr[25]                  ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[20]                  ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[19]                  ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[18]                  ; 1                 ; 6       ;
@@ -1727,19 +1780,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - ctrl:inst5|cntr[2]                   ; 1                 ; 6       ;
 ;      - ctrl:inst5|cntr[1]                   ; 1                 ; 6       ;
 ;      - SRAM_control:inst|DATA_ECHO_OUT[2]~0 ; 1                 ; 6       ;
-;      - SRAM_control:inst|DATA_SRAM[1]~1     ; 1                 ; 6       ;
+;      - SRAM_control:inst|sec_change         ; 1                 ; 6       ;
+;      - SRAM_control:inst|ADDR[19]~0         ; 1                 ; 6       ;
+;      - SRAM_control:inst|PTR[0]             ; 1                 ; 6       ;
+;      - ctrl:inst5|cntr[0]                   ; 1                 ; 6       ;
+;      - SRAM_control:inst|sec_old            ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[15]~en   ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[14]~en   ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[13]~en   ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[12]~en   ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[11]~en   ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[10]~en   ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[9]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[8]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[7]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[6]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[5]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[4]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[3]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[2]~reg0  ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[2]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[1]~en    ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[0]~reg0  ; 1                 ; 6       ;
+;      - SRAM_control:inst|DATA_SRAM[0]~en    ; 1                 ; 6       ;
 +---------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                               ;
-+--------------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
-; Name                                 ; Location           ; Fan-Out ; Usage                    ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
-; KEY0                                 ; PIN_M23            ; 30      ; Async. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; SRAM_control:inst|DATA_ECHO_OUT[2]~0 ; LCCOMB_X90_Y41_N14 ; 3       ; Clock enable             ; no     ; --                   ; --               ; --                        ;
-; clk                                  ; PIN_Y2             ; 33      ; Clock                    ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-+--------------------------------------+--------------------+---------+--------------------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                ;
++--------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; Name                                 ; Location          ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
+; KEY0                                 ; PIN_M23           ; 70      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst|ADDR[19]~0         ; LCCOMB_X4_Y3_N30  ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst|DATA_ECHO_OUT[2]~0 ; LCCOMB_X56_Y32_N6 ; 3       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst|DATA_SRAM[0]~en    ; FF_X3_Y4_N21      ; 1       ; Output enable              ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst|DATA_SRAM[1]~en    ; FF_X3_Y4_N3       ; 1       ; Output enable              ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst|DATA_SRAM[2]~en    ; FF_X3_Y4_N17      ; 1       ; Output enable              ; no     ; --                   ; --               ; --                        ;
+; SRAM_control:inst|sec_change         ; FF_X4_Y3_N21      ; 21      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; clk                                  ; PIN_Y2            ; 91      ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; ctrl:inst5|cntr[23]                  ; FF_X6_Y4_N21      ; 24      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
++--------------------------------------+-------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1747,7 +1828,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_Y2   ; 33      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; clk  ; PIN_Y2   ; 91      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1756,23 +1837,101 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------+---------+
 ; Name                                 ; Fan-Out ;
 +--------------------------------------+---------+
-; KEY0~input                           ; 30      ;
+; KEY0~input                           ; 70      ;
+; ctrl:inst5|cntr[23]                  ; 24      ;
+; SRAM_control:inst|sec_change         ; 21      ;
+; SRAM_control:inst|ADDR[19]~0         ; 20      ;
 ; SRAM_control:inst|DATA_ECHO_OUT[1]   ; 7       ;
 ; SRAM_control:inst|DATA_ECHO_OUT[0]   ; 7       ;
 ; SRAM_control:inst|DATA_ECHO_OUT[2]   ; 7       ;
-; ctrl:inst5|cntr[26]                  ; 5       ;
-; SRAM_control:inst|DATA_SRAM[2]~reg0  ; 4       ;
 ; ctrl:inst5|cntr[24]                  ; 4       ;
-; SRAM_control:inst|DATA_SRAM[1]~reg0  ; 3       ;
-; SRAM_control:inst|DATA_SRAM[0]~reg0  ; 3       ;
+; SRAM_control:inst|PTR[0]             ; 3       ;
 ; SRAM_control:inst|DATA_ECHO_OUT[2]~0 ; 3       ;
 ; ctrl:inst5|cntr[25]                  ; 3       ;
-; SRAM_control:inst|DATA_SRAM[1]~1     ; 2       ;
 ; ctrl:inst5|cntr[0]                   ; 2       ;
-; ctrl:inst5|cntr[0]~78                ; 1       ;
-; SRAM_control:inst|DATA_SRAM[1]~3     ; 1       ;
-; SRAM_control:inst|DATA_SRAM[0]~2     ; 1       ;
-; SRAM_control:inst|DATA_SRAM~0        ; 1       ;
+; SRAM_control:inst|PTR[1]             ; 2       ;
+; SRAM_control:inst|PTR[2]             ; 2       ;
+; SRAM_control:inst|PTR[3]             ; 2       ;
+; SRAM_control:inst|PTR[4]             ; 2       ;
+; SRAM_control:inst|PTR[5]             ; 2       ;
+; SRAM_control:inst|PTR[6]             ; 2       ;
+; SRAM_control:inst|PTR[7]             ; 2       ;
+; SRAM_control:inst|PTR[8]             ; 2       ;
+; SRAM_control:inst|PTR[9]             ; 2       ;
+; SRAM_control:inst|PTR[10]            ; 2       ;
+; SRAM_control:inst|PTR[11]            ; 2       ;
+; SRAM_control:inst|PTR[12]            ; 2       ;
+; SRAM_control:inst|PTR[13]            ; 2       ;
+; SRAM_control:inst|PTR[14]            ; 2       ;
+; SRAM_control:inst|PTR[15]            ; 2       ;
+; SRAM_control:inst|PTR[16]            ; 2       ;
+; SRAM_control:inst|PTR[17]            ; 2       ;
+; SRAM_control:inst|PTR[18]            ; 2       ;
+; SRAM_control:inst|PTR[19]            ; 2       ;
+; sram_data[0]~input                   ; 1       ;
+; sram_data[1]~input                   ; 1       ;
+; sram_data[2]~input                   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[0]~31    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[1]~30    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[2]~29    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[3]~28    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[4]~27    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[5]~26    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[6]~25    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[7]~24    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[8]~23    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[9]~22    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[10]~21   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[11]~20   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[12]~19   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[13]~18   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[14]~17   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[15]~16   ; 1       ;
+; ctrl:inst5|cntr[0]~75                ; 1       ;
+; shit_and_stuff:inst6|Mux2~0          ; 1       ;
+; shit_and_stuff:inst6|Mux1~0          ; 1       ;
+; shit_and_stuff:inst6|Mux0~0          ; 1       ;
+; SRAM_control:inst|DATA_SRAM[0]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[0]~reg0  ; 1       ;
+; SRAM_control:inst|DATA_SRAM[1]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[2]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[2]~reg0  ; 1       ;
+; SRAM_control:inst|DATA_SRAM[3]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[4]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[5]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[6]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[7]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[8]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[9]~en    ; 1       ;
+; SRAM_control:inst|DATA_SRAM[10]~en   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[11]~en   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[12]~en   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[13]~en   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[14]~en   ; 1       ;
+; SRAM_control:inst|DATA_SRAM[15]~en   ; 1       ;
+; SRAM_control:inst|PTR[0]~57          ; 1       ;
+; SRAM_control:inst|sec_change~0       ; 1       ;
+; SRAM_control:inst|sec_old            ; 1       ;
+; SRAM_control:inst|ADDR[0]            ; 1       ;
+; SRAM_control:inst|ADDR[1]            ; 1       ;
+; SRAM_control:inst|ADDR[2]            ; 1       ;
+; SRAM_control:inst|ADDR[3]            ; 1       ;
+; SRAM_control:inst|ADDR[4]            ; 1       ;
+; SRAM_control:inst|ADDR[5]            ; 1       ;
+; SRAM_control:inst|ADDR[6]            ; 1       ;
+; SRAM_control:inst|ADDR[7]            ; 1       ;
+; SRAM_control:inst|ADDR[8]            ; 1       ;
+; SRAM_control:inst|ADDR[9]            ; 1       ;
+; SRAM_control:inst|ADDR[10]           ; 1       ;
+; SRAM_control:inst|ADDR[11]           ; 1       ;
+; SRAM_control:inst|ADDR[12]           ; 1       ;
+; SRAM_control:inst|ADDR[13]           ; 1       ;
+; SRAM_control:inst|ADDR[14]           ; 1       ;
+; SRAM_control:inst|ADDR[15]           ; 1       ;
+; SRAM_control:inst|ADDR[16]           ; 1       ;
+; SRAM_control:inst|ADDR[17]           ; 1       ;
+; SRAM_control:inst|ADDR[18]           ; 1       ;
+; SRAM_control:inst|ADDR[19]           ; 1       ;
 ; group_no:inst4|HEX6[6]~5             ; 1       ;
 ; group_no:inst4|HEX6[5]~4             ; 1       ;
 ; group_no:inst4|HEX6[4]~3             ; 1       ;
@@ -1780,57 +1939,94 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; group_no:inst4|Equal7~0              ; 1       ;
 ; group_no:inst4|HEX6[1]~1             ; 1       ;
 ; group_no:inst4|HEX6[0]~0             ; 1       ;
-; ctrl:inst5|cntr[26]~76               ; 1       ;
-; ctrl:inst5|cntr[25]~75               ; 1       ;
-; ctrl:inst5|cntr[25]~74               ; 1       ;
-; ctrl:inst5|cntr[24]~73               ; 1       ;
+; SRAM_control:inst|sram_we            ; 1       ;
+; ctrl:inst5|cntr[25]~73               ; 1       ;
 ; ctrl:inst5|cntr[24]~72               ; 1       ;
-; ctrl:inst5|cntr[23]~71               ; 1       ;
+; ctrl:inst5|cntr[24]~71               ; 1       ;
+; SRAM_control:inst|DATA_SRAM[1]~reg0  ; 1       ;
+; SRAM_control:inst|PTR[19]~55         ; 1       ;
+; SRAM_control:inst|PTR[18]~54         ; 1       ;
+; SRAM_control:inst|PTR[18]~53         ; 1       ;
+; SRAM_control:inst|PTR[17]~52         ; 1       ;
+; SRAM_control:inst|PTR[17]~51         ; 1       ;
+; SRAM_control:inst|PTR[16]~50         ; 1       ;
+; SRAM_control:inst|PTR[16]~49         ; 1       ;
+; SRAM_control:inst|PTR[15]~48         ; 1       ;
+; SRAM_control:inst|PTR[15]~47         ; 1       ;
+; SRAM_control:inst|PTR[14]~46         ; 1       ;
+; SRAM_control:inst|PTR[14]~45         ; 1       ;
+; SRAM_control:inst|PTR[13]~44         ; 1       ;
+; SRAM_control:inst|PTR[13]~43         ; 1       ;
+; SRAM_control:inst|PTR[12]~42         ; 1       ;
+; SRAM_control:inst|PTR[12]~41         ; 1       ;
+; SRAM_control:inst|PTR[11]~40         ; 1       ;
+; SRAM_control:inst|PTR[11]~39         ; 1       ;
+; SRAM_control:inst|PTR[10]~38         ; 1       ;
+; SRAM_control:inst|PTR[10]~37         ; 1       ;
+; SRAM_control:inst|PTR[9]~36          ; 1       ;
+; SRAM_control:inst|PTR[9]~35          ; 1       ;
+; SRAM_control:inst|PTR[8]~34          ; 1       ;
+; SRAM_control:inst|PTR[8]~33          ; 1       ;
+; SRAM_control:inst|PTR[7]~32          ; 1       ;
+; SRAM_control:inst|PTR[7]~31          ; 1       ;
+; SRAM_control:inst|PTR[6]~30          ; 1       ;
+; SRAM_control:inst|PTR[6]~29          ; 1       ;
+; SRAM_control:inst|PTR[5]~28          ; 1       ;
+; SRAM_control:inst|PTR[5]~27          ; 1       ;
+; SRAM_control:inst|PTR[4]~26          ; 1       ;
+; SRAM_control:inst|PTR[4]~25          ; 1       ;
+; SRAM_control:inst|PTR[3]~24          ; 1       ;
+; SRAM_control:inst|PTR[3]~23          ; 1       ;
+; SRAM_control:inst|PTR[2]~22          ; 1       ;
+; SRAM_control:inst|PTR[2]~21          ; 1       ;
+; SRAM_control:inst|PTR[1]~20          ; 1       ;
+; SRAM_control:inst|PTR[1]~19          ; 1       ;
 ; ctrl:inst5|cntr[23]~70               ; 1       ;
-; ctrl:inst5|cntr[22]~69               ; 1       ;
+; ctrl:inst5|cntr[23]~69               ; 1       ;
 ; ctrl:inst5|cntr[22]~68               ; 1       ;
-; ctrl:inst5|cntr[21]~67               ; 1       ;
+; ctrl:inst5|cntr[22]~67               ; 1       ;
 ; ctrl:inst5|cntr[21]~66               ; 1       ;
-; ctrl:inst5|cntr[20]~65               ; 1       ;
+; ctrl:inst5|cntr[21]~65               ; 1       ;
 ; ctrl:inst5|cntr[20]~64               ; 1       ;
-; ctrl:inst5|cntr[19]~63               ; 1       ;
+; ctrl:inst5|cntr[20]~63               ; 1       ;
 ; ctrl:inst5|cntr[19]~62               ; 1       ;
-; ctrl:inst5|cntr[18]~61               ; 1       ;
+; ctrl:inst5|cntr[19]~61               ; 1       ;
 ; ctrl:inst5|cntr[18]~60               ; 1       ;
-; ctrl:inst5|cntr[17]~59               ; 1       ;
+; ctrl:inst5|cntr[18]~59               ; 1       ;
 ; ctrl:inst5|cntr[17]~58               ; 1       ;
-; ctrl:inst5|cntr[16]~57               ; 1       ;
+; ctrl:inst5|cntr[17]~57               ; 1       ;
 ; ctrl:inst5|cntr[16]~56               ; 1       ;
-; ctrl:inst5|cntr[15]~55               ; 1       ;
+; ctrl:inst5|cntr[16]~55               ; 1       ;
 ; ctrl:inst5|cntr[15]~54               ; 1       ;
-; ctrl:inst5|cntr[14]~53               ; 1       ;
+; ctrl:inst5|cntr[15]~53               ; 1       ;
 ; ctrl:inst5|cntr[14]~52               ; 1       ;
-; ctrl:inst5|cntr[13]~51               ; 1       ;
+; ctrl:inst5|cntr[14]~51               ; 1       ;
 ; ctrl:inst5|cntr[13]~50               ; 1       ;
-; ctrl:inst5|cntr[12]~49               ; 1       ;
+; ctrl:inst5|cntr[13]~49               ; 1       ;
 ; ctrl:inst5|cntr[12]~48               ; 1       ;
-; ctrl:inst5|cntr[11]~47               ; 1       ;
+; ctrl:inst5|cntr[12]~47               ; 1       ;
 ; ctrl:inst5|cntr[11]~46               ; 1       ;
-; ctrl:inst5|cntr[10]~45               ; 1       ;
+; ctrl:inst5|cntr[11]~45               ; 1       ;
 ; ctrl:inst5|cntr[10]~44               ; 1       ;
-; ctrl:inst5|cntr[9]~43                ; 1       ;
+; ctrl:inst5|cntr[10]~43               ; 1       ;
 ; ctrl:inst5|cntr[9]~42                ; 1       ;
-; ctrl:inst5|cntr[8]~41                ; 1       ;
+; ctrl:inst5|cntr[9]~41                ; 1       ;
 ; ctrl:inst5|cntr[8]~40                ; 1       ;
-; ctrl:inst5|cntr[7]~39                ; 1       ;
+; ctrl:inst5|cntr[8]~39                ; 1       ;
 ; ctrl:inst5|cntr[7]~38                ; 1       ;
-; ctrl:inst5|cntr[6]~37                ; 1       ;
+; ctrl:inst5|cntr[7]~37                ; 1       ;
 ; ctrl:inst5|cntr[6]~36                ; 1       ;
-; ctrl:inst5|cntr[5]~35                ; 1       ;
+; ctrl:inst5|cntr[6]~35                ; 1       ;
 ; ctrl:inst5|cntr[5]~34                ; 1       ;
-; ctrl:inst5|cntr[4]~33                ; 1       ;
+; ctrl:inst5|cntr[5]~33                ; 1       ;
 ; ctrl:inst5|cntr[4]~32                ; 1       ;
-; ctrl:inst5|cntr[3]~31                ; 1       ;
+; ctrl:inst5|cntr[4]~31                ; 1       ;
 ; ctrl:inst5|cntr[3]~30                ; 1       ;
-; ctrl:inst5|cntr[2]~29                ; 1       ;
+; ctrl:inst5|cntr[3]~29                ; 1       ;
 ; ctrl:inst5|cntr[2]~28                ; 1       ;
-; ctrl:inst5|cntr[1]~27                ; 1       ;
+; ctrl:inst5|cntr[2]~27                ; 1       ;
 ; ctrl:inst5|cntr[1]~26                ; 1       ;
+; ctrl:inst5|cntr[1]~25                ; 1       ;
 ; ctrl:inst5|cntr[1]                   ; 1       ;
 ; ctrl:inst5|cntr[2]                   ; 1       ;
 ; ctrl:inst5|cntr[3]                   ; 1       ;
@@ -1853,30 +2049,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ctrl:inst5|cntr[20]                  ; 1       ;
 ; ctrl:inst5|cntr[21]                  ; 1       ;
 ; ctrl:inst5|cntr[22]                  ; 1       ;
-; ctrl:inst5|cntr[23]                  ; 1       ;
 +--------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Other Routing Usage Summary                          ;
-+-----------------------------+------------------------+
-; Other Routing Resource Type ; Usage                  ;
-+-----------------------------+------------------------+
-; Block interconnects         ; 22 / 342,891 ( < 1 % ) ;
-; C16 interconnects           ; 17 / 10,120 ( < 1 % )  ;
-; C4 interconnects            ; 41 / 209,544 ( < 1 % ) ;
-; Direct links                ; 1 / 342,891 ( < 1 % )  ;
-; Global clocks               ; 1 / 20 ( 5 % )         ;
-; Local interconnects         ; 32 / 119,088 ( < 1 % ) ;
-; R24 interconnects           ; 23 / 9,963 ( < 1 % )   ;
-; R4 interconnects            ; 40 / 289,782 ( < 1 % ) ;
-+-----------------------------+------------------------+
++-------------------------------------------------------+
+; Other Routing Usage Summary                           ;
++-----------------------------+-------------------------+
+; Other Routing Resource Type ; Usage                   ;
++-----------------------------+-------------------------+
+; Block interconnects         ; 80 / 342,891 ( < 1 % )  ;
+; C16 interconnects           ; 26 / 10,120 ( < 1 % )   ;
+; C4 interconnects            ; 131 / 209,544 ( < 1 % ) ;
+; Direct links                ; 2 / 342,891 ( < 1 % )   ;
+; Global clocks               ; 1 / 20 ( 5 % )          ;
+; Local interconnects         ; 50 / 119,088 ( < 1 % )  ;
+; R24 interconnects           ; 36 / 9,963 ( < 1 % )    ;
+; R4 interconnects            ; 96 / 289,782 ( < 1 % )  ;
++-----------------------------+-------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 13.00) ; Number of LABs  (Total = 3) ;
+; Number of Logic Elements  (Average = 12.83) ; Number of LABs  (Total = 6) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
@@ -1887,12 +2082,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                           ; 0                           ;
 ; 8                                           ; 1                           ;
 ; 9                                           ; 0                           ;
-; 10                                          ; 0                           ;
+; 10                                          ; 1                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
+; 13                                          ; 1                           ;
 ; 14                                          ; 0                           ;
-; 15                                          ; 1                           ;
+; 15                                          ; 2                           ;
 ; 16                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
@@ -1900,17 +2095,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.33) ; Number of LABs  (Total = 3) ;
+; LAB-wide Signals  (Average = 1.83) ; Number of LABs  (Total = 6) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 1                           ;
-; 1 Clock                            ; 3                           ;
+; 1 Async. clear                     ; 2                           ;
+; 1 Clock                            ; 6                           ;
+; 1 Clock enable                     ; 3                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 24.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced  (Average = 24.50) ; Number of LABs  (Total = 6) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1932,46 +2128,55 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
-; 20                                           ; 0                           ;
+; 20                                           ; 1                           ;
 ; 21                                           ; 0                           ;
 ; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
 ; 24                                           ; 0                           ;
 ; 25                                           ; 0                           ;
-; 26                                           ; 0                           ;
+; 26                                           ; 1                           ;
 ; 27                                           ; 0                           ;
 ; 28                                           ; 0                           ;
-; 29                                           ; 0                           ;
-; 30                                           ; 1                           ;
-; 31                                           ; 1                           ;
+; 29                                           ; 2                           ;
+; 30                                           ; 0                           ;
+; 31                                           ; 0                           ;
+; 32                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 4.00) ; Number of LABs  (Total = 3) ;
+; Number of Signals Sourced Out  (Average = 8.33) ; Number of LABs  (Total = 6) ;
 +-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 1                           ;
+; 0                                               ; 1                           ;
+; 1                                               ; 0                           ;
 ; 2                                               ; 0                           ;
 ; 3                                               ; 0                           ;
 ; 4                                               ; 1                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
 ; 7                                               ; 1                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 0                           ;
+; 10                                              ; 1                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 0                           ;
+; 13                                              ; 0                           ;
+; 14                                              ; 1                           ;
+; 15                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 4.33) ; Number of LABs  (Total = 3) ;
+; Number of Distinct Inputs  (Average = 3.50) ; Number of LABs  (Total = 6) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
-; 3                                           ; 1                           ;
+; 2                                           ; 1                           ;
+; 3                                           ; 3                           ;
 ; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 1                           ;
@@ -1984,10 +2189,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I/O Rules Statistic              ; Total ;
 +----------------------------------+-------+
 ; Total I/O Rules                  ; 30    ;
-; Number of I/O Rules Passed       ; 9     ;
+; Number of I/O Rules Passed       ; 11    ;
 ; Number of I/O Rules Failed       ; 0     ;
 ; Number of I/O Rules Unchecked    ; 0     ;
-; Number of I/O Rules Inapplicable ; 21    ;
+; Number of I/O Rules Inapplicable ; 19    ;
 +----------------------------------+-------+
 
 
@@ -1997,7 +2202,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Status       ; ID        ; Category                          ; Rule Description                                                                                     ; Severity ; Information                                                              ; Area ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+------+-------------------+
 ; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
-; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; No Global Signal assignments found.                                      ; I/O  ;                   ;
+; Pass         ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
 ; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                                     ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O  ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                                  ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O  ;                   ;
@@ -2016,7 +2221,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Pass         ; IO_000020 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested PCI Clamp Diode.                                       ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
 ; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                                    ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O  ;                   ;
 ; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                                        ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O  ;                   ;
-; Inapplicable ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; No open drain assignments found.                                         ; I/O  ;                   ;
+; Pass         ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; 0 such failures found.                                                   ; I/O  ;                   ;
 ; Inapplicable ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                                      ; Critical ; No Termination assignments found.                                        ; I/O  ;                   ;
 ; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.                        ; Critical ; No Current Strength or Termination assignments found.                    ; I/O  ;                   ;
 ; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                                       ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; I/O  ;                   ;
@@ -2034,9 +2239,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 135       ; 0            ; 135       ; 0            ; 0            ; 135       ; 135       ; 0            ; 135       ; 135       ; 0            ; 0            ; 0            ; 0            ; 42           ; 0            ; 0            ; 42           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 135       ; 0            ; 0            ;
+; Total Pass         ; 135       ; 20           ; 135       ; 0            ; 0            ; 135       ; 135       ; 0            ; 135       ; 135       ; 0            ; 0            ; 0            ; 0            ; 42           ; 0            ; 0            ; 42           ; 0            ; 0            ; 13           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 135       ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 135          ; 0         ; 135          ; 135          ; 0         ; 0         ; 135          ; 0         ; 0         ; 135          ; 135          ; 135          ; 135          ; 93           ; 135          ; 135          ; 93           ; 135          ; 135          ; 135          ; 135          ; 135          ; 135          ; 135          ; 135          ; 135          ; 0         ; 135          ; 135          ;
+; Total Inapplicable ; 0         ; 115          ; 0         ; 135          ; 135          ; 0         ; 0         ; 135          ; 0         ; 0         ; 135          ; 135          ; 135          ; 135          ; 93           ; 135          ; 135          ; 93           ; 135          ; 135          ; 122          ; 135          ; 135          ; 135          ; 135          ; 135          ; 135          ; 0         ; 135          ; 135          ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; hsync              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; vsync              ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2087,26 +2292,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; LEDR[15]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[16]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; LEDR[17]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[19]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[18]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[17]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[16]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[15]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[14]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[13]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[12]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[11]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[10]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[9]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[8]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[7]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[6]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[5]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[4]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[3]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[2]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_addr[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[19]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[18]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[17]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[16]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[15]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[14]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[13]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[12]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[11]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[10]      ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[9]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[8]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[7]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[6]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[5]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[4]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[3]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[2]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[1]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_addr[0]       ; Pass      ; Pass         ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; vga_b[7]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; vga_b[6]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; vga_b[5]           ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2155,19 +2360,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SW[15]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[16]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; SW[17]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[15]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[14]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[13]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[12]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[11]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[10]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[9]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[8]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[7]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[6]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[5]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[4]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sram_data[3]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[15]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[14]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[13]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[12]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[11]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[10]      ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[9]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[8]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[7]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[6]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[5]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[4]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sram_data[3]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sram_data[2]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sram_data[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sram_data[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2250,7 +2455,7 @@ Info (176353): Automatically promoted node clk~input (placed in PIN Y2 (CLK2, DI
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (176233): Starting register packing
 Info (176235): Finished register packing
-    Extra Info (176219): No registers were packed into other blocks
+    Extra Info (176218): Packed 20 registers into blocks of type I/O Output Buffer
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "HEX1[0]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX1[1]" is assigned to location or region, but does not exist in design
@@ -2301,7 +2506,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "HEX7[4]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX7[5]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "HEX7[6]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -2309,17 +2514,17 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X81_Y37 to location X91_Y48
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.28 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 42 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin PS2_CLK uses I/O standard 3.3-V LVTTL at G6
@@ -2364,29 +2569,12 @@ Warning (169177): 42 pins must meet Altera requirements for 3.3-, 3.0-, and 2.5-
     Info (169178): Pin sram_data[0] uses I/O standard 3.3-V LVTTL at AH3
     Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at Y2
     Info (169178): Pin KEY0 uses I/O standard 3.3-V LVTTL at M23
-Warning (169064): Following 16 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
-    Info (169065): Pin sram_data[15] has a permanently enabled output enable
-    Info (169065): Pin sram_data[14] has a permanently enabled output enable
-    Info (169065): Pin sram_data[13] has a permanently enabled output enable
-    Info (169065): Pin sram_data[12] has a permanently enabled output enable
-    Info (169065): Pin sram_data[11] has a permanently enabled output enable
-    Info (169065): Pin sram_data[10] has a permanently enabled output enable
-    Info (169065): Pin sram_data[9] has a permanently enabled output enable
-    Info (169065): Pin sram_data[8] has a permanently enabled output enable
-    Info (169065): Pin sram_data[7] has a permanently enabled output enable
-    Info (169065): Pin sram_data[6] has a permanently enabled output enable
-    Info (169065): Pin sram_data[5] has a permanently enabled output enable
-    Info (169065): Pin sram_data[4] has a permanently enabled output enable
-    Info (169065): Pin sram_data[3] has a permanently enabled output enable
-    Info (169065): Pin sram_data[2] has a permanently enabled output enable
-    Info (169065): Pin sram_data[1] has a permanently enabled output enable
-    Info (169065): Pin sram_data[0] has a permanently enabled output enable
 Info (144001): Generated suppressed messages file X:/GITHUB/TSIU03-VHDL-Gang/Code/SOUNDPROJ/output_files/Proj.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 5659 megabytes
-    Info: Processing ended: Mon Oct 04 16:35:38 2021
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 53 warnings
+    Info: Peak virtual memory: 5671 megabytes
+    Info: Processing ended: Fri Oct 08 12:55:35 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +----------------------------+

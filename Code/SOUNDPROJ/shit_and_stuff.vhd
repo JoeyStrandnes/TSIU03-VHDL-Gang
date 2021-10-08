@@ -13,13 +13,13 @@ architecture RTL of shit_and_stuff is
 
 begin
 	with seccount select
-		DATA <= to_unsigned(5,16) when "000",
-				  to_unsigned(3,16) when "001",
-				  to_unsigned(7,16) when "010",
-				  to_unsigned(2,16) when "011",
+		DATA <= to_unsigned(4,16) when "000",
+				  to_unsigned(3,16) when "010",
+				  to_unsigned(2,16) when "100",
+				  to_unsigned(1,16) when "110",
 				  to_unsigned(0,16) when others;
 	
-	RW <= '1' when seccount(2) = '1' else '0';
-	
+	--RW <= '1' when seccount(2) = '1' else '0';
+	RW <= seccount(0);
 	
 end architecture;
