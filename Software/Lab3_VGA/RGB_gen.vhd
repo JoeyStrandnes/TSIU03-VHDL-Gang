@@ -18,7 +18,7 @@ begin
 	process(clk)
 	
 	begin
-		if (rising_edge(clk)) then
+		if (rising_edge(clk)) and ce='1' then
 			
 			if(pixcode(7) = '1') then
 				vga_r <= (pixcode(6 downto 5) & pixcode(6 downto 5) & pixcode(6 downto 5) & pixcode(6 downto 5));
