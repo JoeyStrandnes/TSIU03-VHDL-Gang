@@ -44,68 +44,60 @@ begin
 			ECHO4 <= (others => '0');
 		--Vore snyggare med en "riktig" FSM och lookup-table	
 		elsif rising_edge(clk) then
-			if cntr < 50 then
+			-- Needs to be here to not sound like ass
+			if cntr < 10 then
+				offset <= (others => '0' );
+				RW <= '1';
+			-- First ECHO read
+			elsif cntr < 50 then
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6103*1
 				, offset'length);
 				RW <= '1';
 				ECHO1 <= DATA_READ;
-			elsif cntr < 75 then
-				offset <= (others => '0' );
-				RW <= '0';
+			-- Secound ECHO read
 			elsif cntr < 100 then
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6103*2
 				, offset'length);
 				RW <= '1';
 				ECHO2 <= DATA_READ;
-			elsif cntr < 125 then
-				offset <= (others => '0' );
-				RW <= '0';
+			-- Third ECHO read
 			elsif cntr < 150 then
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6103*3
 				, offset'length);
 				RW <= '1';
 				ECHO3 <= DATA_READ;
-			elsif cntr < 175 then
-				offset <= (others => '0' );
-				RW <= '0';
+			-- Fourth ECHO read
 			elsif cntr < 200 then
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6103*4
 				, offset'length);
 				RW <= '1';
 				ECHO4 <= DATA_READ;
-
 			else 
-				RW <= '1';
-				OUT_TMP <= ECHO4 ;
+				RW <= '0';
+				
+				-- Muting echos not wanted decided by ECHO_NUM NOT A GOOD SOLUTION!
+				if ECHO_NUM = "00" then
+					ECHO2 <= (others => '0');
+					ECHO3 <= (others => '0');
+					ECHO4 <= (others => '0');
+				elsif ECHO_NUM = "01" then
+					ECHO3 <= (others => '0');
+					ECHO4 <= (others => '0');
+				elsif ECHO_NUM = "10" then
+					ECHO4 <= (others => '0');
+				end if;
+				
+				-- Adding all echos together
+				OUT_TMP <= ECHO1 + ECHO2 + ECHO3 + ECHO4;	
 			end if;
 		end if;
 	end process;
 
-	
-
-	-- Muting echos not wanted decided by ECHO_NUM NOT A GOOD SOLUTION!
---	process(clk,ECHO_NUM) is
---		begin
---			if rising_edge(clk) then	
---				if ECHO_NUM = "00" then
---					ECHO2 <= (others => '0');
---					ECHO3 <= (others => '0');
---					ECHO4 <= (others => '0');
---				elsif ECHO_NUM = "01" then
---					ECHO3 <= (others => '0');
---					ECHO4 <= (others => '0');
---				elsif ECHO_NUM = "10" then
---					ECHO4 <= (others => '0');
---				end if;
---			end if;
---	end process;
 			
-	-- Adding all signals together,
-
-
+	-- Adding all signals together
 	SAMPLE_OUT <= 	OUT_TMP +SAMPLE_IN;
 end architecture;

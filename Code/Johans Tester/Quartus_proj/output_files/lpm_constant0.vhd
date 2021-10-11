@@ -70,7 +70,7 @@ BEGIN
 
 	LPM_CONSTANT_component : LPM_CONSTANT
 	GENERIC MAP (
-		lpm_cvalue => 15,
+		lpm_cvalue => 4,
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "LPM_CONSTANT",
 		lpm_width => 4
