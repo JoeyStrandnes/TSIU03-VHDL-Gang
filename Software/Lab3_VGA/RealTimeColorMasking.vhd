@@ -6,7 +6,7 @@ entity masking is
   Port ( clk, rstn, pixcode_single  : in std_logic;
          pixcode       : out unsigned(7 downto 0);
 			vcnt,hcnt : in unsigned(9 downto 0);
-			Number : in unsigned(6 downto 0));
+			Number : in unsigned(1 downto 0));
 			
 end entity;
 
@@ -49,18 +49,31 @@ begin
 				color <= color+1;
 			end if;
 			
-			if(Number = "0010000") then -- 9
-				VOL_Limit <= "100101000";
-			elsif(Number = "1111001" AND VOL_Limit > 20 ) then -- 1
-				VOL_Limit <= VOL_Limit + 20;
-			elsif(Number = "1000000" AND VOL_Limit > 0) then -- 0
-				VOL_Limit <= VOL_Limit -20;
-			elsif(Number = "0010010") then -- 5
-				VOL_Limit <= "011011000";
-			end if;
+--			if(Number = "0010000") then -- 9
+--				VOL_Limit <= "100101000";
+--			elsif(Number = "1111001" AND VOL_Limit > 20 ) then -- 1
+--				VOL_Limit <= VOL_Limit + 20;
+--			elsif(Number = "1000000" AND VOL_Limit > 0) then -- 0
+--				VOL_Limit <= VOL_Limit -20;
+--			elsif(Number = "0010010") then -- 5
+--				VOL_Limit <= "011011000";
+--			end if;
+
 			
 			if(((vcnt > 32) AND (vcnt < 72)) AND ((hcnt > 135) AND (hcnt < VOL_Limit))) then 		-- Overlay for volume -- hcnt < 296
-				pixcode <= "11100001";
+				
+				if(Number = "00") then
+					pixcode <= "11100000";
+				elsif(Number = "01") then
+					pixcode <= "10011100";
+				elsif(Number = "10") then
+					pixcode <= "10000011";
+				elsif(Number = "11") then
+					pixcode <= "11111100";
+				else
+					pixcode <= "11111111";
+				end if;
+			
 			elsif(((vcnt > 103) AND (vcnt < 152)) AND ((hcnt > LR_Limit) AND (hcnt < (LR_Limit+16)))) then -- Overlay for left rigth adjust -- hcnt = 296
 				pixcode <= "10000011";
 			elsif(((vcnt > 184) AND (vcnt < 216)) AND ((hcnt > 135) AND (hcnt < DIST_Limit))) then -- Overlay for dist -- hcnt = 296
@@ -73,6 +86,8 @@ begin
 				pixcode <= "1" & color;
 
 			--elsif(((vcnt > 279) AND (vcnt < 440)) AND ((hcnt > 39) AND (hcnt < 600))) then -- Overlay for graph view. 600 max
+			elsif((((vcnt > 23) AND (vcnt < 96)) AND ((hcnt > 23) AND (hcnt < 96))) AND Number = "00") then -- Overlay for left rigth adjust -- hcnt = 296
+				pixcode <= not pixcode_single & not pixcode_single & not pixcode_single & not pixcode_single & not pixcode_single & not pixcode_single & not pixcode_single & not pixcode_single;
 			
 			
 			else

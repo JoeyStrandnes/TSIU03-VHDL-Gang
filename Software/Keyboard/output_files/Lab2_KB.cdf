@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("X:/TSIU03/Lab2/output_files/") File("Lab2_KB.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/output_files/") File("Lab2_KB.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

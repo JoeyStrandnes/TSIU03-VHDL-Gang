@@ -38,7 +38,6 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 72 120 128 136))
 )
 (pin
 	(input)
@@ -55,41 +54,38 @@ applicable agreement for further details.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "GND" (rect 136 7 157 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 64 136 128 152))
 )
 (pin
 	(input)
-	(rect 864 880 1032 896)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "PS2_CLK" (rect 5 0 53 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 864 880 1040 896)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "PS2_CLK" (rect 9 0 56 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 808 896 864 912))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
-	(rect 864 896 1032 912)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "PS2_DAT" (rect 5 0 53 12)(font "Arial" ))
-	(pt 168 8)
+	(rect 864 896 1040 912)
+	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
+	(text "PS2_DAT" (rect 9 0 56 12)(font "Arial" ))
+	(pt 176 8)
 	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
 	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 808 912 864 928))
+	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
@@ -106,7 +102,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2432 240 2488 256))
 )
 (pin
 	(output)
@@ -123,7 +118,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2432 384 2488 400))
 )
 (pin
 	(output)
@@ -140,7 +134,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2256 792 2312 808))
 )
 (pin
 	(output)
@@ -157,7 +150,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1056 32 1120 48))
 )
 (pin
 	(output)
@@ -174,7 +166,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1056 48 1120 64))
 )
 (pin
 	(output)
@@ -191,7 +182,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2096 528 2152 544))
 )
 (pin
 	(output)
@@ -208,7 +198,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2072 704 2128 720))
 )
 (pin
 	(output)
@@ -225,7 +214,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2072 656 2128 672))
 )
 (pin
 	(output)
@@ -242,7 +230,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2072 672 2128 688))
 )
 (pin
 	(output)
@@ -259,7 +246,6 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 2072 688 2128 704))
 )
 (symbol
 	(rect 344 80 472 160)
@@ -283,7 +269,7 @@ applicable agreement for further details.
 		(pt 128 32)
 		(output)
 		(text "ce" (rect 0 0 11 12)(font "Arial" ))
-		(text "ce" (rect 98 27 109 39)(font "Arial" ))
+		(text "ce" (rect 98 27 107 39)(font "Arial" ))
 		(line (pt 128 32)(pt 112 32))
 	)
 	(drawing
@@ -319,7 +305,7 @@ applicable agreement for further details.
 		(pt 152 32)
 		(output)
 		(text "hcnt[9..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "hcnt[9..0]" (rect 92 27 139 39)(font "Arial" ))
+		(text "hcnt[9..0]" (rect 92 27 131 39)(font "Arial" ))
 		(line (pt 152 32)(pt 136 32)(line_width 3))
 	)
 	(drawing
@@ -398,7 +384,7 @@ applicable agreement for further details.
 		(pt 160 32)
 		(output)
 		(text "hsync" (rect 0 0 30 12)(font "Arial" ))
-		(text "hsync" (rect 114 27 144 39)(font "Arial" ))
+		(text "hsync" (rect 114 27 139 39)(font "Arial" ))
 		(line (pt 160 32)(pt 144 32))
 	)
 	(drawing
@@ -434,7 +420,7 @@ applicable agreement for further details.
 		(pt 168 32)
 		(output)
 		(text "vsync" (rect 0 0 31 12)(font "Arial" ))
-		(text "vsync" (rect 121 27 152 39)(font "Arial" ))
+		(text "vsync" (rect 121 27 147 39)(font "Arial" ))
 		(line (pt 168 32)(pt 152 32))
 	)
 	(drawing
@@ -477,7 +463,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -527,7 +513,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -577,7 +563,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -627,7 +613,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -677,7 +663,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -727,7 +713,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -763,7 +749,7 @@ applicable agreement for further details.
 		(pt 160 32)
 		(output)
 		(text "blank" (rect 0 0 25 12)(font "Arial" ))
-		(text "blank" (rect 118 27 143 39)(font "Arial" ))
+		(text "blank" (rect 118 27 139 39)(font "Arial" ))
 		(line (pt 160 32)(pt 144 32))
 	)
 	(drawing
@@ -806,28 +792,28 @@ applicable agreement for further details.
 		(pt 200 32)
 		(output)
 		(text "vga_r[7..0]" (rect 0 0 54 12)(font "Arial" ))
-		(text "vga_r[7..0]" (rect 134 27 188 39)(font "Arial" ))
+		(text "vga_r[7..0]" (rect 134 27 179 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(port
 		(pt 200 48)
 		(output)
 		(text "vga_g[7..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "vga_g[7..0]" (rect 132 43 188 55)(font "Arial" ))
+		(text "vga_g[7..0]" (rect 132 43 179 55)(font "Arial" ))
 		(line (pt 200 48)(pt 184 48)(line_width 3))
 	)
 	(port
 		(pt 200 64)
 		(output)
 		(text "vga_b[7..0]" (rect 0 0 56 12)(font "Arial" ))
-		(text "vga_b[7..0]" (rect 132 59 188 71)(font "Arial" ))
+		(text "vga_b[7..0]" (rect 132 59 179 71)(font "Arial" ))
 		(line (pt 200 64)(pt 184 64)(line_width 3))
 	)
 	(port
 		(pt 200 80)
 		(output)
 		(text "vga_sync" (rect 0 0 49 12)(font "Arial" ))
-		(text "vga_sync" (rect 138 75 187 87)(font "Arial" ))
+		(text "vga_sync" (rect 138 75 179 87)(font "Arial" ))
 		(line (pt 200 80)(pt 184 80))
 	)
 	(drawing
@@ -870,21 +856,21 @@ applicable agreement for further details.
 		(pt 192 32)
 		(output)
 		(text "pixcode_single" (rect 0 0 71 12)(font "Arial" ))
-		(text "pixcode_single" (rect 111 27 182 39)(font "Arial" ))
+		(text "pixcode_single" (rect 111 27 171 39)(font "Arial" ))
 		(line (pt 192 32)(pt 176 32))
 	)
 	(port
 		(pt 192 48)
 		(output)
 		(text "vcnt_d[9..0]" (rect 0 0 60 12)(font "Arial" ))
-		(text "vcnt_d[9..0]" (rect 121 43 181 55)(font "Arial" ))
+		(text "vcnt_d[9..0]" (rect 121 43 171 55)(font "Arial" ))
 		(line (pt 192 48)(pt 176 48)(line_width 3))
 	)
 	(port
 		(pt 192 64)
 		(output)
 		(text "hcnt_d[9..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "hcnt_d[9..0]" (rect 122 59 181 71)(font "Arial" ))
+		(text "hcnt_d[9..0]" (rect 122 59 171 71)(font "Arial" ))
 		(line (pt 192 64)(pt 176 64)(line_width 3))
 	)
 	(drawing
@@ -927,7 +913,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -977,7 +963,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -1027,7 +1013,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "Q" (rect 45 20 50 32)(font "Courier New" (bold)))
-		(text "Q" (rect 43 20 48 32)(font "Courier New" (bold)))
+		(text "Q" (rect 43 20 47 32)(font "Courier New" (bold)))
 		(line (pt 52 24)(pt 64 24))
 	)
 	(drawing
@@ -1104,8 +1090,8 @@ applicable agreement for further details.
 	(port
 		(pt 200 32)
 		(output)
-		(text "Number[7..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "Number[7..0]" (rect 125 27 179 39)(font "Arial" ))
+		(text "Number[1..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "Number[1..0]" (rect 125 27 179 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(drawing
@@ -1113,7 +1099,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1320 616 1528 760)
+	(rect 1328 648 1536 792)
 	(text "masking" (rect 5 0 46 12)(font "Arial" ))
 	(text "inst" (rect 8 128 25 140)(font "Arial" ))
 	(port
@@ -1154,8 +1140,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 112)
 		(input)
-		(text "Number[7..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "Number[7..0]" (rect 21 107 85 119)(font "Arial" ))
+		(text "Number[1..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "Number[1..0]" (rect 21 107 85 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 3))
 	)
 	(port
@@ -1460,26 +1446,6 @@ applicable agreement for further details.
 	(pt 1896 696)
 )
 (connector
-	(text "rstn" (rect 1298 648 1316 660)(font "Arial" ))
-	(pt 1296 664)
-	(pt 1320 664)
-)
-(connector
-	(text "clk" (rect 1303 632 1317 644)(font "Arial" ))
-	(pt 1296 648)
-	(pt 1320 648)
-)
-(connector
-	(pt 1528 648)
-	(pt 1584 648)
-	(bus)
-)
-(connector
-	(pt 1584 648)
-	(pt 1584 696)
-	(bus)
-)
-(connector
 	(pt 1584 696)
 	(pt 1656 696)
 	(bus)
@@ -1487,14 +1453,6 @@ applicable agreement for further details.
 (connector
 	(pt 1216 648)
 	(pt 1272 648)
-)
-(connector
-	(pt 1272 648)
-	(pt 1272 680)
-)
-(connector
-	(pt 1320 680)
-	(pt 1272 680)
 )
 (connector
 	(pt 1440 576)
@@ -1576,26 +1534,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1320 696)
-	(pt 1256 696)
-	(bus)
-)
-(connector
-	(pt 1256 664)
-	(pt 1256 696)
-	(bus)
-)
-(connector
-	(pt 1320 712)
-	(pt 1240 712)
-	(bus)
-)
-(connector
-	(pt 1240 680)
-	(pt 1240 712)
-	(bus)
-)
-(connector
 	(text "clk" (rect 1004 864 1018 876)(font "Arial" ))
 	(pt 1056 872)
 	(pt 1032 872)
@@ -1609,24 +1547,6 @@ applicable agreement for further details.
 	(pt 1256 856)
 	(pt 1280 856)
 	(bus)
-)
-(connector
-	(pt 1280 856)
-	(pt 1280 728)
-	(bus)
-)
-(connector
-	(pt 1320 728)
-	(pt 1280 728)
-	(bus)
-)
-(connector
-	(pt 1056 888)
-	(pt 1032 888)
-)
-(connector
-	(pt 1056 904)
-	(pt 1032 904)
 )
 (connector
 	(pt 440 696)
@@ -1658,11 +1578,87 @@ applicable agreement for further details.
 	(pt 456 680)
 	(bus)
 )
+(connector
+	(pt 1584 680)
+	(pt 1536 680)
+	(bus)
+)
+(connector
+	(pt 1584 696)
+	(pt 1584 680)
+	(bus)
+)
+(connector
+	(pt 1272 648)
+	(pt 1272 712)
+)
+(connector
+	(pt 1256 664)
+	(pt 1256 728)
+	(bus)
+)
+(connector
+	(pt 1240 744)
+	(pt 1328 744)
+	(bus)
+)
+(connector
+	(pt 1240 680)
+	(pt 1240 744)
+	(bus)
+)
+(connector
+	(pt 1280 856)
+	(pt 1280 760)
+	(bus)
+)
+(connector
+	(pt 1280 760)
+	(pt 1328 760)
+	(bus)
+)
+(connector
+	(text "clk" (rect 1311 664 1325 676)(font "Arial" ))
+	(pt 1304 680)
+	(pt 1328 680)
+)
+(connector
+	(text "rstn" (rect 1306 680 1324 692)(font "Arial" ))
+	(pt 1304 696)
+	(pt 1328 696)
+)
+(connector
+	(pt 1272 712)
+	(pt 1328 712)
+)
+(connector
+	(pt 1256 728)
+	(pt 1328 728)
+	(bus)
+)
+(connector
+	(pt 1032 888)
+	(pt 1040 888)
+)
+(connector
+	(pt 1040 888)
+	(pt 1056 888)
+)
+(connector
+	(pt 1032 904)
+	(pt 1040 904)
+)
+(connector
+	(pt 1040 904)
+	(pt 1056 904)
+)
 (junction (pt 440 264))
 (junction (pt 440 504))
 (junction (pt 456 408))
 (junction (pt 456 520))
 (junction (pt 440 536))
+(junction (pt 1040 888))
+(junction (pt 1040 904))
 (text "Double click in the parameter box above to set your group number." (rect 640 80 1017 94)(font "Arial" (font_size 8)))
 (text "This will be written on HEX7 and HEX6, to help you reqognize your own application on the board." (rect 640 96 1189 110)(font "Arial" (font_size 8)))
 (text "(Only group number 00-99 is allowed)" (rect 640 112 855 126)(font "Arial" (font_size 8)))

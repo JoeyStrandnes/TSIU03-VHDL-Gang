@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab3_VGA
-Fri Oct 08 15:25:31 2021
+Mon Oct 11 17:01:47 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -45,13 +45,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 08 15:25:31 2021            ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 11 17:01:47 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Lab3_VGA                                         ;
 ; Top-level Entity Name              ; VGA_contr                                        ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 666                                              ;
-;     Total combinational functions  ; 626                                              ;
+; Total logic elements               ; 598                                              ;
+;     Total combinational functions  ; 568                                              ;
 ;     Dedicated logic registers      ; 162                                              ;
 ; Total registers                    ; 162                                              ;
 ; Total pins                         ; 47                                               ;
@@ -191,17 +191,17 @@ applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 666            ;
+; Estimated Total logic elements              ; 598            ;
 ;                                             ;                ;
-; Total combinational functions               ; 626            ;
+; Total combinational functions               ; 568            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 330            ;
-;     -- 3 input functions                    ; 135            ;
-;     -- <=2 input functions                  ; 161            ;
+;     -- 4 input functions                    ; 312            ;
+;     -- 3 input functions                    ; 120            ;
+;     -- <=2 input functions                  ; 136            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 483            ;
-;     -- arithmetic mode                      ; 143            ;
+;     -- normal mode                          ; 438            ;
+;     -- arithmetic mode                      ; 130            ;
 ;                                             ;                ;
 ; Total registers                             ; 162            ;
 ;     -- Dedicated logic registers            ; 162            ;
@@ -211,8 +211,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ; Maximum fan-out node                        ; fpga_clk~input ;
 ; Maximum fan-out                             ; 162            ;
-; Total fan-out                               ; 2583           ;
-; Average fan-out                             ; 2.93           ;
+; Total fan-out                               ; 2420           ;
+; Average fan-out                             ; 2.94           ;
 +---------------------------------------------+----------------+
 
 
@@ -221,15 +221,15 @@ applicable agreement for further details.
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Library Name ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
-; |VGA_contr                      ; 626 (2)           ; 162 (9)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |VGA_contr                            ; work         ;
-;    |PS2KeyboardInterface:inst1| ; 30 (30)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|PS2KeyboardInterface:inst1 ; work         ;
+; |VGA_contr                      ; 568 (2)           ; 162 (9)      ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |VGA_contr                            ; work         ;
+;    |PS2KeyboardInterface:inst1| ; 24 (24)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|PS2KeyboardInterface:inst1 ; work         ;
 ;    |RGB_gen:i_RGB_gen|          ; 22 (22)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|RGB_gen:i_RGB_gen          ; work         ;
 ;    |blank_gen:iBlank_gen|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|blank_gen:iBlank_gen       ; work         ;
 ;    |ce_gen:i_ce_gen|            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|ce_gen:i_ce_gen            ; work         ;
 ;    |hs_gen:i_hs_gen|            ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|hs_gen:i_hs_gen            ; work         ;
 ;    |linecounter:i_linecounter|  ; 17 (17)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|linecounter:i_linecounter  ; work         ;
-;    |masking:inst|               ; 267 (267)         ; 71 (71)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|masking:inst               ; work         ;
-;    |pixel_reg:i_pixreg|         ; 258 (258)         ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixel_reg:i_pixreg         ; work         ;
+;    |masking:inst|               ; 221 (221)         ; 68 (68)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|masking:inst               ; work         ;
+;    |pixel_reg:i_pixreg|         ; 252 (252)         ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixel_reg:i_pixreg         ; work         ;
 ;    |pixelcounter:i_pixcounter|  ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|pixelcounter:i_pixcounter  ; work         ;
 ;    |vs_gen:i_vs_gen|            ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA_contr|vs_gen:i_vs_gen            ; work         ;
 +---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+--------------+
@@ -242,9 +242,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                         ; Reason for Removal                        ;
 +---------------------------------------+-------------------------------------------+
 ; masking:inst|LR_Limit[0]              ; Stuck at VCC due to stuck port data_in    ;
+; masking:inst|VOL_Limit[0]             ; Stuck at VCC due to stuck port data_in    ;
 ; masking:inst|counter[0]               ; Merged with pixel_reg:i_pixreg|counter[0] ;
+; masking:inst|VOL_Limit[1]             ; Merged with masking:inst|LR_Limit[1]      ;
+; masking:inst|VOL_Limit[2]             ; Merged with masking:inst|LR_Limit[2]      ;
 ; ce_gen:i_ce_gen|counter[1]            ; Stuck at GND due to stuck port data_in    ;
-; Total Number of Removed Registers = 3 ;                                           ;
+; Total Number of Removed Registers = 6 ;                                           ;
 +---------------------------------------+-------------------------------------------+
 
 
@@ -255,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 162   ;
 ; Number of registers using Synchronous Clear  ; 10    ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 42    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 102   ;
@@ -268,51 +271,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
+; masking:inst|LR_Limit[7]                ; 3       ;
+; masking:inst|LR_Limit[6]                ; 3       ;
+; masking:inst|LR_Limit[3]                ; 3       ;
+; masking:inst|LR_Limit[2]                ; 5       ;
+; masking:inst|LR_Limit[1]                ; 5       ;
+; masking:inst|EN_Limit[9]                ; 4       ;
+; masking:inst|EN_Limit[6]                ; 4       ;
+; masking:inst|EN_Limit[5]                ; 3       ;
+; masking:inst|EN_Limit[3]                ; 3       ;
+; masking:inst|EN_Limit[0]                ; 3       ;
 ; masking:inst|ED_Limit[7]                ; 4       ;
 ; masking:inst|ED_Limit[6]                ; 4       ;
 ; masking:inst|ED_Limit[3]                ; 3       ;
 ; masking:inst|ED_Limit[2]                ; 3       ;
 ; masking:inst|ED_Limit[1]                ; 3       ;
 ; masking:inst|ED_Limit[0]                ; 3       ;
-; masking:inst|LR_Limit[7]                ; 3       ;
-; masking:inst|LR_Limit[6]                ; 3       ;
-; masking:inst|LR_Limit[3]                ; 3       ;
-; masking:inst|LR_Limit[2]                ; 3       ;
-; masking:inst|LR_Limit[1]                ; 3       ;
-; masking:inst|VOL_Limit[7]               ; 7       ;
-; masking:inst|VOL_Limit[6]               ; 7       ;
-; masking:inst|VOL_Limit[3]               ; 7       ;
-; masking:inst|VOL_Limit[2]               ; 6       ;
-; masking:inst|VOL_Limit[1]               ; 5       ;
-; masking:inst|VOL_Limit[0]               ; 4       ;
-; masking:inst|EN_Limit[9]                ; 4       ;
-; masking:inst|EN_Limit[6]                ; 4       ;
-; masking:inst|EN_Limit[5]                ; 3       ;
-; masking:inst|EN_Limit[3]                ; 3       ;
-; masking:inst|EN_Limit[0]                ; 3       ;
+; masking:inst|VOL_Limit[7]               ; 14      ;
+; masking:inst|VOL_Limit[6]               ; 4       ;
+; masking:inst|VOL_Limit[3]               ; 3       ;
 ; hs_gen:i_hs_gen|hsync                   ; 1       ;
 ; vs_gen:i_vs_gen|vsync                   ; 1       ;
-; Total number of inverted registers = 24 ;         ;
+; PS2KeyboardInterface:inst1|shiftreg[4]  ; 3       ;
+; PS2KeyboardInterface:inst1|shiftreg[7]  ; 3       ;
+; PS2KeyboardInterface:inst1|shiftreg[6]  ; 3       ;
+; PS2KeyboardInterface:inst1|shiftreg[5]  ; 3       ;
+; PS2KeyboardInterface:inst1|shiftreg[8]  ; 5       ;
+; PS2KeyboardInterface:inst1|shiftreg[2]  ; 5       ;
+; PS2KeyboardInterface:inst1|shiftreg[3]  ; 5       ;
+; PS2KeyboardInterface:inst1|shiftreg[0]  ; 13      ;
+; PS2KeyboardInterface:inst1|shiftreg[1]  ; 5       ;
+; PS2KeyboardInterface:inst1|shiftreg[9]  ; 1       ;
+; Total number of inverted registers = 31 ;         ;
 +-----------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|ED_Limit[5]             ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |VGA_contr|masking:inst|LR_Limit[8]             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|EN_Limit[1]             ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[5]              ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|VOL_Limit[8]            ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |VGA_contr|masking:inst|ED_Limit[0]             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|LR_Limit[3]             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|EN_Limit[6]             ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|VOL_Limit[2]            ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |VGA_contr|PS2KeyboardInterface:inst1|Number[3] ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |VGA_contr|PS2KeyboardInterface:inst1|Number[1] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |VGA_contr|masking:inst|ED_Limit[5]               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |VGA_contr|masking:inst|VOL_Limit[4]              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|EN_Limit[8]               ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |VGA_contr|PS2KeyboardInterface:inst1|Number[1]   ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |VGA_contr|masking:inst|pixcode[3]                ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |VGA_contr|masking:inst|ED_Limit[2]               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |VGA_contr|masking:inst|LR_Limit[2]               ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |VGA_contr|PS2KeyboardInterface:inst1|shiftreg[8] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |VGA_contr|masking:inst|EN_Limit[3]               ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |VGA_contr|masking:inst|pixcode                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
 
 
 +--------------------------------------------------------------+
@@ -340,7 +349,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Oct 08 15:25:17 2021
+    Info: Processing started: Mon Oct 11 17:01:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab3_VGA -c Lab3_VGA
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ps2keyboardinterface.vhd
@@ -400,8 +409,6 @@ Info (12128): Elaborating entity "pixel_reg" for hierarchy "pixel_reg:i_pixreg"
 Info (12128): Elaborating entity "PS2KeyboardInterface" for hierarchy "PS2KeyboardInterface:inst1"
 Warning (10036): Verilog HDL or VHDL warning at PS2KeyboardInterface.vhd(15): object "PS2_DAT2" assigned a value but never read
 Info (12128): Elaborating entity "group_no" for hierarchy "group_no:i_GrNo"
-Warning (12001): Port "Number[7]" does not exist in entity definition of "PS2KeyboardInterface".  The port's range differs between the entity definition and its actual instantiation, "PS2KeyboardInterface:inst1".
-Warning (12001): Port "Number[7]" does not exist in entity definition of "masking".  The port's range differs between the entity definition and its actual instantiation, "masking:inst".
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -423,14 +430,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 713 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 647 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 666 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info (21061): Implemented 600 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
     Info: Peak virtual memory: 4665 megabytes
-    Info: Processing ended: Fri Oct 08 15:25:31 2021
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Processing ended: Mon Oct 11 17:01:47 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:07
 
 

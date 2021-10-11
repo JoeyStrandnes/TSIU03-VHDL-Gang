@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Lab2_KB
-Fri Oct 08 18:36:19 2021
+Mon Oct 11 15:09:44 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 08 18:36:19 2021            ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 11 15:09:44 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Lab2_KB                                          ;
 ; Top-level Entity Name              ; Lab2_KB                                          ;
@@ -164,13 +164,13 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                        ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
-; Lab2_KB.vhd                      ; yes             ; User VHDL File  ; X:/TSIU03/Lab2/Lab2_KB.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; Lab2_KB.vhd                      ; yes             ; User VHDL File  ; X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/Lab2_KB.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -212,35 +212,35 @@ applicable agreement for further details.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; PS2_byte[0..7]                         ; Lost fanout        ;
-; shiftreg[0,2]                          ; Lost fanout        ;
-; PS2_CLK_old                            ; Lost fanout        ;
-; PS2_CLK2                               ; Lost fanout        ;
-; shiftreg[1,3..9]                       ; Lost fanout        ;
-; PS2_DAT2                               ; Lost fanout        ;
-; Total Number of Removed Registers = 21 ;                    ;
-+----------------------------------------+--------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; HEX0[6]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; HEX0[5]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; HEX0[4]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; HEX0[3]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; HEX0[0]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; HEX0[1]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; HEX0[2]~reg0                           ; Stuck at VCC due to stuck port data_in ;
+; shiftreg[0]                            ; Lost fanout                            ;
+; PS2_CLK_old                            ; Lost fanout                            ;
+; PS2_CLK2                               ; Lost fanout                            ;
+; shiftreg[1..9]                         ; Lost fanout                            ;
+; PS2_DAT2                               ; Lost fanout                            ;
+; Total Number of Removed Registers = 20 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                 ;
-+---------------+--------------------+------------------------------------------------------------------------+
-; Register name ; Reason for Removal ; Registers Removed due to This Register                                 ;
-+---------------+--------------------+------------------------------------------------------------------------+
-; PS2_byte[7]   ; Lost Fanouts       ; shiftreg[0], PS2_CLK_old, PS2_CLK2, shiftreg[1], shiftreg[9], PS2_DAT2 ;
-; PS2_byte[6]   ; Lost Fanouts       ; shiftreg[8]                                                            ;
-; PS2_byte[5]   ; Lost Fanouts       ; shiftreg[7]                                                            ;
-; PS2_byte[4]   ; Lost Fanouts       ; shiftreg[6]                                                            ;
-; PS2_byte[3]   ; Lost Fanouts       ; shiftreg[5]                                                            ;
-; PS2_byte[2]   ; Lost Fanouts       ; shiftreg[4]                                                            ;
-; PS2_byte[1]   ; Lost Fanouts       ; shiftreg[3]                                                            ;
-; PS2_byte[0]   ; Lost Fanouts       ; shiftreg[2]                                                            ;
-+---------------+--------------------+------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                         ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register                                                  ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------+
+; HEX0[6]~reg0  ; Stuck at VCC              ; shiftreg[0], PS2_CLK_old, PS2_CLK2, shiftreg[1], shiftreg[2], shiftreg[3], shiftreg[4], ;
+;               ; due to stuck port data_in ; shiftreg[5], shiftreg[6], shiftreg[7], shiftreg[8], shiftreg[9], PS2_DAT2               ;
++---------------+---------------------------+-----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -273,7 +273,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Fri Oct 08 18:35:59 2021
+    Info: Processing started: Mon Oct 11 15:09:37 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2_KB -c Lab2_KB
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file lab2_kb.vhd
@@ -281,54 +281,30 @@ Info (12021): Found 2 design units, including 1 entities, in source file lab2_kb
     Info (12023): Found entity 1: Lab2_KB
 Info (12127): Elaborating entity "Lab2_KB" for the top level hierarchy
 Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(42): signal "PS2_byte_en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(58): signal "scancode_en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(61): signal "PS2_byte" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(63): signal "PS2_byte" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(66): signal "E0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(66): signal "F0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(66): signal "PS2_byte" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(56): inferring latch(es) for signal or variable "scancode", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(56): inferring latch(es) for signal or variable "E0", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(56): inferring latch(es) for signal or variable "F0", which holds its previous value in one or more paths through the process
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(77): signal "scancode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(78): signal "scancode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(78): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(79): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(80): signal "scancode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(80): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(81): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(75): inferring latch(es) for signal or variable "cntr1", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "cntr1[0]" at Lab2_KB.vhd(75)
-Info (10041): Inferred latch for "cntr1[1]" at Lab2_KB.vhd(75)
-Info (10041): Inferred latch for "cntr1[2]" at Lab2_KB.vhd(75)
-Info (10041): Inferred latch for "cntr1[3]" at Lab2_KB.vhd(75)
-Info (10041): Inferred latch for "E0" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[0]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[1]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[2]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[3]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[4]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[5]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[6]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[7]" at Lab2_KB.vhd(56)
-Info (10041): Inferred latch for "scancode[9]" at Lab2_KB.vhd(56)
-Warning (14025): LATCH primitive "E0" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[0]" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[3]" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[2]" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[1]" is permanently disabled
-Warning (14025): LATCH primitive "E0" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[3]" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[2]" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[1]" is permanently disabled
-Warning (14025): LATCH primitive "cntr1[0]" is permanently disabled
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(64): signal "scancode_en" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(67): signal "PS2_byte" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(69): signal "PS2_byte" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(72): signal "E0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(72): signal "F0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(72): signal "PS2_byte" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(62): inferring latch(es) for signal or variable "scancode", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(62): inferring latch(es) for signal or variable "E0", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(62): inferring latch(es) for signal or variable "F0", which holds its previous value in one or more paths through the process
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(83): signal "scancode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(84): signal "scancode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(84): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(85): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(86): signal "scancode" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(86): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at Lab2_KB.vhd(87): signal "cntr1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at Lab2_KB.vhd(81): inferring latch(es) for signal or variable "cntr1", which holds its previous value in one or more paths through the process
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at GND
-    Warning (13410): Pin "HEX0[1]" is stuck at GND
-    Warning (13410): Pin "HEX0[2]" is stuck at GND
-    Warning (13410): Pin "HEX0[3]" is stuck at GND
-    Warning (13410): Pin "HEX0[4]" is stuck at GND
-    Warning (13410): Pin "HEX0[5]" is stuck at GND
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC
     Warning (13410): Pin "HEX0[6]" is stuck at VCC
     Warning (13410): Pin "HEX7[0]" is stuck at VCC
     Warning (13410): Pin "HEX7[1]" is stuck at VCC
@@ -344,7 +320,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX6[4]" is stuck at GND
     Warning (13410): Pin "HEX6[5]" is stuck at GND
     Warning (13410): Pin "HEX6[6]" is stuck at GND
-Info (17049): 21 registers lost all their fanouts during netlist optimizations.
+Info (17049): 13 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
@@ -355,10 +331,10 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
 Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 21 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 55 warnings
-    Info: Peak virtual memory: 4642 megabytes
-    Info: Processing ended: Fri Oct 08 18:36:19 2021
-    Info: Elapsed time: 00:00:20
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 45 warnings
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Mon Oct 11 15:09:45 2021
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:02
 
 

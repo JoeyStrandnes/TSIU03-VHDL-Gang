@@ -1,6 +1,6 @@
 vendor_name = ModelSim
-source_file = 1, X:/TSIU03/Lab2/Lab2_KB.vhd
-source_file = 1, X:/TSIU03/Lab2/db/Lab2_KB.cbx.xml
+source_file = 1, X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/Lab2_KB.vhd
+source_file = 1, X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/db/Lab2_KB.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd

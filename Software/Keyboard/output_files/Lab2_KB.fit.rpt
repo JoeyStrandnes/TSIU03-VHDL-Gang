@@ -1,5 +1,5 @@
 Fitter report for Lab2_KB
-Fri Oct 08 18:36:50 2021
+Mon Oct 11 15:10:00 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 08 18:36:50 2021            ;
+; Fitter Status                      ; Successful - Mon Oct 11 15:10:00 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Lab2_KB                                          ;
 ; Top-level Entity Name              ; Lab2_KB                                          ;
@@ -146,12 +146,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 6           ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.83        ;
+; Average used               ; 1.77        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;  16.7%      ;
+;     Processors 2-6         ;  15.4%      ;
 +----------------------------+-------------+
 
 
@@ -240,7 +240,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in X:/TSIU03/Lab2/output_files/Lab2_KB.pin.
+The pin-out file can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/output_files/Lab2_KB.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1474,7 +1474,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "LEDR[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[8]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "LEDR[9]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1487,24 +1487,24 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.03 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file X:/TSIU03/Lab2/output_files/Lab2_KB.fit.smsg
+Info (144001): Generated suppressed messages file X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/output_files/Lab2_KB.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 5605 megabytes
-    Info: Processing ended: Fri Oct 08 18:36:52 2021
-    Info: Elapsed time: 00:00:32
+    Info: Peak virtual memory: 5596 megabytes
+    Info: Processing ended: Mon Oct 11 15:10:03 2021
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in X:/TSIU03/Lab2/output_files/Lab2_KB.fit.smsg.
+The suppressed messages can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Keyboard/output_files/Lab2_KB.fit.smsg.
 
 
