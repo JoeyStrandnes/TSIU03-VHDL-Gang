@@ -1,0 +1,499 @@
+m255
+K3
+13
+cModel Technology
+Z0 dX:\TSIU03\Lab3_VGA\MSim
+T_opt
+Vj;D?@K5G[1=GbK1K^1BQE2
+04 6 3 work tb_top sim 1
+=33-b00cd16f283b-6141c438-3e2-2b84
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1b;51
+T_opt1
+VLC^Ak75X^2N@5k>H]eH[70
+04 9 8 work vga_contr bdf_type 1
+=1-b00cd16f283b-613f78a4-347-2548
+R1
+n@_opt1
+R2
+Z3 dX:\TSIU03\Lab3_VGA\MSim
+Eblank_gen
+Z4 w1631697589
+Z5 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R3
+Z8 8X:/TSIU03/Lab3_VGA/blank_gen.vhd
+Z9 FX:/TSIU03/Lab3_VGA/blank_gen.vhd
+l0
+L5
+V_?a139Z2R=lR?bYP7L4mQ2
+Z10 OL;C;10.1b;51
+32
+Z11 !s108 1631697735.984000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/blank_gen.vhd|
+Z13 !s107 X:/TSIU03/Lab3_VGA/blank_gen.vhd|
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1
+!s100 cN3Qim_S]ZBkSCU?LUz4D0
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 9 blank_gen 0 22 _?a139Z2R=lR?bYP7L4mQ2
+l13
+L11
+Vn00z5^058>ZGR@?<I[GDi1
+R10
+32
+R11
+R12
+R13
+R14
+R15
+!s100 LFlzo;g]kh`f1Z@9Hi2_g2
+!i10b 1
+Ece_gen
+Z16 w1631699981
+R5
+R6
+R7
+R3
+Z17 8X:/TSIU03/Lab3_VGA/ce_gen.vhd
+Z18 FX:/TSIU03/Lab3_VGA/ce_gen.vhd
+l0
+L5
+VkfI4gbl:YlS^aB4B_1Ui73
+R10
+32
+Z19 !s108 1631699997.653000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/ce_gen.vhd|
+Z21 !s107 X:/TSIU03/Lab3_VGA/ce_gen.vhd|
+R14
+R15
+!s100 3Cm]Bo[_Kl]Bd?_=:f9mN1
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 6 ce_gen 0 22 kfI4gbl:YlS^aB4B_1Ui73
+l15
+L11
+V:0Q?@Xc:=Le`T4<CzV4B?0
+R10
+32
+R19
+R20
+R21
+R14
+R15
+!s100 hkR70N^0:I=BnK1Z4Thlb0
+!i10b 1
+Egroup_no
+Z22 w1552991786
+R6
+R7
+R3
+Z23 8X:/TSIU03/Lab3_VGA/group_no.vhd
+Z24 FX:/TSIU03/Lab3_VGA/group_no.vhd
+l0
+L7
+V`8kKI3`WTeQbzbm56fQFA3
+R10
+32
+Z25 !s108 1631697737.311000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/group_no.vhd|
+Z27 !s107 X:/TSIU03/Lab3_VGA/group_no.vhd|
+R14
+R15
+!s100 UJXobCL?NB3?5oGOWTR8e0
+!i10b 1
+Afoo
+R6
+R7
+DEx4 work 8 group_no 0 22 `8kKI3`WTeQbzbm56fQFA3
+l14
+L12
+VlJ6L[:;CelmcT<N3:DFeO3
+R10
+32
+R25
+R26
+R27
+R14
+R15
+!s100 T<J4cS<RI;MoUO:1;:3:`1
+!i10b 1
+Ehs_gen
+Z28 w1631697839
+R5
+R6
+R7
+R3
+Z29 8X:/TSIU03/Lab3_VGA/hs_gen.vhd
+Z30 FX:/TSIU03/Lab3_VGA/hs_gen.vhd
+l0
+L5
+V[H2l=Jj>XfCR;KGLGT7?b0
+R10
+32
+Z31 !s108 1631698129.006000
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/hs_gen.vhd|
+Z33 !s107 X:/TSIU03/Lab3_VGA/hs_gen.vhd|
+R14
+R15
+!s100 oP08lGfkPhbSoEOL6`L;03
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 6 hs_gen 0 22 [H2l=Jj>XfCR;KGLGT7?b0
+l12
+L11
+VFf`>lTk7Z=g3AVA^mML7Q0
+R10
+32
+R31
+R32
+R33
+R14
+R15
+!s100 gM[89W=6[=2Sgg:EXL@ec0
+!i10b 1
+Elinecounter
+Z34 w1631560198
+R5
+R6
+R7
+R3
+Z35 8X:/TSIU03/Lab3_VGA/linecounter.vhd
+Z36 FX:/TSIU03/Lab3_VGA/linecounter.vhd
+l0
+L5
+VKi2N7k>KD;L@UlIVLCGD;1
+R10
+32
+Z37 !s108 1631697740.606000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/linecounter.vhd|
+Z39 !s107 X:/TSIU03/Lab3_VGA/linecounter.vhd|
+R14
+R15
+!s100 k>h]6US@;XgSm;Fe2Fnkz2
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 linecounter 0 22 Ki2N7k>KD;L@UlIVLCGD;1
+l14
+L11
+V2DUSI^Ic<BNmN1LY5SLhi3
+R10
+32
+R37
+R38
+R39
+R14
+R15
+!s100 92E1MlA5IjXhXeGXka`Rc0
+!i10b 1
+Epixel_reg
+Z40 w1631267751
+R5
+R6
+R7
+R3
+Z41 8X:/TSIU03/Lab3_VGA/pixel_reg.vhd
+Z42 FX:/TSIU03/Lab3_VGA/pixel_reg.vhd
+l0
+L5
+VWMHoJAKEhRh=BN1gKaUg>2
+R10
+32
+Z43 !s108 1631697741.113000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/pixel_reg.vhd|
+Z45 !s107 X:/TSIU03/Lab3_VGA/pixel_reg.vhd|
+R14
+R15
+!s100 MhiojCLI`L67G9gH8>U053
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 9 pixel_reg 0 22 WMHoJAKEhRh=BN1gKaUg>2
+l16
+L13
+VR65kSMiT2EeKoRjR7dgAN0
+R10
+32
+R43
+R44
+R45
+R14
+R15
+!s100 3]RJ_ITEza0Ql2<Q=?Imz2
+!i10b 1
+Epixelcounter
+Z46 w1631561087
+R5
+R6
+R7
+R3
+Z47 8X:/TSIU03/Lab3_VGA/pixelcounter.vhd
+Z48 FX:/TSIU03/Lab3_VGA/pixelcounter.vhd
+l0
+L5
+VdoFf0WmX@>RAOdlc8MB4M1
+R10
+32
+Z49 !s108 1631697741.603000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/pixelcounter.vhd|
+Z51 !s107 X:/TSIU03/Lab3_VGA/pixelcounter.vhd|
+R14
+R15
+!s100 a]0gMngC^Jfg9]]Y[>LYP1
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 12 pixelcounter 0 22 doFf0WmX@>RAOdlc8MB4M1
+l12
+L10
+VhV1`SUcZa>CE]=`g@QZJ73
+R10
+32
+R49
+R50
+R51
+R14
+R15
+!s100 HiOPfVEB4g6d6G3`=_PLD2
+!i10b 1
+Eram_control
+Z52 w1631557163
+R5
+R6
+R7
+R3
+Z53 8X:/TSIU03/Lab3_VGA/RAM_control.vhd
+Z54 FX:/TSIU03/Lab3_VGA/RAM_control.vhd
+l0
+L5
+VBW>i[4T?GghRl<8K_=J133
+R10
+32
+Z55 !s108 1631697742.166000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/RAM_control.vhd|
+Z57 !s107 X:/TSIU03/Lab3_VGA/RAM_control.vhd|
+R14
+R15
+!s100 bo`>766h`Y]mX[n6XX<@I1
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 11 ram_control 0 22 BW>i[4T?GghRl<8K_=J133
+l17
+L14
+VQOE[aK01F`N31Bo5U3D]71
+R10
+32
+R55
+R56
+R57
+R14
+R15
+!s100 ]QO73m1MA4RGWE:@O@ATD2
+!i10b 1
+Ergb_gen
+Z58 w1631699863
+R5
+R6
+R7
+R3
+Z59 8X:/TSIU03/Lab3_VGA/RGB_gen.vhd
+Z60 FX:/TSIU03/Lab3_VGA/RGB_gen.vhd
+l0
+L5
+V7Y`HCeQ>19DCmQLH3@mm`1
+R10
+32
+Z61 !s108 1631699999.003000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/RGB_gen.vhd|
+Z63 !s107 X:/TSIU03/Lab3_VGA/RGB_gen.vhd|
+R14
+R15
+!s100 Ne=oZBg6;KoM4UgJlC_dA3
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 7 rgb_gen 0 22 7Y`HCeQ>19DCmQLH3@mm`1
+l17
+L15
+VWa3o;5[_SWVW3T_Q7II1U3
+R10
+32
+R61
+R62
+R63
+R14
+R15
+!s100 gKAMQX^ITDc;jF7Qb^<lz1
+!i10b 1
+Etb_sram
+Z64 w1552991780
+R5
+R6
+R7
+R3
+Z65 8X:/TSIU03/Lab3_VGA/MSim/TB_SRAM.vhd
+Z66 FX:/TSIU03/Lab3_VGA/MSim/TB_SRAM.vhd
+l0
+L5
+VhGMEk8TTFPDlUn^D43m:m2
+R10
+32
+Z67 !s108 1631697734.834000
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/MSim/TB_SRAM.vhd|
+Z69 !s107 X:/TSIU03/Lab3_VGA/MSim/TB_SRAM.vhd|
+R14
+R15
+!s100 H<G9SbifPUV09509VHR840
+!i10b 1
+Asim
+R5
+R6
+R7
+DEx4 work 7 tb_sram 0 22 hGMEk8TTFPDlUn^D43m:m2
+l17
+L15
+VV@9HC=fX>[nbccmmDMG062
+R10
+32
+R67
+R68
+R69
+R14
+R15
+!s100 ^6h`9hQhOXmTUG6@Zf1`:3
+!i10b 1
+Etb_top
+Z70 w1599827362
+R5
+R6
+R7
+R3
+Z71 8X:/TSIU03/Lab3_VGA/MSim/TB_top.vhd
+Z72 FX:/TSIU03/Lab3_VGA/MSim/TB_top.vhd
+l0
+L7
+VfK:iINF0jeA?6U7QSOL_N1
+R10
+32
+Z73 !s108 1631697735.414000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/MSim/TB_top.vhd|
+Z75 !s107 X:/TSIU03/Lab3_VGA/MSim/TB_top.vhd|
+R14
+R15
+!s100 VUYdAKGJG2hOkeh3XV_o;1
+!i10b 1
+Asim
+R5
+R6
+R7
+DEx4 work 6 tb_top 0 22 fK:iINF0jeA?6U7QSOL_N1
+l52
+L10
+VCS[dZ85iBF8H5_8Q<Fz6V1
+R10
+32
+R73
+R74
+R75
+R14
+R15
+!s100 ^?71;8lK]W7e11nPQ>0N:1
+!i10b 1
+Evga_contr
+Z76 w1629378291
+R5
+R6
+R7
+R3
+Z77 8X:/TSIU03/Lab3_VGA/VGA_contr.vhd
+Z78 FX:/TSIU03/Lab3_VGA/VGA_contr.vhd
+l0
+L25
+Vidi7n=g`86Xche>H?ia=;0
+R10
+32
+Z79 !s108 1631697743.380000
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/VGA_contr.vhd|
+Z81 !s107 X:/TSIU03/Lab3_VGA/VGA_contr.vhd|
+R14
+R15
+!s100 5_HG;3h0;?FSg8cIc]HP73
+!i10b 1
+Abdf_type
+R5
+R6
+R7
+DEx4 work 9 vga_contr 0 22 idi7n=g`86Xche>H?ia=;0
+l156
+L50
+V:S]Yf6:GKTZ;@n>;K5I8b2
+R10
+32
+R79
+R80
+R81
+R14
+R15
+!s100 :T>]MgMA=?Uo<n[n[B3=A3
+!i10b 1
+Evs_gen
+Z82 w1631560651
+R5
+R6
+R7
+R3
+Z83 8X:/TSIU03/Lab3_VGA/vs_gen.vhd
+Z84 FX:/TSIU03/Lab3_VGA/vs_gen.vhd
+l0
+L5
+VHL25[SK@VOUClb821>8RC3
+R10
+32
+Z85 !s108 1631697743.979000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|X:/TSIU03/Lab3_VGA/vs_gen.vhd|
+Z87 !s107 X:/TSIU03/Lab3_VGA/vs_gen.vhd|
+R14
+R15
+!s100 BC[No6H7:hZL239Kme;N<2
+!i10b 1
+Artl
+R5
+R6
+R7
+DEx4 work 6 vs_gen 0 22 HL25[SK@VOUClb821>8RC3
+l12
+L11
+V=5J]Y5S92@>8j<2?LOn1o1
+R10
+32
+R85
+R86
+R87
+R14
+R15
+!s100 m8U:GfM[5RzQLcdaRifZ71
+!i10b 1
