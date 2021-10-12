@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/output_files/") File("Proj.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("X:/GITHUB/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/output_files/") File("Proj.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -2,6 +2,7 @@
 <LOG_ROOT>
 	<PROJECT NAME="Proj">
 		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_qgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|ECHO_GEN:inst2|lpm_mult:Mult1" CBX_FILE_NAME="mult_36t.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_ae6.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

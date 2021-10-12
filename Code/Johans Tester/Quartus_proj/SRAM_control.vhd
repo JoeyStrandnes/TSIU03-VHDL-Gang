@@ -57,7 +57,7 @@ begin
 		end if;	
 	end process;
 	
-	ADDR <= PTR - offset;
+	ADDR <= PTR - offset; --flytta till inuti första processen?
 	
 	
 	-- we    ----__--------------------------------------

@@ -160,7 +160,7 @@ applicable agreement for further details.
 	(input)
 	(rect -424 464 -256 480)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[0..3]" (rect 5 0 49 12)(font "Arial" ))
+	(text "SW[0..3]" (rect 5 0 48 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -177,7 +177,7 @@ applicable agreement for further details.
 	(input)
 	(rect -424 480 -256 496)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "SW[4..5]" (rect 5 0 49 12)(font "Arial" ))
+	(text "SW[4..5]" (rect 5 0 48 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -189,6 +189,23 @@ applicable agreement for further details.
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect -504 512 -440 752))
+)
+(pin
+	(input)
+	(rect -424 496 -256 512)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "SW[6..9]" (rect 5 0 49 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -448 552 -384 792))
 )
 (pin
 	(output)
@@ -1011,7 +1028,7 @@ applicable agreement for further details.
 		(pt 144 32)
 		(output)
 		(text "result[3..0]" (rect 0 0 53 12)(font "Arial" ))
-		(text "result[3..0]" (rect 79 27 123 39)(font "Arial" ))
+		(text "result[3..0]" (rect 79 27 132 39)(font "Arial" ))
 		(line (pt 144 32)(pt 128 32)(line_width 3))
 	)
 	(drawing
@@ -1277,8 +1294,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "ECHO_VOL[3..0]" (rect -254 488 -170 500)(font "Arial" ))
+	(text "ECHO_VOL[3..0]" (rect -230 488 -146 500)(font "Arial" ))
 	(pt -256 504)
-	(pt -160 504)
+	(pt -136 504)
 	(bus)
 )

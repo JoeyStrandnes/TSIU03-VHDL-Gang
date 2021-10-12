@@ -146,8 +146,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
+SW[9]                        : AB25      : input  : 3.3-V LVTTL       :         : 5         : Y              
+SW[7]                        : AB26      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[4]                        : AB27      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[0]                        : AB28      : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   :         : 2         :                
@@ -174,7 +174,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
+SW[8]                        : AC25      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[5]                        : AC26      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[2]                        : AC27      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[1]                        : AC28      : input  : 3.3-V LVTTL       :         : 5         : Y              
@@ -203,7 +203,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :      
 VCCIO4                       : AD23      : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
+SW[6]                        : AD26      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[3]                        : AD27      : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
 sram_data[11]                : AE1       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
