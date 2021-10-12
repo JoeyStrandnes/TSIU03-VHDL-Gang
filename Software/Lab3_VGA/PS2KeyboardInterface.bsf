@@ -54,8 +54,8 @@ applicable agreement for further details.
 	(port
 		(pt 200 32)
 		(output)
-		(text "Number[1..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "Number[1..0]" (rect 128 27 179 39)(font "Arial" ))
+		(text "Number[2..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "Number[2..0]" (rect 126 27 179 39)(font "Arial" ))
 		(line (pt 200 32)(pt 184 32)(line_width 3))
 	)
 	(drawing
