@@ -1,5 +1,5 @@
 Fitter report for Lab3_VGA
-Tue Oct 12 13:05:54 2021
+Tue Oct 12 15:31:19 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -69,17 +69,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Oct 12 13:05:54 2021            ;
+; Fitter Status                      ; Successful - Tue Oct 12 15:31:19 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Lab3_VGA                                         ;
 ; Top-level Entity Name              ; VGA_contr                                        ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE115F29C7                                    ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 611 / 114,480 ( < 1 % )                          ;
-;     Total combinational functions  ; 594 / 114,480 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 147 / 114,480 ( < 1 % )                          ;
-; Total registers                    ; 147                                              ;
+; Total logic elements               ; 631 / 114,480 ( < 1 % )                          ;
+;     Total combinational functions  ; 614 / 114,480 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 154 / 114,480 ( < 1 % )                          ;
+; Total registers                    ; 154                                              ;
 ; Total pins                         ; 47 / 529 ( 9 % )                                 ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                            ;
@@ -155,12 +155,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 6           ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.67        ;
+; Average used               ; 1.83        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;  13.3%      ;
+;     Processors 2-6         ;  16.7%      ;
 +----------------------------+-------------+
 
 
@@ -270,8 +270,8 @@ applicable agreement for further details.
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 847 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 847 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 874 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 874 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -294,7 +294,7 @@ applicable agreement for further details.
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 837     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 864     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 10      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -310,23 +310,23 @@ The pin-out file can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ou
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Total logic elements                        ; 611 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 464                     ;
+; Total logic elements                        ; 631 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 477                     ;
 ;     -- Register only                        ; 17                      ;
-;     -- Combinational with a register        ; 130                     ;
+;     -- Combinational with a register        ; 137                     ;
 ;                                             ;                         ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 325                     ;
-;     -- 3 input functions                    ; 155                     ;
-;     -- <=2 input functions                  ; 114                     ;
+;     -- 4 input functions                    ; 322                     ;
+;     -- 3 input functions                    ; 172                     ;
+;     -- <=2 input functions                  ; 120                     ;
 ;     -- Register only                        ; 17                      ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 473                     ;
-;     -- arithmetic mode                      ; 121                     ;
+;     -- normal mode                          ; 480                     ;
+;     -- arithmetic mode                      ; 134                     ;
 ;                                             ;                         ;
-; Total registers*                            ; 147 / 117,053 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 147 / 114,480 ( < 1 % ) ;
+; Total registers*                            ; 154 / 117,053 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 154 / 114,480 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )       ;
 ;                                             ;                         ;
 ; Total LABs:  partially or completely used   ; 42 / 7,155 ( < 1 % )    ;
@@ -347,11 +347,11 @@ The pin-out file can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ou
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )           ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )           ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%            ;
-; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%            ;
-; Maximum fan-out                             ; 147                     ;
-; Highest non-global fan-out                  ; 98                      ;
-; Total fan-out                               ; 2520                    ;
-; Average fan-out                             ; 2.93                    ;
+; Peak interconnect usage (total/H/V)         ; 3% / 2% / 3%            ;
+; Maximum fan-out                             ; 154                     ;
+; Highest non-global fan-out                  ; 100                     ;
+; Total fan-out                               ; 2585                    ;
+; Average fan-out                             ; 2.94                    ;
 +---------------------------------------------+-------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -364,23 +364,23 @@ The pin-out file can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ou
 +---------------------------------------------+------------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                    ; Low                            ;
 ;                                             ;                        ;                                ;
-; Total logic elements                        ; 611 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 464                    ; 0                              ;
+; Total logic elements                        ; 631 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 477                    ; 0                              ;
 ;     -- Register only                        ; 17                     ; 0                              ;
-;     -- Combinational with a register        ; 130                    ; 0                              ;
+;     -- Combinational with a register        ; 137                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic element usage by number of LUT inputs ;                        ;                                ;
-;     -- 4 input functions                    ; 325                    ; 0                              ;
-;     -- 3 input functions                    ; 155                    ; 0                              ;
-;     -- <=2 input functions                  ; 114                    ; 0                              ;
+;     -- 4 input functions                    ; 322                    ; 0                              ;
+;     -- 3 input functions                    ; 172                    ; 0                              ;
+;     -- <=2 input functions                  ; 120                    ; 0                              ;
 ;     -- Register only                        ; 17                     ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Logic elements by mode                      ;                        ;                                ;
-;     -- normal mode                          ; 473                    ; 0                              ;
-;     -- arithmetic mode                      ; 121                    ; 0                              ;
+;     -- normal mode                          ; 480                    ; 0                              ;
+;     -- arithmetic mode                      ; 134                    ; 0                              ;
 ;                                             ;                        ;                                ;
-; Total registers                             ; 147                    ; 0                              ;
-;     -- Dedicated logic registers            ; 147 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+; Total registers                             ; 154                    ; 0                              ;
+;     -- Dedicated logic registers            ; 154 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
 ;                                             ;                        ;                                ;
 ; Total LABs:  partially or completely used   ; 42 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                        ;                                ;
@@ -398,8 +398,8 @@ The pin-out file can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ou
 ;     -- Registered Output Connections        ; 0                      ; 0                              ;
 ;                                             ;                        ;                                ;
 ; Internal Connections                        ;                        ;                                ;
-;     -- Total Connections                    ; 2515                   ; 5                              ;
-;     -- Registered Connections               ; 962                    ; 0                              ;
+;     -- Total Connections                    ; 2580                   ; 5                              ;
+;     -- Registered Connections               ; 989                    ; 0                              ;
 ;                                             ;                        ;                                ;
 ; External Connections                        ;                        ;                                ;
 ;     -- Top                                  ; 0                      ; 0                              ;
@@ -434,7 +434,7 @@ The pin-out file can be found in X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ou
 ; KEY0     ; M23   ; 6        ; 115          ; 40           ; 7            ; 47                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; PS2_CLK  ; G6    ; 1        ; 0            ; 67           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; PS2_DAT  ; H5    ; 1        ; 0            ; 59           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; fpga_clk ; Y2    ; 2        ; 0            ; 36           ; 14           ; 147                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; fpga_clk ; Y2    ; 2        ; 0            ; 36           ; 14           ; 154                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 +----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -1331,14 +1331,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------+--------------+
 ; Compilation Hierarchy Node      ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                   ; Library Name ;
 +---------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------+--------------+
-; |VGA_contr                      ; 611 (9)     ; 147 (9)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 47   ; 0            ; 464 (0)      ; 17 (6)            ; 130 (2)          ; |VGA_contr                            ; work         ;
+; |VGA_contr                      ; 631 (9)     ; 154 (9)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 47   ; 0            ; 477 (0)      ; 17 (6)            ; 137 (2)          ; |VGA_contr                            ; work         ;
 ;    |PS2KeyboardInterface:inst1| ; 29 (29)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 1 (1)             ; 16 (16)          ; |VGA_contr|PS2KeyboardInterface:inst1 ; work         ;
 ;    |RGB_gen:i_RGB_gen|          ; 24 (24)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 9 (9)             ; 15 (15)          ; |VGA_contr|RGB_gen:i_RGB_gen          ; work         ;
 ;    |blank_gen:iBlank_gen|       ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; |VGA_contr|blank_gen:iBlank_gen       ; work         ;
 ;    |ce_gen:i_ce_gen|            ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |VGA_contr|ce_gen:i_ce_gen            ; work         ;
 ;    |hs_gen:i_hs_gen|            ; 3 (3)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; |VGA_contr|hs_gen:i_hs_gen            ; work         ;
 ;    |linecounter:i_linecounter|  ; 17 (17)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 10 (10)          ; |VGA_contr|linecounter:i_linecounter  ; work         ;
-;    |masking:inst|               ; 241 (241)   ; 51 (51)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 171 (171)    ; 0 (0)             ; 70 (70)          ; |VGA_contr|masking:inst               ; work         ;
+;    |masking:inst|               ; 261 (261)   ; 58 (58)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 184 (184)    ; 0 (0)             ; 77 (77)          ; |VGA_contr|masking:inst               ; work         ;
 ;    |pixel_reg:i_pixreg|         ; 281 (281)   ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 258 (258)    ; 1 (1)             ; 22 (22)          ; |VGA_contr|pixel_reg:i_pixreg         ; work         ;
 ;    |pixelcounter:i_pixcounter|  ; 19 (19)     ; 10 (10)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 10 (10)          ; |VGA_contr|pixelcounter:i_pixcounter  ; work         ;
 ;    |vs_gen:i_vs_gen|            ; 4 (4)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 1 (1)            ; |VGA_contr|vs_gen:i_vs_gen            ; work         ;
@@ -1395,8 +1395,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; vga_r[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; vga_r[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; fpga_clk  ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; KEY0      ; Input    ; (6) 1314 ps   ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; PS2_CLK   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; KEY0      ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; PS2_CLK   ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; PS2_DAT   ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 +-----------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1434,29 +1434,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - pixelcounter:i_pixcounter|hcnti[7]         ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[8]         ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[9]         ; 1                 ; 6       ;
-;      - pixelcounter:i_pixcounter|hcnti[5]         ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[6]         ; 1                 ; 6       ;
-;      - pixelcounter:i_pixcounter|hcnti[3]         ; 1                 ; 6       ;
+;      - pixelcounter:i_pixcounter|hcnti[5]         ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[4]         ; 1                 ; 6       ;
+;      - pixelcounter:i_pixcounter|hcnti[3]         ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|Number[1]       ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|Number[0]       ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|Number[2]       ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[2]         ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[1]         ; 1                 ; 6       ;
 ;      - pixelcounter:i_pixcounter|hcnti[0]         ; 1                 ; 6       ;
-;      - PS2KeyboardInterface:inst1|shiftreg[0]     ; 1                 ; 6       ;
-;      - PS2KeyboardInterface:inst1|shiftreg[1]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[2]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[4]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[7]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[6]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[5]     ; 1                 ; 6       ;
-;      - PS2KeyboardInterface:inst1|shiftreg[3]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[8]     ; 1                 ; 6       ;
-;      - PS2KeyboardInterface:inst1|break~0         ; 0                 ; 6       ;
+;      - PS2KeyboardInterface:inst1|shiftreg[1]     ; 1                 ; 6       ;
+;      - PS2KeyboardInterface:inst1|shiftreg[3]     ; 1                 ; 6       ;
+;      - PS2KeyboardInterface:inst1|shiftreg[0]     ; 1                 ; 6       ;
 ;      - PS2KeyboardInterface:inst1|shiftreg[9]     ; 1                 ; 6       ;
+;      - PS2KeyboardInterface:inst1|break~0         ; 1                 ; 6       ;
 ; PS2_CLK                                           ;                   ;         ;
-;      - PS2KeyboardInterface:inst1|PS2_CLK2~feeder ; 1                 ; 6       ;
+;      - PS2KeyboardInterface:inst1|PS2_CLK2~feeder ; 0                 ; 6       ;
 ; PS2_DAT                                           ;                   ;         ;
 ;      - PS2KeyboardInterface:inst1|shiftreg~10     ; 1                 ; 6       ;
 +---------------------------------------------------+-------------------+---------+
@@ -1468,18 +1468,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                     ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; KEY0                                     ; PIN_M23            ; 47      ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; PS2KeyboardInterface:inst1|shiftreg[0]   ; FF_X67_Y47_N9      ; 14      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; PS2KeyboardInterface:inst1|shiftreg[8]~2 ; LCCOMB_X67_Y47_N0  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; ce_gen:i_ce_gen|counter[0]               ; FF_X66_Y46_N1      ; 37      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; fpga_clk                                 ; PIN_Y2             ; 147     ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; linecounter:i_linecounter|LessThan0~2    ; LCCOMB_X67_Y45_N30 ; 10      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; linecounter:i_linecounter|process_0~3    ; LCCOMB_X66_Y46_N30 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; masking:inst|DIST_Limit[1]~1             ; LCCOMB_X73_Y47_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; masking:inst|ED_Limit[1]~1               ; LCCOMB_X73_Y47_N8  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; masking:inst|EN_Limit[1]~4               ; LCCOMB_X73_Y47_N22 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; masking:inst|LR_Limit[1]~1               ; LCCOMB_X73_Y47_N4  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; masking:inst|VOL_Limit[1]~2              ; LCCOMB_X73_Y47_N6  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; pixel_reg:i_pixreg|Equal0~0              ; LCCOMB_X69_Y47_N20 ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; PS2KeyboardInterface:inst1|shiftreg[0]   ; FF_X76_Y49_N11     ; 14      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; PS2KeyboardInterface:inst1|shiftreg[8]~1 ; LCCOMB_X76_Y49_N0  ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; ce_gen:i_ce_gen|counter[0]               ; FF_X76_Y50_N17     ; 37      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; fpga_clk                                 ; PIN_Y2             ; 154     ; Clock                      ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; linecounter:i_linecounter|LessThan0~2    ; LCCOMB_X77_Y51_N30 ; 10      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; linecounter:i_linecounter|process_0~3    ; LCCOMB_X76_Y50_N0  ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; masking:inst|DIST_Limit[1]~1             ; LCCOMB_X74_Y52_N28 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; masking:inst|ED_Limit[3]~2               ; LCCOMB_X72_Y52_N4  ; 7       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; masking:inst|EN_Limit[1]~1               ; LCCOMB_X72_Y52_N10 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; masking:inst|EV_Limit[1]~3               ; LCCOMB_X72_Y53_N30 ; 9       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; masking:inst|LR_Limit[1]~1               ; LCCOMB_X74_Y52_N30 ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; masking:inst|VOL_Limit[1]~2              ; LCCOMB_X74_Y53_N2  ; 8       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; pixel_reg:i_pixreg|Equal0~0              ; LCCOMB_X77_Y52_N2  ; 20      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1488,7 +1489,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name     ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; fpga_clk ; PIN_Y2   ; 147     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; fpga_clk ; PIN_Y2   ; 154     ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +----------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1497,56 +1498,58 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------+---------+
 ; Name                                     ; Fan-Out ;
 +------------------------------------------+---------+
-; pixel_reg:i_pixreg|Add1~0                ; 98      ;
-; pixelcounter:i_pixcounter|hcnti[3]       ; 92      ;
-; pixel_reg:i_pixreg|Add1~2                ; 91      ;
-; pixelcounter:i_pixcounter|hcnti[5]       ; 76      ;
-; pixel_reg:i_pixreg|Add1~4                ; 73      ;
-; pixelcounter:i_pixcounter|hcnti[6]       ; 72      ;
+; pixel_reg:i_pixreg|Add1~0                ; 100     ;
+; pixel_reg:i_pixreg|Add1~2                ; 89      ;
+; pixelcounter:i_pixcounter|hcnti[3]       ; 87      ;
+; pixelcounter:i_pixcounter|hcnti[6]       ; 85      ;
+; pixelcounter:i_pixcounter|hcnti[5]       ; 79      ;
+; pixel_reg:i_pixreg|Add1~4                ; 69      ;
 ; pixelcounter:i_pixcounter|hcnti[4]       ; 53      ;
-; pixel_reg:i_pixreg|Add1~6                ; 49      ;
 ; KEY0~input                               ; 47      ;
-; pixel_reg:i_pixreg|Add1~10               ; 46      ;
+; pixel_reg:i_pixreg|Add1~10               ; 45      ;
+; pixel_reg:i_pixreg|Add1~6                ; 45      ;
 ; ce_gen:i_ce_gen|counter[0]               ; 37      ;
 ; pixel_reg:i_pixreg|Equal0~0              ; 20      ;
-; masking:inst|Menu_Counter[2]             ; 17      ;
 ; masking:inst|pixcode[7]                  ; 15      ;
 ; PS2KeyboardInterface:inst1|shiftreg[0]   ; 14      ;
-; masking:inst|Menu_Counter[0]             ; 13      ;
-; pixel_reg:i_pixreg|hcnt_d[6]             ; 13      ;
-; pixel_reg:i_pixreg|hcnt_d[5]             ; 13      ;
 ; pixel_reg:i_pixreg|vcnt_d[5]             ; 13      ;
-; masking:inst|Menu_Counter[1]             ; 12      ;
-; pixel_reg:i_pixreg|hcnt_d[4]             ; 12      ;
-; pixel_reg:i_pixreg|vcnt_d[7]             ; 12      ;
+; pixel_reg:i_pixreg|hcnt_d[5]             ; 13      ;
+; masking:inst|Menu_Counter[0]             ; 12      ;
+; pixel_reg:i_pixreg|vcnt_d[4]             ; 12      ;
 ; pixel_reg:i_pixreg|vcnt_d[6]             ; 12      ;
-; pixel_reg:i_pixreg|hcnt_d[3]             ; 11      ;
-; pixel_reg:i_pixreg|vcnt_d[4]             ; 11      ;
+; pixel_reg:i_pixreg|hcnt_d[3]             ; 12      ;
+; pixel_reg:i_pixreg|hcnt_d[4]             ; 12      ;
+; pixel_reg:i_pixreg|hcnt_d[6]             ; 12      ;
+; masking:inst|Menu_Counter[1]             ; 11      ;
+; masking:inst|Menu_Counter[2]             ; 11      ;
+; pixel_reg:i_pixreg|hcnt_d[7]             ; 11      ;
+; pixel_reg:i_pixreg|hcnt_d[8]             ; 11      ;
 ; linecounter:i_linecounter|process_0~3    ; 10      ;
 ; linecounter:i_linecounter|LessThan0~2    ; 10      ;
-; pixel_reg:i_pixreg|hcnt_d[7]             ; 10      ;
-; pixel_reg:i_pixreg|hcnt_d[8]             ; 10      ;
-; PS2KeyboardInterface:inst1|shiftreg[8]~2 ; 9       ;
-; masking:inst|ED_Limit[1]~1               ; 9       ;
-; masking:inst|EN_Limit[1]~4               ; 9       ;
-; masking:inst|process_0~44                ; 9       ;
-; masking:inst|process_0~32                ; 9       ;
+; pixel_reg:i_pixreg|vcnt_d[7]             ; 10      ;
+; PS2KeyboardInterface:inst1|shiftreg[8]~1 ; 9       ;
+; masking:inst|EV_Limit[1]~3               ; 9       ;
+; masking:inst|process_0~41                ; 9       ;
+; masking:inst|EN_Limit[1]~1               ; 9       ;
+; masking:inst|process_0~25                ; 9       ;
 ; masking:inst|pixcode[1]                  ; 9       ;
-; pixel_reg:i_pixreg|Add1~12               ; 9       ;
 ; linecounter:i_linecounter|vcnti[6]       ; 9       ;
 ; masking:inst|LR_Limit[1]~1               ; 8       ;
 ; masking:inst|DIST_Limit[1]~1             ; 8       ;
 ; pixel_reg:i_pixreg|Mux0~0                ; 8       ;
 ; masking:inst|VOL_Limit[1]~2              ; 8       ;
-; masking:inst|process_0~26                ; 8       ;
-; masking:inst|Equal8~0                    ; 8       ;
-; masking:inst|process_0~47                ; 7       ;
-; masking:inst|process_0~46                ; 7       ;
-; pixel_reg:i_pixreg|Mux0~18               ; 7       ;
+; masking:inst|Equal4~0                    ; 8       ;
+; pixel_reg:i_pixreg|hcnt_d[1]             ; 8       ;
+; pixel_reg:i_pixreg|hcnt_d[2]             ; 8       ;
+; pixel_reg:i_pixreg|hcnt_d[9]             ; 8       ;
+; pixel_reg:i_pixreg|Add1~12               ; 8       ;
+; masking:inst|process_0~43                ; 7       ;
+; masking:inst|process_0~42                ; 7       ;
+; masking:inst|ED_Limit[3]~2               ; 7       ;
+; masking:inst|process_0~38                ; 7       ;
+; masking:inst|process_0~19                ; 7       ;
 ; PS2KeyboardInterface:inst1|Number[0]     ; 7       ;
-; pixel_reg:i_pixreg|hcnt_d[1]             ; 7       ;
-; pixel_reg:i_pixreg|hcnt_d[2]             ; 7       ;
-; pixel_reg:i_pixreg|hcnt_d[9]             ; 7       ;
+; pixel_reg:i_pixreg|hcnt_d[0]             ; 7       ;
 ; masking:inst|pixcode[4]                  ; 7       ;
 ; masking:inst|pixcode[6]                  ; 7       ;
 ; pixel_reg:i_pixreg|Add1~8                ; 7       ;
@@ -1554,41 +1557,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; linecounter:i_linecounter|vcnti[8]       ; 7       ;
 ; linecounter:i_linecounter|vcnti[5]       ; 7       ;
 ; linecounter:i_linecounter|vcnti[7]       ; 7       ;
-; PS2KeyboardInterface:inst1|shiftreg[8]   ; 6       ;
 ; PS2KeyboardInterface:inst1|shiftreg[3]   ; 6       ;
-; PS2KeyboardInterface:inst1|shiftreg[2]   ; 6       ;
+; PS2KeyboardInterface:inst1|shiftreg[8]   ; 6       ;
 ; pixelcounter:i_pixcounter|Equal0~2       ; 6       ;
+; pixel_reg:i_pixreg|Mux0~60               ; 6       ;
 ; masking:inst|VOL_Limit[1]~1              ; 6       ;
+; masking:inst|Equal5~0                    ; 6       ;
 ; pixelcounter:i_pixcounter|hcnti[9]       ; 6       ;
 ; pixelcounter:i_pixcounter|hcnti[8]       ; 6       ;
 ; pixelcounter:i_pixcounter|hcnti[7]       ; 6       ;
+; masking:inst|pixcode~25                  ; 6       ;
 ; masking:inst|LR_Limit[4]                 ; 6       ;
-; pixel_reg:i_pixreg|hcnt_d[0]             ; 6       ;
+; masking:inst|pixcode~20                  ; 6       ;
+; masking:inst|process_0~2                 ; 6       ;
 ; pixel_reg:i_pixreg|vcnt_d[3]             ; 6       ;
 ; masking:inst|pixcode[3]                  ; 6       ;
 ; masking:inst|pixcode[5]                  ; 6       ;
 ; linecounter:i_linecounter|vcnti[3]       ; 6       ;
 ; linecounter:i_linecounter|vcnti[4]       ; 6       ;
 ; PS2KeyboardInterface:inst1|shiftreg[1]   ; 5       ;
-; pixel_reg:i_pixreg|Mux0~45               ; 5       ;
+; PS2KeyboardInterface:inst1|shiftreg[2]   ; 5       ;
+; pixel_reg:i_pixreg|Mux0~44               ; 5       ;
 ; pixelcounter:i_pixcounter|hcnti[0]       ; 5       ;
 ; pixelcounter:i_pixcounter|hcnti[1]       ; 5       ;
 ; pixelcounter:i_pixcounter|hcnti[2]       ; 5       ;
-; masking:inst|Equal6~0                    ; 5       ;
-; masking:inst|Equal5~0                    ; 5       ;
 ; PS2KeyboardInterface:inst1|Number[2]     ; 5       ;
 ; PS2KeyboardInterface:inst1|Number[1]     ; 5       ;
-; masking:inst|pixcode~15                  ; 5       ;
 ; masking:inst|LR_Limit[3]                 ; 5       ;
 ; masking:inst|LR_Limit[5]                 ; 5       ;
 ; masking:inst|LR_Limit[6]                 ; 5       ;
 ; masking:inst|LR_Limit[7]                 ; 5       ;
 ; masking:inst|LR_Limit[8]                 ; 5       ;
-; masking:inst|process_0~4                 ; 5       ;
-; masking:inst|process_0~2                 ; 5       ;
-; PS2KeyboardInterface:inst1|Number~2      ; 4       ;
-; PS2KeyboardInterface:inst1|Equal0~0      ; 4       ;
-; masking:inst|VOL_Limit[7]~0              ; 4       ;
+; masking:inst|pixcode~24                  ; 5       ;
+; masking:inst|process_0~1                 ; 5       ;
+; pixel_reg:i_pixreg|Mux0~11               ; 4       ;
+; masking:inst|VOL_Limit[2]~0              ; 4       ;
 ; masking:inst|DIST_Limit[3]               ; 4       ;
 ; masking:inst|DIST_Limit[4]               ; 4       ;
 ; masking:inst|DIST_Limit[5]               ; 4       ;
@@ -1602,6 +1605,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; masking:inst|ED_Limit[7]                 ; 4       ;
 ; masking:inst|ED_Limit[8]                 ; 4       ;
 ; masking:inst|ED_Limit[9]                 ; 4       ;
+; masking:inst|EV_Limit[3]                 ; 4       ;
+; masking:inst|EV_Limit[4]                 ; 4       ;
+; masking:inst|EV_Limit[5]                 ; 4       ;
+; masking:inst|EV_Limit[6]                 ; 4       ;
+; masking:inst|EV_Limit[7]                 ; 4       ;
+; masking:inst|EV_Limit[8]                 ; 4       ;
+; masking:inst|EV_Limit[9]                 ; 4       ;
 ; masking:inst|EN_Limit[3]                 ; 4       ;
 ; masking:inst|EN_Limit[4]                 ; 4       ;
 ; masking:inst|EN_Limit[5]                 ; 4       ;
@@ -1615,105 +1625,105 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; masking:inst|VOL_Limit[6]                ; 4       ;
 ; masking:inst|VOL_Limit[7]                ; 4       ;
 ; masking:inst|VOL_Limit[8]                ; 4       ;
-; pixel_reg:i_pixreg|vcnt_d[9]             ; 4       ;
-; pixel_reg:i_pixreg|vcnt_d[8]             ; 4       ;
-; masking:inst|LessThan44~0                ; 4       ;
+; masking:inst|LessThan47~0                ; 4       ;
 ; linecounter:i_linecounter|vcnti[2]       ; 4       ;
 ; linecounter:i_linecounter|vcnti[1]       ; 4       ;
 ; linecounter:i_linecounter|vcnti[0]       ; 4       ;
 ; PS2KeyboardInterface:inst1|PS2_CLK2      ; 3       ;
+; PS2KeyboardInterface:inst1|Number~3      ; 3       ;
+; PS2KeyboardInterface:inst1|break         ; 3       ;
+; PS2KeyboardInterface:inst1|Equal0~0      ; 3       ;
 ; PS2KeyboardInterface:inst1|shiftreg[5]   ; 3       ;
 ; PS2KeyboardInterface:inst1|shiftreg[6]   ; 3       ;
 ; PS2KeyboardInterface:inst1|shiftreg[7]   ; 3       ;
 ; PS2KeyboardInterface:inst1|shiftreg[4]   ; 3       ;
-; PS2KeyboardInterface:inst1|break         ; 3       ;
-; pixel_reg:i_pixreg|Mux0~204              ; 3       ;
+; masking:inst|ED_Limit[3]~1               ; 3       ;
+; masking:inst|ED_Limit[3]~0               ; 3       ;
+; masking:inst|LR_Limit[1]~0               ; 3       ;
+; pixel_reg:i_pixreg|Mux0~160              ; 3       ;
 ; pixel_reg:i_pixreg|Mux0~17               ; 3       ;
 ; pixel_reg:i_pixreg|Mux0~3                ; 3       ;
-; masking:inst|LR_Limit[2]~0               ; 3       ;
-; masking:inst|process_0~28                ; 3       ;
+; masking:inst|process_0~21                ; 3       ;
+; masking:inst|Equal9~5                    ; 3       ;
 ; pixel_reg:i_pixreg|counter[0]            ; 3       ;
-; masking:inst|pixcode~18                  ; 3       ;
 ; masking:inst|LR_Limit[1]                 ; 3       ;
 ; masking:inst|LR_Limit[2]                 ; 3       ;
-; pixel_reg:i_pixreg|pixcode_single        ; 3       ;
-; masking:inst|process_0~18                ; 3       ;
-; masking:inst|pixcode~13                  ; 3       ;
-; masking:inst|LessThan37~2                ; 3       ;
-; masking:inst|ED_Limit[1]                 ; 3       ;
-; masking:inst|ED_Limit[2]                 ; 3       ;
-; masking:inst|LessThan46~0                ; 3       ;
-; masking:inst|EN_Limit[1]                 ; 3       ;
-; masking:inst|EN_Limit[2]                 ; 3       ;
-; masking:inst|LessThan26~1                ; 3       ;
+; masking:inst|Equal9~4                    ; 3       ;
+; masking:inst|Equal9~3                    ; 3       ;
+; masking:inst|Equal9~2                    ; 3       ;
+; masking:inst|LessThan49~0                ; 3       ;
+; masking:inst|Equal9~1                    ; 3       ;
+; masking:inst|Equal9~0                    ; 3       ;
+; pixel_reg:i_pixreg|vcnt_d[9]             ; 3       ;
+; pixel_reg:i_pixreg|vcnt_d[8]             ; 3       ;
 ; PS2KeyboardInterface:inst1|new_number    ; 3       ;
 ; pixel_reg:i_pixreg|Add1~14               ; 3       ;
 ; PS2KeyboardInterface:inst1|Number~8      ; 2       ;
-; masking:inst|LessThan23~3                ; 2       ;
+; masking:inst|LessThan40~3                ; 2       ;
+; masking:inst|LessThan25~3                ; 2       ;
 ; PS2KeyboardInterface:inst1|PS2_CLK2_old  ; 2       ;
 ; PS2KeyboardInterface:inst1|Number~6      ; 2       ;
-; PS2KeyboardInterface:inst1|Equal2~1      ; 2       ;
 ; PS2KeyboardInterface:inst1|Equal0~2      ; 2       ;
+; PS2KeyboardInterface:inst1|Equal2~1      ; 2       ;
+; PS2KeyboardInterface:inst1|Equal0~1      ; 2       ;
 ; linecounter:i_linecounter|process_0~1    ; 2       ;
 ; linecounter:i_linecounter|process_0~0    ; 2       ;
-; pixel_reg:i_pixreg|Mux0~205              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~194              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~186              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~182              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~178              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~177              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~158              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~110              ; 2       ;
-; pixel_reg:i_pixreg|Mux0~94               ; 2       ;
+; masking:inst|DIST_Limit[6]~0             ; 2       ;
+; masking:inst|process_0~32                ; 2       ;
+; masking:inst|process_0~29                ; 2       ;
+; masking:inst|EN_Limit[2]~0               ; 2       ;
+; pixel_reg:i_pixreg|Mux0~206              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~196              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~195              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~185              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~171              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~161              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~147              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~131              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~130              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~111              ; 2       ;
+; pixel_reg:i_pixreg|Mux0~93               ; 2       ;
 ; pixel_reg:i_pixreg|Mux0~70               ; 2       ;
 ; pixel_reg:i_pixreg|Mux0~61               ; 2       ;
-; pixel_reg:i_pixreg|Mux0~48               ; 2       ;
-; pixel_reg:i_pixreg|Mux0~33               ; 2       ;
-; pixel_reg:i_pixreg|Mux0~30               ; 2       ;
+; pixel_reg:i_pixreg|Mux0~47               ; 2       ;
+; pixel_reg:i_pixreg|Mux0~32               ; 2       ;
 ; pixel_reg:i_pixreg|Mux0~13               ; 2       ;
 ; pixel_reg:i_pixreg|Mux0~12               ; 2       ;
-; pixel_reg:i_pixreg|Mux0~11               ; 2       ;
 ; pixel_reg:i_pixreg|Mux0~2                ; 2       ;
-; masking:inst|ED_Limit[6]~0               ; 2       ;
-; masking:inst|EN_Limit[1]~3               ; 2       ;
-; masking:inst|DIST_Limit[1]~0             ; 2       ;
-; masking:inst|process_0~38                ; 2       ;
-; masking:inst|process_0~35                ; 2       ;
+; masking:inst|process_0~18                ; 2       ;
 ; pixel_reg:i_pixreg|counter[1]            ; 2       ;
-; masking:inst|pixcode~19                  ; 2       ;
 ; masking:inst|DIST_Limit[1]               ; 2       ;
 ; masking:inst|DIST_Limit[2]               ; 2       ;
-; masking:inst|process_0~19                ; 2       ;
-; masking:inst|pixcode~14                  ; 2       ;
-; masking:inst|process_0~15                ; 2       ;
-; masking:inst|Equal8~2                    ; 2       ;
-; masking:inst|process_0~13                ; 2       ;
-; masking:inst|LessThan43~0                ; 2       ;
-; masking:inst|Equal8~1                    ; 2       ;
-; masking:inst|process_0~9                 ; 2       ;
+; masking:inst|process_0~14                ; 2       ;
+; masking:inst|pixcode~23                  ; 2       ;
+; masking:inst|EV_Limit[1]                 ; 2       ;
+; masking:inst|EV_Limit[2]                 ; 2       ;
+; masking:inst|pixcode~22                  ; 2       ;
+; masking:inst|EN_Limit[1]                 ; 2       ;
+; masking:inst|EN_Limit[2]                 ; 2       ;
+; masking:inst|LessThan33~1                ; 2       ;
+; masking:inst|LessThan49~1                ; 2       ;
+; masking:inst|LessThan39~1                ; 2       ;
+; masking:inst|process_0~10                ; 2       ;
+; masking:inst|LessThan39~0                ; 2       ;
 ; masking:inst|process_0~8                 ; 2       ;
-; masking:inst|LessThan48~0                ; 2       ;
-; masking:inst|pixcode~4                   ; 2       ;
-; masking:inst|pixcode~2                   ; 2       ;
-; masking:inst|process_0~6                 ; 2       ;
-; masking:inst|LessThan46~1                ; 2       ;
 ; masking:inst|process_0~5                 ; 2       ;
-; masking:inst|LessThan36~1                ; 2       ;
-; masking:inst|LessThan36~0                ; 2       ;
-; masking:inst|LessThan25~0                ; 2       ;
+; masking:inst|LessThan46~0                ; 2       ;
+; masking:inst|pixcode~13                  ; 2       ;
+; masking:inst|pixcode~12                  ; 2       ;
+; masking:inst|LessThan50~0                ; 2       ;
 ; masking:inst|VOL_Limit[1]                ; 2       ;
 ; masking:inst|VOL_Limit[2]                ; 2       ;
-; masking:inst|process_0~3                 ; 2       ;
-; masking:inst|LessThan38~0                ; 2       ;
+; masking:inst|LessThan41~0                ; 2       ;
 ; pixel_reg:i_pixreg|vcnt_d[2]             ; 2       ;
 ; pixel_reg:i_pixreg|vcnt_d[1]             ; 2       ;
 ; pixel_reg:i_pixreg|vcnt_d[0]             ; 2       ;
+; masking:inst|process_0~0                 ; 2       ;
 ; RGB_gen:i_RGB_gen|vga_r~0                ; 2       ;
 ; RGB_gen:i_RGB_gen|vga_g~4                ; 2       ;
 ; RGB_gen:i_RGB_gen|vga_b~2                ; 2       ;
 ; RGB_gen:i_RGB_gen|vga_b~0                ; 2       ;
 ; pixel_reg:i_pixreg|Add1~16               ; 2       ;
-; masking:inst|LessThan31~18               ; 2       ;
 ; PS2_DAT~input                            ; 1       ;
 ; PS2_CLK~input                            ; 1       ;
 ; pixel_reg:i_pixreg|counter[0]~1          ; 1       ;
@@ -1727,15 +1737,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; masking:inst|DIST_Limit[3]~4             ; 1       ;
 ; masking:inst|DIST_Limit[6]~3             ; 1       ;
 ; masking:inst|DIST_Limit[7]~2             ; 1       ;
-; masking:inst|ED_Limit[1]~6               ; 1       ;
-; masking:inst|ED_Limit[2]~5               ; 1       ;
-; masking:inst|ED_Limit[3]~4               ; 1       ;
-; masking:inst|ED_Limit[6]~3               ; 1       ;
-; masking:inst|ED_Limit[7]~2               ; 1       ;
-; masking:inst|EN_Limit[3]~8               ; 1       ;
-; masking:inst|EN_Limit[5]~7               ; 1       ;
-; masking:inst|EN_Limit[6]~6               ; 1       ;
-; masking:inst|EN_Limit[9]~5               ; 1       ;
+; masking:inst|ED_Limit[4]~4               ; 1       ;
+; masking:inst|ED_Limit[9]~3               ; 1       ;
+; masking:inst|EV_Limit[1]~7               ; 1       ;
+; masking:inst|EV_Limit[2]~6               ; 1       ;
+; masking:inst|EV_Limit[4]~5               ; 1       ;
+; masking:inst|EV_Limit[9]~4               ; 1       ;
+; masking:inst|EN_Limit[1]~5               ; 1       ;
+; masking:inst|EN_Limit[2]~4               ; 1       ;
+; masking:inst|EN_Limit[4]~3               ; 1       ;
+; masking:inst|EN_Limit[9]~2               ; 1       ;
 ; masking:inst|VOL_Limit[1]~7              ; 1       ;
 ; masking:inst|VOL_Limit[2]~6              ; 1       ;
 ; masking:inst|VOL_Limit[3]~5              ; 1       ;
@@ -1748,21 +1759,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~240              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~239              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~238              ; 1       ;
-; masking:inst|pixcode~24                  ; 1       ;
-; masking:inst|LessThan37~3                ; 1       ;
+; pixel_reg:i_pixreg|Mux0~237              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~236              ; 1       ;
+; masking:inst|pixcode~34                  ; 1       ;
+; masking:inst|pixcode~33                  ; 1       ;
+; masking:inst|pixcode~32                  ; 1       ;
+; masking:inst|pixcode~31                  ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~10   ; 1       ;
-; PS2KeyboardInterface:inst1|new_number~0  ; 1       ;
-; PS2KeyboardInterface:inst1|shiftreg~9    ; 1       ;
-; PS2KeyboardInterface:inst1|shiftreg[9]   ; 1       ;
+; PS2KeyboardInterface:inst1|shiftreg[0]~9 ; 1       ;
+; PS2KeyboardInterface:inst1|break~0       ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~8    ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~7    ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~6    ; 1       ;
+; PS2KeyboardInterface:inst1|shiftreg[9]   ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~5    ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~4    ; 1       ;
 ; PS2KeyboardInterface:inst1|shiftreg~3    ; 1       ;
-; PS2KeyboardInterface:inst1|shiftreg~1    ; 1       ;
-; PS2KeyboardInterface:inst1|shiftreg[0]~0 ; 1       ;
-; PS2KeyboardInterface:inst1|break~0       ; 1       ;
+; PS2KeyboardInterface:inst1|shiftreg~2    ; 1       ;
+; PS2KeyboardInterface:inst1|shiftreg~0    ; 1       ;
+; PS2KeyboardInterface:inst1|new_number~0  ; 1       ;
 ; pixelcounter:i_pixcounter|hcnti~5        ; 1       ;
 ; pixelcounter:i_pixcounter|hcnti~4        ; 1       ;
 ; PS2KeyboardInterface:inst1|Number~7      ; 1       ;
@@ -1770,10 +1785,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PS2KeyboardInterface:inst1|Equal4~0      ; 1       ;
 ; PS2KeyboardInterface:inst1|Number~5      ; 1       ;
 ; PS2KeyboardInterface:inst1|Number~4      ; 1       ;
-; PS2KeyboardInterface:inst1|Number~3      ; 1       ;
 ; PS2KeyboardInterface:inst1|Equal2~0      ; 1       ;
 ; PS2KeyboardInterface:inst1|Equal1~0      ; 1       ;
-; PS2KeyboardInterface:inst1|Equal0~1      ; 1       ;
+; PS2KeyboardInterface:inst1|Number~2      ; 1       ;
 ; pixelcounter:i_pixcounter|hcnti~3        ; 1       ;
 ; pixelcounter:i_pixcounter|hcnti~2        ; 1       ;
 ; pixel_reg:i_pixreg|counter[1]~0          ; 1       ;
@@ -1791,8 +1805,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; hs_gen:i_hs_gen|process_0~2              ; 1       ;
 ; hs_gen:i_hs_gen|process_0~1              ; 1       ;
 ; hs_gen:i_hs_gen|process_0~0              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~237              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~236              ; 1       ;
+; masking:inst|EV_Limit[1]~2               ; 1       ;
+; masking:inst|EV_Limit[1]~1               ; 1       ;
+; masking:inst|EV_Limit[1]~0               ; 1       ;
+; masking:inst|process_0~40                ; 1       ;
+; masking:inst|process_0~39                ; 1       ;
+; masking:inst|process_0~37                ; 1       ;
+; masking:inst|process_0~36                ; 1       ;
+; masking:inst|process_0~35                ; 1       ;
+; masking:inst|process_0~34                ; 1       ;
+; masking:inst|Equal9~6                    ; 1       ;
+; masking:inst|process_0~33                ; 1       ;
+; masking:inst|LessThan7~0                 ; 1       ;
+; masking:inst|process_0~31                ; 1       ;
+; masking:inst|process_0~30                ; 1       ;
+; masking:inst|LessThan5~0                 ; 1       ;
+; masking:inst|process_0~28                ; 1       ;
+; masking:inst|process_0~27                ; 1       ;
+; masking:inst|process_0~26                ; 1       ;
+; masking:inst|process_0~24                ; 1       ;
+; masking:inst|process_0~23                ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~235              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~234              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~233              ; 1       ;
@@ -1822,7 +1854,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~209              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~208              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~207              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~206              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~205              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~204              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~203              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~202              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~201              ; 1       ;
@@ -1830,8 +1863,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~199              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~198              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~197              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~196              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~195              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~194              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~193              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~192              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~191              ; 1       ;
@@ -1839,18 +1871,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~189              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~188              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~187              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~185              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~186              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~184              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~183              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~182              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~181              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~180              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~179              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~178              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~177              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~176              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~175              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~174              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~173              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~172              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~171              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~170              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~169              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~168              ; 1       ;
@@ -1860,9 +1894,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~164              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~163              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~162              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~161              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~160              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~159              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~158              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~157              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~156              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~155              ; 1       ;
@@ -1873,7 +1906,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~150              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~149              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~148              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~147              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~146              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~145              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~144              ; 1       ;
@@ -1889,8 +1921,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~134              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~133              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~132              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~131              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~130              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~129              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~128              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~127              ; 1       ;
@@ -1909,7 +1939,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~114              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~113              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~112              ; 1       ;
-; pixel_reg:i_pixreg|Mux0~111              ; 1       ;
+; pixel_reg:i_pixreg|Mux0~110              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~109              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~108              ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~107              ; 1       ;
@@ -1925,7 +1955,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~97               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~96               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~95               ; 1       ;
-; pixel_reg:i_pixreg|Mux0~93               ; 1       ;
+; pixel_reg:i_pixreg|Mux0~94               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~92               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~91               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~90               ; 1       ;
@@ -1956,7 +1986,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~64               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~63               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~62               ; 1       ;
-; pixel_reg:i_pixreg|Mux0~60               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~59               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~58               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~57               ; 1       ;
@@ -1968,9 +1997,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~51               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~50               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~49               ; 1       ;
-; pixel_reg:i_pixreg|Mux0~47               ; 1       ;
+; pixel_reg:i_pixreg|Mux0~48               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~46               ; 1       ;
-; pixel_reg:i_pixreg|Mux0~44               ; 1       ;
+; pixel_reg:i_pixreg|Mux0~45               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~43               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~42               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~41               ; 1       ;
@@ -1981,8 +2010,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~36               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~35               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~34               ; 1       ;
-; pixel_reg:i_pixreg|Mux0~32               ; 1       ;
+; pixel_reg:i_pixreg|Mux0~33               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~31               ; 1       ;
+; pixel_reg:i_pixreg|Mux0~30               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~29               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~28               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~27               ; 1       ;
@@ -1994,6 +2024,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~21               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~20               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~19               ; 1       ;
+; pixel_reg:i_pixreg|Mux0~18               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~16               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~15               ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~14               ; 1       ;
@@ -2005,71 +2036,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Mux0~5                ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~4                ; 1       ;
 ; pixel_reg:i_pixreg|Mux0~1                ; 1       ;
-; masking:inst|Menu_Counter[2]~4           ; 1       ;
-; masking:inst|Menu_Counter[2]~3           ; 1       ;
+; masking:inst|Menu_Counter[1]~4           ; 1       ;
+; masking:inst|process_0~22                ; 1       ;
+; masking:inst|Menu_Counter[0]~3           ; 1       ;
 ; masking:inst|Menu_Counter[2]~2           ; 1       ;
-; masking:inst|Menu_Counter[1]~1           ; 1       ;
-; masking:inst|process_0~45                ; 1       ;
-; masking:inst|Menu_Counter[0]~0           ; 1       ;
-; masking:inst|process_0~43                ; 1       ;
-; masking:inst|process_0~42                ; 1       ;
-; masking:inst|process_0~41                ; 1       ;
-; masking:inst|process_0~40                ; 1       ;
-; masking:inst|process_0~39                ; 1       ;
-; masking:inst|Equal8~3                    ; 1       ;
-; masking:inst|process_0~37                ; 1       ;
-; masking:inst|process_0~36                ; 1       ;
-; masking:inst|LessThan7~0                 ; 1       ;
-; masking:inst|process_0~34                ; 1       ;
-; masking:inst|process_0~33                ; 1       ;
-; masking:inst|LessThan5~0                 ; 1       ;
-; masking:inst|EN_Limit[4]~2               ; 1       ;
-; masking:inst|EN_Limit[4]~1               ; 1       ;
-; masking:inst|EN_Limit[4]~0               ; 1       ;
-; masking:inst|process_0~31                ; 1       ;
-; masking:inst|process_0~30                ; 1       ;
-; masking:inst|process_0~29                ; 1       ;
-; masking:inst|process_0~27                ; 1       ;
+; masking:inst|Menu_Counter[2]~1           ; 1       ;
+; masking:inst|Menu_Counter[2]~0           ; 1       ;
+; masking:inst|process_0~20                ; 1       ;
 ; masking:inst|LessThan3~0                 ; 1       ;
-; masking:inst|process_0~25                ; 1       ;
-; masking:inst|process_0~24                ; 1       ;
+; masking:inst|process_0~17                ; 1       ;
 ; blank_gen:iBlank_gen|blank~2             ; 1       ;
 ; blank_gen:iBlank_gen|blank~1             ; 1       ;
 ; blank_gen:iBlank_gen|blank~0             ; 1       ;
 ; vs_gen:i_vs_gen|vsync                    ; 1       ;
 ; hs_gen:i_hs_gen|hsync                    ; 1       ;
-; masking:inst|pixcode~23                  ; 1       ;
-; masking:inst|process_0~23                ; 1       ;
-; masking:inst|pixcode~22                  ; 1       ;
-; masking:inst|pixcode~21                  ; 1       ;
-; masking:inst|pixcode~20                  ; 1       ;
-; masking:inst|process_0~22                ; 1       ;
-; masking:inst|pixcode~17                  ; 1       ;
-; masking:inst|pixcode~16                  ; 1       ;
-; masking:inst|process_0~21                ; 1       ;
-; masking:inst|process_0~20                ; 1       ;
-; masking:inst|LessThan18~0                ; 1       ;
-; masking:inst|process_0~17                ; 1       ;
+; masking:inst|pixcode~30                  ; 1       ;
+; masking:inst|pixcode~29                  ; 1       ;
+; masking:inst|pixcode~28                  ; 1       ;
+; masking:inst|pixcode~27                  ; 1       ;
+; masking:inst|pixcode~26                  ; 1       ;
 ; masking:inst|process_0~16                ; 1       ;
-; masking:inst|process_0~14                ; 1       ;
-; masking:inst|pixcode~12                  ; 1       ;
+; masking:inst|process_0~15                ; 1       ;
+; masking:inst|LessThan26~0                ; 1       ;
+; masking:inst|LessThan31~0                ; 1       ;
+; masking:inst|pixcode~21                  ; 1       ;
+; masking:inst|LessThan28~1                ; 1       ;
+; masking:inst|LessThan33~0                ; 1       ;
+; pixel_reg:i_pixreg|pixcode_single        ; 1       ;
+; masking:inst|process_0~13                ; 1       ;
 ; masking:inst|process_0~12                ; 1       ;
 ; masking:inst|process_0~11                ; 1       ;
-; masking:inst|pixcode~11                  ; 1       ;
-; masking:inst|pixcode~10                  ; 1       ;
-; masking:inst|LessThan44~1                ; 1       ;
-; masking:inst|pixcode~9                   ; 1       ;
-; masking:inst|process_0~10                ; 1       ;
-; masking:inst|pixcode~8                   ; 1       ;
+; masking:inst|LessThan40~2                ; 1       ;
+; masking:inst|pixcode~19                  ; 1       ;
+; masking:inst|pixcode~18                  ; 1       ;
+; masking:inst|process_0~9                 ; 1       ;
+; masking:inst|pixcode~17                  ; 1       ;
+; masking:inst|pixcode~16                  ; 1       ;
 ; masking:inst|process_0~7                 ; 1       ;
-; masking:inst|pixcode~7                   ; 1       ;
-; masking:inst|pixcode~6                   ; 1       ;
-; masking:inst|pixcode~5                   ; 1       ;
-; masking:inst|pixcode~3                   ; 1       ;
-; masking:inst|LessThan34~0                ; 1       ;
-; masking:inst|LessThan26~0                ; 1       ;
-; masking:inst|LessThan20~0                ; 1       ;
-; masking:inst|LessThan23~2                ; 1       ;
+; masking:inst|process_0~6                 ; 1       ;
+; masking:inst|LessThan47~1                ; 1       ;
+; masking:inst|pixcode~15                  ; 1       ;
+; masking:inst|process_0~4                 ; 1       ;
+; masking:inst|pixcode~14                  ; 1       ;
+; masking:inst|LessThan28~0                ; 1       ;
+; masking:inst|process_0~3                 ; 1       ;
+; masking:inst|LessThan25~2                ; 1       ;
+; masking:inst|LessThan22~0                ; 1       ;
 ; i_blank2                                 ; 1       ;
 ; i_blank5                                 ; 1       ;
 ; i_blank6                                 ; 1       ;
@@ -2182,6 +2194,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; masking:inst|Add6~2                      ; 1       ;
 ; masking:inst|Add6~1                      ; 1       ;
 ; masking:inst|Add6~0                      ; 1       ;
+; masking:inst|Add8~12                     ; 1       ;
+; masking:inst|Add8~11                     ; 1       ;
+; masking:inst|Add8~10                     ; 1       ;
+; masking:inst|Add8~9                      ; 1       ;
+; masking:inst|Add8~8                      ; 1       ;
+; masking:inst|Add8~7                      ; 1       ;
+; masking:inst|Add8~6                      ; 1       ;
+; masking:inst|Add8~5                      ; 1       ;
+; masking:inst|Add8~4                      ; 1       ;
+; masking:inst|Add8~3                      ; 1       ;
+; masking:inst|Add8~2                      ; 1       ;
+; masking:inst|Add8~1                      ; 1       ;
+; masking:inst|Add8~0                      ; 1       ;
+; masking:inst|Add12~16                    ; 1       ;
+; masking:inst|Add12~15                    ; 1       ;
+; masking:inst|Add12~14                    ; 1       ;
+; masking:inst|Add12~13                    ; 1       ;
+; masking:inst|Add12~12                    ; 1       ;
+; masking:inst|Add12~11                    ; 1       ;
+; masking:inst|Add12~10                    ; 1       ;
+; masking:inst|Add12~9                     ; 1       ;
+; masking:inst|Add12~8                     ; 1       ;
+; masking:inst|Add12~7                     ; 1       ;
+; masking:inst|Add12~6                     ; 1       ;
+; masking:inst|Add12~5                     ; 1       ;
+; masking:inst|Add12~4                     ; 1       ;
+; masking:inst|Add12~3                     ; 1       ;
+; masking:inst|Add12~2                     ; 1       ;
+; masking:inst|Add12~1                     ; 1       ;
+; masking:inst|Add12~0                     ; 1       ;
+; masking:inst|Add10~16                    ; 1       ;
+; masking:inst|Add10~15                    ; 1       ;
+; masking:inst|Add10~14                    ; 1       ;
+; masking:inst|Add10~13                    ; 1       ;
+; masking:inst|Add10~12                    ; 1       ;
+; masking:inst|Add10~11                    ; 1       ;
+; masking:inst|Add10~10                    ; 1       ;
+; masking:inst|Add10~9                     ; 1       ;
+; masking:inst|Add10~8                     ; 1       ;
+; masking:inst|Add10~7                     ; 1       ;
+; masking:inst|Add10~6                     ; 1       ;
+; masking:inst|Add10~5                     ; 1       ;
+; masking:inst|Add10~4                     ; 1       ;
+; masking:inst|Add10~3                     ; 1       ;
+; masking:inst|Add10~2                     ; 1       ;
+; masking:inst|Add10~1                     ; 1       ;
+; masking:inst|Add10~0                     ; 1       ;
 ; pixel_reg:i_pixreg|Add1~15               ; 1       ;
 ; pixel_reg:i_pixreg|Add1~13               ; 1       ;
 ; pixel_reg:i_pixreg|Add1~11               ; 1       ;
@@ -2203,40 +2262,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pixel_reg:i_pixreg|Add0~2                ; 1       ;
 ; pixel_reg:i_pixreg|Add0~1                ; 1       ;
 ; pixel_reg:i_pixreg|Add0~0                ; 1       ;
-; masking:inst|Add8~16                     ; 1       ;
-; masking:inst|Add8~15                     ; 1       ;
-; masking:inst|Add8~14                     ; 1       ;
-; masking:inst|Add8~13                     ; 1       ;
-; masking:inst|Add8~12                     ; 1       ;
-; masking:inst|Add8~11                     ; 1       ;
-; masking:inst|Add8~10                     ; 1       ;
-; masking:inst|Add8~9                      ; 1       ;
-; masking:inst|Add8~8                      ; 1       ;
-; masking:inst|Add8~7                      ; 1       ;
-; masking:inst|Add8~6                      ; 1       ;
-; masking:inst|Add8~5                      ; 1       ;
-; masking:inst|Add8~4                      ; 1       ;
-; masking:inst|Add8~3                      ; 1       ;
-; masking:inst|Add8~2                      ; 1       ;
-; masking:inst|Add8~1                      ; 1       ;
-; masking:inst|Add8~0                      ; 1       ;
-; masking:inst|Add10~16                    ; 1       ;
-; masking:inst|Add10~15                    ; 1       ;
-; masking:inst|Add10~14                    ; 1       ;
-; masking:inst|Add10~13                    ; 1       ;
-; masking:inst|Add10~12                    ; 1       ;
-; masking:inst|Add10~11                    ; 1       ;
-; masking:inst|Add10~10                    ; 1       ;
-; masking:inst|Add10~9                     ; 1       ;
-; masking:inst|Add10~8                     ; 1       ;
-; masking:inst|Add10~7                     ; 1       ;
-; masking:inst|Add10~6                     ; 1       ;
-; masking:inst|Add10~5                     ; 1       ;
-; masking:inst|Add10~4                     ; 1       ;
-; masking:inst|Add10~3                     ; 1       ;
-; masking:inst|Add10~2                     ; 1       ;
-; masking:inst|Add10~1                     ; 1       ;
-; masking:inst|Add10~0                     ; 1       ;
 ; masking:inst|Add2~14                     ; 1       ;
 ; masking:inst|Add2~13                     ; 1       ;
 ; masking:inst|Add2~12                     ; 1       ;
@@ -2252,67 +2277,76 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; masking:inst|Add2~2                      ; 1       ;
 ; masking:inst|Add2~1                      ; 1       ;
 ; masking:inst|Add2~0                      ; 1       ;
-; masking:inst|LessThan17~16               ; 1       ;
-; masking:inst|LessThan17~15               ; 1       ;
-; masking:inst|LessThan17~13               ; 1       ;
-; masking:inst|LessThan17~11               ; 1       ;
-; masking:inst|LessThan17~9                ; 1       ;
-; masking:inst|LessThan17~7                ; 1       ;
-; masking:inst|LessThan17~5                ; 1       ;
-; masking:inst|LessThan17~3                ; 1       ;
-; masking:inst|LessThan17~1                ; 1       ;
-; masking:inst|Add12~6                     ; 1       ;
-; masking:inst|Add12~5                     ; 1       ;
-; masking:inst|Add12~4                     ; 1       ;
-; masking:inst|Add12~3                     ; 1       ;
-; masking:inst|Add12~2                     ; 1       ;
-; masking:inst|Add12~1                     ; 1       ;
-; masking:inst|Add12~0                     ; 1       ;
-; masking:inst|LessThan16~14               ; 1       ;
-; masking:inst|LessThan16~13               ; 1       ;
-; masking:inst|LessThan16~11               ; 1       ;
-; masking:inst|LessThan16~9                ; 1       ;
-; masking:inst|LessThan16~7                ; 1       ;
-; masking:inst|LessThan16~5                ; 1       ;
-; masking:inst|LessThan16~3                ; 1       ;
-; masking:inst|LessThan16~1                ; 1       ;
-; masking:inst|LessThan21~16               ; 1       ;
-; masking:inst|LessThan21~15               ; 1       ;
-; masking:inst|LessThan21~13               ; 1       ;
-; masking:inst|LessThan21~11               ; 1       ;
-; masking:inst|LessThan21~9                ; 1       ;
-; masking:inst|LessThan21~7                ; 1       ;
-; masking:inst|LessThan21~5                ; 1       ;
-; masking:inst|LessThan21~3                ; 1       ;
-; masking:inst|LessThan21~1                ; 1       ;
-; masking:inst|LessThan31~17               ; 1       ;
-; masking:inst|LessThan31~15               ; 1       ;
-; masking:inst|LessThan31~13               ; 1       ;
-; masking:inst|LessThan31~11               ; 1       ;
-; masking:inst|LessThan31~9                ; 1       ;
-; masking:inst|LessThan31~7                ; 1       ;
-; masking:inst|LessThan31~5                ; 1       ;
-; masking:inst|LessThan31~3                ; 1       ;
-; masking:inst|LessThan31~1                ; 1       ;
-; masking:inst|LessThan27~18               ; 1       ;
-; masking:inst|LessThan27~17               ; 1       ;
-; masking:inst|LessThan27~15               ; 1       ;
-; masking:inst|LessThan27~13               ; 1       ;
-; masking:inst|LessThan27~11               ; 1       ;
-; masking:inst|LessThan27~9                ; 1       ;
-; masking:inst|LessThan27~7                ; 1       ;
-; masking:inst|LessThan27~5                ; 1       ;
-; masking:inst|LessThan27~3                ; 1       ;
-; masking:inst|LessThan27~1                ; 1       ;
-; masking:inst|LessThan13~16               ; 1       ;
-; masking:inst|LessThan13~15               ; 1       ;
-; masking:inst|LessThan13~13               ; 1       ;
-; masking:inst|LessThan13~11               ; 1       ;
-; masking:inst|LessThan13~9                ; 1       ;
-; masking:inst|LessThan13~7                ; 1       ;
-; masking:inst|LessThan13~5                ; 1       ;
-; masking:inst|LessThan13~3                ; 1       ;
-; masking:inst|LessThan13~1                ; 1       ;
+; masking:inst|LessThan19~16               ; 1       ;
+; masking:inst|LessThan19~15               ; 1       ;
+; masking:inst|LessThan19~13               ; 1       ;
+; masking:inst|LessThan19~11               ; 1       ;
+; masking:inst|LessThan19~9                ; 1       ;
+; masking:inst|LessThan19~7                ; 1       ;
+; masking:inst|LessThan19~5                ; 1       ;
+; masking:inst|LessThan19~3                ; 1       ;
+; masking:inst|LessThan19~1                ; 1       ;
+; masking:inst|Add14~6                     ; 1       ;
+; masking:inst|Add14~5                     ; 1       ;
+; masking:inst|Add14~4                     ; 1       ;
+; masking:inst|Add14~3                     ; 1       ;
+; masking:inst|Add14~2                     ; 1       ;
+; masking:inst|Add14~1                     ; 1       ;
+; masking:inst|Add14~0                     ; 1       ;
+; masking:inst|LessThan18~14               ; 1       ;
+; masking:inst|LessThan18~13               ; 1       ;
+; masking:inst|LessThan18~11               ; 1       ;
+; masking:inst|LessThan18~9                ; 1       ;
+; masking:inst|LessThan18~7                ; 1       ;
+; masking:inst|LessThan18~5                ; 1       ;
+; masking:inst|LessThan18~3                ; 1       ;
+; masking:inst|LessThan18~1                ; 1       ;
+; masking:inst|LessThan23~16               ; 1       ;
+; masking:inst|LessThan23~15               ; 1       ;
+; masking:inst|LessThan23~13               ; 1       ;
+; masking:inst|LessThan23~11               ; 1       ;
+; masking:inst|LessThan23~9                ; 1       ;
+; masking:inst|LessThan23~7                ; 1       ;
+; masking:inst|LessThan23~5                ; 1       ;
+; masking:inst|LessThan23~3                ; 1       ;
+; masking:inst|LessThan23~1                ; 1       ;
+; masking:inst|LessThan26~15               ; 1       ;
+; masking:inst|LessThan26~14               ; 1       ;
+; masking:inst|LessThan26~12               ; 1       ;
+; masking:inst|LessThan26~10               ; 1       ;
+; masking:inst|LessThan26~8                ; 1       ;
+; masking:inst|LessThan26~6                ; 1       ;
+; masking:inst|LessThan26~4                ; 1       ;
+; masking:inst|LessThan26~2                ; 1       ;
+; masking:inst|LessThan34~18               ; 1       ;
+; masking:inst|LessThan34~17               ; 1       ;
+; masking:inst|LessThan34~15               ; 1       ;
+; masking:inst|LessThan34~13               ; 1       ;
+; masking:inst|LessThan34~11               ; 1       ;
+; masking:inst|LessThan34~9                ; 1       ;
+; masking:inst|LessThan34~7                ; 1       ;
+; masking:inst|LessThan34~5                ; 1       ;
+; masking:inst|LessThan34~3                ; 1       ;
+; masking:inst|LessThan34~1                ; 1       ;
+; masking:inst|LessThan30~18               ; 1       ;
+; masking:inst|LessThan30~17               ; 1       ;
+; masking:inst|LessThan30~15               ; 1       ;
+; masking:inst|LessThan30~13               ; 1       ;
+; masking:inst|LessThan30~11               ; 1       ;
+; masking:inst|LessThan30~9                ; 1       ;
+; masking:inst|LessThan30~7                ; 1       ;
+; masking:inst|LessThan30~5                ; 1       ;
+; masking:inst|LessThan30~3                ; 1       ;
+; masking:inst|LessThan30~1                ; 1       ;
+; masking:inst|LessThan15~16               ; 1       ;
+; masking:inst|LessThan15~15               ; 1       ;
+; masking:inst|LessThan15~13               ; 1       ;
+; masking:inst|LessThan15~11               ; 1       ;
+; masking:inst|LessThan15~9                ; 1       ;
+; masking:inst|LessThan15~7                ; 1       ;
+; masking:inst|LessThan15~5                ; 1       ;
+; masking:inst|LessThan15~3                ; 1       ;
+; masking:inst|LessThan15~1                ; 1       ;
 +------------------------------------------+---------+
 
 
@@ -2321,145 +2355,153 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-------------------------+
 ; Other Routing Resource Type ; Usage                   ;
 +-----------------------------+-------------------------+
-; Block interconnects         ; 584 / 342,891 ( < 1 % ) ;
-; C16 interconnects           ; 10 / 10,120 ( < 1 % )   ;
-; C4 interconnects            ; 226 / 209,544 ( < 1 % ) ;
-; Direct links                ; 135 / 342,891 ( < 1 % ) ;
+; Block interconnects         ; 592 / 342,891 ( < 1 % ) ;
+; C16 interconnects           ; 15 / 10,120 ( < 1 % )   ;
+; C4 interconnects            ; 206 / 209,544 ( < 1 % ) ;
+; Direct links                ; 141 / 342,891 ( < 1 % ) ;
 ; Global clocks               ; 1 / 20 ( 5 % )          ;
-; Local interconnects         ; 395 / 119,088 ( < 1 % ) ;
-; R24 interconnects           ; 24 / 9,963 ( < 1 % )    ;
-; R4 interconnects            ; 323 / 289,782 ( < 1 % ) ;
+; Local interconnects         ; 406 / 119,088 ( < 1 % ) ;
+; R24 interconnects           ; 32 / 9,963 ( < 1 % )    ;
+; R4 interconnects            ; 284 / 289,782 ( < 1 % ) ;
 +-----------------------------+-------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 14.55) ; Number of LABs  (Total = 42) ;
+; Number of Logic Elements  (Average = 15.02) ; Number of LABs  (Total = 42) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
+; 1                                           ; 0                            ;
 ; 2                                           ; 0                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
 ; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 0                            ;
-; 8                                           ; 0                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 2                            ;
 ; 9                                           ; 0                            ;
 ; 10                                          ; 0                            ;
 ; 11                                          ; 0                            ;
-; 12                                          ; 3                            ;
-; 13                                          ; 7                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 0                            ;
 ; 14                                          ; 4                            ;
-; 15                                          ; 5                            ;
-; 16                                          ; 22                           ;
+; 15                                          ; 8                            ;
+; 16                                          ; 27                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 0.95) ; Number of LABs  (Total = 42) ;
+; LAB-wide Signals  (Average = 0.93) ; Number of LABs  (Total = 42) ;
 +------------------------------------+------------------------------+
 ; 1 Async. clear                     ; 5                            ;
-; 1 Clock                            ; 20                           ;
-; 1 Clock enable                     ; 14                           ;
-; 1 Sync. clear                      ; 1                            ;
+; 1 Clock                            ; 23                           ;
+; 1 Clock enable                     ; 11                           ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 16.79) ; Number of LABs  (Total = 42) ;
+; Number of Signals Sourced  (Average = 17.12) ; Number of LABs  (Total = 42) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 1                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 1                            ;
+; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
-; 5                                            ; 2                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 2                            ;
+; 9                                            ; 1                            ;
 ; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 3                            ;
 ; 13                                           ; 1                            ;
 ; 14                                           ; 1                            ;
-; 15                                           ; 3                            ;
-; 16                                           ; 15                           ;
-; 17                                           ; 1                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 0                            ;
+; 15                                           ; 4                            ;
+; 16                                           ; 12                           ;
+; 17                                           ; 0                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 1                            ;
 ; 20                                           ; 2                            ;
-; 21                                           ; 3                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 2                            ;
 ; 24                                           ; 1                            ;
-; 25                                           ; 3                            ;
+; 25                                           ; 2                            ;
 ; 26                                           ; 2                            ;
 ; 27                                           ; 1                            ;
-; 28                                           ; 1                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 5.88) ; Number of LABs  (Total = 42) ;
+; Number of Signals Sourced Out  (Average = 6.24) ; Number of LABs  (Total = 42) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 6                            ;
-; 2                                               ; 3                            ;
-; 3                                               ; 9                            ;
-; 4                                               ; 2                            ;
+; 1                                               ; 5                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 8                            ;
+; 4                                               ; 5                            ;
 ; 5                                               ; 1                            ;
-; 6                                               ; 3                            ;
+; 6                                               ; 4                            ;
 ; 7                                               ; 1                            ;
-; 8                                               ; 6                            ;
-; 9                                               ; 2                            ;
-; 10                                              ; 4                            ;
+; 8                                               ; 5                            ;
+; 9                                               ; 3                            ;
+; 10                                              ; 3                            ;
 ; 11                                              ; 2                            ;
-; 12                                              ; 0                            ;
-; 13                                              ; 1                            ;
-; 14                                              ; 1                            ;
-; 15                                              ; 1                            ;
+; 12                                              ; 1                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 2                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 1                            ;
 +-------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 11.33) ; Number of LABs  (Total = 42) ;
+; Number of Distinct Inputs  (Average = 11.93) ; Number of LABs  (Total = 42) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
 ; 2                                            ; 0                            ;
-; 3                                            ; 4                            ;
+; 3                                            ; 0                            ;
 ; 4                                            ; 5                            ;
 ; 5                                            ; 1                            ;
-; 6                                            ; 1                            ;
-; 7                                            ; 0                            ;
-; 8                                            ; 4                            ;
-; 9                                            ; 4                            ;
-; 10                                           ; 4                            ;
+; 6                                            ; 3                            ;
+; 7                                            ; 2                            ;
+; 8                                            ; 7                            ;
+; 9                                            ; 1                            ;
+; 10                                           ; 5                            ;
 ; 11                                           ; 2                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 5                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 1                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 3                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 2                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 1                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 1                            ;
+; 13                                           ; 1                            ;
+; 14                                           ; 3                            ;
+; 15                                           ; 2                            ;
+; 16                                           ; 1                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 2                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 1                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 1                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 0                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -2625,7 +2667,7 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+----------------------------------+-------------------+
 ; Source Register ; Destination Register             ; Delay Added in ns ;
 +-----------------+----------------------------------+-------------------+
-; KEY0            ; PS2KeyboardInterface:inst1|break ; 0.483             ;
+; KEY0            ; PS2KeyboardInterface:inst1|break ; 0.468             ;
 +-----------------+----------------------------------+-------------------+
 Note: This table only shows the top 1 path(s) that have the largest delay added for hold.
 
@@ -2724,7 +2766,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "sram_oe" is assigned to location or region, but does not exist in design
     Warning (15706): Node "sram_ub" is assigned to location or region, but does not exist in design
     Warning (15706): Node "sram_we" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -2732,23 +2774,23 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X58_Y37 to location X68_Y48
+    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X69_Y49 to location X80_Y60
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.48 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/output_files/Lab3_VGA.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 5686 megabytes
-    Info: Processing ended: Tue Oct 12 13:05:57 2021
-    Info: Elapsed time: 00:00:20
+    Info: Peak virtual memory: 5691 megabytes
+    Info: Processing ended: Tue Oct 12 15:31:22 2021
+    Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:20
 
 

@@ -6,7 +6,8 @@ entity masking is
   Port ( clk, rstn, pixcode_single  : in std_logic;
          pixcode       : out unsigned(7 downto 0);
 			vcnt,hcnt : in unsigned(9 downto 0);
-			Number : in unsigned(2 downto 0));
+			Number : in unsigned(2 downto 0);
+			Vol_Out,LR_Out, Dist_out, ED_out, EN_Out, EV_Out : out unsigned(3 downto 0));
 			
 end entity;
 
@@ -27,9 +28,9 @@ signal VOL_Limit : unsigned(8 downto 0) := "011001111";
 signal LR_Limit : unsigned(8 downto 0) := "011001111";
 signal DIST_Limit : unsigned(8 downto 0) := "011001111";
 
-signal ED_Limit : unsigned(9 downto 0) := "0011001111";
-signal EN_Limit : unsigned(9 downto 0) := "1001101001";
-signal EV_Limit : unsigned(9 downto 0) := "0011001111";
+signal ED_Limit : unsigned(9 downto 0) := "1000010111";
+signal EN_Limit : unsigned(9 downto 0) := "1000010111";
+signal EV_Limit : unsigned(9 downto 0) := "1000010111";
 
 signal Menu_Counter :unsigned(2 downto 0);
 
@@ -42,7 +43,6 @@ begin
 		if (rising_edge(clk)) then
 			
 			-- Menu navigation
-			
 			if(Number = "001" AND Menu_Counter < 5) then -- Arrow up, increase menu selection
 				Menu_Counter <= Menu_Counter +1;
 			elsif(Number = "000" AND Menu_Counter >= 1) then -- Arrow down, decrease menu selection
@@ -63,21 +63,20 @@ begin
 			elsif((Number = "011" AND DIST_Limit > 135) AND Menu_Counter = 2) then --Left
 				DIST_Limit <= DIST_Limit-10;
 
-			elsif((Number = "010" AND ED_Limit < 207) AND Menu_Counter = 3) then -- Right
-				ED_Limit <= ED_Limit+10;
+			elsif((Number = "010" AND ED_Limit < 616) AND Menu_Counter = 3) then -- Right
+				ED_Limit <= ED_Limit+40;
 			elsif((Number = "011" AND ED_Limit > 455) AND Menu_Counter = 3) then --Left
-				ED_Limit <= ED_Limit-10;
+				ED_Limit <= ED_Limit-40;
 
-			elsif((Number = "010" AND EN_Limit < 207) AND Menu_Counter = 4) then -- Right
+			elsif((Number = "010" AND EN_Limit < 616) AND Menu_Counter = 4) then -- Right
 				EN_Limit <= EN_Limit+10;
 			elsif((Number = "011" AND EN_Limit > 455) AND Menu_Counter = 4) then --Left
 				EN_Limit <= EN_Limit-10;
 				
-			elsif((Number = "010" AND EV_Limit < 207) AND Menu_Counter = 5) then -- Right
+			elsif((Number = "010" AND EV_Limit < 616) AND Menu_Counter = 5) then -- Right
 				EV_Limit <= EV_Limit+10;
 			elsif((Number = "011" AND EV_Limit > 455) AND Menu_Counter = 5) then --Left
 				EV_Limit <= EV_Limit-10;				
-				
 			end if;
 			
 			
@@ -91,14 +90,14 @@ begin
 				pixcode <= "10111100";
 			elsif(((vcnt > 112) AND (vcnt < 145)) AND ((hcnt > 455) AND (hcnt < EN_Limit))) then -- Overlay for number of echos
 				pixcode <= "10110100";
-			elsif(((vcnt > 184) AND (vcnt < 216)) AND ((hcnt > 455) AND (hcnt < ED_Limit))) then -- Overlay for echo volume
-				pixcode <= "1" & color;
+			elsif(((vcnt > 184) AND (vcnt < 216)) AND ((hcnt > 455) AND (hcnt < EV_Limit))) then -- Overlay for echo volume
+				pixcode <= "10110100";
 
 			--elsif(((vcnt > 279) AND (vcnt < 440)) AND ((hcnt > 39) AND (hcnt < 600))) then -- Overlay for graph view. 600 max
 			
 			
 			-- Menu overlays
-			elsif((((vcnt > 23) AND (vcnt < 96)) AND ((hcnt > 23) AND (hcnt < 96))) AND Menu_Counter = 0) then -- Overlay for volume
+			elsif((((vcnt > 15) AND (vcnt < 104)) AND ((hcnt > 15) AND (hcnt < 104))) AND Menu_Counter = 0) then -- Overlay for volume
 					pixcode <= (others =>  not pixcode_single);					
 					
 			elsif((((vcnt > 112) AND (vcnt < 152)) AND ((hcnt > 8) AND (hcnt < 120))) AND Menu_Counter = 1) then -- Overlay for left rigth adjust
@@ -120,7 +119,12 @@ begin
 				pixcode <= (others => pixcode_single);
 			end if;
 			
-
+			VOL_out <= resize((VOL_Limit/10), 4);
+			LR_out <= resize((LR_Limit/10), 4);
+			DIST_out <= resize((DIST_Limit/10), 4);
+			ED_out <= resize((ED_Limit/10), 4);
+			EN_out <= resize((EN_Limit/10), 4);
+			EV_out <= resize((EV_Limit/10), 4);
 			
 		end if;
 	end process;
