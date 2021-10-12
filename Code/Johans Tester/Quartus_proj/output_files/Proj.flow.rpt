@@ -1,5 +1,5 @@
 Flow report for Proj
-Tue Oct 12 13:06:14 2021
+Tue Oct 12 16:11:09 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Tue Oct 12 13:06:04 2021            ;
+; Flow Status                        ; Successful - Tue Oct 12 16:10:56 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE115F29C7                                    ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; 451 / 114,480 ( < 1 % )                          ;
-;     Total combinational functions  ; 387 / 114,480 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 216 / 114,480 ( < 1 % )                          ;
-; Total registers                    ; 216                                              ;
-; Total pins                         ; 141 / 529 ( 27 % )                               ;
+; Total logic elements               ; 798 / 114,480 ( < 1 % )                          ;
+;     Total combinational functions  ; 748 / 114,480 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 291 / 114,480 ( < 1 % )                          ;
+; Total registers                    ; 291                                              ;
+; Total pins                         ; 143 / 529 ( 27 % )                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                            ;
 ; Embedded Multiplier 9-bit elements ; 2 / 532 ( < 1 % )                                ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/12/2021 13:05:13 ;
+; Start date & time ; 10/12/2021 16:09:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Proj                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 193569099818484.163403671202476       ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 193569099819925.163404778405920       ; --            ; --          ; --         ;
 ; IP_TOOL_NAME                        ; LPM_CONSTANT                          ; --            ; --          ; --         ;
 ; IP_TOOL_VERSION                     ; 13.0                                  ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
@@ -96,11 +96,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4696 MB             ; 00:00:04                           ;
-; Fitter                    ; 00:00:27     ; 1.3                     ; 5686 MB             ; 00:00:23                           ;
-; Assembler                 ; 00:00:07     ; 1.0                     ; 4570 MB             ; 00:00:05                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 4700 MB             ; 00:00:04                           ;
-; Total                     ; 00:00:53     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4680 MB             ; 00:00:06                           ;
+; Fitter                    ; 00:00:38     ; 1.3                     ; 5696 MB             ; 00:00:25                           ;
+; Assembler                 ; 00:00:08     ; 1.0                     ; 4561 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:12     ; 1.0                     ; 4704 MB             ; 00:00:05                           ;
+; Total                     ; 00:01:13     ; --                      ; --                  ; 00:00:41                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,10 +109,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; TRANSISTOR1-211  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; MUXEN4-202       ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; MUXEN4-202       ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; MUXEN4-202       ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; MUXEN4-202       ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

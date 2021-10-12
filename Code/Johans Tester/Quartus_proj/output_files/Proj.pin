@@ -145,7 +145,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
+SW[11]                       : AB24      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[9]                        : AB25      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[7]                        : AB26      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[4]                        : AB27      : input  : 3.3-V LVTTL       :         : 5         : Y              
@@ -173,7 +173,7 @@ GND                          : AC20      : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
+SW[10]                       : AC24      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[8]                        : AC25      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[5]                        : AC26      : input  : 3.3-V LVTTL       :         : 5         : Y              
 SW[2]                        : AC27      : input  : 3.3-V LVTTL       :         : 5         : Y              

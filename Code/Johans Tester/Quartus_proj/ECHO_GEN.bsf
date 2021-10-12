@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 128)
 		(input)
-		(text "ECHO_NUM[1..0]" (rect 0 0 75 12)(font "Arial" ))
-		(text "ECHO_NUM[1..0]" (rect 21 123 96 135)(font "Arial" ))
+		(text "ECHO_NUM[3..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "ECHO_NUM[3..0]" (rect 21 123 97 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 3))
 	)
 	(port

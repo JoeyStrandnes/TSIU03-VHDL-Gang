@@ -12,7 +12,7 @@ entity ECHO_GEN is
 			SAMPLE_OUT				: out signed(15 downto 0);
 			-- SETTINGS 
 			ECHO_VOL					: in unsigned(3 downto 0);
-			ECHO_NUM					: in unsigned(1 downto 0);
+			ECHO_NUM					: in unsigned(3 downto 0);
 			ECHO_DELAY				: in unsigned(3 downto 0);
 			-- SRAM
 			offset   				: out unsigned(19 downto 0);
@@ -29,6 +29,11 @@ architecture rtl of ECHO_GEN is
 	signal ECHO2 : signed(15 downto 0);
 	signal ECHO3 : signed(15 downto 0);
 	signal ECHO4 : signed(15 downto 0);
+	signal ECHO5 : signed(15 downto 0);
+	signal ECHO6 : signed(15 downto 0);
+	signal ECHO7 : signed(15 downto 0);
+	signal ECHO8 : signed(15 downto 0);
+	signal ECHO9 : signed(15 downto 0);
 	signal OUT_TMP: signed(15 downto 0);
 	constant fs  : integer := 48828;
 	signal ECHO_M : signed(15 downto 0);
@@ -46,77 +51,144 @@ begin
 			ECHO4 <= (others => '0');
 		--Vore snyggare med en "riktig" FSM och lookup-table	
 		elsif rising_edge(clk) then
-			-- Needs to be here to not sound like ass
-			if cntr < 10 then
+			
+			if cntr < 10 then -- Needs to be here to not sound like ass
 				offset <= (others => '0' );
 				RW <= '1';
-			-- First ECHO read
-			elsif cntr < 50 then
+			
+			elsif cntr < 20 then -- 1:st ECHO read
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6104*1
 				, offset'length);
 				RW <= '1';
-			elsif cntr < 75 then
-				ECHO1 <= resize( DATA_READ(15 downto 1) , 16);
-			-- Secound ECHO read
-			elsif cntr < 100 then
+			elsif cntr < 30 then
+				ECHO1 <= resize( DATA_READ(15 downto 0) , 16);
+			
+			elsif cntr < 40 then -- 2:nd ECHO read
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6104*2
 				, offset'length);
 				RW <= '1';
-			elsif cntr < 125 then
-				ECHO2 <= resize( DATA_READ(15 downto 2) , 16);
-			-- Third ECHO read
-			elsif cntr < 150 then
+			elsif cntr < 50 then
+				ECHO2 <= resize( DATA_READ(15 downto 0) , 16);
+			
+			elsif cntr < 60 then -- 3:rd ECHO read
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6104*3
 				, offset'length);
 				RW <= '1';
-			elsif cntr < 175 then
-					ECHO3 <= resize( DATA_READ(15 downto 3) , 16);
-			-- Fourth ECHO read
-			elsif cntr < 200 then
+			elsif cntr < 70 then
+				ECHO3 <= resize( DATA_READ(15 downto 1) , 16);
+			
+			elsif cntr < 80 then -- 4:th ECHO read
 				offset <= resize(
 				(resize(ECHO_DELAY, offset'length) + 1)*6104*4
 				, offset'length);
-
 				RW <= '1';
-			elsif cntr < 225 then
-				ECHO4 <= resize( DATA_READ(15 downto 4) , 16);
-			elsif cntr < 250 then
+			elsif cntr < 90 then
+				ECHO4 <= resize( DATA_READ(15 downto 1) , 16);
+				
+			elsif cntr < 100 then -- 5:th ECHO read
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*5
+				, offset'length);
+				RW <= '1';
+			elsif cntr < 110 then
+				ECHO5 <= resize( DATA_READ(15 downto 2) , 16);
+				
+			elsif cntr < 120 then -- 6:th ECHO read
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*6
+				, offset'length);
+				RW <= '1';
+			elsif cntr < 130 then
+				ECHO6 <= resize( DATA_READ(15 downto 2) , 16);
+				
+			elsif cntr < 140 then -- 7:th ECHO read
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*7
+				, offset'length);
+				RW <= '1';
+			elsif cntr < 150 then
+				ECHO7 <= resize( DATA_READ(15 downto 3) , 16);			
+		
+			elsif cntr < 160 then -- 8:th ECHO read
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*8
+				, offset'length);
+				RW <= '1';
+			elsif cntr < 170 then
+				ECHO8 <= resize( DATA_READ(15 downto 3) , 16);	
 
-				-- Muting echos not wanted decided by ECHO_NUM 
-				if ECHO_NUM = "00" then
+			elsif cntr < 180 then -- 9:th ECHO read
+				offset <= resize(
+				(resize(ECHO_DELAY, offset'length) + 1)*6104*9
+				, offset'length);
+				RW <= '1';
+			elsif cntr < 190 then
+				ECHO9 <= resize( DATA_READ(15 downto 4) , 16);
+			
+	
+			elsif cntr < 250 then -- Muting echos not wanted decided by ECHO_NUM 
+				if ECHO_NUM = "0000" then
+					ECHO1 <= (others => '0');
 					ECHO2 <= (others => '0');
 					ECHO3 <= (others => '0');
 					ECHO4 <= (others => '0');
-				elsif ECHO_NUM = "01" then
+					ECHO5 <= (others => '0');
+					ECHO6 <= (others => '0');
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0001" then
+					ECHO2 <= (others => '0');
 					ECHO3 <= (others => '0');
 					ECHO4 <= (others => '0');
-				elsif ECHO_NUM = "10" then
+					ECHO5 <= (others => '0');
+					ECHO6 <= (others => '0');
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0010" then
+					ECHO3 <= (others => '0');
 					ECHO4 <= (others => '0');
+					ECHO5 <= (others => '0');
+					ECHO6 <= (others => '0');
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0011" then
+					ECHO4 <= (others => '0');				
+					ECHO5 <= (others => '0');
+					ECHO6 <= (others => '0');
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0100" then
+					ECHO5 <= (others => '0');
+					ECHO6 <= (others => '0');
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0101" then
+					ECHO6 <= (others => '0');
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0110" then
+					ECHO7 <= (others => '0');
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "0111" then
+					ECHO8 <= (others => '0');
+					ECHO9 <= (others => '0');
+				elsif ECHO_NUM = "1000" then
+					ECHO9 <= (others => '0');
 				end if;
+
 				
---				case ECHO_VOL is
---					when "1111" => ECHO_M <= to_signed(16384, 16);
---					when "1110" => ECHO_M <= to_signed(11468, 16);	
---					when "1101" => ECHO_M <= to_signed(5620, 16);
---					when "1100" => ECHO_M <= to_signed(3934, 16);
---					when "1011" => ECHO_M <= to_signed(2754, 16);
---					when "1010" => ECHO_M <= to_signed(1928, 16);
---					when "1001" => ECHO_M <= to_signed(1350, 16);
---					when "1000" => ECHO_M <= to_signed(944, 16);
---					when "0111" => ECHO_M <= to_signed(662, 16);
---					when "0110" => ECHO_M <= to_signed(462, 16);
---					when "0101" => ECHO_M <= to_signed(324, 16);
---					when "0100" => ECHO_M <= to_signed(226, 16);
---					when "0011" => ECHO_M <= to_signed(158, 16);
---					when "0010" => ECHO_M <= to_signed(112, 16);
---					when "0001" => ECHO_M <= to_signed(78, 16); --basically zero
---					when others => ECHO_M <= to_signed(0, 16);
---				end case;	
 				-- Adding all echos together
-				OUT_TMP <= ECHO1 + ECHO2 + ECHO3 + ECHO4;
+				OUT_TMP <= ECHO1 + ECHO2 + ECHO3 + ECHO4 + ECHO5 + ECHO6 + ECHO7 + ECHO8 + ECHO9;
 				
 				
 			else --Writing to SRAM
@@ -145,8 +217,8 @@ begin
 							to_signed(78, 16)  when "1111", 
 							to_signed(0, 16)  when others;  
 		
-		RES<= (ECHO_M * OUT_TMP);
+		RES <= (ECHO_M * OUT_TMP);
 			
 	-- Adding all signals together
-	SAMPLE_OUT <= 	RES(31 downto 16) +SAMPLE_IN;
+	SAMPLE_OUT <= 	RES(31 downto 16) + SAMPLE_IN;
 end architecture;
