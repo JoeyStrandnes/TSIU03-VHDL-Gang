@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="BIG_SOUND_BLOCK">
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIG_SOUND_BLOCK|Dist:inst2|lpm_mult:Mult0" CBX_FILE_NAME="mult_46t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIG_SOUND_BLOCK|Balance_Control:inst1|lpm_mult:Mult0" CBX_FILE_NAME="mult_36t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIG_SOUND_BLOCK|ECHO_GEN:inst4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_qgh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIG_SOUND_BLOCK|ECHO_GEN:inst4|lpm_mult:Mult1" CBX_FILE_NAME="mult_36t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|BIG_SOUND_BLOCK|Volume_Control:inst3|lpm_mult:Mult0" CBX_FILE_NAME="mult_36t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

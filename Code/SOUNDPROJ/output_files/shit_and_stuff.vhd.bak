@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity group_no is
+  port(seccount: in unsigned(2 downto 0);
+		 lrsel: out std_logic;
+		 DATA: out unsigned(15 downto 0);
+		 RW : out std_logic);
+end entity;
+
+architecture RTL of group_no is
+
+begin
+	with seccount select
+		DATA <= 5 when 0,
+				  4 when 1,
+				  7 when 2,
+				  6 when 3,
+				  0 when others;
+	
+	RW <= 1 when seccount(2) = 1 else 0;
+end architecture;

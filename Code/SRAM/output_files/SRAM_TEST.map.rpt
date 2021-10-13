@@ -1,0 +1,484 @@
+Analysis & Synthesis report for SRAM_TEST
+Wed Oct 06 15:37:58 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component
+ 14. Parameter Settings for User Entity Instance: lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++------------------------------------+--------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Oct 06 15:37:58 2021            ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
+; Revision Name                      ; SRAM_TEST                                        ;
+; Top-level Entity Name              ; SRAM_TEST                                        ;
+; Family                             ; Cyclone IV E                                     ;
+; Total logic elements               ; 151                                              ;
+;     Total combinational functions  ; 118                                              ;
+;     Dedicated logic registers      ; 111                                              ;
+; Total registers                    ; 111                                              ;
+; Total pins                         ; 49                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 0                                                ;
+; Total PLLs                         ; 0                                                ;
++------------------------------------+--------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; SRAM_TEST          ; SRAM_TEST          ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                       ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+; SRAM_control.vhd                 ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/SRAM_control.vhd              ;         ;
+; SRAM_TEST.bdf                    ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/SRAM_TEST.bdf                 ;         ;
+; ECHO_GEN.vhd                     ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/ECHO_GEN.vhd                  ;         ;
+; my_mux.vhd                       ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/my_mux.vhd                    ;         ;
+; lpm_constant1.vhd                ; yes             ; User Wizard-Generated File         ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/lpm_constant1.vhd             ;         ;
+; lpm_constant2.vhd                ; yes             ; User Wizard-Generated File         ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/lpm_constant2.vhd             ;         ;
+; snddriver.vhd                    ; yes             ; Auto-Found VHDL File               ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/snddriver.vhd                 ;         ;
+; ctrl.vhd                         ; yes             ; Auto-Found VHDL File               ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/ctrl.vhd                      ;         ;
+; channel_mod.vhd                  ; yes             ; Auto-Found VHDL File               ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/channel_mod.vhd               ;         ;
+; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 151       ;
+;                                             ;           ;
+; Total combinational functions               ; 118       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 21        ;
+;     -- 3 input functions                    ; 63        ;
+;     -- <=2 input functions                  ; 34        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 77        ;
+;     -- arithmetic mode                      ; 41        ;
+;                                             ;           ;
+; Total registers                             ; 111       ;
+;     -- Dedicated logic registers            ; 111       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 49        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 111       ;
+; Total fan-out                               ; 867       ;
+; Average fan-out                             ; 2.53      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                      ; Library Name ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+; |SRAM_TEST                         ; 118 (0)           ; 111 (0)      ; 0           ; 0            ; 0       ; 0         ; 49   ; 0            ; |SRAM_TEST                                               ; work         ;
+;    |ECHO_GEN:inst|                 ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|ECHO_GEN:inst                                 ; work         ;
+;    |SRAM_control:inst2|            ; 54 (54)           ; 38 (38)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SRAM_control:inst2                            ; work         ;
+;    |SndDriver:inst_SND|            ; 40 (1)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND                            ; work         ;
+;       |channel_mod:b2v_inst_left|  ; 15 (15)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left  ; work         ;
+;       |channel_mod:b2v_inst_right| ; 14 (14)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right ; work         ;
+;       |ctrl:b2v_inst_ctrl|         ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SRAM_TEST|SndDriver:inst_SND|ctrl:b2v_inst_ctrl         ; work         ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                   ;
++--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                ; IP Include File                                        ;
++--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------+
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |SRAM_TEST|lpm_constant1:inst3 ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/lpm_constant1.vhd ;
+; Altera ; LPM_CONSTANT ; 13.0    ; N/A          ; N/A          ; |SRAM_TEST|lpm_constant2:inst4 ; X:/GITHUB/TSIU03-VHDL-Gang/Code/SRAM/lpm_constant2.vhd ;
++--------+--------------+---------+--------------+--------------+--------------------------------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++--------------------------------------------------------+----------------------------------------+
+; Register name                                          ; Reason for Removal                     ;
++--------------------------------------------------------+----------------------------------------+
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[0] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[0]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[1] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[1]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[2] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[2]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[3] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[3]  ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[4] ; Stuck at GND due to stuck port data_in ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[4]  ; Stuck at GND due to stuck port data_in ;
+; ECHO_GEN:inst|offset[0..3,19]                          ; Stuck at GND due to stuck port data_in ;
+; ECHO_GEN:inst|offset[9]                                ; Merged with ECHO_GEN:inst|offset[17]   ;
+; ECHO_GEN:inst|offset[8,16]                             ; Merged with ECHO_GEN:inst|offset[10]   ;
+; ECHO_GEN:inst|offset[7]                                ; Merged with ECHO_GEN:inst|offset[15]   ;
+; ECHO_GEN:inst|offset[6,13,14]                          ; Merged with ECHO_GEN:inst|offset[12]   ;
+; Total Number of Removed Registers = 22                 ;                                        ;
++--------------------------------------------------------+----------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                  ;
++--------------------------------------------------------+---------------------------+---------------------------------------------------------+
+; Register name                                          ; Reason for Removal        ; Registers Removed due to This Register                  ;
++--------------------------------------------------------+---------------------------+---------------------------------------------------------+
+; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[0] ; Stuck at GND              ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[1], ;
+;                                                        ; due to stuck port data_in ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[2], ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[3], ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[4]  ;
+; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[0]  ; Stuck at GND              ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[1],  ;
+;                                                        ; due to stuck port data_in ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[2],  ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[3],  ;
+;                                                        ;                           ; SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[4]   ;
++--------------------------------------------------------+---------------------------+---------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 111   ;
+; Number of registers using Synchronous Clear  ; 3     ;
+; Number of registers using Synchronous Load   ; 16    ;
+; Number of registers using Asynchronous Clear ; 84    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 82    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_left|TXReg[15] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |SRAM_TEST|SndDriver:inst_SND|channel_mod:b2v_inst_right|TXReg[6] ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |SRAM_TEST|SRAM_control:inst2|DATA_SRAM[14]~reg0                  ;
+; 6:1                ; 15 bits   ; 60 LEs        ; 45 LEs               ; 15 LEs                 ; Yes        ; |SRAM_TEST|ECHO_GEN:inst|offset[5]                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+--------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                         ;
++--------------------+------------------+--------------------------------------------------------------+
+; LPM_WIDTH          ; 4                ; Signed Integer                                               ;
+; LPM_CVALUE         ; 15               ; Signed Integer                                               ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                      ;
+; CBXI_PARAMETER     ; lpm_constant_sf6 ; Untyped                                                      ;
++--------------------+------------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+--------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                         ;
++--------------------+------------------+--------------------------------------------------------------+
+; LPM_WIDTH          ; 2                ; Signed Integer                                               ;
+; LPM_CVALUE         ; 3                ; Signed Integer                                               ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                      ;
+; CBXI_PARAMETER     ; lpm_constant_7e6 ; Untyped                                                      ;
++--------------------+------------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Wed Oct 06 15:37:48 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SRAM_TEST -c SRAM_TEST
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file sram_control.vhd
+    Info (12022): Found design unit 1: SRAM_control-rtl
+    Info (12023): Found entity 1: SRAM_control
+Info (12021): Found 1 design units, including 1 entities, in source file sram_test.bdf
+    Info (12023): Found entity 1: SRAM_TEST
+Info (12021): Found 2 design units, including 1 entities, in source file echo_gen.vhd
+    Info (12022): Found design unit 1: ECHO_GEN-rtl
+    Info (12023): Found entity 1: ECHO_GEN
+Info (12021): Found 2 design units, including 1 entities, in source file my_mux.vhd
+    Info (12022): Found design unit 1: my_mux-rtl
+    Info (12023): Found entity 1: my_mux
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant0.vhd
+    Info (12022): Found design unit 1: lpm_constant0-SYN
+    Info (12023): Found entity 1: lpm_constant0
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant1.vhd
+    Info (12022): Found design unit 1: lpm_constant1-SYN
+    Info (12023): Found entity 1: lpm_constant1
+Info (12021): Found 2 design units, including 1 entities, in source file lpm_constant2.vhd
+    Info (12022): Found design unit 1: lpm_constant2-SYN
+    Info (12023): Found entity 1: lpm_constant2
+Info (12127): Elaborating entity "SRAM_TEST" for the top level hierarchy
+Info (12128): Elaborating entity "SRAM_control" for hierarchy "SRAM_control:inst2"
+Warning (12125): Using design file snddriver.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: SndDriver-bdf_type
+    Info (12023): Found entity 1: SndDriver
+Warning (12300): Found the following files while searching for definition of entity "SndDriver", but did not use these files because already using a different file containing the entity definition
+    Warning (12126): File: SndDriver.bdf
+Info (12128): Elaborating entity "SndDriver" for hierarchy "SndDriver:inst_SND"
+Warning (12125): Using design file ctrl.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ctrl-rtl
+    Info (12023): Found entity 1: ctrl
+Info (12128): Elaborating entity "ctrl" for hierarchy "SndDriver:inst_SND|ctrl:b2v_inst_ctrl"
+Warning (12125): Using design file channel_mod.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: channel_mod-rtl
+    Info (12023): Found entity 1: channel_mod
+Info (12128): Elaborating entity "channel_mod" for hierarchy "SndDriver:inst_SND|channel_mod:b2v_inst_left"
+Info (12128): Elaborating entity "ECHO_GEN" for hierarchy "ECHO_GEN:inst"
+Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(27): object "ECHO2" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(28): object "ECHO3" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(29): object "ECHO4" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at ECHO_GEN.vhd(30): object "I_SAMPLE_OUT" assigned a value but never read
+Info (12128): Elaborating entity "lpm_constant2" for hierarchy "lpm_constant2:inst4"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "lpm_constant2:inst4|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "15"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "4"
+Info (12128): Elaborating entity "lpm_constant1" for hierarchy "lpm_constant1:inst3"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "lpm_constant1:inst3|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "3"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "2"
+Info (12128): Elaborating entity "my_mux" for hierarchy "my_mux:inst_mux"
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[15]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[14]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[13]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[12]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[11]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[10]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[9]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[8]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[7]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[6]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[5]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[4]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[3]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[2]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[1]" and its non-tri-state driver.
+    Warning (13035): Inserted always-enabled tri-state buffer between "DATA_SRAM[0]" and its non-tri-state driver.
+Info (13060): One or more bidirs are fed by always enabled tri-state buffers
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[15]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[14]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[13]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[12]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[11]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[10]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[9]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[8]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[7]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[6]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[5]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[4]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[3]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[2]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[1]" is moved to its source
+    Info (13061): Fan-out of permanently enabled tri-state buffer feeding bidir "DATA_SRAM[0]" is moved to its source
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+    Warning (13010): Node "DATA_SRAM~synth"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sram_ce" is stuck at GND
+    Warning (13410): Pin "sram_oe" is stuck at GND
+    Warning (13410): Pin "sram_lb" is stuck at GND
+    Warning (13410): Pin "sram_ub" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 202 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 30 output pins
+    Info (21060): Implemented 16 bidirectional pins
+    Info (21061): Implemented 153 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 48 warnings
+    Info: Peak virtual memory: 4650 megabytes
+    Info: Processing ended: Wed Oct 06 15:37:58 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:02
+
+

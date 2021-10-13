@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Dist is
+	Port (clk, rstn : in std_logic;
+			distcontrol : in unsigned(3 downto 0);
+			in_sample : in signed (15 downto 0));
+			out_sample : out signed(15 downto 0);
+end entity;
+
+architecture distArch of Dist is
+	

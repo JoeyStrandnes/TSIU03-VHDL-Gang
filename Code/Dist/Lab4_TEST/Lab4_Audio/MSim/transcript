@@ -1,0 +1,92 @@
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/SCCnt'.
+# Executing ONERROR command at macro ./wave.do line 26
+# ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/BitCnt'.
+# Executing ONERROR command at macro ./wave.do line 27
+run -a
+# ** Note: mclk: OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: bclk: OK (320 ns)
+#    Time: 1480 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: adclrc: OK (20480 ns)
+#    Time: 41 us  Iteration: 2  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=27044, received=-1.
+#    Time: 41001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: mclk1: OK
+#    Time: 61481 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: bclk0: OK
+#    Time: 61481 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Causality operation skipped due to absense of debug database file
+# Compile of ctrl.vhd was successful.
+vsim -gui work.tb_audio
+# vsim -gui work.tb_audio 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/SCCnt'.
+# Executing ONERROR command at macro ./wave.do line 26
+# ** Error: (vish-4014) No objects found matching '/tb_audio/DUT/BitCnt'.
+# Executing ONERROR command at macro ./wave.do line 27
+run -a
+# ** Note: mclk: OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: bclk: OK (320 ns)
+#    Time: 1480 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: adclrc: OK (20480 ns)
+#    Time: 30760 ns  Iteration: 2  Instance: /tb_audio
+# ** Error: RDAC: NOK. Sent=30180, received=-1.
+#    Time: 30761 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: mclk1: OK
+#    Time: 51241 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: bclk0: OK
+#    Time: 51241 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: NOK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# Compile of ctrl.vhd was successful.
+# Compile of channel_mod.vhd was successful.
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_audio(sim)#1
+run -a
+# ** Note: mclk: OK (80 ns)
+#    Time: 1080 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: bclk: OK (320 ns)
+#    Time: 1480 ns  Iteration: 2  Instance: /tb_audio
+# ** Note: adclrc: OK (20480 ns)
+#    Time: 41 us  Iteration: 2  Instance: /tb_audio
+# ** Note: mclk1: OK
+#    Time: 61481 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: bclk0: OK
+#    Time: 61481 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: adclrc = daclrc /= lrsel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
+# ** Note: ADC channel: OK, DAC channel: OK
+#    Time: 1000001 ns  Iteration: 0  Instance: /tb_audio
