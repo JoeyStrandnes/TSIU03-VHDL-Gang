@@ -93,7 +93,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2256 224 2432 240)
+	(rect 2368 224 2544 240)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "hsync" (rect 90 0 120 12)(font "Arial" ))
 	(pt 0 8)
@@ -110,7 +110,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2256 368 2432 384)
+	(rect 2368 368 2544 384)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vsync" (rect 90 0 121 12)(font "Arial" ))
 	(pt 0 8)
@@ -127,7 +127,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 2080 776 2256 792)
+	(rect 2192 776 2368 792)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vga_clk" (rect 90 0 128 12)(font "Arial" ))
 	(pt 0 8)
@@ -178,7 +178,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1920 512 2096 528)
+	(rect 2032 512 2208 528)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vga_blank" (rect 90 0 140 12)(font "Arial" ))
 	(pt 0 8)
@@ -195,7 +195,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1896 688 2072 704)
+	(rect 2008 688 2184 704)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vga_sync" (rect 90 0 139 12)(font "Arial" ))
 	(pt 0 8)
@@ -212,7 +212,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1896 640 2072 656)
+	(rect 2008 640 2184 656)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vga_r[7..0]" (rect 90 0 144 12)(font "Arial" ))
 	(pt 0 8)
@@ -229,7 +229,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1896 656 2072 672)
+	(rect 2008 656 2184 672)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vga_g[7..0]" (rect 90 0 146 12)(font "Arial" ))
 	(pt 0 8)
@@ -246,7 +246,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 1896 672 2072 688)
+	(rect 2008 672 2184 688)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "vga_b[7..0]" (rect 90 0 146 12)(font "Arial" ))
 	(pt 0 8)
@@ -260,6 +260,102 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 	(annotation_block (location)(rect 2072 688 2128 704))
+)
+(pin
+	(output)
+	(rect 1560 688 1736 704)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Vol_Out[3..0]" (rect 90 0 154 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1560 704 1736 720)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "LR_Out[3..0]" (rect 90 0 153 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1560 720 1736 736)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Dist_Out[3..0]" (rect 90 0 159 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1560 736 1736 752)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "ED_Out[3..0]" (rect 90 0 154 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1560 752 1736 768)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "EN_Out[3..0]" (rect 90 0 154 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1560 768 1736 784)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "EV_Out[3..0]" (rect 90 0 153 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 344 80 472 160)
@@ -442,7 +538,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1808 208 1872 288)
+	(rect 1920 208 1984 288)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "i_hs3" (rect 3 68 28 80)(font "Arial" ))
 	(port
@@ -492,7 +588,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1808 352 1872 432)
+	(rect 1920 352 1984 432)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "i_vs3" (rect 3 68 30 80)(font "Arial" ))
 	(port
@@ -542,7 +638,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1808 496 1872 576)
+	(rect 1920 496 1984 576)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "i_blank3" (rect 3 68 43 80)(font "Arial" ))
 	(port
@@ -642,7 +738,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2096 208 2160 288)
+	(rect 2208 208 2272 288)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "i_hs4" (rect 3 68 28 80)(font "Arial" ))
 	(port
@@ -692,7 +788,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2096 352 2160 432)
+	(rect 2208 352 2272 432)
 	(text "DFF" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "i_vs4" (rect 3 68 30 80)(font "Arial" ))
 	(port
@@ -771,7 +867,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1656 616 1856 728)
+	(rect 1768 616 1968 728)
 	(text "RGB_gen" (rect 5 0 52 12)(font "Arial" ))
 	(text "i_RGB_gen" (rect 8 96 63 108)(font "Arial" ))
 	(port
@@ -1368,145 +1464,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1840 288)
-	(pt 1840 304)
-)
-(connector
-	(text "rstn" (rect 1810 288 1828 300)(font "Arial" ))
-	(pt 1808 304)
-	(pt 1840 304)
-)
-(connector
-	(pt 2128 288)
-	(pt 2128 304)
-)
-(connector
-	(text "rstn" (rect 2098 288 2116 300)(font "Arial" ))
-	(pt 2096 304)
-	(pt 2128 304)
-)
-(connector
-	(pt 1840 432)
-	(pt 1840 448)
-)
-(connector
-	(text "rstn" (rect 1810 432 1828 444)(font "Arial" ))
-	(pt 1808 448)
-	(pt 1840 448)
-)
-(connector
-	(pt 2128 432)
-	(pt 2128 448)
-)
-(connector
-	(text "rstn" (rect 2098 432 2116 444)(font "Arial" ))
-	(pt 2096 448)
-	(pt 2128 448)
-)
-(connector
-	(pt 1840 576)
-	(pt 1840 592)
-)
-(connector
-	(text "rstn" (rect 1810 576 1828 588)(font "Arial" ))
-	(pt 1808 592)
-	(pt 1840 592)
-)
-(connector
-	(text "clk" (rect 1791 248 1805 260)(font "Arial" ))
-	(pt 1784 248)
-	(pt 1808 248)
-)
-(connector
-	(text "clk" (rect 2079 248 2093 260)(font "Arial" ))
-	(pt 2072 248)
-	(pt 2096 248)
-)
-(connector
-	(text "clk" (rect 1791 392 1805 404)(font "Arial" ))
-	(pt 1784 392)
-	(pt 1808 392)
-)
-(connector
-	(text "clk" (rect 2079 392 2093 404)(font "Arial" ))
-	(pt 2072 392)
-	(pt 2096 392)
-)
-(connector
-	(text "clk" (rect 1791 536 1805 548)(font "Arial" ))
-	(pt 1784 536)
-	(pt 1808 536)
-)
-(connector
-	(text "ce" (rect 2042 768 2053 780)(font "Arial" ))
-	(pt 2016 784)
-	(pt 2080 784)
-)
-(connector
-	(text "blank3" (rect 1882 504 1913 516)(font "Arial" ))
-	(pt 1872 520)
-	(pt 1920 520)
-)
-(connector
-	(text "clk" (rect 1639 632 1653 644)(font "Arial" ))
-	(pt 1632 648)
-	(pt 1656 648)
-)
-(connector
-	(text "rstn" (rect 1634 648 1652 660)(font "Arial" ))
-	(pt 1632 664)
-	(pt 1656 664)
-)
-(connector
-	(text "ce" (rect 1642 664 1653 676)(font "Arial" ))
-	(pt 1632 680)
-	(pt 1656 680)
-)
-(connector
-	(pt 1856 648)
-	(pt 1896 648)
-	(bus)
-)
-(connector
-	(pt 1856 664)
-	(pt 1896 664)
-	(bus)
-)
-(connector
-	(pt 1856 680)
-	(pt 1896 680)
-	(bus)
-)
-(connector
-	(text "hsync3" (rect 1975 216 2011 228)(font "Arial" ))
-	(pt 1872 232)
-	(pt 2096 232)
-)
-(connector
-	(text "vsync3" (rect 1973 360 2010 372)(font "Arial" ))
-	(pt 1872 376)
-	(pt 2096 376)
-)
-(connector
-	(text "hsync4" (rect 2188 216 2224 228)(font "Arial" ))
-	(pt 2160 232)
-	(pt 2256 232)
-)
-(connector
-	(text "vsync4" (rect 2192 360 2229 372)(font "Arial" ))
-	(pt 2160 376)
-	(pt 2256 376)
-)
-(connector
-	(pt 1856 696)
-	(pt 1896 696)
-)
-(connector
-	(pt 1584 696)
-	(pt 1656 696)
-	(bus)
-)
-(connector
 	(pt 1216 648)
 	(pt 1272 648)
 )
@@ -1529,11 +1486,6 @@ applicable agreement for further details.
 	(pt 1408 520)
 )
 (connector
-	(text "blank2" (rect 1528 504 1559 516)(font "Arial" ))
-	(pt 1472 520)
-	(pt 1808 520)
-)
-(connector
 	(pt 1440 432)
 	(pt 1440 448)
 )
@@ -1552,11 +1504,6 @@ applicable agreement for further details.
 	(pt 1408 376)
 )
 (connector
-	(text "vsync2" (rect 1624 360 1661 372)(font "Arial" ))
-	(pt 1472 376)
-	(pt 1808 376)
-)
-(connector
 	(pt 1440 288)
 	(pt 1440 304)
 )
@@ -1573,11 +1520,6 @@ applicable agreement for further details.
 (connector
 	(pt 1184 232)
 	(pt 1408 232)
-)
-(connector
-	(text "hsync2" (rect 1631 216 1667 228)(font "Arial" ))
-	(pt 1472 232)
-	(pt 1808 232)
 )
 (connector
 	(pt 1216 664)
@@ -1635,11 +1577,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1584 696)
-	(pt 1584 680)
-	(bus)
-)
-(connector
 	(pt 1272 648)
 	(pt 1272 712)
 )
@@ -1688,24 +1625,205 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1032 888)
-	(pt 1040 888)
-)
-(connector
 	(pt 1040 888)
 	(pt 1056 888)
-)
-(connector
-	(pt 1032 904)
-	(pt 1040 904)
 )
 (connector
 	(pt 1040 904)
 	(pt 1056 904)
 )
 (connector
-	(pt 1584 680)
+	(pt 1952 288)
+	(pt 1952 304)
+)
+(connector
+	(text "rstn" (rect 1922 288 1940 300)(font "Arial" ))
+	(pt 1920 304)
+	(pt 1952 304)
+)
+(connector
+	(pt 2240 288)
+	(pt 2240 304)
+)
+(connector
+	(text "rstn" (rect 2210 288 2228 300)(font "Arial" ))
+	(pt 2208 304)
+	(pt 2240 304)
+)
+(connector
+	(pt 1952 432)
+	(pt 1952 448)
+)
+(connector
+	(text "rstn" (rect 1922 432 1940 444)(font "Arial" ))
+	(pt 1920 448)
+	(pt 1952 448)
+)
+(connector
+	(pt 2240 432)
+	(pt 2240 448)
+)
+(connector
+	(text "rstn" (rect 2210 432 2228 444)(font "Arial" ))
+	(pt 2208 448)
+	(pt 2240 448)
+)
+(connector
+	(pt 1952 576)
+	(pt 1952 592)
+)
+(connector
+	(text "rstn" (rect 1922 576 1940 588)(font "Arial" ))
+	(pt 1920 592)
+	(pt 1952 592)
+)
+(connector
+	(text "clk" (rect 1903 248 1917 260)(font "Arial" ))
+	(pt 1896 248)
+	(pt 1920 248)
+)
+(connector
+	(text "clk" (rect 2191 248 2205 260)(font "Arial" ))
+	(pt 2184 248)
+	(pt 2208 248)
+)
+(connector
+	(text "clk" (rect 1903 392 1917 404)(font "Arial" ))
+	(pt 1896 392)
+	(pt 1920 392)
+)
+(connector
+	(text "clk" (rect 2191 392 2205 404)(font "Arial" ))
+	(pt 2184 392)
+	(pt 2208 392)
+)
+(connector
+	(text "clk" (rect 1903 536 1917 548)(font "Arial" ))
+	(pt 1896 536)
+	(pt 1920 536)
+)
+(connector
+	(text "ce" (rect 2154 768 2165 780)(font "Arial" ))
+	(pt 2128 784)
+	(pt 2192 784)
+)
+(connector
+	(text "blank3" (rect 1994 504 2025 516)(font "Arial" ))
+	(pt 1984 520)
+	(pt 2032 520)
+)
+(connector
+	(text "clk" (rect 1751 632 1765 644)(font "Arial" ))
+	(pt 1744 648)
+	(pt 1768 648)
+)
+(connector
+	(text "rstn" (rect 1746 648 1764 660)(font "Arial" ))
+	(pt 1744 664)
+	(pt 1768 664)
+)
+(connector
+	(text "ce" (rect 1754 664 1765 676)(font "Arial" ))
+	(pt 1744 680)
+	(pt 1768 680)
+)
+(connector
+	(pt 1968 648)
+	(pt 2008 648)
+	(bus)
+)
+(connector
+	(pt 1968 664)
+	(pt 2008 664)
+	(bus)
+)
+(connector
+	(pt 1968 680)
+	(pt 2008 680)
+	(bus)
+)
+(connector
+	(text "hsync4" (rect 2300 216 2336 228)(font "Arial" ))
+	(pt 2272 232)
+	(pt 2368 232)
+)
+(connector
+	(text "vsync4" (rect 2304 360 2341 372)(font "Arial" ))
+	(pt 2272 376)
+	(pt 2368 376)
+)
+(connector
+	(pt 1968 696)
+	(pt 2008 696)
+)
+(connector
+	(text "hsync2" (rect 1743 216 1779 228)(font "Arial" ))
+	(pt 1472 232)
+	(pt 1920 232)
+)
+(connector
+	(text "vsync2" (rect 1736 360 1773 372)(font "Arial" ))
+	(pt 1472 376)
+	(pt 1920 376)
+)
+(connector
+	(text "blank2" (rect 1640 504 1671 516)(font "Arial" ))
+	(pt 1472 520)
+	(pt 1920 520)
+)
+(connector
+	(text "hsync3" (rect 2087 216 2123 228)(font "Arial" ))
+	(pt 1984 232)
+	(pt 2208 232)
+)
+(connector
+	(text "vsync3" (rect 2085 360 2122 372)(font "Arial" ))
+	(pt 1984 376)
+	(pt 2208 376)
+)
+(connector
 	(pt 1544 680)
+	(pt 1728 680)
+	(bus)
+)
+(connector
+	(pt 1728 680)
+	(pt 1728 696)
+	(bus)
+)
+(connector
+	(pt 1768 696)
+	(pt 1728 696)
+	(bus)
+)
+(connector
+	(pt 1544 696)
+	(pt 1560 696)
+	(bus)
+)
+(connector
+	(pt 1544 712)
+	(pt 1560 712)
+	(bus)
+)
+(connector
+	(pt 1544 728)
+	(pt 1560 728)
+	(bus)
+)
+(connector
+	(pt 1544 744)
+	(pt 1560 744)
+	(bus)
+)
+(connector
+	(pt 1544 760)
+	(pt 1560 760)
+	(bus)
+)
+(connector
+	(pt 1544 776)
+	(pt 1560 776)
 	(bus)
 )
 (junction (pt 440 264))
@@ -1713,14 +1831,12 @@ applicable agreement for further details.
 (junction (pt 456 408))
 (junction (pt 456 520))
 (junction (pt 440 536))
-(junction (pt 1040 888))
-(junction (pt 1040 904))
 (text "Double click in the parameter box above to set your group number." (rect 640 80 1017 94)(font "Arial" (font_size 8)))
 (text "This will be written on HEX7 and HEX6, to help you reqognize your own application on the board." (rect 640 96 1189 110)(font "Arial" (font_size 8)))
 (text "(Only group number 00-99 is allowed)" (rect 640 112 855 126)(font "Arial" (font_size 8)))
 (text "Generates y-coordinates" (rect 272 360 414 374)(font "Arial" (font_size 8)))
 (text "Generates vertical sync" (rect 1024 328 1160 342)(font "Arial" (font_size 8)))
-(text "Generates R/G/B data and control signals to the video DAC" (rect 1688 736 2023 750)(font "Arial" (font_size 8)))
+(text "Generates R/G/B data and control signals to the video DAC" (rect 1800 736 2135 750)(font "Arial" (font_size 8)))
 (text "Generates the blanking signal" (rect 536 456 703 470)(font "Arial" (font_size 8)))
 (text "Pipelines the blank signal" (rect 1024 472 1164 486)(font "Arial" (font_size 8)))
 (text "Generates x-coordninates (done)" (rect 240 216 431 230)(font "Arial" (font_size 8)))
@@ -1729,14 +1845,14 @@ applicable agreement for further details.
 (text "Hint: Shift+scroll to scroll horizontall" (rect 608 328 809 342)(font "Arial" (font_size 8)))
 (text "Hint: Scroll to scroll vertically" (rect 608 312 770 326)(font "Arial" (font_size 8)))
 (text "Clock enable generator" (rect 352 64 482 78)(font "Arial" (font_size 8)))
-(text "ce works perfectly as vga_clk" (rect 2016 792 2189 806)(font "Arial" (font_size 8)))
-(text "This one does not really need ce, but just in case" (rect 1688 760 1966 774)(font "Arial" (font_size 8)))
+(text "ce works perfectly as vga_clk" (rect 2128 792 2301 806)(font "Arial" (font_size 8)))
+(text "This one does not really need ce, but just in case" (rect 1800 760 2078 774)(font "Arial" (font_size 8)))
 (text "Pipeline stage 1" (rect 408 184 510 198)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
 (text "Pipeline stage 2" (rect 1168 160 1270 174)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
-(text "Pipeline stage 3" (rect 1864 160 1966 174)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
+(text "Pipeline stage 3" (rect 1976 160 2078 174)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
 (text "Pipeline stage 0" (rect 296 184 398 198)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
-(text "Pipeline stage 4" (rect 2152 160 2254 174)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
-(text "The blank and RGB are pipelined in the video DAC" (rect 2040 576 2322 590)(font "Arial" (font_size 8)))
+(text "Pipeline stage 4" (rect 2264 160 2366 174)(font "Arial" (color 255 0 0)(font_size 8)(bold)))
+(text "The blank and RGB are pipelined in the video DAC" (rect 2152 576 2434 590)(font "Arial" (font_size 8)))
 (text "Image generator" (rect 176 675 190 767)(font "Arial" (color 0 170 127)(font_size 8))(vertical))
 (text "This part must have exactly two" (rect 201 626 215 808)(font "Arial" (color 0 170 127)(font_size 8))(vertical))
 (text "pipeline stages from *cnt to RGB" (rect 217 626 231 810)(font "Arial" (color 0 170 127)(font_size 8))(vertical))
@@ -1744,8 +1860,8 @@ applicable agreement for further details.
 (text "Read in the right pixel from the ROM" (rect 1032 752 1234 766)(font "Arial" (font_size 8)))
 (line (pt 1160 816)(pt 1160 160)(color 255 0 0)(dashed)(line_width 2))
 (line (pt 400 832)(pt 400 176)(color 255 0 0)(dashed)(line_width 2))
-(line (pt 1856 160)(pt 1856 760)(color 255 0 0)(dashed)(line_width 2))
-(line (pt 2144 160)(pt 2144 760)(color 255 0 0)(dashed)(line_width 2))
+(line (pt 1968 160)(pt 1968 760)(color 255 0 0)(dashed)(line_width 2))
+(line (pt 2256 160)(pt 2256 760)(color 255 0 0)(dashed)(line_width 2))
 (line (pt 240 56)(pt 200 96)(color 0 170 127))
 (line (pt 200 96)(pt 200 528)(color 0 170 127))
 (line (pt 200 528)(pt 240 568)(color 0 170 127))

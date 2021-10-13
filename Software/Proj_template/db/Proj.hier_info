@@ -1,13 +1,13 @@
 |Proj
-hsync <= VGA_contr:inst_vga.hsync
-clk => VGA_contr:inst_vga.fpga_clk
-KEY0 => VGA_contr:inst_vga.KEY0
-PS2_CLK => VGA_contr:inst_vga.PS2_CLK
-PS2_DAT => VGA_contr:inst_vga.PS2_DAT
-vsync <= VGA_contr:inst_vga.vsync
-vga_clk <= VGA_contr:inst_vga.vga_clk
-vga_blank <= VGA_contr:inst_vga.vga_blank
-vga_sync <= VGA_contr:inst_vga.vga_sync
+hsync <= VGA_contr:inst.hsync
+clk => VGA_contr:inst.fpga_clk
+KEY0 => VGA_contr:inst.KEY0
+PS2_CLK => VGA_contr:inst.PS2_CLK
+PS2_DAT => VGA_contr:inst.PS2_DAT
+vsync <= VGA_contr:inst.vsync
+vga_clk <= VGA_contr:inst.vga_clk
+vga_blank <= VGA_contr:inst.vga_blank
+vga_sync <= VGA_contr:inst.vga_sync
 sram_ce <= <GND>
 sram_oe <= <GND>
 sram_lb <= <GND>
@@ -25,20 +25,20 @@ HEX0[3] <= <GND>
 HEX0[2] <= <GND>
 HEX0[1] <= <GND>
 HEX0[0] <= <GND>
-HEX6[6] <= VGA_contr:inst_vga.HEX6[6]
-HEX6[5] <= VGA_contr:inst_vga.HEX6[5]
-HEX6[4] <= VGA_contr:inst_vga.HEX6[4]
-HEX6[3] <= VGA_contr:inst_vga.HEX6[3]
-HEX6[2] <= VGA_contr:inst_vga.HEX6[2]
-HEX6[1] <= VGA_contr:inst_vga.HEX6[1]
-HEX6[0] <= VGA_contr:inst_vga.HEX6[0]
-HEX7[6] <= VGA_contr:inst_vga.HEX7[6]
-HEX7[5] <= VGA_contr:inst_vga.HEX7[5]
-HEX7[4] <= VGA_contr:inst_vga.HEX7[4]
-HEX7[3] <= VGA_contr:inst_vga.HEX7[3]
-HEX7[2] <= VGA_contr:inst_vga.HEX7[2]
-HEX7[1] <= VGA_contr:inst_vga.HEX7[1]
-HEX7[0] <= VGA_contr:inst_vga.HEX7[0]
+HEX6[6] <= VGA_contr:inst.HEX6[6]
+HEX6[5] <= VGA_contr:inst.HEX6[5]
+HEX6[4] <= VGA_contr:inst.HEX6[4]
+HEX6[3] <= VGA_contr:inst.HEX6[3]
+HEX6[2] <= VGA_contr:inst.HEX6[2]
+HEX6[1] <= VGA_contr:inst.HEX6[1]
+HEX6[0] <= VGA_contr:inst.HEX6[0]
+HEX7[6] <= VGA_contr:inst.HEX7[6]
+HEX7[5] <= VGA_contr:inst.HEX7[5]
+HEX7[4] <= VGA_contr:inst.HEX7[4]
+HEX7[3] <= VGA_contr:inst.HEX7[3]
+HEX7[2] <= VGA_contr:inst.HEX7[2]
+HEX7[1] <= VGA_contr:inst.HEX7[1]
+HEX7[0] <= VGA_contr:inst.HEX7[0]
 LEDG[8] <= <GND>
 LEDG[7] <= <GND>
 LEDG[6] <= <GND>
@@ -86,30 +86,30 @@ sram_addr[16] <= <GND>
 sram_addr[17] <= <GND>
 sram_addr[18] <= <GND>
 sram_addr[19] <= <GND>
-vga_b[0] <= VGA_contr:inst_vga.vga_b[0]
-vga_b[1] <= VGA_contr:inst_vga.vga_b[1]
-vga_b[2] <= VGA_contr:inst_vga.vga_b[2]
-vga_b[3] <= VGA_contr:inst_vga.vga_b[3]
-vga_b[4] <= VGA_contr:inst_vga.vga_b[4]
-vga_b[5] <= VGA_contr:inst_vga.vga_b[5]
-vga_b[6] <= VGA_contr:inst_vga.vga_b[6]
-vga_b[7] <= VGA_contr:inst_vga.vga_b[7]
-vga_g[0] <= VGA_contr:inst_vga.vga_g[0]
-vga_g[1] <= VGA_contr:inst_vga.vga_g[1]
-vga_g[2] <= VGA_contr:inst_vga.vga_g[2]
-vga_g[3] <= VGA_contr:inst_vga.vga_g[3]
-vga_g[4] <= VGA_contr:inst_vga.vga_g[4]
-vga_g[5] <= VGA_contr:inst_vga.vga_g[5]
-vga_g[6] <= VGA_contr:inst_vga.vga_g[6]
-vga_g[7] <= VGA_contr:inst_vga.vga_g[7]
-vga_r[0] <= VGA_contr:inst_vga.vga_r[0]
-vga_r[1] <= VGA_contr:inst_vga.vga_r[1]
-vga_r[2] <= VGA_contr:inst_vga.vga_r[2]
-vga_r[3] <= VGA_contr:inst_vga.vga_r[3]
-vga_r[4] <= VGA_contr:inst_vga.vga_r[4]
-vga_r[5] <= VGA_contr:inst_vga.vga_r[5]
-vga_r[6] <= VGA_contr:inst_vga.vga_r[6]
-vga_r[7] <= VGA_contr:inst_vga.vga_r[7]
+vga_b[0] <= VGA_contr:inst.vga_b[0]
+vga_b[1] <= VGA_contr:inst.vga_b[1]
+vga_b[2] <= VGA_contr:inst.vga_b[2]
+vga_b[3] <= VGA_contr:inst.vga_b[3]
+vga_b[4] <= VGA_contr:inst.vga_b[4]
+vga_b[5] <= VGA_contr:inst.vga_b[5]
+vga_b[6] <= VGA_contr:inst.vga_b[6]
+vga_b[7] <= VGA_contr:inst.vga_b[7]
+vga_g[0] <= VGA_contr:inst.vga_g[0]
+vga_g[1] <= VGA_contr:inst.vga_g[1]
+vga_g[2] <= VGA_contr:inst.vga_g[2]
+vga_g[3] <= VGA_contr:inst.vga_g[3]
+vga_g[4] <= VGA_contr:inst.vga_g[4]
+vga_g[5] <= VGA_contr:inst.vga_g[5]
+vga_g[6] <= VGA_contr:inst.vga_g[6]
+vga_g[7] <= VGA_contr:inst.vga_g[7]
+vga_r[0] <= VGA_contr:inst.vga_r[0]
+vga_r[1] <= VGA_contr:inst.vga_r[1]
+vga_r[2] <= VGA_contr:inst.vga_r[2]
+vga_r[3] <= VGA_contr:inst.vga_r[3]
+vga_r[4] <= VGA_contr:inst.vga_r[4]
+vga_r[5] <= VGA_contr:inst.vga_r[5]
+vga_r[6] <= VGA_contr:inst.vga_r[6]
+vga_r[7] <= VGA_contr:inst.vga_r[7]
 adcdat => ~NO_FANOUT~
 KEY1 => ~NO_FANOUT~
 KEY2 => ~NO_FANOUT~
@@ -134,7 +134,7 @@ SW[1] => ~NO_FANOUT~
 SW[0] => ~NO_FANOUT~
 
 
-|Proj|VGA_contr:inst_vga
+|Proj|VGA_contr:inst
 hsync <= i_hs4.DB_MAX_OUTPUT_PORT_TYPE
 KEY0 => i_hs4.ACLR
 KEY0 => i_hs3.ACLR
@@ -178,6 +178,22 @@ vga_blank <= i_blank3.DB_MAX_OUTPUT_PORT_TYPE
 vga_sync <= RGB_gen:i_RGB_gen.vga_sync
 PS2_CLK => PS2KeyboardInterface:inst1.PS2_CLK
 PS2_DAT => PS2KeyboardInterface:inst1.PS2_DAT
+Dist_Out[0] <= masking:inst_masking.Dist_out[0]
+Dist_Out[1] <= masking:inst_masking.Dist_out[1]
+Dist_Out[2] <= masking:inst_masking.Dist_out[2]
+Dist_Out[3] <= masking:inst_masking.Dist_out[3]
+ED_Out[0] <= masking:inst_masking.ED_out[0]
+ED_Out[1] <= masking:inst_masking.ED_out[1]
+ED_Out[2] <= masking:inst_masking.ED_out[2]
+ED_Out[3] <= masking:inst_masking.ED_out[3]
+EN_Out[0] <= masking:inst_masking.EN_Out[0]
+EN_Out[1] <= masking:inst_masking.EN_Out[1]
+EN_Out[2] <= masking:inst_masking.EN_Out[2]
+EN_Out[3] <= masking:inst_masking.EN_Out[3]
+EV_Out[0] <= masking:inst_masking.EV_Out[0]
+EV_Out[1] <= masking:inst_masking.EV_Out[1]
+EV_Out[2] <= masking:inst_masking.EV_Out[2]
+EV_Out[3] <= masking:inst_masking.EV_Out[3]
 HEX6[6] <= group_no:i_GrNo.HEX6[6]
 HEX6[5] <= group_no:i_GrNo.HEX6[5]
 HEX6[4] <= group_no:i_GrNo.HEX6[4]
@@ -192,6 +208,10 @@ HEX7[3] <= group_no:i_GrNo.HEX7[3]
 HEX7[2] <= group_no:i_GrNo.HEX7[2]
 HEX7[1] <= group_no:i_GrNo.HEX7[1]
 HEX7[0] <= group_no:i_GrNo.HEX7[0]
+LR_Out[0] <= masking:inst_masking.LR_Out[0]
+LR_Out[1] <= masking:inst_masking.LR_Out[1]
+LR_Out[2] <= masking:inst_masking.LR_Out[2]
+LR_Out[3] <= masking:inst_masking.LR_Out[3]
 vga_b[0] <= RGB_gen:i_RGB_gen.vga_b[0]
 vga_b[1] <= RGB_gen:i_RGB_gen.vga_b[1]
 vga_b[2] <= RGB_gen:i_RGB_gen.vga_b[2]
@@ -216,9 +236,13 @@ vga_r[4] <= RGB_gen:i_RGB_gen.vga_r[4]
 vga_r[5] <= RGB_gen:i_RGB_gen.vga_r[5]
 vga_r[6] <= RGB_gen:i_RGB_gen.vga_r[6]
 vga_r[7] <= RGB_gen:i_RGB_gen.vga_r[7]
+Vol_Out[0] <= masking:inst_masking.Vol_Out[0]
+Vol_Out[1] <= masking:inst_masking.Vol_Out[1]
+Vol_Out[2] <= masking:inst_masking.Vol_Out[2]
+Vol_Out[3] <= masking:inst_masking.Vol_Out[3]
 
 
-|Proj|VGA_contr:inst_vga|hs_gen:i_hs_gen
+|Proj|VGA_contr:inst|hs_gen:i_hs_gen
 clk => hsync~reg0.CLK
 rstn => hsync~reg0.PRESET
 hcnt[0] => LessThan0.IN20
@@ -244,7 +268,7 @@ hcnt[9] => LessThan1.IN11
 hsync <= hsync~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|pixelcounter:i_pixcounter
+|Proj|VGA_contr:inst|pixelcounter:i_pixcounter
 clk => hcnti[0].CLK
 clk => hcnti[1].CLK
 clk => hcnti[2].CLK
@@ -287,7 +311,7 @@ hcnt[8] <= hcnti[8].DB_MAX_OUTPUT_PORT_TYPE
 hcnt[9] <= hcnti[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|ce_gen:i_ce_gen
+|Proj|VGA_contr:inst|ce_gen:i_ce_gen
 clk => counter[0].CLK
 clk => counter[1].CLK
 rstn => counter[0].ACLR
@@ -295,7 +319,7 @@ rstn => counter[1].ACLR
 ce <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|vs_gen:i_vs_gen
+|Proj|VGA_contr:inst|vs_gen:i_vs_gen
 clk => vsync~reg0.CLK
 rstn => vsync~reg0.PRESET
 vcnt[0] => LessThan0.IN20
@@ -321,7 +345,7 @@ vcnt[9] => LessThan1.IN11
 vsync <= vsync~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|linecounter:i_linecounter
+|Proj|VGA_contr:inst|linecounter:i_linecounter
 clk => vcnti[0].CLK
 clk => vcnti[1].CLK
 clk => vcnti[2].CLK
@@ -365,7 +389,7 @@ vcnt[8] <= vcnti[8].DB_MAX_OUTPUT_PORT_TYPE
 vcnt[9] <= vcnti[9].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|blank_gen:iBlank_gen
+|Proj|VGA_contr:inst|blank_gen:iBlank_gen
 vcnt[0] => LessThan0.IN20
 vcnt[1] => LessThan0.IN19
 vcnt[2] => LessThan0.IN18
@@ -389,7 +413,7 @@ hcnt[9] => LessThan1.IN11
 blank <= blank.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|RGB_gen:i_RGB_gen
+|Proj|VGA_contr:inst|RGB_gen:i_RGB_gen
 clk => vga_b[0]~reg0.CLK
 clk => vga_b[1]~reg0.CLK
 clk => vga_b[2]~reg0.CLK
@@ -534,7 +558,7 @@ vga_b[7] <= vga_b[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 vga_sync <= <GND>
 
 
-|Proj|VGA_contr:inst_vga|masking:inst_masking
+|Proj|VGA_contr:inst|masking:inst_masking
 clk => EV_Out[0]~reg0.CLK
 clk => EV_Out[1]~reg0.CLK
 clk => EV_Out[2]~reg0.CLK
@@ -1072,7 +1096,7 @@ EV_Out[2] <= EV_Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 EV_Out[3] <= EV_Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|pixel_reg:i_pixreg
+|Proj|VGA_contr:inst|pixel_reg:i_pixreg
 clk => counter[0].CLK
 clk => counter[1].CLK
 clk => hcnt_d[0]~reg0.CLK
@@ -1161,7 +1185,7 @@ hcnt_d[8] <= hcnt_d[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 hcnt_d[9] <= hcnt_d[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|PS2KeyboardInterface:inst1
+|Proj|VGA_contr:inst|PS2KeyboardInterface:inst1
 rstn => shiftreg[0].PRESET
 rstn => shiftreg[1].PRESET
 rstn => shiftreg[2].PRESET
@@ -1201,7 +1225,7 @@ Number[1] <= Number[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Number[2] <= Number[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Proj|VGA_contr:inst_vga|group_no:i_GrNo
+|Proj|VGA_contr:inst|group_no:i_GrNo
 HEX7[6] <= <GND>
 HEX7[5] <= <GND>
 HEX7[4] <= Equal11.DB_MAX_OUTPUT_PORT_TYPE
