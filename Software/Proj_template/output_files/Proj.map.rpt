@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proj
-Wed Oct 13 12:48:40 2021
+Wed Oct 13 14:56:42 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -45,15 +45,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 13 12:48:39 2021            ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 13 14:56:42 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 645                                              ;
-;     Total combinational functions  ; 608                                              ;
-;     Dedicated logic registers      ; 153                                              ;
-; Total registers                    ; 153                                              ;
+; Total logic elements               ; 705                                              ;
+;     Total combinational functions  ; 668                                              ;
+;     Dedicated logic registers      ; 154                                              ;
+; Total registers                    ; 154                                              ;
 ; Total pins                         ; 149                                              ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
@@ -158,12 +158,11 @@ applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 5           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-5         ; < 0.1%      ;
-;     Processor 6            ;   0.0%      ;
+;     Processors 2-6         ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -193,28 +192,28 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 645       ;
+; Estimated Total logic elements              ; 705       ;
 ;                                             ;           ;
-; Total combinational functions               ; 608       ;
+; Total combinational functions               ; 668       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 327       ;
-;     -- 3 input functions                    ; 162       ;
-;     -- <=2 input functions                  ; 119       ;
+;     -- 4 input functions                    ; 350       ;
+;     -- 3 input functions                    ; 163       ;
+;     -- <=2 input functions                  ; 155       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 476       ;
-;     -- arithmetic mode                      ; 132       ;
+;     -- normal mode                          ; 504       ;
+;     -- arithmetic mode                      ; 164       ;
 ;                                             ;           ;
-; Total registers                             ; 153       ;
-;     -- Dedicated logic registers            ; 153       ;
+; Total registers                             ; 154       ;
+;     -- Dedicated logic registers            ; 154       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 149       ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 153       ;
-; Total fan-out                               ; 2675      ;
-; Average fan-out                             ; 2.49      ;
+; Maximum fan-out                             ; 154       ;
+; Total fan-out                               ; 2844      ;
+; Average fan-out                             ; 2.50      ;
 +---------------------------------------------+-----------+
 
 
@@ -223,16 +222,16 @@ applicable agreement for further details.
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                             ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
-; |Proj                              ; 608 (0)           ; 153 (0)      ; 0           ; 0            ; 0       ; 0         ; 149  ; 0            ; |Proj                                           ; work         ;
-;    |VGA_contr:inst|                ; 608 (2)           ; 153 (9)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst                            ; work         ;
+; |Proj                              ; 668 (0)           ; 154 (0)      ; 0           ; 0            ; 0       ; 0         ; 149  ; 0            ; |Proj                                           ; work         ;
+;    |VGA_contr:inst|                ; 668 (2)           ; 154 (9)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst                            ; work         ;
 ;       |PS2KeyboardInterface:inst1| ; 28 (28)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|PS2KeyboardInterface:inst1 ; work         ;
 ;       |RGB_gen:i_RGB_gen|          ; 15 (15)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|RGB_gen:i_RGB_gen          ; work         ;
 ;       |blank_gen:iBlank_gen|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|blank_gen:iBlank_gen       ; work         ;
 ;       |ce_gen:i_ce_gen|            ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|ce_gen:i_ce_gen            ; work         ;
 ;       |hs_gen:i_hs_gen|            ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|hs_gen:i_hs_gen            ; work         ;
 ;       |linecounter:i_linecounter|  ; 17 (17)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|linecounter:i_linecounter  ; work         ;
-;       |masking:inst_masking|       ; 258 (258)         ; 57 (57)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|masking:inst_masking       ; work         ;
-;       |pixel_reg:i_pixreg|         ; 258 (258)         ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|pixel_reg:i_pixreg         ; work         ;
+;       |masking:inst_masking|       ; 316 (316)         ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|masking:inst_masking       ; work         ;
+;       |pixel_reg:i_pixreg|         ; 260 (260)         ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|pixel_reg:i_pixreg         ; work         ;
 ;       |pixelcounter:i_pixcounter|  ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|pixelcounter:i_pixcounter  ; work         ;
 ;       |vs_gen:i_vs_gen|            ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|VGA_contr:inst|vs_gen:i_vs_gen            ; work         ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------+--------------+
@@ -256,7 +255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 153   ;
+; Total registers                              ; 154   ;
 ; Number of registers using Synchronous Clear  ; 11    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 42    ;
@@ -273,29 +272,30 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------+---------+
 ; VGA_contr:inst|masking:inst_masking|VOL_Limit[7]      ; 4       ;
 ; VGA_contr:inst|masking:inst_masking|VOL_Limit[6]      ; 4       ;
-; VGA_contr:inst|masking:inst_masking|VOL_Limit[3]      ; 4       ;
-; VGA_contr:inst|masking:inst_masking|VOL_Limit[2]      ; 2       ;
-; VGA_contr:inst|masking:inst_masking|VOL_Limit[1]      ; 2       ;
+; VGA_contr:inst|masking:inst_masking|VOL_Limit[4]      ; 4       ;
+; VGA_contr:inst|masking:inst_masking|VOL_Limit[2]      ; 3       ;
+; VGA_contr:inst|masking:inst_masking|VOL_Limit[1]      ; 3       ;
 ; VGA_contr:inst|masking:inst_masking|EN_Limit[9]       ; 4       ;
-; VGA_contr:inst|masking:inst_masking|EN_Limit[4]       ; 4       ;
+; VGA_contr:inst|masking:inst_masking|EN_Limit[4]       ; 3       ;
 ; VGA_contr:inst|masking:inst_masking|EV_Limit[9]       ; 4       ;
 ; VGA_contr:inst|masking:inst_masking|EV_Limit[4]       ; 4       ;
-; VGA_contr:inst|masking:inst_masking|EV_Limit[2]       ; 2       ;
-; VGA_contr:inst|masking:inst_masking|EV_Limit[1]       ; 2       ;
+; VGA_contr:inst|masking:inst_masking|EV_Limit[2]       ; 3       ;
+; VGA_contr:inst|masking:inst_masking|EV_Limit[1]       ; 3       ;
 ; VGA_contr:inst|masking:inst_masking|ED_Limit[9]       ; 4       ;
 ; VGA_contr:inst|masking:inst_masking|ED_Limit[4]       ; 4       ;
-; VGA_contr:inst|masking:inst_masking|ED_Limit[2]       ; 2       ;
-; VGA_contr:inst|masking:inst_masking|ED_Limit[1]       ; 2       ;
+; VGA_contr:inst|masking:inst_masking|ED_Limit[2]       ; 3       ;
+; VGA_contr:inst|masking:inst_masking|ED_Limit[1]       ; 3       ;
 ; VGA_contr:inst|masking:inst_masking|DIST_Limit[7]     ; 4       ;
 ; VGA_contr:inst|masking:inst_masking|DIST_Limit[6]     ; 4       ;
-; VGA_contr:inst|masking:inst_masking|DIST_Limit[3]     ; 4       ;
-; VGA_contr:inst|masking:inst_masking|DIST_Limit[2]     ; 2       ;
-; VGA_contr:inst|masking:inst_masking|DIST_Limit[1]     ; 2       ;
-; VGA_contr:inst|masking:inst_masking|LR_Limit[7]       ; 5       ;
-; VGA_contr:inst|masking:inst_masking|LR_Limit[6]       ; 5       ;
-; VGA_contr:inst|masking:inst_masking|LR_Limit[3]       ; 5       ;
-; VGA_contr:inst|masking:inst_masking|LR_Limit[2]       ; 3       ;
-; VGA_contr:inst|masking:inst_masking|LR_Limit[1]       ; 3       ;
+; VGA_contr:inst|masking:inst_masking|DIST_Limit[4]     ; 4       ;
+; VGA_contr:inst|masking:inst_masking|DIST_Limit[2]     ; 3       ;
+; VGA_contr:inst|masking:inst_masking|DIST_Limit[1]     ; 3       ;
+; VGA_contr:inst|masking:inst_masking|LR_Limit[7]       ; 9       ;
+; VGA_contr:inst|masking:inst_masking|LR_Limit[6]       ; 9       ;
+; VGA_contr:inst|masking:inst_masking|LR_Limit[4]       ; 10      ;
+; VGA_contr:inst|masking:inst_masking|LR_Limit[2]       ; 10      ;
+; VGA_contr:inst|masking:inst_masking|LR_Limit[1]       ; 8       ;
+; VGA_contr:inst|masking:inst_masking|LR_Limit[0]       ; 6       ;
 ; VGA_contr:inst|hs_gen:i_hs_gen|hsync                  ; 1       ;
 ; VGA_contr:inst|vs_gen:i_vs_gen|vsync                  ; 1       ;
 ; VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[0] ; 14      ;
@@ -308,7 +308,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[3] ; 6       ;
 ; VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[8] ; 6       ;
 ; VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[9] ; 1       ;
-; Total number of inverted registers = 37               ;         ;
+; Total number of inverted registers = 38               ;         ;
 +-------------------------------------------------------+---------+
 
 
@@ -317,21 +317,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|Menu_Counter[0]   ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[8]       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[4]      ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[4]       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[5]     ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|Menu_Counter[1]   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[7]       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[3]      ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[3]     ;
 ; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|ED_Limit[8]       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EN_Limit[5]       ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|pixcode[6]        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[1]       ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[7]      ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[3]       ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[7]     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|ED_Limit[4]       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EN_Limit[9]       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EN_Limit[7]       ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|pixcode[7]        ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[8]       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[9]       ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[6]      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[4]     ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|ED_Limit[9]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 0 LEs                ; 4 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EN_Limit[4]       ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[8] ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[4]       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -360,7 +360,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Oct 13 12:48:26 2021
+    Info: Processing started: Wed Oct 13 14:56:28 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proj -c Proj
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/vs_gen.vhd
@@ -566,14 +566,14 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]"
     Warning (15610): No output dependent on input pin "SW[16]"
     Warning (15610): No output dependent on input pin "SW[17]"
-Info (21057): Implemented 798 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 858 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
     Info (21059): Implemented 107 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 649 logic cells
+    Info (21061): Implemented 709 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 142 warnings
-    Info: Peak virtual memory: 4668 megabytes
-    Info: Processing ended: Wed Oct 13 12:48:40 2021
+    Info: Peak virtual memory: 4669 megabytes
+    Info: Processing ended: Wed Oct 13 14:56:42 2021
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:06
 
