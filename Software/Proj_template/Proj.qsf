@@ -248,6 +248,16 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/Volume_Control.vhd
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/SRAM_control.vhd
+set_global_assignment -name BDF_FILE ../../Code/BIG_SOUND_BLOCK/SndDriver.bdf
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/my_mux.vhd
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/ECHO_GEN.vhd
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/Dist.vhd
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/ctrl.vhd
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/channel_mod.vhd
+set_global_assignment -name BDF_FILE ../../Code/BIG_SOUND_BLOCK/BIG_SOUND_BLOCK.bdf
+set_global_assignment -name VHDL_FILE ../../Code/BIG_SOUND_BLOCK/Balance_Control.vhd
 set_global_assignment -name VHDL_FILE ../Lab3_VGA/vs_gen.vhd
 set_global_assignment -name VHDL_FILE ../Lab3_VGA/RGB_gen.vhd
 set_global_assignment -name VHDL_FILE ../Lab3_VGA/RAM_control.vhd

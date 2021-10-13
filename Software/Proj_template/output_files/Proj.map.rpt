@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proj
-Wed Oct 13 14:56:42 2021
+Wed Oct 13 17:37:48 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 13 14:56:42 2021            ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 13 17:37:47 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
@@ -171,19 +171,19 @@ applicable agreement for further details.
 +--------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path     ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                          ; Library ;
 +--------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
-; ../Lab3_VGA/vs_gen.vhd               ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/vs_gen.vhd               ;         ;
-; ../Lab3_VGA/RGB_gen.vhd              ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/RGB_gen.vhd              ;         ;
-; ../Lab3_VGA/PS2KeyboardInterface.vhd ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/PS2KeyboardInterface.vhd ;         ;
-; ../Lab3_VGA/pixelcounter.vhd         ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixelcounter.vhd         ;         ;
-; ../Lab3_VGA/pixel_reg.vhd            ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixel_reg.vhd            ;         ;
-; ../Lab3_VGA/masking.vhd              ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/masking.vhd              ;         ;
-; ../Lab3_VGA/linecounter.vhd          ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/linecounter.vhd          ;         ;
-; ../Lab3_VGA/hs_gen.vhd               ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/hs_gen.vhd               ;         ;
-; ../Lab3_VGA/group_no.vhd             ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/group_no.vhd             ;         ;
-; ../Lab3_VGA/ce_gen.vhd               ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/ce_gen.vhd               ;         ;
-; ../Lab3_VGA/blank_gen.vhd            ; yes             ; User VHDL File                     ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/blank_gen.vhd            ;         ;
-; ../Lab3_VGA/VGA_contr.bdf            ; yes             ; User Block Diagram/Schematic File  ; X:/GitHub/TSIU03-VHDL-Gang/Software/Lab3_VGA/VGA_contr.bdf            ;         ;
-; Proj.bdf                             ; yes             ; User Block Diagram/Schematic File  ; X:/GitHub/TSIU03-VHDL-Gang/Software/Proj_template/Proj.bdf            ;         ;
+; ../Lab3_VGA/vs_gen.vhd               ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/vs_gen.vhd               ;         ;
+; ../Lab3_VGA/RGB_gen.vhd              ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/RGB_gen.vhd              ;         ;
+; ../Lab3_VGA/PS2KeyboardInterface.vhd ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/PS2KeyboardInterface.vhd ;         ;
+; ../Lab3_VGA/pixelcounter.vhd         ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixelcounter.vhd         ;         ;
+; ../Lab3_VGA/pixel_reg.vhd            ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixel_reg.vhd            ;         ;
+; ../Lab3_VGA/masking.vhd              ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/masking.vhd              ;         ;
+; ../Lab3_VGA/linecounter.vhd          ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/linecounter.vhd          ;         ;
+; ../Lab3_VGA/hs_gen.vhd               ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/hs_gen.vhd               ;         ;
+; ../Lab3_VGA/group_no.vhd             ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/group_no.vhd             ;         ;
+; ../Lab3_VGA/ce_gen.vhd               ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/ce_gen.vhd               ;         ;
+; ../Lab3_VGA/blank_gen.vhd            ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/blank_gen.vhd            ;         ;
+; ../Lab3_VGA/VGA_contr.bdf            ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/VGA_contr.bdf            ;         ;
+; Proj.bdf                             ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Proj_template/Proj.bdf            ;         ;
 +--------------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------+---------+
 
 
@@ -360,9 +360,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Wed Oct 13 14:56:28 2021
+    Info: Processing started: Wed Oct 13 17:37:32 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proj -c Proj
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/volume_control.vhd
+    Info (12022): Found design unit 1: Volume_Control-Volume
+    Info (12023): Found entity 1: Volume_Control
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/sram_control.vhd
+    Info (12022): Found design unit 1: SRAM_control-rtl
+    Info (12023): Found entity 1: SRAM_control
+Info (12021): Found 1 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/snddriver.bdf
+    Info (12023): Found entity 1: SndDriver
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/my_mux.vhd
+    Info (12022): Found design unit 1: my_mux-rtl
+    Info (12023): Found entity 1: my_mux
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/echo_gen.vhd
+    Info (12022): Found design unit 1: ECHO_GEN-rtl
+    Info (12023): Found entity 1: ECHO_GEN
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/dist.vhd
+    Info (12022): Found design unit 1: Dist-distArch
+    Info (12023): Found entity 1: Dist
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/ctrl.vhd
+    Info (12022): Found design unit 1: ctrl-rtl
+    Info (12023): Found entity 1: ctrl
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/channel_mod.vhd
+    Info (12022): Found design unit 1: channel_mod-rtl
+    Info (12023): Found entity 1: channel_mod
+Info (12021): Found 1 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/big_sound_block.bdf
+    Info (12023): Found entity 1: BIG_SOUND_BLOCK
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/balance_control.vhd
+    Info (12022): Found design unit 1: Balance_Control-rtl
+    Info (12023): Found entity 1: Balance_Control
 Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/vs_gen.vhd
     Info (12022): Found design unit 1: vs_gen-rtl
     Info (12023): Found entity 1: vs_gen
@@ -572,9 +600,9 @@ Info (21057): Implemented 858 device resources after synthesis - the final resou
     Info (21060): Implemented 16 bidirectional pins
     Info (21061): Implemented 709 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 142 warnings
-    Info: Peak virtual memory: 4669 megabytes
-    Info: Processing ended: Wed Oct 13 14:56:42 2021
-    Info: Elapsed time: 00:00:14
+    Info: Peak virtual memory: 4672 megabytes
+    Info: Processing ended: Wed Oct 13 17:37:48 2021
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:06
 
 
