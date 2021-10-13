@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proj
-Tue Oct 12 16:10:01 2021
+Wed Oct 13 15:15:23 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -19,13 +19,15 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  11. Registers Removed During Synthesis
  12. General Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: group_no:inst5
- 15. Parameter Settings for User Entity Instance: lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
- 16. Parameter Settings for Inferred Entity Instance: ECHO_GEN:inst2|lpm_mult:Mult1
- 17. Parameter Settings for Inferred Entity Instance: ECHO_GEN:inst2|lpm_mult:Mult0
- 18. lpm_mult Parameter Settings by Entity Instance
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 14. Parameter Settings for User Entity Instance: lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
+ 15. Parameter Settings for User Entity Instance: group_no:inst5
+ 16. Parameter Settings for Inferred Entity Instance: Balance_Control:inst8|lpm_mult:Mult0
+ 17. Parameter Settings for Inferred Entity Instance: Volume_Control:inst7|lpm_mult:Mult0
+ 18. Parameter Settings for Inferred Entity Instance: ECHO_GEN:inst2|lpm_mult:Mult0
+ 19. Parameter Settings for Inferred Entity Instance: ECHO_GEN:inst2|lpm_mult:Mult1
+ 20. lpm_mult Parameter Settings by Entity Instance
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -51,19 +53,19 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 12 16:10:01 2021            ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 13 15:15:22 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 798                                              ;
-;     Total combinational functions  ; 748                                              ;
-;     Dedicated logic registers      ; 307                                              ;
-; Total registers                    ; 307                                              ;
-; Total pins                         ; 143                                              ;
+; Total logic elements               ; 990                                              ;
+;     Total combinational functions  ; 940                                              ;
+;     Dedicated logic registers      ; 351                                              ;
+; Total registers                    ; 351                                              ;
+; Total pins                         ; 147                                              ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 0                                                ;
-; Embedded Multiplier 9-bit elements ; 2                                                ;
+; Embedded Multiplier 9-bit elements ; 4                                                ;
 ; Total PLLs                         ; 0                                                ;
 +------------------------------------+--------------------------------------------------+
 
@@ -172,45 +174,50 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                         ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; SndDriver.vhd                    ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/SndDriver.vhd                  ;         ;
-; Proj.bdf                         ; yes             ; User Block Diagram/Schematic File  ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/Proj.bdf                       ;         ;
-; output_files/lpm_constant0.vhd   ; yes             ; User Wizard-Generated File         ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/output_files/lpm_constant0.vhd ;         ;
-; sram_control.vhd                 ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/sram_control.vhd               ;         ;
-; ctrl.vhd                         ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/ctrl.vhd                       ;         ;
-; channel_mod.vhd                  ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/channel_mod.vhd                ;         ;
-; echo_gen.vhd                     ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/echo_gen.vhd                   ;         ;
-; my_mux.vhd                       ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/my_mux.vhd                     ;         ;
-; group_no.vhd                     ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/group_no.vhd                   ;         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf                                                   ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                                       ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                     ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                    ;         ;
-; multcore.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc                                                       ;         ;
-; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                       ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                                       ;         ;
-; db/mult_36t.tdf                  ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/mult_36t.tdf                ;         ;
-; multcore.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.tdf                                                       ;         ;
-; csa_add.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/csa_add.inc                                                        ;         ;
-; mpar_add.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.inc                                                       ;         ;
-; muleabz.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muleabz.inc                                                        ;         ;
-; mul_lfrg.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_lfrg.inc                                                       ;         ;
-; mul_boothc.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_boothc.inc                                                     ;         ;
-; alt_ded_mult.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult.inc                                                   ;         ;
-; alt_ded_mult_y.inc               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                                 ;         ;
-; dffpipe.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffpipe.inc                                                        ;         ;
-; mpar_add.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.tdf                                                       ;         ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                    ;         ;
-; addcore.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                                                        ;         ;
-; look_add.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                                                       ;         ;
-; alt_stratix_add_sub.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                            ;         ;
-; db/add_sub_qgh.tdf               ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/add_sub_qgh.tdf             ;         ;
-; altshift.tdf                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf                                                       ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                               ;
++----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                                         ; Library ;
++----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
+; ../../Volume and Balance/Volume_Control.vhd  ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Volume and Balance/Volume_Control.vhd                     ;         ;
+; ../../Volume and Balance/Balance_Control.vhd ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Volume and Balance/Balance_Control.vhd                    ;         ;
+; SndDriver.vhd                                ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/SndDriver.vhd                  ;         ;
+; Proj.bdf                                     ; yes             ; User Block Diagram/Schematic File  ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/Proj.bdf                       ;         ;
+; output_files/lpm_constant0.vhd               ; yes             ; User Wizard-Generated File         ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/output_files/lpm_constant0.vhd ;         ;
+; sram_control.vhd                             ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/sram_control.vhd               ;         ;
+; ctrl.vhd                                     ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/ctrl.vhd                       ;         ;
+; channel_mod.vhd                              ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/channel_mod.vhd                ;         ;
+; lpm_constant.tdf                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.tdf                                                   ;         ;
+; echo_gen.vhd                                 ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/echo_gen.vhd                   ;         ;
+; my_mux.vhd                                   ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/my_mux.vhd                     ;         ;
+; group_no.vhd                                 ; yes             ; Auto-Found VHDL File               ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/group_no.vhd                   ;         ;
+; lpm_mult.tdf                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                                       ;         ;
+; aglobal130.inc                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                     ;         ;
+; lpm_add_sub.inc                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                    ;         ;
+; multcore.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc                                                       ;         ;
+; bypassff.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                                       ;         ;
+; altshift.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                                       ;         ;
+; db/mult_36t.tdf                              ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/mult_36t.tdf                ;         ;
+; multcore.tdf                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.tdf                                                       ;         ;
+; csa_add.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/csa_add.inc                                                        ;         ;
+; mpar_add.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.inc                                                       ;         ;
+; muleabz.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muleabz.inc                                                        ;         ;
+; mul_lfrg.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_lfrg.inc                                                       ;         ;
+; mul_boothc.inc                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_boothc.inc                                                     ;         ;
+; alt_ded_mult.inc                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult.inc                                                   ;         ;
+; alt_ded_mult_y.inc                           ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                                 ;         ;
+; dffpipe.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffpipe.inc                                                        ;         ;
+; mpar_add.tdf                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.tdf                                                       ;         ;
+; lpm_add_sub.tdf                              ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                                    ;         ;
+; addcore.inc                                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                                                        ;         ;
+; look_add.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                                                       ;         ;
+; alt_stratix_add_sub.inc                      ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                            ;         ;
+; db/add_sub_bkh.tdf                           ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/add_sub_bkh.tdf             ;         ;
+; db/add_sub_h9h.tdf                           ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/add_sub_h9h.tdf             ;         ;
+; db/add_sub_fkh.tdf                           ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/add_sub_fkh.tdf             ;         ;
+; altshift.tdf                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf                                                       ;         ;
+; db/add_sub_qgh.tdf                           ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/Johans Tester/Quartus_proj/db/add_sub_qgh.tdf             ;         ;
++----------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -218,52 +225,63 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 798       ;
+; Estimated Total logic elements              ; 990       ;
 ;                                             ;           ;
-; Total combinational functions               ; 748       ;
+; Total combinational functions               ; 940       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 339       ;
-;     -- 3 input functions                    ; 315       ;
-;     -- <=2 input functions                  ; 94        ;
+;     -- 4 input functions                    ; 408       ;
+;     -- 3 input functions                    ; 386       ;
+;     -- <=2 input functions                  ; 146       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 494       ;
-;     -- arithmetic mode                      ; 254       ;
+;     -- normal mode                          ; 613       ;
+;     -- arithmetic mode                      ; 327       ;
 ;                                             ;           ;
-; Total registers                             ; 307       ;
-;     -- Dedicated logic registers            ; 307       ;
+; Total registers                             ; 351       ;
+;     -- Dedicated logic registers            ; 351       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 143       ;
-; Embedded Multiplier 9-bit elements          ; 2         ;
+; I/O pins                                    ; 147       ;
+; Embedded Multiplier 9-bit elements          ; 4         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 307       ;
-; Total fan-out                               ; 3811      ;
-; Average fan-out                             ; 2.80      ;
+; Maximum fan-out                             ; 351       ;
+; Total fan-out                               ; 4515      ;
+; Average fan-out                             ; 2.81      ;
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                ;
-+------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                    ; Library Name ;
-+------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Proj                                          ; 748 (0)           ; 307 (0)      ; 0           ; 2            ; 0       ; 1         ; 143  ; 0            ; |Proj                                                                                                                  ; work         ;
-;    |ECHO_GEN:inst2|                            ; 626 (591)         ; 162 (162)    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2                                                                                                   ; work         ;
-;       |lpm_mult:Mult0|                         ; 35 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0                                                                                    ; work         ;
-;          |multcore:mult_core|                  ; 35 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core                                                                 ; work         ;
-;             |mpar_add:padder|                  ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ; work         ;
-;                |lpm_add_sub:adder[0]|          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ; work         ;
-;                   |add_sub_qgh:auto_generated| ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_qgh:auto_generated ; work         ;
-;       |lpm_mult:Mult1|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult1                                                                                    ; work         ;
-;          |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult1|mult_36t:auto_generated                                                            ; work         ;
-;    |SRAM_control:inst3|                        ; 55 (55)           ; 71 (71)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SRAM_control:inst3                                                                                               ; work         ;
-;    |SndDriver:inst|                            ; 51 (1)            ; 74 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst                                                                                                   ; work         ;
-;       |channel_mod:b2v_inst_left|              ; 21 (21)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left                                                                         ; work         ;
-;       |channel_mod:b2v_inst_right|             ; 19 (19)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right                                                                        ; work         ;
-;       |ctrl:b2v_inst_ctrl|                     ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|ctrl:b2v_inst_ctrl                                                                                ; work         ;
-;    |my_mux:inst1|                              ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|my_mux:inst1                                                                                                     ; work         ;
-+------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                      ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Library Name ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |Proj                                          ; 940 (0)           ; 351 (0)      ; 0           ; 4            ; 0       ; 2         ; 147  ; 0            ; |Proj                                                                                                                        ; work         ;
+;    |Balance_Control:inst8|                     ; 30 (30)           ; 16 (16)      ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|Balance_Control:inst8                                                                                                  ; work         ;
+;       |lpm_mult:Mult0|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|Balance_Control:inst8|lpm_mult:Mult0                                                                                   ; work         ;
+;          |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|Balance_Control:inst8|lpm_mult:Mult0|mult_36t:auto_generated                                                           ; work         ;
+;    |ECHO_GEN:inst2|                            ; 696 (661)         ; 174 (174)    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2                                                                                                         ; work         ;
+;       |lpm_mult:Mult0|                         ; 35 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0                                                                                          ; work         ;
+;          |multcore:mult_core|                  ; 35 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core                                                                       ; work         ;
+;             |mpar_add:padder|                  ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                       ; work         ;
+;                |lpm_add_sub:adder[0]|          ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                  ; work         ;
+;                   |add_sub_qgh:auto_generated| ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_qgh:auto_generated       ; work         ;
+;       |lpm_mult:Mult1|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult1                                                                                          ; work         ;
+;          |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|ECHO_GEN:inst2|lpm_mult:Mult1|mult_36t:auto_generated                                                                  ; work         ;
+;    |SRAM_control:inst3|                        ; 55 (55)           ; 71 (71)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SRAM_control:inst3                                                                                                     ; work         ;
+;    |SndDriver:inst|                            ; 51 (1)            ; 74 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst                                                                                                         ; work         ;
+;       |channel_mod:b2v_inst_left|              ; 21 (21)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left                                                                               ; work         ;
+;       |channel_mod:b2v_inst_right|             ; 19 (19)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right                                                                              ; work         ;
+;       |ctrl:b2v_inst_ctrl|                     ; 10 (10)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|SndDriver:inst|ctrl:b2v_inst_ctrl                                                                                      ; work         ;
+;    |Volume_Control:inst7|                      ; 92 (24)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7                                                                                                   ; work         ;
+;       |lpm_mult:Mult0|                         ; 68 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0                                                                                    ; work         ;
+;          |multcore:mult_core|                  ; 68 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core                                                                 ; work         ;
+;             |mpar_add:padder|                  ; 40 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ; work         ;
+;                |lpm_add_sub:adder[0]|          ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ; work         ;
+;                   |add_sub_h9h:auto_generated| ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_h9h:auto_generated ; work         ;
+;                |lpm_add_sub:adder[1]|          ; 20 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]                            ; work         ;
+;                   |add_sub_bkh:auto_generated| ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]|add_sub_bkh:auto_generated ; work         ;
+;    |my_mux:inst1|                              ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|my_mux:inst1                                                                                                           ; work         ;
++------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -273,10 +291,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                             ; Number Used ;
 +---------------------------------------+-------------+
 ; Simple Multipliers (9-bit)            ; 0           ;
-; Simple Multipliers (18-bit)           ; 1           ;
+; Simple Multipliers (18-bit)           ; 2           ;
 ; Embedded Multiplier Blocks            ; --          ;
-; Embedded Multiplier 9-bit elements    ; 2           ;
-; Signed Embedded Multipliers           ; 1           ;
+; Embedded Multiplier 9-bit elements    ; 4           ;
+; Signed Embedded Multipliers           ; 2           ;
 ; Unsigned Embedded Multipliers         ; 0           ;
 ; Mixed Sign Embedded Multipliers       ; 0           ;
 ; Variable Sign Embedded Multipliers    ; 0           ;
@@ -329,8 +347,9 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; ECHO_GEN:inst2|ECHO7[13..15]           ; Merged with ECHO_GEN:inst2|ECHO7[12]   ;
 ; ECHO_GEN:inst2|ECHO8[13..15]           ; Merged with ECHO_GEN:inst2|ECHO8[12]   ;
 ; ECHO_GEN:inst2|ECHO9[12..15]           ; Merged with ECHO_GEN:inst2|ECHO9[11]   ;
+; ECHO_GEN:inst2|ECHO10[12..15]          ; Merged with ECHO_GEN:inst2|ECHO10[11]  ;
 ; ECHO_GEN:inst2|offset[0..2]            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 19 ;                                        ;
+; Total Number of Removed Registers = 23 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -339,35 +358,50 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 307   ;
-; Number of registers using Synchronous Clear  ; 13    ;
-; Number of registers using Synchronous Load   ; 12    ;
+; Total registers                              ; 351   ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 156   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 294   ;
+; Number of registers using Clock Enable       ; 322   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                         ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left|TXReg[6]  ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right|TXReg[3] ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO9[7]                            ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 13 LEs               ; 26 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO8[2]                            ;
-; 6:1                ; 13 bits   ; 52 LEs        ; 13 LEs               ; 39 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO7[7]                            ;
-; 8:1                ; 14 bits   ; 70 LEs        ; 14 LEs               ; 56 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO6[11]                           ;
-; 10:1               ; 14 bits   ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO5[8]                            ;
-; 12:1               ; 15 bits   ; 120 LEs       ; 15 LEs               ; 105 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO4[12]                           ;
-; 14:1               ; 15 bits   ; 135 LEs       ; 15 LEs               ; 120 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO3[9]                            ;
-; 16:1               ; 16 bits   ; 160 LEs       ; 16 LEs               ; 144 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO2[9]                            ;
-; 19:1               ; 16 bits   ; 192 LEs       ; 16 LEs               ; 176 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO1[13]                           ;
-; 21:1               ; 4 bits    ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|offset[0]                           ;
-; 21:1               ; 12 bits   ; 168 LEs       ; 72 LEs               ; 96 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|offset[6]                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_left|TXReg[15]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Proj|Balance_Control:inst8|result[27]                    ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|SndDriver:inst|channel_mod:b2v_inst_right|TXReg[14] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO10[11]                           ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO9[11]                            ;
+; 6:1                ; 13 bits   ; 52 LEs        ; 13 LEs               ; 39 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO8[3]                             ;
+; 8:1                ; 13 bits   ; 65 LEs        ; 13 LEs               ; 52 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO7[0]                             ;
+; 10:1               ; 14 bits   ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO6[6]                             ;
+; 12:1               ; 14 bits   ; 112 LEs       ; 14 LEs               ; 98 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO5[13]                            ;
+; 14:1               ; 15 bits   ; 135 LEs       ; 15 LEs               ; 120 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO4[0]                             ;
+; 16:1               ; 15 bits   ; 150 LEs       ; 15 LEs               ; 135 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO3[7]                             ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 16 LEs               ; 176 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO2[15]                            ;
+; 21:1               ; 16 bits   ; 224 LEs       ; 16 LEs               ; 208 LEs                ; Yes        ; |Proj|ECHO_GEN:inst2|ECHO1[2]                             ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|RW                                   ;
+; 23:1               ; 12 bits   ; 180 LEs       ; 84 LEs               ; 96 LEs                 ; Yes        ; |Proj|ECHO_GEN:inst2|offset[17]                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component ;
++--------------------+------------------+--------------------------------------------------------------+
+; Parameter Name     ; Value            ; Type                                                         ;
++--------------------+------------------+--------------------------------------------------------------+
+; LPM_WIDTH          ; 4                ; Signed Integer                                               ;
+; LPM_CVALUE         ; 15               ; Signed Integer                                               ;
+; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                      ;
+; CBXI_PARAMETER     ; lpm_constant_sf6 ; Untyped                                                      ;
++--------------------+------------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------+
@@ -380,51 +414,73 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component ;
-+--------------------+------------------+--------------------------------------------------------------+
-; Parameter Name     ; Value            ; Type                                                         ;
-+--------------------+------------------+--------------------------------------------------------------+
-; LPM_WIDTH          ; 4                ; Signed Integer                                               ;
-; LPM_CVALUE         ; 4                ; Signed Integer                                               ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                                                      ;
-; CBXI_PARAMETER     ; lpm_constant_ae6 ; Untyped                                                      ;
-+--------------------+------------------+--------------------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Balance_Control:inst8|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+-----------------------+
+; Parameter Name                                 ; Value        ; Type                  ;
++------------------------------------------------+--------------+-----------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE        ;
+; LPM_WIDTHA                                     ; 16           ; Untyped               ;
+; LPM_WIDTHB                                     ; 16           ; Untyped               ;
+; LPM_WIDTHP                                     ; 32           ; Untyped               ;
+; LPM_WIDTHR                                     ; 32           ; Untyped               ;
+; LPM_WIDTHS                                     ; 1            ; Untyped               ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped               ;
+; LPM_PIPELINE                                   ; 0            ; Untyped               ;
+; LATENCY                                        ; 0            ; Untyped               ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped               ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped               ;
+; USE_EAB                                        ; OFF          ; Untyped               ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped               ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped               ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped               ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K   ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped               ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped               ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped               ;
+; CBXI_PARAMETER                                 ; mult_36t     ; Untyped               ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped               ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped               ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped               ;
++------------------------------------------------+--------------+-----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: ECHO_GEN:inst2|lpm_mult:Mult1      ;
-+------------------------------------------------+--------------+---------------------+
-; Parameter Name                                 ; Value        ; Type                ;
-+------------------------------------------------+--------------+---------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
-; LPM_WIDTHA                                     ; 16           ; Untyped             ;
-; LPM_WIDTHB                                     ; 16           ; Untyped             ;
-; LPM_WIDTHP                                     ; 32           ; Untyped             ;
-; LPM_WIDTHR                                     ; 32           ; Untyped             ;
-; LPM_WIDTHS                                     ; 1            ; Untyped             ;
-; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
-; LPM_PIPELINE                                   ; 0            ; Untyped             ;
-; LATENCY                                        ; 0            ; Untyped             ;
-; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
-; USE_EAB                                        ; OFF          ; Untyped             ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
-; CBXI_PARAMETER                                 ; mult_36t     ; Untyped             ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
-+------------------------------------------------+--------------+---------------------+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: Volume_Control:inst7|lpm_mult:Mult0 ;
++------------------------------------------------+--------------+----------------------+
+; Parameter Name                                 ; Value        ; Type                 ;
++------------------------------------------------+--------------+----------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY           ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY         ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE         ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE       ;
+; LPM_WIDTHA                                     ; 16           ; Untyped              ;
+; LPM_WIDTHB                                     ; 16           ; Untyped              ;
+; LPM_WIDTHP                                     ; 32           ; Untyped              ;
+; LPM_WIDTHR                                     ; 32           ; Untyped              ;
+; LPM_WIDTHS                                     ; 1            ; Untyped              ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped              ;
+; LPM_PIPELINE                                   ; 0            ; Untyped              ;
+; LATENCY                                        ; 0            ; Untyped              ;
+; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped              ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped              ;
+; USE_EAB                                        ; OFF          ; Untyped              ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped              ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped              ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped              ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K  ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped              ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped              ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped              ;
+; CBXI_PARAMETER                                 ; NOTHING      ; Untyped              ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped              ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped              ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped              ;
++------------------------------------------------+--------------+----------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -463,35 +519,92 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                        ;
-+---------------------------------------+-------------------------------+
-; Name                                  ; Value                         ;
-+---------------------------------------+-------------------------------+
-; Number of entity instances            ; 2                             ;
-; Entity Instance                       ; ECHO_GEN:inst2|lpm_mult:Mult1 ;
-;     -- LPM_WIDTHA                     ; 16                            ;
-;     -- LPM_WIDTHB                     ; 16                            ;
-;     -- LPM_WIDTHP                     ; 32                            ;
-;     -- LPM_REPRESENTATION             ; SIGNED                        ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                            ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                            ;
-;     -- USE_EAB                        ; OFF                           ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                          ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                            ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                            ;
-; Entity Instance                       ; ECHO_GEN:inst2|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 5                             ;
-;     -- LPM_WIDTHB                     ; 13                            ;
-;     -- LPM_WIDTHP                     ; 18                            ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                      ;
-;     -- INPUT_A_IS_CONSTANT            ; NO                            ;
-;     -- INPUT_B_IS_CONSTANT            ; YES                           ;
-;     -- USE_EAB                        ; OFF                           ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                          ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                            ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                            ;
-+---------------------------------------+-------------------------------+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: ECHO_GEN:inst2|lpm_mult:Mult1      ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 16           ; Untyped             ;
+; LPM_WIDTHB                                     ; 16           ; Untyped             ;
+; LPM_WIDTHP                                     ; 32           ; Untyped             ;
+; LPM_WIDTHR                                     ; 32           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; SIGNED       ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_36t     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                               ;
++---------------------------------------+--------------------------------------+
+; Name                                  ; Value                                ;
++---------------------------------------+--------------------------------------+
+; Number of entity instances            ; 4                                    ;
+; Entity Instance                       ; Balance_Control:inst8|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 16                                   ;
+;     -- LPM_WIDTHB                     ; 16                                   ;
+;     -- LPM_WIDTHP                     ; 32                                   ;
+;     -- LPM_REPRESENTATION             ; SIGNED                               ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                   ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                   ;
+;     -- USE_EAB                        ; OFF                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                   ;
+; Entity Instance                       ; Volume_Control:inst7|lpm_mult:Mult0  ;
+;     -- LPM_WIDTHA                     ; 16                                   ;
+;     -- LPM_WIDTHB                     ; 16                                   ;
+;     -- LPM_WIDTHP                     ; 32                                   ;
+;     -- LPM_REPRESENTATION             ; SIGNED                               ;
+;     -- INPUT_A_IS_CONSTANT            ; YES                                  ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                   ;
+;     -- USE_EAB                        ; OFF                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                   ;
+; Entity Instance                       ; ECHO_GEN:inst2|lpm_mult:Mult0        ;
+;     -- LPM_WIDTHA                     ; 5                                    ;
+;     -- LPM_WIDTHB                     ; 13                                   ;
+;     -- LPM_WIDTHP                     ; 18                                   ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                             ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                   ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                                  ;
+;     -- USE_EAB                        ; OFF                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                   ;
+; Entity Instance                       ; ECHO_GEN:inst2|lpm_mult:Mult1        ;
+;     -- LPM_WIDTHA                     ; 16                                   ;
+;     -- LPM_WIDTHB                     ; 16                                   ;
+;     -- LPM_WIDTHP                     ; 32                                   ;
+;     -- LPM_REPRESENTATION             ; SIGNED                               ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                   ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                   ;
+;     -- USE_EAB                        ; OFF                                  ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                 ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                   ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                   ;
++---------------------------------------+--------------------------------------+
 
 
 +-------------------------------+
@@ -499,7 +612,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:08     ;
 +----------------+--------------+
 
 
@@ -509,9 +622,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Oct 12 16:09:42 2021
+    Info: Processing started: Wed Oct 13 15:14:59 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proj -c Proj
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/volume and balance/volume_control.vhd
+    Info (12022): Found design unit 1: Volume_Control-Volume
+    Info (12023): Found entity 1: Volume_Control
+Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/volume and balance/balance_control.vhd
+    Info (12022): Found design unit 1: Balance_Control-rtl
+    Info (12023): Found entity 1: Balance_Control
 Info (12021): Found 2 design units, including 1 entities, in source file snddriver.vhd
     Info (12022): Found design unit 1: SndDriver-bdf_type
     Info (12023): Found entity 1: SndDriver
@@ -521,6 +640,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file output_
     Info (12022): Found design unit 1: lpm_constant0-SYN
     Info (12023): Found entity 1: lpm_constant0
 Info (12127): Elaborating entity "Proj" for the top level hierarchy
+Warning (275011): Block or symbol "Volume_Control" of instance "inst7" overlaps another block or symbol
 Warning (275043): Pin "hsync" is missing source
 Warning (275043): Pin "vsync" is missing source
 Warning (275043): Pin "vga_clk" is missing source
@@ -550,6 +670,16 @@ Warning (12125): Using design file channel_mod.vhd, which is not specified as a 
     Info (12022): Found design unit 1: channel_mod-rtl
     Info (12023): Found entity 1: channel_mod
 Info (12128): Elaborating entity "channel_mod" for hierarchy "SndDriver:inst|channel_mod:b2v_inst_left"
+Info (12128): Elaborating entity "Balance_Control" for hierarchy "Balance_Control:inst8"
+Info (12128): Elaborating entity "Volume_Control" for hierarchy "Volume_Control:inst7"
+Info (12128): Elaborating entity "lpm_constant0" for hierarchy "lpm_constant0:inst4"
+Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
+Info (12130): Elaborated megafunction instantiation "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
+Info (12133): Instantiated megafunction "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" with the following parameter:
+    Info (12134): Parameter "lpm_cvalue" = "15"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
+    Info (12134): Parameter "lpm_width" = "4"
 Warning (12125): Using design file echo_gen.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: ECHO_GEN-rtl
     Info (12023): Found entity 1: ECHO_GEN
@@ -562,19 +692,13 @@ Warning (12125): Using design file group_no.vhd, which is not specified as a des
     Info (12022): Found design unit 1: group_no-RTL
     Info (12023): Found entity 1: group_no
 Info (12128): Elaborating entity "group_no" for hierarchy "group_no:inst5"
-Info (12128): Elaborating entity "lpm_constant0" for hierarchy "lpm_constant0:inst4"
-Info (12128): Elaborating entity "lpm_constant" for hierarchy "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
-Info (12130): Elaborated megafunction instantiation "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component"
-Info (12133): Instantiated megafunction "lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" with the following parameter:
-    Info (12134): Parameter "lpm_cvalue" = "4"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "LPM_CONSTANT"
-    Info (12134): Parameter "lpm_width" = "4"
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ECHO_GEN:inst2|Mult1"
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Balance_Control:inst8|Mult0"
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Volume_Control:inst7|Mult0"
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ECHO_GEN:inst2|Mult0"
-Info (12130): Elaborated megafunction instantiation "ECHO_GEN:inst2|lpm_mult:Mult1"
-Info (12133): Instantiated megafunction "ECHO_GEN:inst2|lpm_mult:Mult1" with the following parameter:
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ECHO_GEN:inst2|Mult1"
+Info (12130): Elaborated megafunction instantiation "Balance_Control:inst8|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Balance_Control:inst8|lpm_mult:Mult0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "16"
     Info (12134): Parameter "LPM_WIDTHB" = "16"
     Info (12134): Parameter "LPM_WIDTHP" = "32"
@@ -586,6 +710,30 @@ Info (12133): Instantiated megafunction "ECHO_GEN:inst2|lpm_mult:Mult1" with the
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_36t.tdf
     Info (12023): Found entity 1: mult_36t
+Info (12130): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12133): Instantiated megafunction "Volume_Control:inst7|lpm_mult:Mult0" with the following parameter:
+    Info (12134): Parameter "LPM_WIDTHA" = "16"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "32"
+    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_bkh.tdf
+    Info (12023): Found entity 1: add_sub_bkh
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_h9h.tdf
+    Info (12023): Found entity 1: add_sub_h9h
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_fkh.tdf
+    Info (12023): Found entity 1: add_sub_fkh
+Info (12131): Elaborated megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "Volume_Control:inst7|lpm_mult:Mult0"
 Info (12130): Elaborated megafunction instantiation "ECHO_GEN:inst2|lpm_mult:Mult0"
 Info (12133): Instantiated megafunction "ECHO_GEN:inst2|lpm_mult:Mult0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "5"
@@ -694,16 +842,16 @@ Warning (21074): Design contains 5 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY1"
     Warning (15610): No output dependent on input pin "KEY2"
     Warning (15610): No output dependent on input pin "KEY3"
-Info (21057): Implemented 960 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 20 input pins
+Info (21057): Implemented 1158 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 24 input pins
     Info (21059): Implemented 107 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 815 logic cells
-    Info (21062): Implemented 2 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 110 warnings
-    Info: Peak virtual memory: 4680 megabytes
-    Info: Processing ended: Tue Oct 12 16:10:01 2021
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:07
+    Info (21061): Implemented 1007 logic cells
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 111 warnings
+    Info: Peak virtual memory: 4678 megabytes
+    Info: Processing ended: Wed Oct 13 15:15:23 2021
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:08
 
 

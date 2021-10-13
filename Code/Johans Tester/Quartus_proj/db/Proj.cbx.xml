@@ -3,6 +3,10 @@
 	<PROJECT NAME="Proj">
 		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|ECHO_GEN:inst2|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_qgh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|ECHO_GEN:inst2|lpm_mult:Mult1" CBX_FILE_NAME="mult_36t.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_ae6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[1]" CBX_FILE_NAME="add_sub_bkh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|Balance_Control:inst8|lpm_mult:Mult0" CBX_FILE_NAME="mult_36t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_h9h.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|Volume_Control:inst7|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_fkh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Proj|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_sf6.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

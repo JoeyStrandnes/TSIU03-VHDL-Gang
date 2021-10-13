@@ -1,5 +1,5 @@
 Flow report for Sound_Project
-Fri Oct 08 12:29:25 2021
+Wed Oct 13 13:21:07 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Flow Failed - Fri Oct 08 12:29:24 2021           ;
+; Flow Status                        ; Successful - Wed Oct 13 13:21:07 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Sound_Project                                    ;
-; Top-level Entity Name              ; Sound_Project                                    ;
+; Top-level Entity Name              ; Volume_Control                                   ;
 ; Family                             ; Cyclone IV E                                     ;
 ; Device                             ; EP4CE115F29C7                                    ;
 ; Timing Models                      ; Final                                            ;
-; Total logic elements               ; N/A until Partition Merge                        ;
-;     Total combinational functions  ; N/A until Partition Merge                        ;
-;     Dedicated logic registers      ; N/A until Partition Merge                        ;
-; Total registers                    ; N/A until Partition Merge                        ;
-; Total pins                         ; N/A until Partition Merge                        ;
-; Total virtual pins                 ; N/A until Partition Merge                        ;
-; Total memory bits                  ; N/A until Partition Merge                        ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                        ;
-; Total PLLs                         ; N/A until Partition Merge                        ;
+; Total logic elements               ; 30                                               ;
+;     Total combinational functions  ; 14                                               ;
+;     Dedicated logic registers      ; 16                                               ;
+; Total registers                    ; 16                                               ;
+; Total pins                         ; 38                                               ;
+; Total virtual pins                 ; 0                                                ;
+; Total memory bits                  ; 0                                                ;
+; Embedded Multiplier 9-bit elements ; 2                                                ;
+; Total PLLs                         ; 0                                                ;
 +------------------------------------+--------------------------------------------------+
 
 
@@ -64,33 +64,36 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/08/2021 12:29:23 ;
+; Start date & time ; 10/13/2021 13:21:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Sound_Project       ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id           ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------------+
-; COMPILER_SIGNATURE_ID               ; 193569099819378.163368896306640 ; --            ; --          ; --                   ;
-; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Design Compiler                 ; <None>        ; --          ; --                   ;
-; EDA_INPUT_DATA_FORMAT               ; Vhdl                            ; --            ; --          ; eda_design_synthesis ;
-; EDA_INPUT_VCC_NAME                  ; Vdd                             ; --            ; --          ; eda_design_synthesis ;
-; EDA_LMF_FILE                        ; altsyn.lmf                      ; --            ; --          ; eda_design_synthesis ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation       ;
-; EDA_SIMULATION_TOOL                 ; ModelSim (VHDL)                 ; <None>        ; --          ; --                   ;
-; EDA_TIME_SCALE                      ; 1 ps                            ; --            ; --          ; eda_simulation       ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --                   ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --                   ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                            ; --            ; --          ; --                   ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top                  ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top                  ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top                  ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --                   ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                    ;
++-------------------------------------+---------------------------------------+---------------+----------------+----------------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name    ; Section Id           ;
++-------------------------------------+---------------------------------------+---------------+----------------+----------------------+
+; COMPILER_SIGNATURE_ID               ; 193569099819925.163412406207560       ; --            ; --             ; --                   ;
+; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Design Compiler                       ; <None>        ; --             ; --                   ;
+; EDA_INPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --             ; eda_design_synthesis ;
+; EDA_INPUT_VCC_NAME                  ; Vdd                                   ; --            ; --             ; eda_design_synthesis ;
+; EDA_LMF_FILE                        ; altsyn.lmf                            ; --            ; --             ; eda_design_synthesis ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --             ; eda_simulation       ;
+; EDA_SIMULATION_TOOL                 ; ModelSim (VHDL)                       ; <None>        ; --             ; --                   ;
+; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --             ; eda_simulation       ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --             ; --                   ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --             ; --                   ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                  ; --            ; --             ; --                   ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; Volume_Control ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; Volume_Control ; Top                  ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; Volume_Control ; Top                  ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --             ; --                   ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --             ; --                   ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --             ; --                   ;
+; TOP_LEVEL_ENTITY                    ; Volume_Control                        ; Sound_Project ; --             ; --                   ;
++-------------------------------------+---------------------------------------+---------------+----------------+----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -98,8 +101,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4623 MB             ; 00:00:01                           ;
-; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:04     ; 1.0                     ; 4662 MB             ; 00:00:02                           ;
+; Total                ; 00:00:04     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,7 +111,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; TRANSISTOR1-214  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; MUXEN4-202       ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
