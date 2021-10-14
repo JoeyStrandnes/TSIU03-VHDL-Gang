@@ -7,7 +7,8 @@ entity masking is
          pixcode       : out unsigned(7 downto 0);
 			vcnt,hcnt : in unsigned(9 downto 0);
 			Number : in unsigned(2 downto 0);
-			Vol_Out,LR_Out, Dist_out, ED_out, EN_Out, EV_Out : out unsigned(3 downto 0));
+			Vol_Out, Dist_out, EV_Out : out unsigned(4 downto 0);
+			ED_out, LR_Out, EN_Out : out unsigned(3 downto 0));
 			
 end entity;
 
@@ -32,6 +33,10 @@ signal ED_Limit : unsigned(9 downto 0) := "1000010111";
 signal EN_Limit : unsigned(9 downto 0) := "1000010111";
 signal EV_Limit : unsigned(9 downto 0) := "1000010111";
 
+signal iVol_Out, iDist_out, iEV_Out : unsigned(4 downto 0) := "01000";
+signal iLR_Out : unsigned(3 downto 0) := "0111";
+signal iEN_Out : unsigned(3 downto 0) := "0101";
+signal iED_out: unsigned(3 downto 0) := "0111";
 signal Menu_Counter :unsigned(2 downto 0);
 
 begin
@@ -50,43 +55,55 @@ begin
 			-- Graphs
 			elsif((Number = "010" AND VOL_Limit < 295) AND Menu_Counter = 0) then -- Right
 				VOL_Limit <= VOL_Limit+10;
+				iVol_Out <= iVol_Out+1;
 			elsif((Number = "011" AND VOL_Limit > 135) AND Menu_Counter = 0) then --Left
 				VOL_Limit <= VOL_Limit-10;
-			
+				iVol_Out <= iVol_Out-1;
 			elsif((Number = "010" AND LR_Limit < 288) AND Menu_Counter = 1) then -- Right
 				
 				if((LR_Limit >= 200) AND (LR_Limit < 230))then
 					LR_Limit <= LR_Limit+15;
+					iLR_Out <= iLR_Out+1;
 				else
 					LR_Limit <= LR_Limit+10;
+					iLR_Out <= iLR_Out+1;
 				end if;
 				
 			elsif((Number = "011" AND LR_Limit > 143) AND Menu_Counter = 1) then --Left
 				if((LR_Limit > 200) AND (LR_Limit <= 230))then
 					LR_Limit <= LR_Limit-15;
+					iLR_Out <= iLR_Out-1;
 				else
 					LR_Limit <= LR_Limit-10;
+					iLR_Out <= iLR_Out-1;
 				end if;
 
 			elsif((Number = "010" AND DIST_Limit < 295) AND Menu_Counter = 2) then -- Right
 				DIST_Limit <= DIST_Limit+10;
+				iDist_out <= iDist_out+1;
 			elsif((Number = "011" AND DIST_Limit > 135) AND Menu_Counter = 2) then --Left
 				DIST_Limit <= DIST_Limit-10;
+				iDist_out <= iDist_out-1;
 
 			elsif((Number = "010" AND ED_Limit < 615) AND Menu_Counter = 3) then -- Right
 				ED_Limit <= ED_Limit+10;
-			elsif((Number = "011" AND ED_Limit > 455) AND Menu_Counter = 3) then --Left
+				iED_out <= iED_out+1;
+			elsif((Number = "011" AND ED_Limit > 465) AND Menu_Counter = 3) then --Left
 				ED_Limit <= ED_Limit-10;
+				iED_out <= iED_out-1;
 
 			elsif((Number = "010" AND EN_Limit < 615) AND Menu_Counter = 4) then -- Right
 				EN_Limit <= EN_Limit+16;
+				iEN_Out <= iEN_Out+1;
 			elsif((Number = "011" AND EN_Limit > 455) AND Menu_Counter = 4) then --Left
 				EN_Limit <= EN_Limit-16;
-				
+				iEN_Out <= iEN_Out-1;
 			elsif((Number = "010" AND EV_Limit < 615) AND Menu_Counter = 5) then -- Right
 				EV_Limit <= EV_Limit+10;
+				iEV_Out <= iEV_Out+1;
 			elsif((Number = "011" AND EV_Limit > 455) AND Menu_Counter = 5) then --Left
-				EV_Limit <= EV_Limit-10;				
+				EV_Limit <= EV_Limit-10;
+				iEV_Out <= iEV_Out-1;
 			end if;
 			
 			--Graphs
@@ -130,16 +147,16 @@ begin
 			end if;
 			
 			-- Output for Sound group
-			VOL_out <= resize((VOL_Limit/10), 4);
-			LR_out <= resize((LR_Limit/10), 4);
-			DIST_out <= resize((DIST_Limit/10), 4);
-			ED_out <= resize((ED_Limit/10), 4);
-			EN_out <= resize((EN_Limit/10), 4);
-			EV_out <= resize((EV_Limit/10), 4);
 			
 		end if;
 	end process;
 	
+	VOL_out <= iVol_Out;
+	LR_out <= iLR_Out;
+	DIST_out <= iDist_out;
+	ED_out <= iED_out;
+	EN_out <= iEN_Out;
+	EV_out <= iEV_Out;
 	
 
 

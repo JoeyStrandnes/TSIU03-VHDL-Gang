@@ -11,7 +11,7 @@ entity ECHO_GEN is
 			SAMPLE_IN				: in signed(15 downto 0);
 			SAMPLE_OUT				: out signed(15 downto 0);
 			-- SETTINGS 
-			ECHO_VOL					: in unsigned(3 downto 0);
+			ECHO_VOL					: in unsigned(4 downto 0);
 			ECHO_NUM					: in unsigned(3 downto 0);
 			ECHO_DELAY				: in unsigned(3 downto 0);
 			-- SRAM
@@ -218,23 +218,23 @@ begin
 	end process;
 	
 	with ECHO_VOL select
-		ECHO_M <=   	to_signed(32767, 16) when "1111",
-							to_signed(11468*2, 16) when "1110", 
-							to_signed(8028*2, 16) when "1101",	
-							to_signed(5620*2, 16) when "1100",  
-							to_signed(3934*2, 16) when "1011",
-							to_signed(2754*2, 16) when "1010",
-							to_signed(1928*2, 16) when "1001",
-							to_signed(1350*2, 16) when "1000",
-							to_signed(944*2, 16) when "0111",
-							to_signed(662*2, 16) when "0110",
-							to_signed(462*2, 16) when "0101",
-							to_signed(324*2, 16) when "0100",
-							to_signed(226*2, 16) when "0011",
-							to_signed(158*2, 16) when "0010",
-							to_signed(112*2, 16) when "0001",	
-							to_signed(78*2, 16)  when "0000", 
-							to_signed(0*2, 16)  when others;  
+		ECHO_M <=  		to_signed(11468*2, 16) when "01111",
+							to_signed(8028*2, 16) when "01110", 
+							to_signed(5620*2, 16) when "01101",	
+							to_signed(3934*2, 16) when "01100",  
+							to_signed(2754*2, 16) when "01011",
+							to_signed(1928*2, 16) when "01010",
+							to_signed(1350*2, 16) when "01001",
+							to_signed(944*2, 16) when "01000",
+							to_signed(662*2, 16) when "00111",
+							to_signed(462*2, 16) when "00110",
+							to_signed(324*2, 16) when "00101",
+							to_signed(226*2, 16) when "00100",
+							to_signed(158*2, 16) when "00011",
+							to_signed(112*2, 16) when "00010",
+							to_signed(78*2, 16)  when "00001",	
+							to_signed(0*2, 16)   when "00000", 
+						   to_signed(32767, 16)  when others;	
 		
 		RES <= resize( (ECHO_M * OUT_TMP) , RES'length ) ;
 			

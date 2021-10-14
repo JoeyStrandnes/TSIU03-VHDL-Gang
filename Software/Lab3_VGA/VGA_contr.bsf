@@ -117,22 +117,22 @@ applicable agreement for further details.
 	(port
 		(pt 184 176)
 		(output)
-		(text "Vol_Out[3..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
-		(text "Vol_Out[3..0]" (rect 89 171 163 185)(font "Arial" (font_size 8)))
+		(text "Vol_Out[4..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "Vol_Out[4..0]" (rect 89 171 163 185)(font "Arial" (font_size 8)))
 		(line (pt 184 176)(pt 168 176)(line_width 3))
 	)
 	(port
 		(pt 184 192)
 		(output)
-		(text "LR_Out[3..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "LR_Out[3..0]" (rect 93 187 163 201)(font "Arial" (font_size 8)))
+		(text "Dist_Out[4..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "Dist_Out[4..0]" (rect 87 187 163 201)(font "Arial" (font_size 8)))
 		(line (pt 184 192)(pt 168 192)(line_width 3))
 	)
 	(port
 		(pt 184 208)
 		(output)
-		(text "Dist_Out[3..0]" (rect 0 0 76 14)(font "Arial" (font_size 8)))
-		(text "Dist_Out[3..0]" (rect 87 203 163 217)(font "Arial" (font_size 8)))
+		(text "EV_Out[4..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "EV_Out[4..0]" (rect 92 203 163 217)(font "Arial" (font_size 8)))
 		(line (pt 184 208)(pt 168 208)(line_width 3))
 	)
 	(port
@@ -145,15 +145,15 @@ applicable agreement for further details.
 	(port
 		(pt 184 240)
 		(output)
-		(text "EN_Out[3..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
-		(text "EN_Out[3..0]" (rect 93 235 163 249)(font "Arial" (font_size 8)))
+		(text "LR_Out[3..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "LR_Out[3..0]" (rect 93 235 163 249)(font "Arial" (font_size 8)))
 		(line (pt 184 240)(pt 168 240)(line_width 3))
 	)
 	(port
 		(pt 184 256)
 		(output)
-		(text "EV_Out[3..0]" (rect 0 0 71 14)(font "Arial" (font_size 8)))
-		(text "EV_Out[3..0]" (rect 92 251 163 265)(font "Arial" (font_size 8)))
+		(text "EN_Out[3..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "EN_Out[3..0]" (rect 93 251 163 265)(font "Arial" (font_size 8)))
 		(line (pt 184 256)(pt 168 256)(line_width 3))
 	)
 	(port
