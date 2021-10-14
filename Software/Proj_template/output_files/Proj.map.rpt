@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Proj
-Thu Oct 14 14:03:38 2021
+Thu Oct 14 16:09:14 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -53,13 +53,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 14 14:03:38 2021            ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 14 16:09:14 2021            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; Proj                                             ;
 ; Top-level Entity Name              ; Proj                                             ;
 ; Family                             ; Cyclone IV E                                     ;
-; Total logic elements               ; 1,829                                            ;
-;     Total combinational functions  ; 1,710                                            ;
+; Total logic elements               ; 1,840                                            ;
+;     Total combinational functions  ; 1,721                                            ;
 ;     Dedicated logic registers      ; 543                                              ;
 ; Total registers                    ; 543                                              ;
 ; Total pins                         ; 149                                              ;
@@ -174,58 +174,59 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
-+------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path               ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                     ; Library ;
-+------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
-; ../../Code/BIG_SOUND_BLOCK/Volume_Control.vhd  ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/Volume_Control.vhd    ;         ;
-; ../../Code/BIG_SOUND_BLOCK/SRAM_control.vhd    ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/SRAM_control.vhd      ;         ;
-; ../../Code/BIG_SOUND_BLOCK/SndDriver.bdf       ; yes             ; User Block Diagram/Schematic File  ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/SndDriver.bdf         ;         ;
-; ../../Code/BIG_SOUND_BLOCK/my_mux.vhd          ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/my_mux.vhd            ;         ;
-; ../../Code/BIG_SOUND_BLOCK/ECHO_GEN.vhd        ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/ECHO_GEN.vhd          ;         ;
-; ../../Code/BIG_SOUND_BLOCK/Dist.vhd            ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/Dist.vhd              ;         ;
-; ../../Code/BIG_SOUND_BLOCK/ctrl.vhd            ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/ctrl.vhd              ;         ;
-; ../../Code/BIG_SOUND_BLOCK/channel_mod.vhd     ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/channel_mod.vhd       ;         ;
-; ../../Code/BIG_SOUND_BLOCK/BIG_SOUND_BLOCK.bdf ; yes             ; User Block Diagram/Schematic File  ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/BIG_SOUND_BLOCK.bdf   ;         ;
-; ../../Code/BIG_SOUND_BLOCK/Balance_Control.vhd ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/Balance_Control.vhd   ;         ;
-; ../Lab3_VGA/vs_gen.vhd                         ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/vs_gen.vhd               ;         ;
-; ../Lab3_VGA/RGB_gen.vhd                        ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/RGB_gen.vhd              ;         ;
-; ../Lab3_VGA/PS2KeyboardInterface.vhd           ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/PS2KeyboardInterface.vhd ;         ;
-; ../Lab3_VGA/pixelcounter.vhd                   ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixelcounter.vhd         ;         ;
-; ../Lab3_VGA/pixel_reg.vhd                      ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixel_reg.vhd            ;         ;
-; ../Lab3_VGA/masking.vhd                        ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/masking.vhd              ;         ;
-; ../Lab3_VGA/linecounter.vhd                    ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/linecounter.vhd          ;         ;
-; ../Lab3_VGA/hs_gen.vhd                         ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/hs_gen.vhd               ;         ;
-; ../Lab3_VGA/group_no.vhd                       ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/group_no.vhd             ;         ;
-; ../Lab3_VGA/ce_gen.vhd                         ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/ce_gen.vhd               ;         ;
-; ../Lab3_VGA/blank_gen.vhd                      ; yes             ; User VHDL File                     ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/blank_gen.vhd            ;         ;
-; ../Lab3_VGA/VGA_contr.bdf                      ; yes             ; User Block Diagram/Schematic File  ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Lab3_VGA/VGA_contr.bdf            ;         ;
-; Proj.bdf                                       ; yes             ; User Block Diagram/Schematic File  ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Proj_template/Proj.bdf            ;         ;
-; lpm_mult.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf                                   ;         ;
-; aglobal130.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                 ;         ;
-; lpm_add_sub.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc                                ;         ;
-; multcore.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc                                   ;         ;
-; bypassff.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc                                   ;         ;
-; altshift.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc                                   ;         ;
-; db/mult_36t.tdf                                ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Proj_template/db/mult_36t.tdf     ;         ;
-; multcore.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.tdf                                   ;         ;
-; csa_add.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/csa_add.inc                                    ;         ;
-; mpar_add.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.inc                                   ;         ;
-; muleabz.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muleabz.inc                                    ;         ;
-; mul_lfrg.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_lfrg.inc                                   ;         ;
-; mul_boothc.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_boothc.inc                                 ;         ;
-; alt_ded_mult.inc                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult.inc                               ;         ;
-; alt_ded_mult_y.inc                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                             ;         ;
-; dffpipe.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffpipe.inc                                    ;         ;
-; mpar_add.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.tdf                                   ;         ;
-; lpm_add_sub.tdf                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                ;         ;
-; addcore.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                                    ;         ;
-; look_add.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                                   ;         ;
-; alt_stratix_add_sub.inc                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                        ;         ;
-; db/add_sub_qgh.tdf                             ; yes             ; Auto-Generated Megafunction        ; X:/KURSKOD/tsiu03 Systemkonstruktion/TSIU03-VHDL-Gang/Software/Proj_template/db/add_sub_qgh.tdf  ;         ;
-; altshift.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf                                   ;         ;
-+------------------------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path               ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
++------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; ../../Code/BIG_SOUND_BLOCK/Volume_Control.vhd  ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/Volume_Control.vhd        ;         ;
+; ../../Code/BIG_SOUND_BLOCK/SRAM_control.vhd    ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/SRAM_control.vhd          ;         ;
+; ../../Code/BIG_SOUND_BLOCK/SndDriver.bdf       ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/SndDriver.bdf             ;         ;
+; ../../Code/BIG_SOUND_BLOCK/my_mux.vhd          ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/my_mux.vhd                ;         ;
+; ../../Code/BIG_SOUND_BLOCK/ECHO_GEN.vhd        ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/ECHO_GEN.vhd              ;         ;
+; ../../Code/BIG_SOUND_BLOCK/Dist.vhd            ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/Dist.vhd                  ;         ;
+; ../../Code/BIG_SOUND_BLOCK/ctrl.vhd            ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/ctrl.vhd                  ;         ;
+; ../../Code/BIG_SOUND_BLOCK/channel_mod.vhd     ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/channel_mod.vhd           ;         ;
+; ../../Code/BIG_SOUND_BLOCK/BIG_SOUND_BLOCK.bdf ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/BIG_SOUND_BLOCK.bdf       ;         ;
+; ../../Code/BIG_SOUND_BLOCK/Balance_Control.vhd ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Code/BIG_SOUND_BLOCK/Balance_Control.vhd       ;         ;
+; ../Lab3_VGA/vs_gen.vhd                         ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/vs_gen.vhd                   ;         ;
+; ../Lab3_VGA/RGB_gen.vhd                        ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/RGB_gen.vhd                  ;         ;
+; ../Lab3_VGA/PS2KeyboardInterface.vhd           ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/PS2KeyboardInterface.vhd     ;         ;
+; ../Lab3_VGA/pixelcounter.vhd                   ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixelcounter.vhd             ;         ;
+; ../Lab3_VGA/pixel_reg.vhd                      ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/pixel_reg.vhd                ;         ;
+; ../Lab3_VGA/masking.vhd                        ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/masking.vhd                  ;         ;
+; ../Lab3_VGA/linecounter.vhd                    ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/linecounter.vhd              ;         ;
+; ../Lab3_VGA/hs_gen.vhd                         ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/hs_gen.vhd                   ;         ;
+; ../Lab3_VGA/group_no.vhd                       ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/group_no.vhd                 ;         ;
+; ../Lab3_VGA/ce_gen.vhd                         ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/ce_gen.vhd                   ;         ;
+; ../Lab3_VGA/blank_gen.vhd                      ; yes             ; User VHDL File                     ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/blank_gen.vhd                ;         ;
+; ../Lab3_VGA/VGA_contr.bdf                      ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Lab3_VGA/VGA_contr.bdf                ;         ;
+; Proj.bdf                                       ; yes             ; User Block Diagram/Schematic File  ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Proj_template/Proj.bdf                ;         ;
+; lpm_mult.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mult.tdf            ;         ;
+; aglobal130.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
+; lpm_add_sub.inc                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
+; multcore.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.inc            ;         ;
+; bypassff.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/bypassff.inc            ;         ;
+; altshift.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc            ;         ;
+; db/mult_36t.tdf                                ; yes             ; Auto-Generated Megafunction        ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Proj_template/db/mult_36t.tdf         ;         ;
+; multcore.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/multcore.tdf            ;         ;
+; csa_add.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/csa_add.inc             ;         ;
+; mpar_add.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.inc            ;         ;
+; muleabz.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/muleabz.inc             ;         ;
+; mul_lfrg.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_lfrg.inc            ;         ;
+; mul_boothc.inc                                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mul_boothc.inc          ;         ;
+; alt_ded_mult.inc                               ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult.inc        ;         ;
+; alt_ded_mult_y.inc                             ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_ded_mult_y.inc      ;         ;
+; dffpipe.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffpipe.inc             ;         ;
+; mpar_add.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/mpar_add.tdf            ;         ;
+; lpm_add_sub.tdf                                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf         ;         ;
+; addcore.inc                                    ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc             ;         ;
+; look_add.inc                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc            ;         ;
+; alt_stratix_add_sub.inc                        ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc ;         ;
+; db/add_sub_qgh.tdf                             ; yes             ; Auto-Generated Megafunction        ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Proj_template/db/add_sub_qgh.tdf      ;         ;
+; altshift.tdf                                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.tdf            ;         ;
+; db/mult_66t.tdf                                ; yes             ; Auto-Generated Megafunction        ; X:/GITHUB/TSIU03-VHDL-Gang/Software/Proj_template/db/mult_66t.tdf         ;         ;
++------------------------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -233,17 +234,17 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 1,829     ;
+; Estimated Total logic elements              ; 1,840     ;
 ;                                             ;           ;
-; Total combinational functions               ; 1710      ;
+; Total combinational functions               ; 1721      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 796       ;
-;     -- 3 input functions                    ; 578       ;
-;     -- <=2 input functions                  ; 336       ;
+;     -- 4 input functions                    ; 775       ;
+;     -- 3 input functions                    ; 602       ;
+;     -- <=2 input functions                  ; 344       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 1229      ;
-;     -- arithmetic mode                      ; 481       ;
+;     -- normal mode                          ; 1226      ;
+;     -- arithmetic mode                      ; 495       ;
 ;                                             ;           ;
 ; Total registers                             ; 543       ;
 ;     -- Dedicated logic registers            ; 543       ;
@@ -253,8 +254,8 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 8         ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 543       ;
-; Total fan-out                               ; 7705      ;
-; Average fan-out                             ; 2.99      ;
+; Total fan-out                               ; 7694      ;
+; Average fan-out                             ; 2.98      ;
 +---------------------------------------------+-----------+
 
 
@@ -263,14 +264,14 @@ applicable agreement for further details.
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                        ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                          ; Library Name ;
 +---------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |Proj                                             ; 1710 (0)          ; 543 (0)      ; 0           ; 8            ; 0       ; 4         ; 149  ; 0            ; |Proj                                                                                                                                        ; work         ;
-;    |BIG_SOUND_BLOCK:inst6|                        ; 1004 (0)          ; 366 (0)      ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6                                                                                                                  ; work         ;
+; |Proj                                             ; 1721 (0)          ; 543 (0)      ; 0           ; 8            ; 0       ; 4         ; 149  ; 0            ; |Proj                                                                                                                                        ; work         ;
+;    |BIG_SOUND_BLOCK:inst6|                        ; 1015 (0)          ; 366 (0)      ; 0           ; 8            ; 0       ; 4         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6                                                                                                                  ; work         ;
 ;       |Balance_Control:inst1|                     ; 30 (30)           ; 16 (16)      ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Balance_Control:inst1                                                                                            ; work         ;
 ;          |lpm_mult:Mult0|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Balance_Control:inst1|lpm_mult:Mult0                                                                             ; work         ;
 ;             |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Balance_Control:inst1|lpm_mult:Mult0|mult_36t:auto_generated                                                     ; work         ;
-;       |Dist:inst2|                                ; 116 (116)         ; 16 (16)      ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2                                                                                                       ; work         ;
+;       |Dist:inst2|                                ; 127 (127)         ; 16 (16)      ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2                                                                                                       ; work         ;
 ;          |lpm_mult:Mult0|                         ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2|lpm_mult:Mult0                                                                                        ; work         ;
-;             |mult_36t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2|lpm_mult:Mult0|mult_36t:auto_generated                                                                ; work         ;
+;             |mult_66t:auto_generated|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2|lpm_mult:Mult0|mult_66t:auto_generated                                                                ; work         ;
 ;       |ECHO_GEN:inst4|                            ; 711 (676)         ; 174 (174)    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4                                                                                                   ; work         ;
 ;          |lpm_mult:Mult0|                         ; 35 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|lpm_mult:Mult0                                                                                    ; work         ;
 ;             |multcore:mult_core|                  ; 35 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|lpm_mult:Mult0|multcore:mult_core                                                                 ; work         ;
@@ -433,7 +434,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[8] ; 6       ;
 ; VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[9] ; 1       ;
 ; VGA_contr:inst|masking:inst_masking|iVol_Out[3]       ; 14      ;
-; VGA_contr:inst|masking:inst_masking|iDist_out[3]      ; 25      ;
+; VGA_contr:inst|masking:inst_masking|iDist_out[3]      ; 23      ;
 ; VGA_contr:inst|masking:inst_masking|iEV_Out[3]        ; 14      ;
 ; VGA_contr:inst|masking:inst_masking|iEN_Out[2]        ; 10      ;
 ; Total number of inverted registers = 46               ;         ;
@@ -446,36 +447,36 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 ; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|SndDriver:inst|channel_mod:inst_left|TXReg[15] ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|Balance_Control:inst1|result[17]               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|Balance_Control:inst1|result[30]               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|ED_Limit[5]                      ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|Menu_Counter[0]                  ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|iVol_Out[1]                      ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[8]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[6]                      ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EN_Limit[7]                      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[8]                     ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 0 LEs                ; 14 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[8]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[7]                      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|iEN_Out[1]                       ;
 ; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|SndDriver:inst|channel_mod:inst_right|TXReg[1] ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|pixcode[7]                       ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[8]                      ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|pixcode[6]                       ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[3]                      ;
 ; 10:1               ; 12 bits   ; 72 LEs        ; 12 LEs               ; 60 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO10[10]                      ;
-; 6:1                ; 13 bits   ; 52 LEs        ; 13 LEs               ; 39 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO8[7]                        ;
-; 8:1                ; 13 bits   ; 65 LEs        ; 13 LEs               ; 52 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO7[1]                        ;
-; 20:1               ; 12 bits   ; 156 LEs       ; 12 LEs               ; 144 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO9[8]                        ;
-; 10:1               ; 14 bits   ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO6[11]                       ;
-; 12:1               ; 14 bits   ; 112 LEs       ; 14 LEs               ; 98 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO5[0]                        ;
+; 6:1                ; 13 bits   ; 52 LEs        ; 13 LEs               ; 39 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO8[9]                        ;
+; 8:1                ; 13 bits   ; 65 LEs        ; 13 LEs               ; 52 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO7[0]                        ;
+; 20:1               ; 12 bits   ; 156 LEs       ; 12 LEs               ; 144 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO9[5]                        ;
+; 10:1               ; 14 bits   ; 84 LEs        ; 14 LEs               ; 70 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO6[9]                        ;
+; 12:1               ; 14 bits   ; 112 LEs       ; 14 LEs               ; 98 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO5[1]                        ;
 ; 14:1               ; 15 bits   ; 135 LEs       ; 15 LEs               ; 120 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO4[8]                        ;
-; 16:1               ; 15 bits   ; 150 LEs       ; 15 LEs               ; 135 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO3[6]                        ;
-; 18:1               ; 16 bits   ; 192 LEs       ; 16 LEs               ; 176 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO2[6]                        ;
-; 21:1               ; 16 bits   ; 224 LEs       ; 16 LEs               ; 208 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO1[9]                        ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|RW                              ;
+; 16:1               ; 15 bits   ; 150 LEs       ; 15 LEs               ; 135 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO3[9]                        ;
+; 18:1               ; 16 bits   ; 192 LEs       ; 16 LEs               ; 176 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO2[14]                       ;
+; 21:1               ; 16 bits   ; 224 LEs       ; 16 LEs               ; 208 LEs                ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|ECHO1[13]                       ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|offset[2]                       ;
 ; 23:1               ; 12 bits   ; 180 LEs       ; 84 LEs               ; 96 LEs                 ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|ECHO_GEN:inst4|offset[6]                       ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|ED_Limit[4]                      ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 0 LEs                ; 14 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[4]                     ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 0 LEs                ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|ED_Limit[9]                      ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 0 LEs                ; 14 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|VOL_Limit[6]                     ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|iLR_Out[1]                       ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 0 LEs                ; 14 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[7]                    ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|EV_Limit[2]                      ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|DIST_Limit[7]                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 0 LEs                ; 12 LEs                 ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|iEV_Out[4]                       ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|iEN_Out[2]                       ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2|sample_out_tmp[14]                  ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[5]                ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; Yes        ; |Proj|BIG_SOUND_BLOCK:inst6|Dist:inst2|sample_out_tmp[3]                   ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |Proj|VGA_contr:inst|PS2KeyboardInterface:inst1|shiftreg[2]                ;
 ; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |Proj|VGA_contr:inst|masking:inst_masking|LR_Limit[7]                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
 
@@ -605,9 +606,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                     ;
 ; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE                   ;
 ; LPM_WIDTHA                                     ; 16           ; Untyped                          ;
-; LPM_WIDTHB                                     ; 16           ; Untyped                          ;
-; LPM_WIDTHP                                     ; 32           ; Untyped                          ;
-; LPM_WIDTHR                                     ; 32           ; Untyped                          ;
+; LPM_WIDTHB                                     ; 13           ; Untyped                          ;
+; LPM_WIDTHP                                     ; 29           ; Untyped                          ;
+; LPM_WIDTHR                                     ; 29           ; Untyped                          ;
 ; LPM_WIDTHS                                     ; 1            ; Untyped                          ;
 ; LPM_REPRESENTATION                             ; SIGNED       ; Untyped                          ;
 ; LPM_PIPELINE                                   ; 0            ; Untyped                          ;
@@ -622,7 +623,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                          ;
 ; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                          ;
 ; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                          ;
-; CBXI_PARAMETER                                 ; mult_36t     ; Untyped                          ;
+; CBXI_PARAMETER                                 ; mult_66t     ; Untyped                          ;
 ; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                          ;
 ; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                          ;
 ; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                          ;
@@ -706,8 +707,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- INPUT_B_FIXED_VALUE            ; Bx                                                         ;
 ; Entity Instance                       ; BIG_SOUND_BLOCK:inst6|Dist:inst2|lpm_mult:Mult0            ;
 ;     -- LPM_WIDTHA                     ; 16                                                         ;
-;     -- LPM_WIDTHB                     ; 16                                                         ;
-;     -- LPM_WIDTHP                     ; 32                                                         ;
+;     -- LPM_WIDTHB                     ; 13                                                         ;
+;     -- LPM_WIDTHP                     ; 29                                                         ;
 ;     -- LPM_REPRESENTATION             ; SIGNED                                                     ;
 ;     -- INPUT_A_IS_CONSTANT            ; NO                                                         ;
 ;     -- INPUT_B_IS_CONSTANT            ; NO                                                         ;
@@ -744,77 +745,77 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Oct 14 14:03:09 2021
+    Info: Processing started: Thu Oct 14 16:08:46 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Proj -c Proj
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/volume_control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/volume_control.vhd
     Info (12022): Found design unit 1: Volume_Control-Volume
     Info (12023): Found entity 1: Volume_Control
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/sram_control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/sram_control.vhd
     Info (12022): Found design unit 1: SRAM_control-rtl
     Info (12023): Found entity 1: SRAM_control
-Info (12021): Found 1 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/snddriver.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/snddriver.bdf
     Info (12023): Found entity 1: SndDriver
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/my_mux.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/my_mux.vhd
     Info (12022): Found design unit 1: my_mux-rtl
     Info (12023): Found entity 1: my_mux
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/echo_gen.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/echo_gen.vhd
     Info (12022): Found design unit 1: ECHO_GEN-rtl
     Info (12023): Found entity 1: ECHO_GEN
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/dist.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/dist.vhd
     Info (12022): Found design unit 1: Dist-distArch
     Info (12023): Found entity 1: Dist
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/ctrl.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/ctrl.vhd
     Info (12022): Found design unit 1: ctrl-rtl
     Info (12023): Found entity 1: ctrl
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/channel_mod.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/channel_mod.vhd
     Info (12022): Found design unit 1: channel_mod-rtl
     Info (12023): Found entity 1: channel_mod
-Info (12021): Found 1 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/big_sound_block.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/big_sound_block.bdf
     Info (12023): Found entity 1: BIG_SOUND_BLOCK
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/code/big_sound_block/balance_control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/code/big_sound_block/balance_control.vhd
     Info (12022): Found design unit 1: Balance_Control-rtl
     Info (12023): Found entity 1: Balance_Control
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/vs_gen.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/vs_gen.vhd
     Info (12022): Found design unit 1: vs_gen-rtl
     Info (12023): Found entity 1: vs_gen
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/rgb_gen.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/rgb_gen.vhd
     Info (12022): Found design unit 1: RGB_gen-rtl
     Info (12023): Found entity 1: RGB_gen
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/ram_control.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/ram_control.vhd
     Info (12022): Found design unit 1: RAM_control-rtl
     Info (12023): Found entity 1: RAM_control
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/ps2keyboardinterface.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/ps2keyboardinterface.vhd
     Info (12022): Found design unit 1: PS2KeyboardInterface-rtl
     Info (12023): Found entity 1: PS2KeyboardInterface
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/pixelcounter.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/pixelcounter.vhd
     Info (12022): Found design unit 1: pixelcounter-rtl
     Info (12023): Found entity 1: pixelcounter
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/pixel_reg.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/pixel_reg.vhd
     Info (12022): Found design unit 1: pixel_reg-rtl
     Info (12023): Found entity 1: pixel_reg
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/masking.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/masking.vhd
     Info (12022): Found design unit 1: masking-RT_masking
     Info (12023): Found entity 1: masking
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/linecounter.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/linecounter.vhd
     Info (12022): Found design unit 1: linecounter-rtl
     Info (12023): Found entity 1: linecounter
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/hs_gen.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/hs_gen.vhd
     Info (12022): Found design unit 1: hs_gen-rtl
     Info (12023): Found entity 1: hs_gen
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/group_no.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/group_no.vhd
     Info (12022): Found design unit 1: group_no-foo
     Info (12023): Found entity 1: group_no
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/displayrom.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/displayrom.vhd
     Info (12022): Found design unit 1: Display_Frame-Display_Arc
     Info (12023): Found entity 1: Display_Frame
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/ce_gen.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/ce_gen.vhd
     Info (12022): Found design unit 1: ce_gen-rtl
     Info (12023): Found entity 1: ce_gen
-Info (12021): Found 2 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/blank_gen.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/blank_gen.vhd
     Info (12022): Found design unit 1: blank_gen-rtl
     Info (12023): Found entity 1: blank_gen
-Info (12021): Found 1 design units, including 1 entities, in source file /kurskod/tsiu03 systemkonstruktion/tsiu03-vhdl-gang/software/lab3_vga/vga_contr.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /github/tsiu03-vhdl-gang/software/lab3_vga/vga_contr.bdf
     Info (12023): Found entity 1: VGA_contr
 Info (12021): Found 1 design units, including 1 entities, in source file proj.bdf
     Info (12023): Found entity 1: Proj
@@ -892,14 +893,16 @@ Info (12131): Elaborated megafunction instantiation "BIG_SOUND_BLOCK:inst6|ECHO_
 Info (12130): Elaborated megafunction instantiation "BIG_SOUND_BLOCK:inst6|Dist:inst2|lpm_mult:Mult0"
 Info (12133): Instantiated megafunction "BIG_SOUND_BLOCK:inst6|Dist:inst2|lpm_mult:Mult0" with the following parameter:
     Info (12134): Parameter "LPM_WIDTHA" = "16"
-    Info (12134): Parameter "LPM_WIDTHB" = "16"
-    Info (12134): Parameter "LPM_WIDTHP" = "32"
-    Info (12134): Parameter "LPM_WIDTHR" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "13"
+    Info (12134): Parameter "LPM_WIDTHP" = "29"
+    Info (12134): Parameter "LPM_WIDTHR" = "29"
     Info (12134): Parameter "LPM_WIDTHS" = "1"
     Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_66t.tdf
+    Info (12023): Found entity 1: mult_66t
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -981,16 +984,16 @@ Warning (21074): Design contains 21 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]"
     Warning (15610): No output dependent on input pin "SW[16]"
     Warning (15610): No output dependent on input pin "SW[17]"
-Info (21057): Implemented 1991 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2002 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
     Info (21059): Implemented 107 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 1834 logic cells
+    Info (21061): Implemented 1845 logic cells
     Info (21062): Implemented 8 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 88 warnings
     Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Thu Oct 14 14:03:38 2021
-    Info: Elapsed time: 00:00:29
+    Info: Processing ended: Thu Oct 14 16:09:14 2021
+    Info: Elapsed time: 00:00:28
     Info: Total CPU time (on all processors): 00:00:12
 
 
