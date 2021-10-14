@@ -36,6 +36,7 @@ architecture rtl of ECHO_GEN is
 	signal ECHO9 : signed(15 downto 0);
 	signal ECHO10 : signed(15 downto 0);
 	signal OUT_TMP: signed(15 downto 0);
+	signal ACCUM: signed(17 downto 0);
 	constant fs  : integer := 48828;
 	signal ECHO_M : signed(15 downto 0);
 	signal RES 	: signed(30 downto 0);
@@ -205,10 +206,15 @@ begin
 					ECHO10 <= (others => '0');
 				end if;
 
-				
+				--unsure if accum is updated at this point
+				if( ACCUM > 32767) then
+					OUT_TMP <= to_signed(32767, 16);
+				elsif ( ACCUM < -32768) then
+					OUT_TMP <= to_signed(-32768 ,16);
+				else
 				-- Adding all echos together
-				OUT_TMP <= ECHO1 + ECHO2 + ECHO3 + ECHO4 + ECHO5 + ECHO6 + ECHO7 + ECHO8 + ECHO9 + ECHO10;
-				
+					OUT_TMP <= resize(ACCUM, 16);
+				end if;
 				
 			else --Writing to SRAM
 				offset <= (others => '0');
@@ -217,6 +223,12 @@ begin
 		end if;
 	end process;
 	
+	--Sum of all echos
+	ACCUM <= resize(ECHO1, ACCUM'length) + resize(ECHO2, ACCUM'length) + resize(ECHO3, ACCUM'length)
+			+ resize(ECHO4, ACCUM'length) +resize(ECHO5, ACCUM'length) + resize(ECHO6, ACCUM'length) 
+			+ resize(ECHO7, ACCUM'length) + resize(ECHO8, ACCUM'length) + resize(ECHO9, ACCUM'length) + resize(ECHO10, ACCUM'length);
+			
+			
 	with ECHO_VOL select
 		ECHO_M <=  		to_signed(11468*2, 16) when "01111",
 							to_signed(8028*2, 16) when "01110", 
